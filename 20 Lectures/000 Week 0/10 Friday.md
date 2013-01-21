@@ -133,30 +133,30 @@ For example, we could insist on cutting irregularly shaped slices. However,
 for the sake of sanity, let’s keep moving forward.
 
 * Now we place the slices of bread on the table and start thinking about the
-peanut butter. Here, too, we must account for the jar being either open or
-closed. Even if it’s open, we need to account for the so-called corner case of
-this being the first time we ever opened the jar given that there is a plastic
-inner seal. By corner case, we simply mean a situation that we rarely have to
-handle but which, if left unhandled, causes unexpected behavior. So to continue
-our algorithm:
+  peanut butter. Here, too, we must account for the jar being either open or
+  closed. Even if it’s open, we need to account for the so-called corner case of
+  this being the first time we ever opened the jar given that there is a plastic
+  inner seal. By corner case, we simply mean a situation that we rarely have to
+  handle but which, if left unhandled, causes unexpected behavior. So to continue
+  our algorithm:
 
-    if bag is closed
-    open bag
-    if loaf is already sliced
-    remove two slices from open end
-    else if it isn’t sliced
-    remove bread from bag
-    cut two slices of bread from loaf
-    put slices on table separately
-    open the jar of peanut butter
-    if jar is sealed
-    unseal jar
-    pick up knife
-    put knife in peanut butter
-    scoop out 2 tablespoons of peanut butter
+      if bag is closed
+      open bag
+      if loaf is already sliced
+      remove two slices from open end
+      else if it isn’t sliced
+      remove bread from bag
+      cut two slices of bread from loaf
+      put slices on table separately
+      open the jar of peanut butter
+      if jar is sealed
+      unseal jar
+      pick up knife
+      put knife in peanut butter
+      scoop out 2 tablespoons of peanut butter
 
-And so on. The takeaway here is that there are countless opportunities
-to make mistakes such as failing to handle corner cases.
+  And so on. The takeaway here is that there are countless opportunities
+  to make mistakes such as failing to handle corner cases.
 
 ## Binary and Hard Drives (30:00–45:00)
 * So far we’ve used only pseudocode, a non-programming language, to ex-
