@@ -111,26 +111,26 @@ let’s add a condition that we only open the bag if it’s closed to begin with
 We might represent this in “pseudocode,” that is, a mock programming
 language we use just to express our ideas, like so:
 
-    if bag is closed
-    open bag
+      if bag is closed
+          open bag
 
-The indentation indicates that the second line of code should only be
-executed if the first line is true.
+  The indentation indicates that the second line of code should only be
+  executed if the first line is true.
 
 * Now we need to account for the loaf of bread being sliced or not. We can
-do this with a two-pronged condition, i.e. if-else:
+  do this with a two-pronged condition, i.e. if-else:
 
-    if bag is closed
-    open bag
-    if loaf is already sliced
-    remove two slices from open end
-    else if it isn’t sliced
-    remove bread from bag
-    cut two slices of bread from loaf
+      if bag is closed
+          open bag
+      if loaf is already sliced
+          remove two slices from open end
+      else if it isn’t sliced
+          remove bread from bag
+          cut two slices of bread from loaf
 
-Of course, at any point, we could deteriorate to complete ridiculousness.
-For example, we could insist on cutting irregularly shaped slices. However,
-for the sake of sanity, let’s keep moving forward.
+  Of course, at any point, we could deteriorate to complete ridiculousness.
+  For example, we could insist on cutting irregularly shaped slices. However,
+  for the sake of sanity, let’s keep moving forward.
 
 * Now we place the slices of bread on the table and start thinking about the
   peanut butter. Here, too, we must account for the jar being either open or
@@ -141,16 +141,16 @@ for the sake of sanity, let’s keep moving forward.
   our algorithm:
 
       if bag is closed
-      open bag
+          open bag
       if loaf is already sliced
-      remove two slices from open end
+          remove two slices from open end
       else if it isn’t sliced
-      remove bread from bag
-      cut two slices of bread from loaf
+          remove bread from bag
+          cut two slices of bread from loaf
       put slices on table separately
       open the jar of peanut butter
       if jar is sealed
-      unseal jar
+          unseal jar
       pick up knife
       put knife in peanut butter
       scoop out 2 tablespoons of peanut butter
@@ -159,69 +159,75 @@ for the sake of sanity, let’s keep moving forward.
   to make mistakes such as failing to handle corner cases.
 
 ## Binary and Hard Drives (30:00–45:00)
+
 * So far we’ve used only pseudocode, a non-programming language, to ex-
-press our ideas. As we make the transition to true programming languages
-like C, we’ll need to be extra careful about syntax. Even a single missing
-semicolon in millions of lines of code will break our program! Fortunately
-(or unfortunately?), as the semester progresses, you’ll find yourself making
-fewer syntax errors and more interesting errors.
+press our ideas. As we make the transition to true programming languages like
+C, we’ll need to be extra careful about syntax. Even a single missing semicolon
+in millions of lines of code will break our program! Fortunately (or
+unfortunately?), as the semester progresses, you’ll find yourself making fewer
+syntax errors and more interesting errors.
+
 * Let’s take a look at our very first program in C:
-#include <stdio.h>
-int
-main(void)
-{
-printf("hello, world\n");
-}
-Ta-da! This program does nothing more than print “hello, world” to the
-screen. It is a common convention in computer science to write a so-
-called “hello, world” program when you are first beginning to learn a new
-language.
+
+      #include <stdio.h>
+      int
+      main(void)
+      {
+          printf("hello, world\n");
+      }
+
+  Ta-da! This program does nothing more than print “hello, world” to the
+  screen. It is a common convention in computer science to write a so-
+  called “hello, world” program when you are first beginning to learn a new
+  language.
+
 * As cryptic as this program might seem, it’s still readable by a human.
 However, the truth is that it’s not actually readable by a machine in its
-current state. Computers only really understand binary, the language of
-0’s and 1’s. This is because 0 and 1 map nicely to the off and on states of
-electricity. In order to run our very first program in C, we’ll need to run
-it through a compiler, a program that will translate it into binary.
+current state. Computers only really understand binary, the language of 0’s and
+1’s. This is because 0 and 1 map nicely to the off and on states of
+electricity. In order to run our very first program in C, we’ll need to run it
+through a compiler, a program that will translate it into binary.
+
 * Let’s begin learning binary the same way we learned decimal: counting.
-0 and 1 are easy, but how do we count to 2 in binary? We’ve run out of
-digits. Recall from your days of arithmetic the concept of “carrying the
-1.” If we carry the 1 here, we end up with 10 as 2 and 11 as 3. Here are
-the numbers 0 through 4 in pretty-printed format:
-000
-001
-010
-5
-Computer Science 50
-Fall 2011
-Scribe Notes
-Week 0 Friday: September 2, 2011
-Andrew Sellergren
-011
-100
-Counting up, it seems, is relatively easy. We can have as many leading
-zeroes as we want when representing numbers on paper, but in practice,
-computers only handle a certain number of total zeroes, or bits, at a time.
-This is where the terms 32-bit and 64-bit come from, but more on that
-later.
-* Given a binary number like 111, how do we convert it to decimal? Consider
-a number like 123 in decimal. The 1 is in the 100’s column, the 2 is in the
-10’s column, and the 3 is in the 1’s column. 123 = 1 ∗ 100 + 2 ∗ 10 + 3 ∗ 1.
-Likewise in binary, the columns represent powers of the base number.
-Decimal is base 10, so each column is a power of 10. Binary is base 2,
-so each column is a power of 2. To convert 111 to decimal, then, we
-take each column and multiply by the appropriate power of 2: 111 =
-1 ∗ 4 + 1 ∗ 2 + 1 ∗ 1 = 7.
+  0 and 1 are easy, but how do we count to 2 in binary? We’ve run out of
+  digits. Recall from your days of arithmetic the concept of “carrying the
+  1.” If we carry the 1 here, we end up with 10 as 2 and 11 as 3. Here are
+  the numbers 0 through 4 in pretty-printed format:
+
+      000
+      001
+      010
+      011
+      100
+
+  Counting up, it seems, is relatively easy. We can have as many leading
+  zeroes as we want when representing numbers on paper, but in practice,
+  computers only handle a certain number of total zeroes, or bits, at a time.
+  This is where the terms 32-bit and 64-bit come from, but more on that
+  later.
+
+* Given a binary number like $111$, how do we convert it to decimal? Consider
+a number like $123$ in decimal. The 1 is in the 100’s column, the 2 is in the
+10’s column, and the 3 is in the 1’s column. $123 = 1 ∗ 100 + 2 ∗ 10 + 3 ∗ 1$.
+Likewise in binary, the columns represent powers of the base number.  Decimal
+is base 10, so each column is a power of 10. Binary is base 2, so each column
+is a power of 2. To convert $111$ to decimal, then, we take each column and
+multiply by the appropriate power of 2: $111 = 1 ∗ 4 + 1 ∗ 2 + 1 ∗ 1 = 7$.
+
 * Somewhere along the way, it was decided to lump bits together in order
 to create a more practical unit for measuring information. Thus the byte,
 which consists of 8 bits, was born.
+
 * Now that you understand binary, you’ll get the joke behind the Foxtrot
 comic in which Jason professes to have completed his phys-ed homework,
 which required him to do 100 pushups, having done only 4.
+
 * In order to use binary to express alphabetic characters, we’ll need some
 kind of mapping between numbers and letters. This is where ASCII comes
 in. To see the complete mapping, check out this ASCII table. However,
 you only really need to know that uppercase A is 65 and lowercase a is
 97. This will help with conversions.
+
 * If we allow ourselves eight columns, we can represent all the numbers from
 0 to 255 (and their character mappings according to ASCII) in binary.
 These eight columns correspond to eight bits, which together make up a
