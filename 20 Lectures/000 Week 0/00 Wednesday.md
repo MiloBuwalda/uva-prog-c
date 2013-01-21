@@ -1,8 +1,8 @@
 # Wednesday lecture
 
-[video](http://cs50.tv/2011/fall/lectures/0/week0w.mp4)
+[Video](http://cs50.tv/2011/fall/lectures/0/week0w.mp4)
 
-[slides](http://cdn.cs50.net/2011/fall/lectures/0/week0w.pdf)
+[Slides](http://cdn.cs50.net/2011/fall/lectures/0/week0w.pdf)
 
 ## Announcements and Demos (0:00–1:00)
 
