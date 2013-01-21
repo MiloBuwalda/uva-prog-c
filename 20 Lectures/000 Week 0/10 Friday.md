@@ -103,65 +103,62 @@ technology.
 > 5. Have fun!
 
 How can we improve on this algorithm?
-3
-Computer Science 50
-Fall 2011
-Scribe Notes
-Week 0 Friday: September 2, 2011
-Andrew Sellergren
+
 * Consider step 1. We forgot to mention that we need to open the bag first.
 But now think about a second round of sandwich making. Now the bag
 is already open, so we don’t need a step to open it. To handle this case,
 let’s add a condition that we only open the bag if it’s closed to begin with.
 We might represent this in “pseudocode,” that is, a mock programming
 language we use just to express our ideas, like so:
-if bag is closed
-open bag
+
+    if bag is closed
+    open bag
+
 The indentation indicates that the second line of code should only be
 executed if the first line is true.
+
 * Now we need to account for the loaf of bread being sliced or not. We can
 do this with a two-pronged condition, i.e. if-else:
-if bag is closed
-open bag
-if loaf is already sliced
-remove two slices from open end
-else if it isn’t sliced
-remove bread from bag
-cut two slices of bread from loaf
+
+    if bag is closed
+    open bag
+    if loaf is already sliced
+    remove two slices from open end
+    else if it isn’t sliced
+    remove bread from bag
+    cut two slices of bread from loaf
+
 Of course, at any point, we could deteriorate to complete ridiculousness.
 For example, we could insist on cutting irregularly shaped slices. However,
 for the sake of sanity, let’s keep moving forward.
+
 * Now we place the slices of bread on the table and start thinking about the
-peanut butter. Here, too, we must account for the jar being either open
-or closed. Even if it’s open, we need to account for the so-called corner
-case of this being the first time we ever opened the jar given that there
-is a plastic inner seal. By corner case, we simply mean a situation that
-we rarely have to handle but which, if left unhandled, causes unexpected
-behavior. So to continue our algorithm:
-if bag is closed
-open bag
-if loaf is already sliced
-remove two slices from open end
-else if it isn’t sliced
-remove bread from bag
-cut two slices of bread from loaf
-put slices on table separately
-open the jar of peanut butter
-if jar is sealed
-unseal jar
-4
-Computer Science 50
-Fall 2011
-Scribe Notes
-Week 0 Friday: September 2, 2011
-Andrew Sellergren
-pick up knife
-put knife in peanut butter
-scoop out 2 tablespoons of peanut butter
+peanut butter. Here, too, we must account for the jar being either open or
+closed. Even if it’s open, we need to account for the so-called corner case of
+this being the first time we ever opened the jar given that there is a plastic
+inner seal. By corner case, we simply mean a situation that we rarely have to
+handle but which, if left unhandled, causes unexpected behavior. So to continue
+our algorithm:
+
+    if bag is closed
+    open bag
+    if loaf is already sliced
+    remove two slices from open end
+    else if it isn’t sliced
+    remove bread from bag
+    cut two slices of bread from loaf
+    put slices on table separately
+    open the jar of peanut butter
+    if jar is sealed
+    unseal jar
+    pick up knife
+    put knife in peanut butter
+    scoop out 2 tablespoons of peanut butter
+
 And so on. The takeaway here is that there are countless opportunities
 to make mistakes such as failing to handle corner cases.
-4
-Binary and Hard Drives (30:00–45:00)
+
+## Binary and Hard Drives (30:00–45:00)
 * So far we’ve used only pseudocode, a non-programming language, to ex-
 press our ideas. As we make the transition to true programming languages
 like C, we’ll need to be extra careful about syntax. Even a single missing
