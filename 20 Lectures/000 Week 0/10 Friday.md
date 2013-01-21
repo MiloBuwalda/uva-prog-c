@@ -206,13 +206,13 @@ through a compiler, a program that will translate it into binary.
   This is where the terms 32-bit and 64-bit come from, but more on that
   later.
 
-* Given a binary number like $111$, how do we convert it to decimal? Consider
-a number like $123$ in decimal. The 1 is in the 100’s column, the 2 is in the
-10’s column, and the 3 is in the 1’s column. $123 = 1 ∗ 100 + 2 ∗ 10 + 3 ∗ 1$.
+* Given a binary number like 111, how do we convert it to decimal? Consider
+a number like 123 in decimal. The 1 is in the 100’s column, the 2 is in the
+10’s column, and the 3 is in the 1’s column. 123 = 1 ∗ 100 + 2 ∗ 10 + 3 ∗ 1.
 Likewise in binary, the columns represent powers of the base number.  Decimal
 is base 10, so each column is a power of 10. Binary is base 2, so each column
-is a power of 2. To convert $111$ to decimal, then, we take each column and
-multiply by the appropriate power of 2: $111 = 1 ∗ 4 + 1 ∗ 2 + 1 ∗ 1 = 7$.
+is a power of 2. To convert 111 to decimal, then, we take each column and
+multiply by the appropriate power of 2: 111 = 1 ∗ 4 + 1 ∗ 2 + 1 ∗ 1 = 7.
 
 * Somewhere along the way, it was decided to lump bits together in order
 to create a more practical unit for measuring information. Thus the byte,
@@ -232,10 +232,12 @@ you only really need to know that uppercase A is 65 and lowercase a is
 0 to 255 (and their character mappings according to ASCII) in binary.
 These eight columns correspond to eight bits, which together make up a
 single byte. The letter A in binary is written as 01000001.
+
 * How is this binary data stored in reality? Take a look at this video and
 this follow-up for a detailed explanation of how hard drives work. Here
 are the take-away points of these videos:
-– Hard drives consist of circular platters which spin as data is being
+
++ Hard drives consist of circular platters which spin as data is being
 written to and read from them. When data is to be stored on the hard
 drive, it passes from RAM along with software signals that designate
 how the data is to be stored. Certain signals control how the platters
@@ -243,13 +245,8 @@ spin and others control the read-write heads. The distance between
 the heads and platters is less than the width of a human hair, yet the
 platters spin 5400 RPM or faster. Multiple platters make for greater
 efficiency than a single platter.
-6
-Computer Science 50
-Fall 2011
-Scribe Notes
-Week 0 Friday: September 2, 2011
-Andrew Sellergren
-– A read-write head in a hard drive contains a tiny electromagnet which
+
++ A read-write head in a hard drive contains a tiny electromagnet which
 conducts the software signals it is passed and, during writing, flips
 single bits on the platter either on or off by polarizing it in one
 direction or the opposite. During reading, the process is reversed
@@ -257,57 +254,66 @@ and the electromagnet conducts signals from the bits on the platter.
 A single file may be stored in locations scattered widely across a
 platter, so a separate file keeps track of the locations of all the bits
 of files.
-5
-Scratch (45:00–71:00)
+
+
+## Scratch (45:00–71:00)
+
 * The program we demonstrated at the beginning of lecture was written
 in a framework called Scratch, developed down the road at MIT. This
 framework was designed to allow students to ease into the world of pro-
 gramming by dragging and dropping puzzle pieces in order to create logical
 constructs such as if-else statements and loops.
+
 * To start working with Scratch, you’ll need to download the program from
 MIT’s website.
+
 * Once you install Scratch and open it, take note of the following layout:
-– On far left, notice the “palette” of puzzle pieces, which represent
+
++ On far left, notice the “palette” of puzzle pieces, which represent
 programming statements. Programs will be composed by putting
 puzzle pieces together in a particular order.
-– At bottom right are sprites, or characters that will carry out your
+
++ At bottom right are sprites, or characters that will carry out your
 instructions.
-– At top right is the stage, where the program will be carried out.
-– To the left of the stage is the scripts area, where puzzle pieces must
+
++ At top right is the stage, where the program will be carried out.
+
++ To the left of the stage is the scripts area, where puzzle pieces must
 be dragged and strung together.
+
 * We can recreate our very simple C program in Scratch using the “say”
-block. Hai1.sb is equivalent to hello.c, only a little more colorful. The
-“when green flag clicked” piece is equivalent to our main keyword in the
+block. `Hai1.sb` is equivalent to `hello.c`, only a little more colorful. The
+“when green flag clicked” piece is equivalent to our `main` keyword in the
 C program above.
+
 * Before we go any farther, let’s talk about some computer science jargon:
-a statement is an action that we give to the computer to perform. In the
+a *statement* is an action that we give to the computer to perform. In the
 context of Scratch, statements begin with verbs like “say,” “play,” and
 “wait.”
+
 * Obviously, we’re taking baby steps, but realize that that’s what program-
 ming is all about–taking very basic building blocks and creating functions
 and more complicated programs.
-* Hai2.sb is slightly more complicated. The cat will say “O hai, world!”
+
+* `Hai2.sb` is slightly more complicated. The cat will say “O hai, world!”
 for 1 second, wait 1 second, say it again for 1 second, wait 1 second, and
 say it again for 1 second.
-7
-Computer Science 50
-Fall 2011
-Scribe Notes
-Week 0 Friday: September 2, 2011
-Andrew Sellergren
-* So far we’ve only made use of statements, which are direct imperatives
+
+* So far we’ve only made use of *statements*, which are direct imperatives
 given to the computer. But if we want to introduce logic into our program,
-we’ll need boolean expressions and conditions. Boolean expressions are
+we’ll need *boolean expressions* and conditions. Boolean expressions are
 those that have only two possible values: true or false, yes or no, on or
 off, 1 or 0. No matter how you say it, it’s a simple variable. In Scratch,
 boolean expressions are represented as hexagons and are written as yes-
 or-no questions such as “touching mouse-pointer?,” “mouse down?” or
 comparisons such as less-than, equal-to, or greater-than.
+
 * Boolean expressions aren’t new to you. Consider on HarvardCourses when
 you search for courses offered this year. Somewhere in the code, that
 translates to a boolean variable that signifies either offered this year or
 not offered this year.
-* Hai4.sb and Hai5.sb make use of conditions and boolean expressions. In
+
+* `Hai4.sb` and `Hai5.sb` make use of conditions and boolean expressions. In
 the first, the condition 1 < 2 always evaluates to true, so the cat meows
 everytime we click the green flag. In the second, however, the condition
 says, “pick a random number between 1 and 10 and if that number is
@@ -315,61 +321,63 @@ less than 6, have the cat meow.” This is what we call a pseudorandom
 number generator. The effect of this pseudorandom number generator on
 our program is that the cat will meow approximately half the time we
 click the green flag.
+
 * If we want our cat to meow multiple times, we can certainly just duplicate
 the statements however many times we want. But this would be very
 tedious to drag the puzzles pieces over and over again. Instead, we can
-use loops when we wish to repeat a statement. In Hai6.sb, we implement
+use loops when we wish to repeat a statement. In `Hai6.sb`, we implement
 a loop which causes the cat to meow indefinitely. Infinite loops aren’t
 necessarily bad: consider the case of a spellchecker in a word-processing
 program that constantly checks for words you have typed.
-* In Hai7.sb, we combine a loop and a condition so that the cat will meow
+
+* In `Hai7.sb`, we combine a loop and a condition so that the cat will meow
 only if the mouse pointer is touching it or, in other words, if we are
 petting it. In Hai8.sb, we add an extra condition so that the cat will
 meow indefinitely, but will roar if we touch it with the mouse pointer.
-* Variables are another useful programming construct. They allow us to
+
+* *Variables* are another useful programming construct. They allow us to
 store information about the state of a program. For example, in the case
 of the peanut butter and jelly algorithm, we might have defined a variable
 slices_of_bread_left.
-* Arrays are essentially collections of related variables. In the game
+
+* *Arrays* are essentially collections of related variables. In the game
 FruitcraftRPG.sb, for example, an array is used to store the different
 types of fruit which have been collected. An array is one of many different
 types of data structures which are essentially buckets in which we can
 store information of interest to our program.
-* Now is a good time to introduce the concept of threads. This is a fairly
-complicated concept which doesn’t usually get introduced in the first week
-8
-Computer Science 50
-Fall 2011
-Scribe Notes
-Week 0 Friday: September 2, 2011
-Andrew Sellergren
-of a computer science course, let alone in the first semester of computer
-science training. However, let’s Scratch the surface of a threading discus-
-sion.2 In the context of your computer, threads are what allow you to
-have multiple software applications open at once. Your computer isn’t ac-
-tually doing multiple things at once; rather, it’s switching back and forth
-between tasks faster than you can perceive.
+
+* Now is a good time to introduce the concept of *threads*. This is a fairly
+complicated concept which doesn’t usually get introduced in the first week of a
+computer science course, let alone in the first semester of computer science
+training. However, let’s Scratch the surface of a threading discus- sion.2 In
+the context of your computer, threads are what allow you to have multiple
+software applications open at once. Your computer isn’t ac- tually doing
+multiple things at once; rather, it’s switching back and forth between tasks
+faster than you can perceive.
+
 * Threading refers to the notion of multiple threads of code executing si-
-multaneously. In Move1.sb, we have a simple animation of a duck moving
-back and forth across the screen, screaming and turning around every
-time it touches the edge. This is a single thread. In Move2.sb, we achieve
-“multithreading,” at least in appearance. In terms of programming, we
-have two different scripts associated with two different sprites, a cat and
-a bird. For the cat, we begin by placing him in a given spot on the stage
-and orienting him in a random direction. Then we begin a loop whereby
-if he touches the bird, then the game ends; otherwise, orient toward the
-bird and advance one step. For the bird, we again place and orient him
-and then move him around the stage three steps at a time. Effectively,
-then, the cat is chasing the bird until he catches him.
+multaneously. In Move1.sb, we have a simple animation of a duck moving back and
+forth across the screen, screaming and turning around every time it touches the
+edge. This is a single thread. In Move2.sb, we achieve “multithreading,” at
+least in appearance. In terms of programming, we have two different scripts
+associated with two different sprites, a cat and a bird. For the cat, we begin
+by placing him in a given spot on the stage and orienting him in a random
+direction. Then we begin a loop whereby if he touches the bird, then the game
+ends; otherwise, orient toward the bird and advance one step. For the bird, we
+again place and orient him and then move him around the stage three steps at a
+time. Effectively, then, the cat is chasing the bird until he catches him.
+
 * Events are another method of communicating between sprites. Marco.sb
-leverages events to play the game of Marco Polo. Thus far, our sprites
-haven’t really been communicating with each other. But in this game of
-Marco Polo, one sprite is saying “Marco,” and the other is listening for
-him to say it so that she can say “Polo” in response. The second sprite is
-listening for the event which the first sprite broadcasts.
+leverages events to play the game of Marco Polo. Thus far, our sprites haven’t
+really been communicating with each other. But in this game of Marco Polo, one
+sprite is saying “Marco,” and the other is listening for him to say it so that
+she can say “Polo” in response. The second sprite is listening for the event
+which the first sprite broadcasts.
+
 * Scratch also offers sensor boards which take user input in the form of
 sound, light, and movement, as required by the Hacker Edition of Problem
 Set 0.
+
 * Check out Scratch Scratch Revolution and Raining Men for more examples
 of what you can do with Scratch!
 
