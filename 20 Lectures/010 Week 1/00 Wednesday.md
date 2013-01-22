@@ -219,9 +219,9 @@ Harvard.
 * At the command line, we’ll type the command ls, short for list, and see
 the following output:
 
-  > `jharvard@appliance (~): ls`
-  > `Desktop lectures`
-  > `jharvard@appliance (~):`
+      jharvard@appliance (~): ls
+      Desktop lectures
+      jharvard@appliance (~):
 
   This tells us that in your home directory, which is comparable to the My
   Documents folder on Windows or the Documents folder on Mac OS, there
@@ -229,10 +229,10 @@ the following output:
   we saved our program on the desktop, so we need to navigate there in
   order to compile and run it. To do this, we run this command:
 
-  > `jharvard@appliance (~): cd Desktop`
-  > `jharvard@appliance (~/Desktop): ls`
-  > `hello.c`
-  > `jharvard@appliance (~/Desktop):`
+      jharvard@appliance (~): cd Desktop
+      jharvard@appliance (~/Desktop): ls
+      hello.c
+      jharvard@appliance (~/Desktop):
 
   `cd` stands for change directory. Within the parentheses, we are reminded
   that we are currently in the Desktop, a subdirectory of the home directory
