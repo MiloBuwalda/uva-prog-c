@@ -27,3 +27,16 @@ Hoe te beginnen?
 * Review elke week de lecture notes, maak aantekeningen en vraag je assistent over de dingen die je nog niet begrijpt! Dat is de enige manier om je op het tentamen voor te bereiden.
 
 
+# Werken op de labmachines
+
+Heb je de Walkthrough al gekeken? Deze geeft een idee van de stappen die je
+kunt nemen om je Problem Set op te lossen. Zie onder **standard edition &rarr;
+video**.
+
+Voer, voordat je begint, het volgende commando uit op de Terminal van je
+Linux-machine -- dit geldt voor computers van de faculteit:
+
+	/home/mstegem1/soft/bin/cs50
+
+Je hoeft dat maar één keer te doen.
+
