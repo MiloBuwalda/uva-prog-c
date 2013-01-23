@@ -239,78 +239,76 @@ the following output:
   which is represented by the ~.
 
 * Now to compile our program. At the command line, we’ll pass our source
-code file into a compiler named GCC (GNU Compiler Collection) like so:
-jharvard@appliance (~/Desktop): gcc hello.c
-jharvard@appliance (~/Desktop):
-6
-Computer Science 50
-Fall 2011
-Scribe Notes
-Week 1 Wednesday: September 7, 2011
-Andrew Sellergren
-The fact that nothing happened when we ran this command is actually a
-good sign: it means there were no errors in compiling the program. Now
-when we check the contents of our Desktop, we see an extra file has been
-created:
-jharvard@appliance (~/Desktop): ls
-a.out hello.c
-a.out is the default name for a program created by GCC. To run it, we’ll
-simply type its name at the command line:
-jharvard@appliance (~/Desktop): ./a.out
-O hai, world!
-jharvard@appliance (~/Desktop):
-Woohoo, our first program ran! Incidentally, the ./ tells Linux to look
-for the program within our current directory, represented by a dot. If this
-were a built-in program in Linux, we wouldn’t need to tell it where to
-look.
+  code file into a compiler named GCC (GNU Compiler Collection) like so:
+
+      jharvard@appliance (~/Desktop): gcc hello.c
+      jharvard@appliance (~/Desktop):
+
+  The fact that nothing happened when we ran this command is actually a
+  good sign: it means there were no errors in compiling the program. Now
+  when we check the contents of our Desktop, we see an extra file has been
+  created:
+
+      jharvard@appliance (~/Desktop): ls
+      a.out hello.c
+
+  `a.out` is the default name for a program created by GCC. To run it, we’ll
+  simply type its name at the command line:
+
+      jharvard@appliance (~/Desktop): ./a.out
+      O hai, world!
+      jharvard@appliance (~/Desktop):
+
+  Woohoo, our first program ran! Incidentally, the `./` tells Linux to look
+  for the program within our current directory, represented by a dot. If this
+  were a built-in program in Linux, we wouldn’t need to tell it where to
+  look.
 
 * a.out isn’t a very descriptive name for our program, so let’s modify our
-compiler command to name its output more appropriately:
-jharvard@appliance (~/Desktop): gcc -o hello hello.c
-The -o is a flag or a switch or an option passed to GCC to tell it the name
-we’d like it to give to its output, in this case hello. Now we can execute
-the same program by running ./hello.
+  compiler command to name its output more appropriately:
+
+      jharvard@appliance (~/Desktop): gcc -o hello hello.c
+
+  The `-o` is a flag or a switch or an option passed to GCC to tell it the name
+  we’d like it to give to its output, in this case hello. Now we can execute
+  the same program by running `./hello`.
 
 * For the first of many Linux tricks you’ll learn this semester, know that
 you can press the up and down arrows to scroll through the list of your
 previously run commands.
 
 * Remembering which options to execute GCC with every time we run it
-would be a huge pain. Thankfully, there’s another program we can use to
-compile our code: make. We run it like so:
-jharvard@appliance (~/Desktop): make hello
-make: ‘hello’ is up to date.
-make knows to look for the source code file hello.c and turn it into
-a program named hello even without being passed any non-standard
-options. It also prints us a user-friendly message telling us that hello
-doesn’t need to be recompiled because it’s already “up to date.”
+  would be a huge pain. Thankfully, there’s another program we can use to
+  compile our code: make. We run it like so:
 
-* If we want to recompile hello anyway, we need to remove the previous
-output. We do this with the rm command:
-7
-Computer Science 50
-Fall 2011
-Scribe Notes
-jharvard@appliance
-rm: remove regular
-rm: remove regular
-jharvard@appliance
-hello.c
-Week 1 Wednesday: September 7, 2011
-Andrew Sellergren
-(~/Desktop): rm hello a.out
-file ‘hello’? y
-file ‘a.out’? y
-(~/Desktop): ls
-rm will prompt us if we really want to delete the files we just specified and
-when we type y, it will actually remove them. Now we have nothing but
-hello.c left in our Desktop directory. When we run make now, we get
-the following:
-jharvard@appliance (~/Desktop): make hello
-gcc -ggdb -std=c99 -Wall -Werror hello.c -lcs50 -lm -o hello
-As you can see, make is actually running gcc in the background with a few
-extra options that we’ve told it to pass by default. More on these options
-later. As before, we can run ./hello to execute our program.
+      jharvard@appliance (~/Desktop): make hello
+      make: ‘hello’ is up to date.
+
+  `make` knows to look for the source code file hello.c and turn it into
+  a program named `hello` even without being passed any non-standard
+  options. It also prints us a user-friendly message telling us that `hello`
+  doesn’t need to be recompiled because it’s already “up to date.”
+
+* If we want to recompile `hello` anyway, we need to remove the previous
+output. We do this with the `rm` command:
+
+      jharvard@appliance (~/Desktop): rm hello a.out
+      rm: remove regular file ‘hello’? y
+      rm: remove regular file ‘a.out’? y
+      jharvard@appliance (~/Desktop): ls
+      hello.c
+
+  `rm` will prompt us if we really want to delete the files we just specified and
+  when we type y, it will actually remove them. Now we have nothing but
+  `hello.c` left in our Desktop directory. When we run `make` now, we get
+  the following:
+
+      jharvard@appliance (~/Desktop): make hello
+      gcc -ggdb -std=c99 -Wall -Werror hello.c -lcs50 -lm -o hello
+
+  As you can see, `make` is actually running `gcc` in the background with a few
+  extra options that we’ve told it to pass by default. More on these options
+  later. As before, we can run `./hello` to execute our program.
 
 * Question: by convention, directories and executable programs are high-
 lighted in bold by the ls command.
@@ -319,49 +317,44 @@ lighted in bold by the ls command.
 We can click on the Firefox icon and browse the web within the virtual
 machine just as we would on any other computer.
 
-* Question: how did make know what the name of our source code file was?
-Because we told it to compile hello, it looked for a source code file named
-hello.c by default. In the coming weeks, we’ll set up make to use aliases
+* Question: how did `make` know what the name of our source code file was?
+Because we told it to compile `hello`, it looked for a source code file named
+`hello.c` by default. In the coming weeks, we’ll set up `make` to use aliases
 so we can compile multiple files when we specify a keyword.
 
-* Question: what would happen if we tried to run make hello.c? In short,
+* Question: what would happen if we tried to run `make hello.c`? In short,
 we’ll get an error message saying there’s “nothing to be done” for this file.
 
 * Question: do the files we create within the Appliance exist anywhere on
 our actual operating system? No, not as separate files. They are all housed
-within a single, large .vmdk file. However, throughout the semester, we’ll
+within a single, large `.vmdk` file. However, throughout the semester, we’ll
 have multiple ways of interacting with this environment aside from this
 Appliance.
 
 * Know that the Appliance can be run even without an internet connection!
-4.2
-Some Jargon
 
-* Functions are the term we’ll use to denote miniature programs within
-our programs. Just like a mathematical function, these take one or more
-inputs, which we’ll call arguments, and return some output. The first
-function we wrote was called main. In our first program, we passed
-‘‘O hai, world!\n’’ as an argument to printf. The \n is a charac-
-ter which denotes a new line.
-8
-Computer Science 50
-Fall 2011
-Scribe Notes
-Week 1 Wednesday: September 7, 2011
-Andrew Sellergren
 
-* C has a number of primitive types built into it. These include int, char,
-float, and more. int is the integer type which stores numbers using
-4 bytes or 32 bits of memory. How many numbers can we store using
-4 bytes? Each bit has 2 possible values, so in total, we can store 232 , or
-around 4 billion, numbers. Generally, this means we can store the numbers
-from negative 2 billion to positive 2 billion. Note that there are serious
-consequences to this storage space being finite. Once we count up past
-2 billion, we’re going to run into problems with the int type. To store
-numbers this large, we’ll need more bits. This is where the notion of 64-bit
-integers, namely a long long, will come in handy.
+### Some Jargon
 
-* float is the floating point type which can store decimals. Here too finite
+* *Functions* are the term we’ll use to denote miniature programs within
+  our programs. Just like a mathematical function, these take one or more
+  inputs, which we’ll call arguments, and return some output. The first
+  function we wrote was called `main`. In our first program, we passed `‘‘O
+  hai, world!\n’’` as an argument to `printf`. The `\n` is a charac- ter which
+  denotes a new line.
+
+* C has a number of *primitive types* built into it. These include `int`,
+ `char`, `float`, and more. int is the integer type which stores numbers using
+ 4 bytes or 32 bits of memory. How many numbers can we store using 4 bytes?
+ Each bit has 2 possible values, so in total, we can store 232 , or around 4
+ billion, numbers. Generally, this means we can store the numbers from negative
+ 2 billion to positive 2 billion. Note that there are serious consequences to
+ this storage space being finite. Once we count up past 2 billion, we’re going
+ to run into problems with the `int` type. To store numbers this large, we’ll
+ need more bits. This is where the notion of 64-bit integers, namely a 
+ `long long`, will come in handy.
+
+* `float` is the floating point type which can store decimals. Here too finite
 storage space presents a problem. One third represented as a decimal
 translates into an infinite number of 3’s after the decimal point. We obvi-
 ously can’t represent an infinite number of digits with finite storage space,
@@ -374,82 +367,79 @@ than the full four.
 plicated process in C. Because we feel that you should begin your exposure
 to C with more interesting tasks, we’ve written some functions to accom-
 plish this for you. These are available to you in the CS50 library which
-lives at cs50.h:
-– GetChar
-– GetDouble
-– GetFloat
-– GetInt
-– GetLongLong
-– GetString
-These functions get input of different types (e.g. characters, doubles,
-floats, integers) from the user as he enters them on the keyboard.
+lives at `cs50.h`:
+
+> – `GetChar`
+> – `GetDouble`
+> – `GetFloat`
+> – `GetInt`
+> – `GetLongLong`
+> – `GetString`
+
+These functions get input of different types (e.g. `characters`, `doubles`,
+`floats`, `integers`) from the user as he enters them on the keyboard.
 
 * If we wanted to make our program from earlier slightly more interesting,
-we could make use of the CS50 Library like so:
-#include <cs50.h>
-#include <stdio.h>
-int
-main(void)
-{
-printf("Name please: ");
-9
-Computer Science 50
-Fall 2011
-Scribe Notes
-Week 1 Wednesday: September 7, 2011
-Andrew Sellergren
-string s = GetString();
-printf("%s\n", s);
-}
-GetString is going to do the work of parsing the user’s input and passing
-it back to us so that we can store it in a variable named s. We’re then
-going to pass this variable s as a second argument to printf, which we’ll
-substitute it in where the %s is.
+  we could make use of the CS50 Library like so:
 
-* What’s the deal with the include lines? These lines tell the compiler
-to make use of other libraries of code within our program. The standard
-library is stdio.h, which allows us to use the printf function. Similarly,
-including the cs50.h header file allows us to use GetString which is
+      #include <cs50.h>
+      #include <stdio.h>
+      int
+      main(void)
+      {
+          printf("Name please: ");
+          string s = GetString();
+          printf("%s\n", s);
+      }
+
+  `GetString` is going to do the work of parsing the user’s input and passing
+  it back to us so that we can store it in a variable named s. We’re then
+  going to pass this variable s as a second argument to `printf`, which we’ll
+  substitute it in where the `%s` is.
+
+* What’s the deal with the `include` lines? These lines tell the compiler
+to make use of other libraries of code within our program. The *standard
+library* is `stdio.h`, which allows us to use the `printf` function. Similarly,
+including the `cs50.h` *header file* allows us to use `GetString` which is
 defined in the CS50 Library.
 
 * Now when we compile and run our program, typing “David” when prompted
-for a name, we get something like the following:
-jharvard@appliance (~/Desktop): make hello
-gcc -ggdb -std=c99 -Wall -Werror hello.c -lcs50 -lm -o hello
-jharvard@appliance (~/Desktop): ./hello
-Name please: David
-David
+  for a name, we get something like the following:
+
+      jharvard@appliance (~/Desktop): make hello
+      gcc -ggdb -std=c99 -Wall -Werror hello.c -lcs50 -lm -o hello
+      jharvard@appliance (~/Desktop): ./hello
+      Name please: David
+      David
 
 * Next, let’s try prompting the user for a number instead of a name:
-#include <cs50.h>
-#include <stdio.h>
-int
-main(void)
-{
-printf("Number please: ");
-float f = GetFloat();
-printf("%.10f\n", f);
-}
-Now we’re calling the GetFloat function and storing its return value in a
-variable with type float. We’ve also changed the format string that we
-pass to printf. The %.10f tells printf to substitute in a floating-point
-value and to print 10 digits after the decimal point. After compiling and
-running the program, providing the number 0.1, we get the following:
-jharvard@appliance (~/Desktop): ./hello
-Number please: 0.1
-0.1000000015
-10
-Computer Science 50
-Fall 2011
-Scribe Notes
-Week 1 Wednesday: September 7, 2011
-Andrew Sellergren
-Weird. We definitely didn’t type that. What this demonstrates is the
-inherent imprecision of floating points. We only have a finite number of
-bits, so some rounding has to be done in certain cases.
 
-* Don’t think that floating point imprecision is a big deal? Check out this
-video to be convinced otherwise.
-11
+      #include <cs50.h>
+      #include <stdio.h>
+      int
+      main(void)
+      {
+          printf("Number please: ");
+          float f = GetFloat();
+          printf("%.10f\n", f);
+      }
+
+  Now we’re calling the `GetFloat` function and storing its return value in a
+  variable with type `float`. We’ve also changed the format string that we
+  pass to `printf`. The `%.10f` tells `printf` to substitute in a floating-point
+  value and to print 10 digits after the decimal point. After compiling and
+  running the program, providing the number 0.1, we get the following:
+
+      jharvard@appliance (~/Desktop): ./hello
+      Number please: 0.1
+      0.1000000015
+      10
+
+  Weird. We definitely didn’t type that. What this demonstrates is the
+  inherent imprecision of floating points. We only have a finite number of
+  bits, so some rounding has to be done in certain cases.
+
+* Don’t think that floating point imprecision is a big deal? Check out [this
+video](http://www.youtube.com/watch?v=EMVBLg2MrLs) to be convinced otherwise.
  
 
