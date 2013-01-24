@@ -272,17 +272,18 @@ welcome to use any text editor you choose.
 
 * Let’s actually write some programs using conditions, beginning with conditions1.c:
 
-      /****************************************************************************
-      * conditions1.c
-      *
-      * Computer Science 50
-      * David J. Malan
-      *
-      * Tells user if his or her input is positive or negative (somewhat
-      * innacurately).
-      *
-      * Demonstrates use of if-else construct.
-      ***************************************************************************/
+      /*****************************************
+       * conditions1.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Tells user if his or her input is positive or negative (somewhat
+       * innacurately).
+       *
+       * Demonstrates use of if-else construct.
+       *****************************************/
+
       #include <cs50.h>
       #include <stdio.h>
 
@@ -337,16 +338,18 @@ can fix this by using an `else if` block as well, as we do in `conditions2.c`.
 ### `conditions2.c`
 
 * Let’s fix that bug that caused 0 to be mishandled:
-      /****************************************************************************
-      * conditions2.c
-      *
-      * Computer Science 50
-      * David J. Malan
-      *
-      * Tells user if his or her input is positive or negative.
-      *
-      * Demonstrates use of if-else if-else construct.
-      ***************************************************************************/
+
+      /*****************************************
+       * conditions2.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Tells user if his or her input is positive or negative.
+       *
+       * Demonstrates use of if-else if-else construct.
+       *****************************************/
+
       #include <cs50.h>
       #include <stdio.h>
 

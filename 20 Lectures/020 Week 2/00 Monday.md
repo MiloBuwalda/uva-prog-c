@@ -143,15 +143,15 @@ you are ever in doubt, feel free to contact us with your specific situation.
 * Can you figure out why the program below doesn’t print 10 asterisks as
   it’s supposed to?
 
-      /****************************************************************************
-      * buggy1.c
-      *
-      * Computer Science 50
-      * David J. Malan
-      *
-      * Should print 10 asterisks but doesn’t!
-      * Can you find the bug?
-      ***************************************************************************/
+      /*****************************************
+       * buggy1.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Should print 10 asterisks but doesn’t!
+       * Can you find the bug?
+       *****************************************/
 
       #include <stdio.h>
 
@@ -171,25 +171,25 @@ you are ever in doubt, feel free to contact us with your specific situation.
 * How about `buggy2.c`, which is also supposed to print 10 asterisks, one
   per line, but doesn’t?
 
-  /****************************************************************************
-  * buggy2.c
-  *
-  * Computer Science 50
-  * David J. Malan
-  *
-  * Should print 10 asterisks, one per line, but doesn’t!
-  * Can you find the bug?
-  ***************************************************************************/
+      /*****************************************
+       * buggy2.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Should print 10 asterisks, one per line, but doesn’t!
+       * Can you find the bug?
+       *****************************************/
 
-  #include <stdio.h>
+      #include <stdio.h>
 
-  int
-  main(void)
-  {
-      for (int i = 0; i <= 10; i++)
-      printf("*");
-      printf("\n");
-  }
+      int
+      main(void)
+      {
+          for (int i = 0; i <= 10; i++)
+          printf("*");
+          printf("\n");
+      }
 
   The second `printf` statement is not executed within the scope of the
   loop because no curly braces are placed around it and the first `printf`
@@ -201,16 +201,16 @@ you are ever in doubt, feel free to contact us with your specific situation.
 
 * The following program, though syntactically correct, will not compile:
 
-      /****************************************************************************
-      * math1.c
-      *
-      * Computer Science 50
-      * David J. Malan
-      *
-      * Computes a total but does nothing with it.
-      *
-      * Demonstrates use of variables.
-      ***************************************************************************/
+      /*****************************************
+       * math1.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Computes a total but does nothing with it.
+       *
+       * Demonstrates use of variables.
+       *****************************************/
 
       #include <stdio.h>
 
@@ -240,16 +240,16 @@ math1.c:19:9. This refers to line 19, character 9.
 
 * math3.c demonstrates a problem with precision:
 
-      /****************************************************************************
-      * math3.c
-      *
-      * Computer Science 50
-      * David J. Malan
-      *
-      * Computes and prints a floating-point total.
-      *
-      * Demonstrates loss of precision.
-      ***************************************************************************/
+      /*****************************************
+       * math3.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Computes and prints a floating-point total.
+       *
+       * Demonstrates loss of precision.
+       *****************************************/
 
       #include <stdio.h>
 
@@ -296,16 +296,16 @@ was added.
 
 * `nonswitch.c` demonstrates the use of the “and” operator:
 
-      /****************************************************************************
-      * nonswitch.c
-      *
-      * Computer Science 50
-      * David J. Malan
-      *
-      * Assesses the size of user’s input.
-      *
-      * Demonstrates use of Boolean ANDing.
-      ***************************************************************************/
+      /*****************************************
+       * nonswitch.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Assesses the size of user’s input.
+       *
+       * Demonstrates use of Boolean ANDing.
+       *****************************************/
 
       #include <cs50.h>
       #include <stdio.h>
@@ -332,16 +332,16 @@ was added.
   to do this from a style or readability standpoint? You betcha!1 We do so
   using a switch, as we see in `switch1.c`:
 
-      /****************************************************************************
-      * switch1.c
-      *
-      * Computer Science 50
-      * David J. Malan
-      *
-      * Assesses the size of user’s input.
-      *
-      * Demonstrates use of a switch.
-      ***************************************************************************/
+      /*****************************************
+       * switch1.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Assesses the size of user’s input.
+       *
+       * Demonstrates use of a switch.
+       *****************************************/
 
       #include <cs50.h>
       #include <stdio.h>
@@ -408,16 +408,16 @@ statments? No, you would need to use if-else if-else.
   when we want to guarantee that some block of code be executed **at least**
   once no matter what. Let’s take a look at an example in `positive1.c`:
 
-      /****************************************************************************
-      * positive1.c
-      *
-      * Computer Science 50
-      * David J. Malan
-      *
-      * Demands that user provide a positive number.
-      *
-      * Demonstrates use of do-while.
-      ***************************************************************************/
+      /*****************************************
+       * positive1.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Demands that user provide a positive number.
+       *
+       * Demonstrates use of do-while.
+       *****************************************/
 
       #include <cs50.h>
       #include <stdio.h>
@@ -478,34 +478,34 @@ loop? Yes, just be careful not to redeclare it.
 * positive2.c implements the exact same program as positive1.c but
   with the use of a boolean variable:
 
-  /****************************************************************************
-  * positive2.c
-  *
-  * Computer Science 50
-  * David J. Malan
-  *
-  * Demands that user provide a positive number.
-  *
-  * Demonstrates use of bool.
-  ***************************************************************************/
+      /*****************************************
+       * positive2.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Demands that user provide a positive number.
+       *
+       * Demonstrates use of bool.
+       *****************************************/
 
-  #include <cs50.h>
-  #include <stdio.h>
+      #include <cs50.h>
+      #include <stdio.h>
 
-  int
-  main(void)
-  {
-      // loop until user provides a positive integer
-      bool thankful = false;
-      do
+      int
+      main(void)
       {
-          printf("I demand that you give me a positive integer: ");
-          if (GetInt() > 0)
-              thankful = true;
+          // loop until user provides a positive integer
+          bool thankful = false;
+          do
+          {
+              printf("I demand that you give me a positive integer: ");
+              if (GetInt() > 0)
+                  thankful = true;
+          }
+          while (thankful == false);
+          printf("Thanks for the positive integer!\n");
       }
-      while (thankful == false);
-      printf("Thanks for the positive integer!\n");
-  }
 
   Notice that the return value of `GetInt` is not actually stored in a variable,
   but instead directly compared to 0. If that return value turns out to be
@@ -524,65 +524,65 @@ loop? Yes, just be careful not to redeclare it.
   if we write while (!thankful), it reads as “while not thankful,” which
   actually makes for pretty readable code.
 
-  /****************************************************************************
-  * positive3.c
-  *
-  * Computer Science 50
-  * David J. Malan
-  *
-  * Demands that user provide a positive number.
-  *
-  * Demonstrates use of !.
-  ***************************************************************************/
+      /*****************************************
+       * positive3.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Demands that user provide a positive number.
+       *
+       * Demonstrates use of !.
+       *****************************************/
 
-  #include <cs50.h>
-  #include <stdio.h>
+      #include <cs50.h>
+      #include <stdio.h>
 
-  int
-  main(void)
-  {
-      // loop until user provides a positive integer
-      bool thankful = false;
-      do
+      int
+      main(void)
       {
-          printf("I demand that you give me a positive integer: ");
-          if (GetInt() > 0)
-          thankful = true;
+          // loop until user provides a positive integer
+          bool thankful = false;
+          do
+          {
+              printf("I demand that you give me a positive integer: ");
+              if (GetInt() > 0)
+              thankful = true;
+          }
+          while (!thankful);
+          printf("Thanks for the positive integer!\n");
       }
-      while (!thankful);
-      printf("Thanks for the positive integer!\n");
-  }
 
 
 ### `progress1.c`
 
 * progress1.c demonstrates use of the sleep function as well as a for loop:
 
-  /****************************************************************************
-  * progress1.c
-  *
-  * Computer Science 50
-  * David J. Malan
-  *
-  * Simulates a progress bar.
-  *
-  * Demonstrates sleep.
-  ***************************************************************************/
+      /*****************************************
+       * progress1.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Simulates a progress bar.
+       *
+       * Demonstrates sleep.
+       *****************************************/
 
-  #include <stdio.h>
-  #include <unistd.h>
+      #include <stdio.h>
+      #include <unistd.h>
 
-  int
-  main(void)
-  {
-      // simulate progress from 0% to 100%
-      for (int i = 0; i <= 100; i++)
+      int
+      main(void)
       {
-          printf("Percent complete: %d%%\n", i);
-          sleep(1);
+          // simulate progress from 0% to 100%
+          for (int i = 0; i <= 100; i++)
+          {
+              printf("Percent complete: %d%%\n", i);
+              sleep(1);
+          }
+          printf("\n");
       }
-      printf("\n");
-  }
 
   This code is a very simple implementation of a progress bar, counting
   from 0 to 100 over the course of 100 seconds or so. As you might have
@@ -597,32 +597,32 @@ loop? Yes, just be careful not to redeclare it.
 
 * Let’s make our output a little more visually appealing:
 
-  /****************************************************************************
-  * progress2.c
-  *
-  * Computer Science 50
-  * David J. Malan
-  *
-  * Simulates a better progress bar.
-  *
-  * Demonstrates \r, fflush, and sleep.
-  ***************************************************************************/
+      /*****************************************
+       * progress2.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Simulates a better progress bar.
+       *
+       * Demonstrates \r, fflush, and sleep.
+       *****************************************/
 
-  #include <stdio.h>
-  #include <unistd.h>
+      #include <stdio.h>
+      #include <unistd.h>
 
-  int
-  main(void)
-  {
-      // simulate progress from 0% to 100%
-      for (int i = 0; i <= 100; i++)
+      int
+      main(void)
       {
-          printf("\rPercent complete: %d%%", i);
-          fflush(stdout);
-          sleep(1);
+          // simulate progress from 0% to 100%
+          for (int i = 0; i <= 100; i++)
+          {
+              printf("\rPercent complete: %d%%", i);
+              fflush(stdout);
+              sleep(1);
+          }
+          printf("\n");
       }
-      printf("\n");
-  }
 
   Here, we’re using `\r` instead of `\n`. `\n` specifies a newline, but `\r`
   specifies a carriage return, meaning that the cursor will be moved all the
@@ -642,34 +642,34 @@ the same length.
 * Programmatically, we can achieve the same effect from `progress2.c` using
   a while loop instead of a for loop:
 
-  /****************************************************************************
-  * progress3.c
-  *
-  * Computer Science 50
-  * David J. Malan
-  *
-  * Simulates a better progress bar.
-  *
-  * Demonstrates a while loop.
-  ***************************************************************************/
+      /*****************************************
+       * progress3.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Simulates a better progress bar.
+       *
+       * Demonstrates a while loop.
+       *****************************************/
 
-  #include <stdio.h>
-  #include <unistd.h>
+      #include <stdio.h>
+      #include <unistd.h>
 
-  int
-  main(void)
-  {
-      int i = 0;
-      /* simulate progress from 0% to 100% */
-      while (i <= 100)
+      int
+      main(void)
       {
-          printf("\rPercent complete: %d%%", i);
-          fflush(stdout);
-          sleep(1);
-          i++;
+          int i = 0;
+          /* simulate progress from 0% to 100% */
+          while (i <= 100)
+          {
+              printf("\rPercent complete: %d%%", i);
+              fflush(stdout);
+              sleep(1);
+              i++;
+          }
+          printf("\n");
       }
-      printf("\n");
-  }
 
   We have to be careful to include the update condition `i++` within our loop
   code block somewhere or else our loop will repeat infinitely.
@@ -700,19 +700,17 @@ contains all the formatting codes.
 * As ascii1.c demonstrates, you can actually explicitly convert an integer
   to an ASCII character simply by casting it:
 
-      /****************************************************************************
-      * ascii1.c
-      *
-      * Computer Science 50
-      * David J. Malan
-      *
-      * Displays the mapping between alphabetical ASCII characters and
-      * their decimal equivalents using one column.
-      *
-      2 The
-      3 is not always necessary, FYI.
-      * Demonstrates casting from int to char.
-      ***************************************************************************/
+      /*****************************************
+       * ascii1.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Displays the mapping between alphabetical ASCII characters and
+       * their decimal equivalents using one column.
+       *
+       * Demonstrates casting from int to char.
+       *****************************************/
 
       #include <stdio.h>
 
@@ -746,27 +744,27 @@ contains all the formatting codes.
   demonstrates that characters and numbers are actually interchangeable in
   C:
 
-  /****************************************************************************
-  * ascii2.c
-  *
-  * Computer Science 50
-  * David J. Malan
-  *
-  * Displays the mapping between alphabetical ASCII characters and
-  * their decimal equivalents using two columns.
-  *
-  * Demonstrates specification of width in format string.
-  ***************************************************************************/
+      /*****************************************
+       * ascii2.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Displays the mapping between alphabetical ASCII characters and
+       * their decimal equivalents using two columns.
+       *
+       * Demonstrates specification of width in format string.
+       *****************************************/
 
-  #include <stdio.h>
+      #include <stdio.h>
 
-  int
-  main(void)
-  {
-      // display mapping for uppercase letters
-      for (int i = 65; i < 65 + 26; i++)
-          printf("%c %d %3d %c\n", (char) i, i, i + 32, (char) (i + 32));
-  }
+      int
+      main(void)
+      {
+          // display mapping for uppercase letters
+          for (int i = 65; i < 65 + 26; i++)
+              printf("%c %d %3d %c\n", (char) i, i, i + 32, (char) (i + 32));
+      }
 
   Here we’re simply casting i to a `char` in order to turn it into its corre-
   sponding ASCII character.
@@ -794,38 +792,38 @@ contains all the formatting codes.
   either, since we just need to print 10 lowercase o’s in a row. But what
   about that first column of letters? Let’s take a look at the code:
 
-  /****************************************************************************
-  * battleship.c
-  *
-  * Computer Science 50
-  * David J. Malan
-  *
-  * Prints a Battleship board.
-  *
-  * Demonstrates nested loop.
-  ***************************************************************************/
+      /*****************************************
+       * battleship.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Prints a Battleship board.
+       *
+       * Demonstrates nested loop.
+       *****************************************/
 
-  #include <stdio.h>
+      #include <stdio.h>
 
-  int
-  main(void)
-  {
-      // print top row of numbers
-      printf("\n  ");
-      for (int i = 1; i <= 10; i++)
-          printf("%d ", i);
-      printf("\n");
-
-      // print rows of holes, with letters in leftmost column
-      for (int i = 0; i < 10; i++)
+      int
+      main(void)
       {
-          printf("%c ", ’A’ + i);
-          for (int j = 1; j <= 10; j++)
-              printf("o ");
+          // print top row of numbers
+          printf("\n  ");
+          for (int i = 1; i <= 10; i++)
+              printf("%d ", i);
+          printf("\n");
+
+          // print rows of holes, with letters in leftmost column
+          for (int i = 0; i < 10; i++)
+          {
+              printf("%c ", ’A’ + i);
+              for (int j = 1; j <= 10; j++)
+                  printf("o ");
+              printf("\n");
+          }
           printf("\n");
       }
-      printf("\n");
-  }
 
   Take a look at the second for loop. Notice we could’ve started at 1 and
   iterated *through* 10, but we chose to start from 0. This is handy in the
@@ -848,49 +846,49 @@ while the innermost for loop is taking care of printing the column values.
   the word “bottles” instead. So we need to convert plural to singular when
   it’s appropriate.
 
-  /****************************************************************************
-  * beer1.c
-  *
-  * Computer Science 50
-  * David J. Malan
-  *
-  * Sings "99 Bottles of Beer on the Wall."
-  *
-  * Demonstrates a for loop (and an opportunity for hierarchical
-  * decomposition).
-  ***************************************************************************/
+      /*****************************************
+       * beer1.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Sings "99 Bottles of Beer on the Wall."
+       *
+       * Demonstrates a for loop (and an opportunity for hierarchical
+       * decomposition).
+       *****************************************/
 
-  #include <cs50.h>
-  #include <stdio.h>
+      #include <cs50.h>
+      #include <stdio.h>
 
-  int
-  main(void)
-  {
-      // ask user for number
-      printf("How many bottles will there be? ");
-      int n = GetInt();
-
-      // exit upon invalid input
-      if (n < 1)
+      int
+      main(void)
       {
-          printf("Sorry, that makes no sense.\n");
-          return 1;
-      }
+          // ask user for number
+          printf("How many bottles will there be? ");
+          int n = GetInt();
 
-      // sing the annoying song
-      printf("\n");
-      for (int i = n; i > 0; i--)
-      {
-          printf("%d bottle(s) of beer on the wall,\n", i);
-          printf("%d bottle(s) of beer,\n", i);
-          printf("Take one down, pass it around,\n");
-          printf("%d bottle(s) of beer on the wall.\n\n", i - 1);
-      }
+          // exit upon invalid input
+          if (n < 1)
+          {
+              printf("Sorry, that makes no sense.\n");
+              return 1;
+          }
 
-      // exit when song is over
-      printf("Wow, that’s annoying.\n");
-      return 0;
-  }
+          // sing the annoying song
+          printf("\n");
+          for (int i = n; i > 0; i--)
+          {
+              printf("%d bottle(s) of beer on the wall,\n", i);
+              printf("%d bottle(s) of beer,\n", i);
+              printf("Take one down, pass it around,\n");
+              printf("%d bottle(s) of beer on the wall.\n\n", i - 1);
+          }
+
+          // exit when song is over
+          printf("Wow, that’s annoying.\n");
+          return 0;
+      }
 
   In this program, we actually ask the user how many bottles of beer he
   wants to start with. We capture this value by storing the output of the

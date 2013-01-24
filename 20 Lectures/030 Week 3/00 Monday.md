@@ -371,7 +371,7 @@ the compiler will yell that the function was previously declared.
 * Let’s take a look at buggy4.c to see another example of a problem with
   scope:
 
-      /****************************************************************************
+      /*****************************************
        * buggy4.c
        *
        * Computer Science 50
@@ -379,7 +379,7 @@ the compiler will yell that the function was previously declared.
        *
        * Should increment a variable, but doesn’t!
        * Can you find the bug?
-       ***************************************************************************/
+       *****************************************/
 
       #include <stdio.h>
 
@@ -570,7 +570,7 @@ are available in the handouts and online.
 * We read just a minute ago that it’s possible for `GetString` to return a
   special value called `NULL`. In `string2.c`, we explicitly handle that case:
 
-      /****************************************************************************
+      /*****************************************
        * string2.c
        *
        * Computer Science 50
@@ -579,7 +579,7 @@ are available in the handouts and online.
        * Prints a given string one character per line.
        *
        * Demonstrates strings as arrays of chars with slight optimization.
-       ***************************************************************************/
+       *****************************************/
 
       #include <cs50.h>
       #include <stdio.h>
@@ -624,7 +624,7 @@ are available in the handouts and online.
 * Examine the first line of the following program’s main function and see if
   you can tell what it’s doing:
 
-      /****************************************************************************
+      /*****************************************
        * array1.c
        *
        * Computer Science 50
@@ -633,7 +633,7 @@ are available in the handouts and online.
        * Computes a student’s average across 2 quizzes.
        *
        * Demonstrates C’s math library.
-       ***************************************************************************/
+       *****************************************/
 
       #include <cs50.h>
       #include <math.h>

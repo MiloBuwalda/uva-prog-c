@@ -67,49 +67,49 @@ of this website, your best bet is to change your password immediately.
 * Recall our attempt to programmatically output the lyrics of the annoying
   song “99 Bottles of Beer on the Wall”:
 
-  /****************************************************************************
-  * beer1.c
-  *
-  * Computer Science 50
-  * David J. Malan
-  *
-  * Sings "99 Bottles of Beer on the Wall."
-  *
-  * Demonstrates a for loop (and an opportunity for hierarchical
-  * decomposition).
-  ***************************************************************************/
+      /*****************************************
+       * beer1.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Sings "99 Bottles of Beer on the Wall."
+       *
+       * Demonstrates a for loop (and an opportunity for hierarchical
+       * decomposition).
+       *****************************************/
 
-  #include <cs50.h>
-  #include <stdio.h>
+      #include <cs50.h>
+      #include <stdio.h>
 
-  int
-  main(void)
-  {
-      // ask user for number
-      printf("How many bottles will there be? ");
-      int n = GetInt();
-
-      // exit upon invalid input
-      if (n < 1)
+      int
+      main(void)
       {
-      printf("Sorry, that makes no sense.\n");
-      return 1;
-      }
+          // ask user for number
+          printf("How many bottles will there be? ");
+          int n = GetInt();
 
-      // sing the annoying song
-      printf("\n");
-      for (int i = n; i > 0; i--)
-      {
-          printf("%d bottle(s) of beer on the wall,\n", i);
-          printf("%d bottle(s) of beer,\n", i);
-          printf("Take one down, pass it around,\n");
-          printf("%d bottle(s) of beer on the wall.\n\n", i - 1);
-      }
+          // exit upon invalid input
+          if (n < 1)
+          {
+          printf("Sorry, that makes no sense.\n");
+          return 1;
+          }
 
-      // exit when song is over
-      printf("Wow, that’s annoying.\n");
-      return 0;
-  }
+          // sing the annoying song
+          printf("\n");
+          for (int i = n; i > 0; i--)
+          {
+              printf("%d bottle(s) of beer on the wall,\n", i);
+              printf("%d bottle(s) of beer,\n", i);
+              printf("Take one down, pass it around,\n");
+              printf("%d bottle(s) of beer on the wall.\n\n", i - 1);
+          }
+
+          // exit when song is over
+          printf("Wow, that’s annoying.\n");
+          return 0;
+      }
 
   First, we did some error checking, deciding not to reprompt the user if he
   provided bad input, but instead to exit with an return code of 1. Second,
@@ -150,46 +150,46 @@ grams as well as step through them line by line.
   tions. Thus far, we’ve only written a single function, `main`, for each of our
   programs, but here we see it can be useful to write more than one:
 
-  /****************************************************************************
-  * beer4.c
-  *
-  * Computer Science 50
-  * David J. Malan
-  *
-  * Sings "99 Bottles of Beer on the Wall."
-  *
-  * Demonstrates hierarchical decomposition and parameter passing.
-  ***************************************************************************/
+      /*****************************************
+       * beer4.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Sings "99 Bottles of Beer on the Wall."
+       *
+       * Demonstrates hierarchical decomposition and parameter passing.
+       *****************************************/
 
-  #include <cs50.h>
-  #include <stdio.h>
+      #include <cs50.h>
+      #include <stdio.h>
 
-  // function prototype
-  void chorus(int b);
+      // function prototype
+      void chorus(int b);
 
-  int
-  main(void)
-  {
-      // ask user for number
-      printf("How many bottles will there be? ");
-      int n = GetInt();
-
-      // exit upon invalid input
-      if (n < 1)
+      int
+      main(void)
       {
-          printf("Sorry, that makes no sense.\n");
-          return 1;
+          // ask user for number
+          printf("How many bottles will there be? ");
+          int n = GetInt();
+
+          // exit upon invalid input
+          if (n < 1)
+          {
+              printf("Sorry, that makes no sense.\n");
+              return 1;
+          }
+
+          // sing the annoying song
+          printf("\n");
+          while (n)
+              chorus(n--);
+
+          // exit when song is over
+          printf("Wow, that’s annoying.\n");
+          return 0;
       }
-
-      // sing the annoying song
-      printf("\n");
-      while (n)
-          chorus(n--);
-
-      // exit when song is over
-      printf("Wow, that’s annoying.\n");
-      return 0;
-  }
 
   /*
    * Sings about specified number of bottles.
@@ -293,35 +293,35 @@ several conditions.
   them. This is the concept of scope. Variable scope can introduce some
   subtle bugs, as we’ll soon see in buggy3.c:
 
-  /****************************************************************************
-  * buggy3.c
-  *
-  * Computer Science 50
-  * David J. Malan
-  *
-  * Should swap two variables’ values, but doesn’t!
-  * Can you find the bug?
-  ***************************************************************************/
+      /*****************************************
+       * buggy3.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Should swap two variables’ values, but doesn’t!
+       * Can you find the bug?
+       *****************************************/
 
-  #include <stdio.h>
+      #include <stdio.h>
 
-  // function prototype
-  void swap(int a, int b);
+      // function prototype
+      void swap(int a, int b);
 
-  int
-  main(void)
-  {
-      int x = 1;
-      int y = 2;
+      int
+      main(void)
+      {
+          int x = 1;
+          int y = 2;
 
-      printf("x is %d\n", x);
-      printf("y is %d\n", y);
-      printf("Swapping...\n");
-      swap(x, y);
-      printf("Swapped!\n");
-      printf("x is %d\n", x);
-      printf("y is %d\n", y);
-  }
+          printf("x is %d\n", x);
+          printf("y is %d\n", y);
+          printf("Swapping...\n");
+          swap(x, y);
+          printf("Swapped!\n");
+          printf("x is %d\n", x);
+          printf("y is %d\n", y);
+      }
 
   /*
    * Swap arguments’ values.
@@ -396,7 +396,7 @@ it doesn’t (or shouldn’t) have access to `main`’s variables.
   variables are unique in that they can be referenced by any function in a
   program. Take a look at `global.c` to see how they are used:
 
-      /****************************************************************************
+      /*****************************************
        * global.c
        *
        * Computer Science 50
@@ -405,7 +405,7 @@ it doesn’t (or shouldn’t) have access to `main`’s variables.
        * Increments variables.
        *
        * Demonstrates use of global variable and issue of scope.
-       ***************************************************************************/
+       *****************************************/
 
       #include <stdio.h>
 
@@ -531,28 +531,28 @@ in C.
   a command-line argument to `make`. Let’s see how we might handle these
   command-line arguments in `argv1.c`:
 
-  /****************************************************************************
-  * argv1.c
-  *
-  * Computer Science 50
-  * David J. Malan
-  *
-  * Prints command-line arguments, one per line.
-  *
-  * Demonstrates use of argv.
-  ***************************************************************************/
+      /*****************************************
+       * argv1.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Prints command-line arguments, one per line.
+       *
+       * Demonstrates use of argv.
+       *****************************************/
 
-  #include <stdio.h>
+      #include <stdio.h>
 
-  int
-  main(int argc, char *argv[])
-  {
-      // print arguments
-      printf("\n");
-      for (int i = 0; i < argc; i++)
-          printf("%s\n", argv[i]);
-      printf("\n");
-  }
+      int
+      main(int argc, char *argv[])
+      {
+          // print arguments
+          printf("\n");
+          for (int i = 0; i < argc; i++)
+              printf("%s\n", argv[i]);
+          printf("\n");
+      }
 
   `argc` holds the number of command-line arguments that you passed to
   the program. By default, the 0th argument is always the name of your
@@ -577,16 +577,16 @@ command-line arguments we provided it.
 
 * `argv2.c` demonstrates what a string actually is:
 
-      /****************************************************************************
-      * argv2.c
-      *
-      * Computer Science 50
-      * David J. Malan
-      *
-      * Prints command-line arguments, one character per line.
-      *
-      * Demonstrates argv as a two-dimensional array.
-      ***************************************************************************/
+      /*****************************************
+       * argv2.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Prints command-line arguments, one character per line.
+       *
+       * Demonstrates argv as a two-dimensional array.
+       *****************************************/
 
       #include <stdio.h>
       #include <string.h>
