@@ -109,8 +109,8 @@ computer. Incidentally, we exposed you to Caesar’s cipher last time with
 a reference to A Christmas Story in which Ralphie’s secret decoder ring
 reveals the message “Be sure to drink your Ovaltine.”
 
-* Slightly more secure than Caesar’s cipher is Vigen`re’s cipher, which you’ll
-  be implementing in the second part of Problem Set 2. In Vigen`re’s cipher, keys
+* Slightly more secure than Caesar’s cipher is Vigenre’s cipher, which you’ll
+  be implementing in the second part of Problem Set 2. In Vigenre’s cipher, keys
   are actual words. As you iterate from left to right through the
   characters of the plaintext, you also iterate through the characters of the
   key, using a different one to rotate each character of the plaintext. If the
@@ -232,36 +232,36 @@ dictionary—won’t succeed outright.
   help clean up `main` so that it is easier to see what it’s actually doing. Let’s
   see how it might look to move the loop, as well, to a separate function:
 
-  #include <cs50.h>
-  #include <stdio.h>
+      #include <cs50.h>
+      #include <stdio.h>
 
-  int
-  main(void)
-  {
-      printf("How many bottles of beer will there be?\n");
-      int n = GetInt();
-
-      if (n < 1)
+      int
+      main(void)
       {
-          printf("Please input a positive number.\n");
-          return 1;
+          printf("How many bottles of beer will there be?\n");
+          int n = GetInt();
+
+          if (n < 1)
+          {
+              printf("Please input a positive number.\n");
+              return 1;
+          }
+
+          chorus(n);
+          return 0;
       }
 
-      chorus(n);
-      return 0;
-  }
-
-  void
-  chorus(int bottles)
-  {
-      for (int i = bottles; i > 0; i--)
+      void
+      chorus(int bottles)
       {
-          printf("%d bottles of beer on the wall.\n", i);
-          printf("%d bottles of beer.\n", i);
-          printf("Take one down, pass it around.\n");
-          printf("%d bottles of beer on the wall.\n", i - 1);
+          for (int i = bottles; i > 0; i--)
+          {
+              printf("%d bottles of beer on the wall.\n", i);
+              printf("%d bottles of beer.\n", i);
+              printf("Take one down, pass it around.\n");
+              printf("%d bottles of beer on the wall.\n", i - 1);
+          }
       }
-  }
 
   Now that we’ve done this, reading through `main` is very quick and infor-
   mative: first we ask the user for some input; second, we do some a sanity
@@ -285,65 +285,65 @@ dictionary—won’t succeed outright.
   function that will handle the case where the number of bottles of beer on
   the wall is only 1:
 
-  void
-  chorus(int bottles)
-  {
-      for (int i = bottles; i > 0; i--)
+      void
+      chorus(int bottles)
       {
-          if (i == 1)
+          for (int i = bottles; i > 0; i--)
           {
-              printf("%d bottle of beer on the wall.\n", i);
-              printf("%d bottle of beer.\n", i);
+              if (i == 1)
+              {
+                  printf("%d bottle of beer on the wall.\n", i);
+                  printf("%d bottle of beer.\n", i);
+              }
+              else
+              {
+                  printf("%d bottles of beer on the wall.\n", i);
+                  printf("%d bottles of beer.\n", i);
+              }
+              printf("Take one down, pass it around.\n");
+              printf("%d bottles of beer on the wall.\n", i - 1);
           }
-          else
-          {
-              printf("%d bottles of beer on the wall.\n", i);
-              printf("%d bottles of beer.\n", i);
-          }
-          printf("Take one down, pass it around.\n");
-          printf("%d bottles of beer on the wall.\n", i - 1);
       }
-  }
 
   Now our program is grammatically correct, but it feels a little clunky. We
   copied and pasted two `printf` statements that are identical except for one
   word. Let’s try to affect only that one word, then, in our if-else statement:
 
-  void
-  chorus(int bottles)
-  {
-      for (int i = bottles; i > 0; i--)
+      void
+      chorus(int bottles)
       {
-          string s;
-          if (i == 1)
-              s = "bottle";
-          else
-              s = "bottles";
+          for (int i = bottles; i > 0; i--)
+          {
+              string s;
+              if (i == 1)
+                  s = "bottle";
+              else
+                  s = "bottles";
 
-          printf("%d %s of beer on the wall.\n", i, s);
-          printf("%d %s of beer.\n", i, s);
-          printf("Take one down, pass it around.\n");
-          printf("%d bottles of beer on the wall.\n", i - 1);
+              printf("%d %s of beer on the wall.\n", i, s);
+              printf("%d %s of beer.\n", i, s);
+              printf("Take one down, pass it around.\n");
+              printf("%d bottles of beer on the wall.\n", i - 1);
+          }
       }
-  }
 
   Remember that we must declare s outside of the if-else statement lest we
   run into problems of scope. To clean this up even more, we can use the
   *ternary operator* like so:
 
-  void
-  chorus(int bottles)
-  {
-      for (int i = bottles; i > 0; i--)
+      void
+      chorus(int bottles)
       {
-          string s = (i == 1) ? "bottle" : "bottles";
+          for (int i = bottles; i > 0; i--)
+          {
+              string s = (i == 1) ? "bottle" : "bottles";
 
-          printf("%d %s of beer on the wall.\n", i, s);
-          printf("%d %s of beer.\n", i, s);
-          printf("Take one down, pass it around.\n");
-          printf("%d bottles of beer on the wall.\n", i - 1);
+              printf("%d %s of beer on the wall.\n", i, s);
+              printf("%d %s of beer.\n", i, s);
+              printf("Take one down, pass it around.\n");
+              printf("%d bottles of beer on the wall.\n", i - 1);
+          }
       }
-  }
 
   We still actually have one remaining grammar issue, but since it’s very
   similar to the one we just solved, we can stop here.
@@ -370,40 +370,41 @@ the compiler will yell that the function was previously declared.
 
 * Let’s take a look at buggy4.c to see another example of a problem with
   scope:
-  /\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-   * buggy4.c
-   *
-   * Computer Science 50
-   * David J. Malan
-   *
-   * Should increment a variable, but doesn’t!
-   * Can you find the bug?
-   \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
 
-  #include <stdio.h>
+      /\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+       * buggy4.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Should increment a variable, but doesn’t!
+       * Can you find the bug?
+       \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/
 
-  // function prototype
-  void increment(void);
+      #include <stdio.h>
 
-  int
-  main(void)
-  {
-      int x = 1;
-      printf("x is now %d\n", x);
-      printf("Incrementing...\n");
-      increment();
-      printf("Incremented!\n");
-      printf("x is now %d\n", x);
-  }
+      // function prototype
+      void increment(void);
 
-  /*
-   * Tries to increment x.
-   */
-  void
-  increment(void)
-  {
-      x++;
-  }
+      int
+      main(void)
+      {
+          int x = 1;
+          printf("x is now %d\n", x);
+          printf("Incrementing...\n");
+          increment();
+          printf("Incremented!\n");
+          printf("x is now %d\n", x);
+      }
+
+      /*
+       * Tries to increment x.
+       */
+      void
+      increment(void)
+      {
+          x++;
+      }
 
   This program is so buggy that it won’t even compile. The problem is
   that x is declared and initialized only in `main`, not in `increment`. We
@@ -411,12 +412,12 @@ the compiler will yell that the function was previously declared.
   `increment`. Okay, so let’s try fixing this by declaring `x` within
   `increment`:
 
-  void
-  increment(void)
-  {
-      int x;
-      x++;
-  }
+      void
+      increment(void)
+      {
+          int x;
+          x++;
+      }
 
   This program actually will compile because `x` has now been declared.
   However, it hasn’t been initialized, so when we try to increment it, we’ll
@@ -482,23 +483,23 @@ store in this row is 4. This is because we need space for the null terminator
 * Now that we know what library to include, we can move on and use the
   return value of strlen:
 
-  #include <cs50.h>
-  #include <stdio.h>
-  #include <string.h>
+      #include <cs50.h>
+      #include <stdio.h>
+      #include <string.h>
 
-  int
-  main(void)
-  {
-      // ask user for string
-      string s = GetString();
-
-      int n = strlen(s);
-
-      for (int i = 0; i < n; i++)
+      int
+      main(void)
       {
-          printf("%c\n", s[i]);
+          // ask user for string
+          string s = GetString();
+
+          int n = strlen(s);
+
+          for (int i = 0; i < n; i++)
+          {
+              printf("%c\n", s[i]);
+          }
       }
-  }
 
   This bracket notation accesses the ith character of `s`. When we compile
   and run this program, we see that it prints out the string we provide, one
@@ -539,16 +540,16 @@ that later when we discuss debuggers.
   down a bit more, we can peek at a comment describing what `GetString`
   does:
 
-  /*
-   * Reads a line of text from standard input and returns it as a
-   * string (char *), sans trailing newline character. (Ergo, if
-   * user inputs only "\n", returns "" not NULL.) Returns NULL
-   * upon error or no input whatsoever (i.e., just EOF). Leading
-   * and trailing whitespace is not ignored. Stores string on heap
-   * (via malloc); memory must be freed by caller to avoid leak.
-   */
+      /*
+       * Reads a line of text from standard input and returns it as a
+       * string (char *), sans trailing newline character. (Ergo, if
+       * user inputs only "\n", returns "" not NULL.) Returns NULL
+       * upon error or no input whatsoever (i.e., just EOF). Leading
+       * and trailing whitespace is not ignored. Stores string on heap
+       * (via malloc); memory must be freed by caller to avoid leak.
+       */
 
-  string GetString(void);
+      string GetString(void);
 
   Notice that this documentation indicates that strings are stripped of new-
   line characters before being returned. Also, in the event of an error or
