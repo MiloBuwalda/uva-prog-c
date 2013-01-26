@@ -1,4 +1,4 @@
-# Syllabus
+# CS50 @ Minor Programmeren
 
 Edition: February 2013
 
