@@ -1,16 +1,50 @@
-# Studiehandleiding
+# Syllabus
 
-Voor Programmeren 1 & 2  
-Versie 1  
-Data zijn nog niet correct.
+Edition: February 2013
 
-Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, encapsulation, data structures, databases, memory management, security, software development, virtualization, and websites. Languages include C, PHP, and JavaScript plus SQL, CSS, and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience.
+Introduction to the intellectual enterprises of computer science and the art
+of programming. This course teaches students how to think algorithmically and
+solve problems efficiently. Topics include abstraction, algorithms,
+encapsulation, data structures, databases, memory management, security,
+software development, virtualization, and websites. Languages include C, PHP,
+and JavaScript plus SQL, CSS, and HTML. Problem sets inspired by real-world
+domains of biology, cryptography, finance, forensics, and gaming. Designed for
+concentrators and non-concentrators alike, with or without prior programming
+experience.
 
 ## Docent
 
 **Martijn Stegeman**  
 University of Amsterdam  
 <stegeman@uva.nl>
+
+
+Staf
+Voor ziekmelden, overleg over de voortgang, speciale afspraken
+
+Martijn Stegeman (docent)
+stegeman@uva.nl
+kamer C3.204
+telefoon 525 5235
+Voor vragen over deze website en de stof
+
+Marin van Beek (assistent)
+m.vanbeek@uva.nl
+Practicumbegeleiding
+
+Ben Witzen
+Stefan Kok
+Victor Azizi
+Jesse van Assen
+Emiel Bon
+Liam Blythe
+Roman Slaap
+Romy Moerbeek
+Remco Hendriks
+Christos Tsigkanos
+Maarten Inja
+
+
 
 ## Expectations
 

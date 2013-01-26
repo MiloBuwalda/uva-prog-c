@@ -1,6 +1,6 @@
-# Weekschema voor hi-speed
+# 8-week schedule for hi-speed students
 
-### Week 0.
+## Week 1.
 
 * maandag: kijken lecture 0w en 0f, starten met Scratch
 * dinsdag: door met Scratch, deadline pset 0
@@ -9,7 +9,7 @@
 * voorbereiding: lecture 1f
 * deadline: pset 1 op vrijdag om 17:00
 
-### Week 1.
+## Week 2.
 
 * walkthrough kijken problem set 2
 * lecture 2 Monday
@@ -21,7 +21,7 @@ Theorie bij problem set 3:
 * lecture 3 Monday
 * lecture 3 Wednesday
 
-### Week 2.
+## Week 3.
 
 * lezen problem set 3
 * walkthrough kijken problem set 3
@@ -29,7 +29,7 @@ Theorie bij problem set 3:
 * lecture 4 Wednesday
 * deadline: pset 3
 
-### Week 3.
+## Week 4.
 
 * lezen problem set 4
 * walkthrough kijken problem set 4
@@ -37,7 +37,7 @@ Theorie bij problem set 3:
 * lecture 5 Wednesday
 * deadline: pset 4
 
-### Week 4.
+## Week 5.
 
 * lezen problem set 5
 * walkthrough kijken problem set 5
@@ -45,7 +45,7 @@ Theorie bij problem set 3:
 * lecture 7 Wednesday
 * deadline: pset 5
 
-### Week 5.
+## Week 6.
 
 * lezen problem set 6
 * walkthrough kijken problem set 6
@@ -53,7 +53,7 @@ Theorie bij problem set 3:
 * lecture 8 Wednesday
 * deadline: pset 6
 
-### Week 6.
+## Week 7.
 
 * lezen problem set 7
 * walkthrough kijken problem set 7
@@ -61,7 +61,7 @@ Theorie bij problem set 3:
 * lecture 9 Wednesday
 * deadline: pset 7
 
-### Week 7.
+## Week 8.
 
 * lezen problem set 8
 * walkthrough kijken problem set 8
