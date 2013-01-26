@@ -2,6 +2,8 @@
 
 Edition: February 2013
 
+![CS50 banner](cs50.png)
+
 Introduction to the intellectual enterprises of computer science and the art
 of programming. This course teaches students how to think algorithmically and
 solve problems efficiently. Topics include abstraction, algorithms,
