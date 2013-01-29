@@ -1,10 +1,5 @@
 # New students
 
-Welkom bij CS50 voor Programmeren 1!
-
-Tijdens Programmeren 1 ga je problem sets 0 t/m 4 van CS50 doen, en je zult
-een tentamen maken over de hoorcolleges.
-
 De hoorcolleges kijk je op video. Doe dit thuis of onderweg! Daarnaast word je
 12 uur per week bij het practicum verwacht, waar je terecht kunt met vragen
 over je opdrachten, en zeker ook over de hoorcolleges.
