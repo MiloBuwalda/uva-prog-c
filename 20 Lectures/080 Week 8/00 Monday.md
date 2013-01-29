@@ -1,4 +1,4 @@
-> *This week on *CS50:
+> *This week on* CS50:
 > *File I/O. Linked lists. Stacks. Queues. Valgrind. Hash tables. Trees. Binary
 > search trees. Tries.*
 
