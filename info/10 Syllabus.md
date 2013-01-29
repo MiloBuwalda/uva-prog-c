@@ -8,15 +8,15 @@
 *Edition: February 2013*
 
 
-Introduction to the intellectual enterprises of computer science and the art
-of programming. This course teaches students how to think algorithmically and
-solve problems efficiently. Topics include abstraction, algorithms,
-encapsulation, data structures, databases, memory management, security,
-software development, virtualization, and websites. Languages include C, PHP,
-and JavaScript plus SQL, CSS, and HTML. Problem sets inspired by real-world
-domains of biology, cryptography, finance, forensics, and gaming. Designed for
-concentrators and non-concentrators alike, with or without prior programming
-experience.
+CS50 is an introduction to the intellectual enterprises of computer science and
+the art of programming. This course teaches students how to think
+algorithmically and solve problems efficiently. Topics include abstraction,
+algorithms, encapsulation, data structures, databases, memory management,
+security, software development, virtualization, and websites. Languages include
+C, PHP, and JavaScript plus SQL, CSS, and HTML. Problem sets inspired by
+real-world domains of biology, cryptography, finance, forensics, and gaming.
+Designed for concentrators and non-concentrators alike, with or without prior
+programming experience.
 
 # Docent
 
@@ -26,13 +26,23 @@ University of Amsterdam
 
 
 # Staf
-To call in sick and special appointments:
+
+To call in sick and for special appointments:
 
 Martijn Stegeman (docent)
 <stegeman@uva.nl>
 kamer: | C3.204
 telefoon: | 525 5235
 
+> Martijn Stegeman (docent)
+> <stegeman@uva.nl>
+> kamer: | C3.204
+> telefoon: | 525 5235
+
+    Martijn Stegeman (docent)
+    <stegeman@uva.nl>
+    kamer: | C3.204
+    telefoon: | 525 5235
 
 For questions about the website and the course materials:
 
@@ -56,10 +66,11 @@ Problem sets and the final project will be evaluated along axes of:
 
 * Scope, 
 * Correctness, 
-* Design, and 
+* Design and 
 * Style.
 
-Know that CS50 draws quite the spectrum of students, including "those less comfortable," "those more comfortable," and those somewhere in between.  However, what ultimately matters in this course is not so much where you end up relative to your classmates but where you end up relative to yourself before you took this course.
+Know that CS50 draws quite the spectrum of students, including *those less
+comfortable*, *those more comfortable*, and those somewhere in between.  However, what ultimately matters in this course is not so much where you end up relative to your classmates but where you end up relative to yourself before you took this course.
 
 The course is *not* graded on a curve. The course does *not* have pre-determined cutoffs for final grades. Those less comfortable and somewhere in between are *not at a disadvantage* vis-à-vis those more comfortable. Each student's final grade is individually determined at term’s end after input from the assistants. Remarkable effort and upward trending do not go unnoticed.
 
