@@ -20,12 +20,12 @@ programming experience.
 
 # Docent
 
-**Martijn Stegeman**  
-University of Amsterdam  
-<stegeman@uva.nl>
+> **Martijn Stegeman**  
+> University of Amsterdam  
+> <stegeman@uva.nl>
 
 
-# Staf
+# Staff
 
 To call in sick and for special appointments:
 

@@ -1,47 +1,52 @@
-# New students
+# Workflow
 
-De hoorcolleges kijk je op video. Doe dit thuis of onderweg! Daarnaast word je
-12 uur per week bij het practicum verwacht, waar je terecht kunt met vragen
-over je opdrachten, en zeker ook over de hoorcolleges.
+## Lecture notes
 
-Hoe te beginnen?
+Start by reading or browsing the lecture notes. These give you a good
+indication of what you should know to do a problem set.
 
-* Start bij de beide videolectures (Monday + Wednesday) van [week 0](/page/3).
-  Die geven een overzicht van wat je kunt verwachten, en een inleiding in
-  *Scratch*.
+## Lecture
 
-* Lees daarna [Problem set 1](/page/150) goed door en ga aan de slag met
-  Scratch.
+Now you can watch the lecture. Do this before or on your way to the lab
+sessions, so that you can spend your lab time, when you can ask questions, on
+the assignments.
 
-* Ondertussen begin je al met het kijken van de videolectures van [week
-  1](/page/14) waarin je leert over de programmeertaal C.
+## Problem set
 
-* Kijk ook [section 1](/page/130) met een overzicht van de tools die je gaat
-  gebruiken tijdens het programmeren.
+Read the problem set specification completely and try to work out by hand, e.g.
+with pen and paper, how you would perform the tasks of that problem set before
+you start writing code.
 
-* Als je klaar bent met Scratch kun je je programmeeromgeving klaar maken: je
-  gaat werken in Linux op de faculteitscomputers.
+## *(Sections)*
 
-* Draai in de Terminal het volgende commando om te zorgen dat je je CS50
-  problem sets goed kunt maken:
+If you haven't fully grasped the lecture, the sections of the following week
+are a more in depth discussion of the material discussed in that lecture. The
+sections also provide some extra examples that might help you to get started on
+your problem set.
 
-		/home/mstegem1/soft/bin/cs50
+## *(Walkthrough)*
 
-* Ook praktische vragen kun je aan je assistent stellen.
+If after all of this you are still unsure where to start with your problem set,
+you can watch the walkthrough. You can find the walkthrough in the second tab
+of the problem set.
 
-* Review elke week de lecture notes, maak aantekeningen en vraag je assistent
-  over de dingen die je nog niet begrijpt! Dat is de enige manier om je op het
-  tentamen voor te bereiden.
+## *(Hacker Edition)*
 
-# Werken op de labmachines
+If the assignment was a breeze, we strongly urge you to do the hacker edition
+of the assignment. This edition provides an extra challenge for those *more
+comfortable*.
 
-Heb je de Walkthrough al gekeken? Deze geeft een idee van de stappen die je
-kunt nemen om je Problem Set op te lossen. Zie onder **standard edition &rarr;
-video**.
+## Test preparation
 
-Voer, voordat je begint, het volgende commando uit op de Terminal van je
-Linux-machine -- dit geldt voor computers van de faculteit:
+To prepare for the tests, you should regularly reread the lecture notes and ask
+the assistants to help you if anything is unclear, e.g. pointers in C.
+
+## Working on UvA lab machines
+
+Before you start working on problem set 1, execute the following command in the
+terminal of a linux-machine on the UvA:
 
 	/home/mstegem1/soft/bin/cs50
 
-Je hoeft dat maar één keer te doen.
+You only have to do this *once*.
+
