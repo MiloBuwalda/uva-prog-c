@@ -2,8 +2,9 @@
 
 ## Lecture notes
 
-Start by reading or browsing the lecture notes. These give you a good
-indication of what you should know to do a problem set.
+Start by reading the lecture notes. These can be found on the page of that
+specific lecture. These give you a good indication of what you should know to
+finish a problem set.
 
 ## Lecture
 
@@ -48,5 +49,5 @@ terminal of a linux-machine on the UvA:
 
 	/home/mstegem1/soft/bin/cs50
 
-You only have to do this *once*.
+You only have to do this **once**.
 
