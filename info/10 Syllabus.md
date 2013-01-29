@@ -1,6 +1,7 @@
 ![CS50 banner](cs50.png)
 
->
+<br />
+<br />
 
 # CS50 @ Minor Programmeren
 
@@ -17,30 +18,30 @@ domains of biology, cryptography, finance, forensics, and gaming. Designed for
 concentrators and non-concentrators alike, with or without prior programming
 experience.
 
-## Docent
+# Docent
 
 **Martijn Stegeman**  
 University of Amsterdam  
 <stegeman@uva.nl>
 
 
-## Staf
-Voor ziekmelden, overleg over de voortgang, speciale afspraken
+# Staf
+To call in sick and special appointments:
 
-> Martijn Stegeman (docent)
-> <stegeman@uva.nl>
-> kamer: | C3.204
-> telefoon: | 525 5235
-
-
-Voor vragen over deze website en de stof
-
-> Marin van Beek
-> <m.vanbeek@uva.nl>
+Martijn Stegeman (docent)
+<stegeman@uva.nl>
+kamer: | C3.204
+telefoon: | 525 5235
 
 
+For questions about the website and the course materials:
 
-## Grades
+Marin van Beek
+<m.vanbeek@uva.nl>
+
+
+
+# Grades
 
 All students must ordinarily submit all nine problem sets, take both quizzes, and submit a final project in order to be eligible for a passing grade (i.e., 6-10) unless granted an exception in writing by the course’s instructor.
 
@@ -52,6 +53,7 @@ Final grades will be determined using the following weights:
 Please note that you also have to do two tests. You do not have to pass the first test (for *Programmeren 1*), but it is compulsory to pass the second one (for *Programmeren 2*).
 
 Problem sets and the final project will be evaluated along axes of:
+
 * Scope, 
 * Correctness, 
 * Design, and 
@@ -59,10 +61,10 @@ Problem sets and the final project will be evaluated along axes of:
 
 Know that CS50 draws quite the spectrum of students, including "those less comfortable," "those more comfortable," and those somewhere in between.  However, what ultimately matters in this course is not so much where you end up relative to your classmates but where you end up relative to yourself before you took this course.
 
-The course is not graded on a curve. The course does not have pre-determined cutoffs for final grades. Those less comfortable and somewhere in between are not at a disadvantage vis-à-vis those more comfortable. Each student's final grade is individually determined at term’s end after input from the assistants. Remarkable effort and upward trending do not go unnoticed.
+The course is *not* graded on a curve. The course does *not* have pre-determined cutoffs for final grades. Those less comfortable and somewhere in between are *not at a disadvantage* vis-à-vis those more comfortable. Each student's final grade is individually determined at term’s end after input from the assistants. Remarkable effort and upward trending do not go unnoticed.
 
 <!--
-    ## Lectures
+    # Lectures
 
     A schedule of lectures, subject to change, appears below.
 
@@ -120,7 +122,7 @@ The course is not graded on a curve. The course does not have pre-determined cut
 
     Exciting conclusion.
 
-    ## Sections
+    # Sections
 
     Lectures are supplemented by weekly, 90-minute sections led by the teaching fellows. Sections provide you with opportunities to explore and discuss course materials in a more intimate environment, with only your teaching fellow and a handful of classmates present, as well as to dive into hands-on activities.
 
@@ -128,16 +130,16 @@ The course is not graded on a curve. The course does not have pre-determined cut
 
     Sectioning begins in Week 1. Sections themselves begin in Week 3, with course-wide supersections (open to all students) offered in Week 2.
 
-    ## Walkthroughs
+    # Walkthroughs
 
     On Sunday nights from 7:00pm until 8:30pm, the teaching fellows hold a "walkthrough" for the current week’s problem set during which you receive direction on where to begin and how to approach the week's challenges.
     Each walkthrough is filmed and made available within 24 hours in streaming and downloadable formats (MP3 and MP4). You are expected to attend or watch walkthroughs before asking questions about problem sets.
 
-    ## Office Hours
+    # Office Hours
 
     Office hours are opportunities for one-on-one assistance with problem sets alongside the course's teaching fellows and course assistants.
 
-    ## Problem Sets
+    # Problem Sets
 
     Nine problem sets are assigned during the semester. Each is due via electronic submission six or more days after its date of distribution. However, you have four "late days" that you may "spend" during the semester, each of which provides you with an extension of twenty-four hours. You may spend no more than one late day on any particular problem set. You need not inform the staff of your use of a late day; usage of late days is tracked automatically. Lateness of electronic submissions is determined down to the minute by submissions' timestamps. Submitting more than seven minutes late is equivalent to submitting twenty-four hours late. Late work is not accepted once you have exhausted your late days, except in cases of emergency. Technical difficulties are not considered emergencies. These late days cannot be spent on the course’s final project.
 
@@ -176,7 +178,7 @@ The course is not graded on a curve. The course does not have pre-determined cut
     **Problem Set 8: CS50 Shuttle**  
     due by noon on Thu 26-apr
 
-    ## Quizzes
+    # Quizzes
 
     The course has two 75-minute quizzes. These quizzes are "closed-book," but you may utilize during each quiz one two-sided page (A4) of notes, typed or written, and a pen or pencil, nothing else.
 
@@ -196,7 +198,7 @@ The course is not graded on a curve. The course does not have pre-determined cut
 
     Unless arranged with the staff in advance, quizzes may not be taken at alternative times even if missed by accident, except in cases of emergency.
 
-    ## Final Project
+    # Final Project
 
     The climax of this course is its final project. The final project is your opportunity to take your knowledge of programming out for a spin and develop your very own piece of software. So long as your project draws upon this course’s lessons, the nature of your project is entirely up to you, albeit subject to the staff’s approval. You may implement your project in any language(s) as long as the staff approves. You are welcome to utilize infrastructure other than the CS50 Appliance and cloud.cs50.net, provided the staff ultimately has access to any hardware and software that your project requires. All that we ask is that you build something of interest to you, that you make something useful, that you solve an actual problem, or that you somehow impact campus. Strive to create something that outlives this course.
 
@@ -219,7 +221,7 @@ The course is not graded on a curve. The course does not have pre-determined cut
     Extensions on the final project are not granted, except in cases of emergency. Technical difficulties are not considered emergencies. Problem sets' late days cannot be spent on the final project. Lateness of submissions is determined down to the minute by submissions' timestamps. Submitting more than seven minutes late is equivalent to not submitting at all.
 -->
 
-## Academic Honesty
+# Academic Honesty
 
 All work that you do toward fulfillment of this course’s expectations must be your own unless collaboration is explicitly allowed in writing by the course’s instructor. Collaboration in the completion of problem sets is not permitted unless otherwise stated by some problem set’s specification.
 
@@ -231,13 +233,11 @@ You may turn to the Web for instruction beyond the course’s lectures and secti
 
 All forms of academic dishonesty are dealt with harshly. If the course refers some matter to the Administrative Board and the outcome for some student is Admonish, Probation, Requirement to Withdraw, or Recommendation to Dismiss, the course reserves the right to impose local sanctions on top of that outcome for that student that may include, but not be limited to, a failing grade for work submitted or for the course itself.
 
-For more information on the specific UvA rules see [Fraude, plagiaat en bronvermelding](http://studentenserviceplein.uva.nl/serviceplein/content/fraude-plagiaat-en-bronvermelding/fraude-en-plagiaatregeling.html) or [Plagiarism and fraud](http://studentenserviceplein.uva.nl/en/service-point/content/plagiarism-and-fraud/plagiarism-and-fraud.html)
+For more information on the specific UvA rules see: [Fraude, plagiaat en bronvermelding](http://studentenserviceplein.uva.nl/serviceplein/content/fraude-plagiaat-en-bronvermelding/fraude-en-plagiaatregeling.html) or: [Plagiarism and fraud](http://studentenserviceplein.uva.nl/en/service-point/content/plagiarism-and-fraud/plagiarism-and-fraud.html)
 
-## Books
+# Books
 
-No books are required for this course. However, you may want to supplement your
-preparation for or review of some lectures with self-assigned readings relevant
-to those lectures' content from either of the books below. We have a selection
-of books available. Feel free to browse these books for extra information. The
-assistants should know where to find them.
+No books are required for this course. However, we do have a number of books
+available for you to read during office hours. You are welcome to pick up one
+of these and read them as a preparation for or review of one of the lectures.
 
