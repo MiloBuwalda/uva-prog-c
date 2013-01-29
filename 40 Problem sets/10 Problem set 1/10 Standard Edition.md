@@ -1,21 +1,6 @@
 # Problem Set 1: C
 
-Per the directions at this document’s end, submitting this problem set
-involves submitting source code as well as filling out a Web-based form, which
-may take a few minutes, so best not to wait until the very last minute, lest
-you spend a late day unnecessarily.
-
-Do take advantage of Week 2’s office hours as well Week 1’s supersections
-
-(or video thereof at https://www.cs50.net/sections/) as well as this problem
-set’s walkthrough (or video thereof at https://www.cs50.net/psets/).
-
-Goals.
-
-If you have any questions or trouble, head to http://help.cs50.net/. Be sure
-that your code is thoroughly commented
-
-to such an extent that lines’ functionality is apparent from comments alone.
+## Goals.
 
 * Get comfortable with Linux.
 
@@ -23,7 +8,7 @@ to such an extent that lines’ functionality is apparent from comments alone.
 
 * Solve some problems in C.
 
-Recommended Reading.
+## Recommended Reading.
 
 * Sections 1 – 7, 9, and 10 of http://www.howstuffworks.com/c.htm.
 
@@ -31,8 +16,7 @@ Recommended Reading.
 
 * Chapters 1 – 6 of Programming in C.
 
-0 < 16
-
+<!--
 Academic Honesty.
 
 This is CS50. Harvard College Fall 2011
@@ -76,215 +60,201 @@ the course reserves the right to impose local sanctions on top of that outcome
 for that student that may include, but not be limited to, a failing grade for
 work submitted or for the course itself.
 
-Grades.
+-->
+
+## Grades.
 
 Your work on this problem set will be evaluated along four axes primarily.
 
-Scope. To what extent does your code implement the features required by our
-specification? Correctness. To what extent is your code consistent with our
+* *Scope*. To what extent does your code implement the features required by our
+specification? 
+* *Correctness*. To what extent is your code consistent with our
 specifications and free of bugs?
-
-Design. To what extent is your code written well (i.e., clearly, efficiently,
-elegantly, and/or logically)? Style. To what extent is your code readable
+* *Design*. To what extent is your code written well (i.e., clearly, efficiently,
+elegantly, and/or logically)? 
+* *Style*. To what extent is your code readable
 (i.e., commented and indented with variables aptly named)?
-
-All students, whether taking the course Pass/Fail or for a letter grade, must
-ordinarily submit this and all other problem sets to be eligible for a passing
-grade (i.e., Pass or A to D–) unless granted an exception in writing by the
-course’s instructor.
 
 Getting Started.
 
 * Recall that the CS50 Appliance is a “virtual machine” (running an operating
-system called Fedora, which itself is a flavor of Linux) that you can run
-inside of a window on your own computer, whether you run Windows, Mac OS, or
-even Linux itself. To do so, all you need is a “hypervisor” (otherwise known
-as a “virtual machine monitor”), software that tricks the appliance into
-thinking that it’s running on “bare metal.” One such hypervisor is called
-VirtualBox, made by Oracle (formerly Sun Microsystems), which just so happens
-to be free!
+  system called Fedora, which itself is a flavor of Linux) that you can run
+  inside of a window on your own computer, whether you run Windows, Mac OS, or
+  even Linux itself. To do so, all you need is a “hypervisor” (otherwise known
+  as a “virtual machine monitor”), software that tricks the appliance into
+  thinking that it’s running on “bare metal.” One such hypervisor is called
+  VirtualBox, made by Oracle (formerly Sun Microsystems), which just so happens
+  to be free!
 
-Alternatively, you could buy a new computer, install Fedora on it (i.e., bare
-metal), and use that! But VirtualBox lets you do all that for free with
-whatever computer you already have. Plus, the CS50 Appliance is pre-configured
-for CS50, so, as soon as you install it, you can hit the ground running.
+  Alternatively, you could buy a new computer, install Fedora on it (i.e., bare
+  metal), and use that! But VirtualBox lets you do all that for free with
+  whatever computer you already have. Plus, the CS50 Appliance is pre-configured
+  for CS50, so, as soon as you install it, you can hit the ground running.
 
-So let’s get both VirtualBox and the CS50 Appliance installed. Head to
-
-https://manual.cs50.net/Appliance#VirtualBox
-
-where instructions await. If you run into any problems whatsoever, simply post
-to the Appliance category at help.cs50.net!
+  So let’s get both VirtualBox and the CS50 Appliance installed. Head to
+  
+  > [https://manual.cs50.net/Appliance#VirtualBox](https://manual.cs50.net/Appliance#VirtualBox)
+  
+  where instructions await. If you run into any problems whatsoever, simply post
+  to the Appliance category at help.cs50.net!
 
 * Once you have the CS50 Appliance installed, go ahead and start it (as by
-launching VirtualBox, clicking the appliance in VirtualBox’s lefthand menu,
-then clicking Start). A small window should open, inside of which the
-appliance should boot. A few seconds or minutes later, you should find
-yourself logged in as John Harvard (whose username is jharvard and whose
-password is crimson), with John Harvard’s desktop before you.
+  launching VirtualBox, clicking the appliance in VirtualBox’s lefthand menu,
+  then clicking **Start**). A small window should open, inside of which the
+  appliance should boot. A few seconds or minutes later, you should find
+  yourself logged in as John Harvard (whose **username** is jharvard and whose
+  password is **crimson**), with John Harvard’s desktop before you.
 
-If you find that the appliance runs unbearably slow on your computer,
-particularly if several years old or a somewhat slow netbook, let us know via
-help.cs50.net, and we’ll offer some tips on boosting its speed.
+  *If you find that the appliance runs unbearably slow on your computer,
+  particularly if several years old or a somewhat slow netbook, contact us and
+  we’ll offer some tips on boosting its speed.*
 
-By default, the appliance’s resolution is only 800 × 600 (i.e., 800 pixels
-wide by 600 pixels tall), in case you have a small screen. But you can
-increase it to 1024 × 768 via Menu > Preferences > Display if you’d like.1
+  By default, the appliance’s resolution is only 800 × 600 (i.e., 800 pixels
+  wide by 600 pixels tall), in case you have a small screen. But you can
+  increase it to 1024 × 768 via *Menu > Preferences > Display* if you’d like.
 
-Feel free to poke around, particularly the CS50 Menu in the appliance’s
-bottom-left corner. You should find the graphical user interface (GUI), called
-Xfce, reminiscent of both Mac OS and Windows. Linux actually comes with a
-bunch of GUIs; Xfce is just one. If you’re already familiar with Linux, you’re
-welcome to install other software via Menu > Administration > Add/Remove
-Software, but the appliance should have everything you need for now. You’re
-also welcome to play with the appliance’s various features, per the
-instructions at
+  Feel free to poke around, particularly the CS50 Menu in the appliance’s
+  bottom-left corner. You should find the graphical user interface (GUI), called
+  Xfce, reminiscent of both Mac OS and Windows. Linux actually comes with a
+  bunch of GUIs; Xfce is just one. If you’re already familiar with Linux, you’re
+  welcome to install other software via *Menu > Administration > Add/Remove
+  Software*, but the appliance should have everything you need for now. You’re
+  also welcome to play with the appliance’s various features, per the
+  instructions at
 
-https://manual.cs50.net/Appliance#How_to_Use_Appliance
+  > [https://manual.cs50.net/Appliance#How_to_Use_Appliance](https://manual.cs50.net/Appliance#How_to_Use_Appliance)
 
-1 To increase its resolution further, see
-https://manual.cs50.net/Appliance#How_to_Change_Resolution.
-
-￼2 < 16
-
-This is CS50. Harvard College Fall 2011
-
-but this problem set will explicitly mention anything that you need know or
-do.
-
-Notice, though, that the appliance will “capture” your trackpad or mouse,
-whereby once you’ve clicked inside of the appliance, you can no longer move
-your cursor (i.e., arrow) outside of the appliance’s window! Not to worry. To
-release your cursor from the appliance’s clutches, simply hit VirtualBox’s
-“host key” on your keyboard: on Mac OS, hit left-⌘; on Windows or Linux, hit
-right-Ctrl. Once you do, you should have full control of your trackpad or
-mouse again.
+  but this problem set will explicitly mention anything that you need know or
+  do.
+  
+  Notice, though, that the appliance will “capture” your trackpad or mouse,
+  whereby once you’ve clicked inside of the appliance, you can no longer move
+  your cursor (i.e., arrow) outside of the appliance’s window! Not to worry. To
+  release your cursor from the appliance’s clutches, simply hit VirtualBox’s
+  “host key” on your keyboard: on Mac OS, hit left-⌘; on Windows or Linux, hit
+  right-Ctrl. Once you do, you should have full control of your trackpad or
+  mouse again.
 
 * Even if you just downloaded the appliance, ensure that it’s completely
-up-to-date by selecting Menu > Administration > Software Update. If updates
-are indeed available, click Install Updates. If prompted with Additional
-confirmation required, click Continue. If warned that the software is not from
-a trusted source and prompted for a password, input crimson, then click
-Authenticate. If prompted a few seconds or minutes later to log out and back
-in, click Log Out and then log back in as John Harvard, when prompted, with
-username jharvard and password crimson.
+  up-to-date by selecting *Menu > Administration > Software Update*. If updates
+  are indeed available, click *Install Updates*. If prompted with *Additional
+  confirmation required*, click *Continue*. If warned that the *software is not from
+  a trusted source* and prompted for a password, input *crimson*, then click
+  *Authenticate*. If prompted a few seconds or minutes later to *log out and back
+  in*, click *Log Out* and then log back in as John Harvard, when prompted, with
+  username *jharvard* and password *crimson*.
 
 * Okay, let’s create a folder (otherwise known as a “directory”) in which your
-code for this problem set will soon live. Go ahead and double-click Home on
-John Harvard’s desktop (in the appliance’s top-left corner). A window entitled
-jharvard - File Manager should appear, indicating that you’re inside of John
-Harvard’s “home directory” (i.e., personal folder). Be sure that jharvard is
-indeed highlighted in the window’s top-left corner, then select File > Create
-Folder... and input pset1 (in all lowercase, with no spaces) when prompted for
-a new name. Then click Create. A new folder called pset1 should appear in the
-window. Go ahead and double-click it. The window’s title should change to
-pset1 - File Manager, and you should see an otherwise empty folder (since you
-just created it). Notice, though, that atop the window are two buttons,
-jharvard and pset1, that indicate where you were and where you are,
-respectively; you can click buttons like those to navigate back and forth
-easily.
+  code for this problem set will soon live. Go ahead and double-click *Home* on
+  John Harvard’s desktop (in the appliance’s top-left corner). A window entitled
+  *jharvard - File Manager* should appear, indicating that you’re inside of John
+  Harvard’s “home directory” (i.e., personal folder). Be sure that *jharvard* is
+  indeed highlighted in the window’s top-left corner, then select *File > Create
+  Folder...* and input *pset1* (in all lowercase, with no spaces) when prompted for
+  a new name. Then click *Create*. A new folder called *pset1* should appear in the
+  window. Go ahead and double-click it. The window’s title should change to
+  *pset1 - File Manager*, and you should see an otherwise empty folder (since you
+  just created it). Notice, though, that atop the window are two buttons,
+  *jharvard* and *pset1*, that indicate where you were and where you are,
+  respectively; you can click buttons like those to navigate back and forth
+  easily.
 
-* Okay, go ahead and close any open windows, then select Menu > Programming >
-gedit. (Recall that the CS50 Menu is in the appliance’s bottom-left corner.) A
-window entitled Unsaved Document 1 - gedit should appear, inside of which is a
-tab entitled Unsaved Document 1. Clearly the document is just begging to be
-saved. Go ahead and type hello (or the ever-popular asdf) in the tab, and then
-notice how the tab’s name is now prefixed with an asterisk (*), indicating
-that you’ve made changes since the file was first opened. Select File > Save,
-and a window entitled Save As should appear. Input hello.txt next to Name,
-then click jharvard under Places. You should then see the contents of John
-Harvard’s home directory, namely Desktop and pset1. Double-click pset1, and
-you should find yourself inside that empty folder you created. Now, at the
-bottom of this same window, you should see that the file’s default Character
-Encoding is Unicode (UTF-8) and that the file’s default Line Ending is
-Unix/Linux. No need to change either; just notice they’re there. That the
-file’s Line Ending is Unix/Linux just means that gedit will insert (invisibly)
-\n at the end of any line of text that you type. Windows, by contrast, uses
-\r\n, and Mac OS uses \r, but more on those details some other time.
+* Okay, go ahead and close any open windows, then select *Menu > Programming >
+  gedit*. (Recall that the CS50 Menu is in the appliance’s bottom-left corner.) A
+  window entitled *Unsaved Document 1 - gedit* should appear, inside of which is a
+  tab entitled *Unsaved Document 1*. Clearly the document is just begging to be
+  saved. Go ahead and type `hello` (or the ever-popular `asdf`) in the tab, and then
+  notice how the tab’s name is now prefixed with an asterisk (*), indicating
+  that you’ve made changes since the file was first opened. Select *File > Save*,
+  and a window entitled *Save As* should appear. Input `hello.txt` next to *Name*,
+  then click *jharvard* under *Places*. You should then see the contents of John
+  Harvard’s home directory, namely *Desktop* and *pset1*. Double-click *pset1*, and
+  you should find yourself inside that empty folder you created. Now, at the
+  bottom of this same window, you should see that the file’s default *Character
+  Encoding* is *Unicode (UTF-8)* and that the file’s default *Line Ending* is
+  *Unix/Linux*. No need to change either; just notice they’re there. That the
+  file’s Line Ending is Unix/Linux just means that gedit will insert (invisibly)
+  `\n` at the end of any line of text that you type. Windows, by contrast, uses
+  `\r\n`, and Mac OS uses `\r`, but more on those details some other time.
+  
+  Okay, click *Save* in the window’s bottom-right corner. The window should close,
+  and you should see that the original window’s title is now *`hello.txt (~/pset1)
+  - gedit`*. The parenthetical just means that `hello.txt` is inside of *pset1*, which
+  itself is inside of *~*, which is shorthand notation for John Harvard’s home
+  directory. A useful reminder is all. The tab, meanwhile, should now be
+  entitled `hello.txt` (with no asterisk, unless you accidentally hit the
+  keyboard again).
 
-Okay, click Save in the window’s bottom-right corner. The window should close,
-and you should see that the original window’s title is now hello.txt (~/pset1)
-- gedit. The parenthetical just means that hello.txt is inside of pset1, which
-itself is inside of ~, which is shorthand notation for John
-
-3 < 16
-
-This is CS50. Harvard College Fall 2011
-
-Harvard’s home directory. A useful reminder is all. The tab, meanwhile, should
-now be entitled hello.txt (with no asterisk, unless you accidentally hit the
-keyboard again).
-
-* Okay, with hello.txt still open in gedit, notice that beneath your document
-is a “terminal window,” a command-line (i.e., text-based) interface via which
-you can navigate the appliance’s hard drive and run programs (by typing their
-name). Notice that the window’s “prompt” is
-
-jharvard@appliance (~):
-
-which means that you are logged into the appliance as John Harvard and that
-you are currently inside of ~ (i.e., John Harvard’s home directory). If that’s
-the case, there should be a pset1 directory somewhere inside. Let’s confirm as
-much.
-
-Click somewhere inside of that terminal window, and the prompt should start to
-blink. Type
-
-ls
-
-and then Enter. That’s a lowercase L and a lowercase S, which is shorthand
-notation for “list.” Indeed, you should then see a (short!) list of the
-folders inside of John Harvard’s home directory, namely Desktop and pset1!
-Let’s open the latter. Type
-
-cd pset1
-
-or even
-
-cd ~/pset1
-
-followed by Enter to change your directory to pset1 (ergo, cd). You should
-find that your prompt
-
-changes to
-
-jharvard@appliance (~/pset1):
-
-confirming that you are indeed now inside of ~/pset1 (i.e., a directory called
-pset1 inside of John Harvard’s home directory). Now type
-
-ls
-
-followed by Enter. You should see hello.txt! Now, you can’t click or
-double-click on that file’s name there; it’s just text. But that listing does
-confirm that hello.txt is where we hoped it would be.
-
-Let’s poke around a bit more. Go ahead and type
-
-cd
-
-and then Enter. If you don’t provide cd with a “command-line argument” (i.e.,
-a directory’s
-
-name), it whisks you back to your home directory by default. Indeed, your
-prompt should now be: 4 < 16
-
-jharvard@appliance (~):
-
-This is CS50. Harvard College Fall 2011
-
-Phew, home sweet home. Make sense? If not, no worries; it soon will! It’s in
-this terminal window that you’ll soon be compiling your first program! For
-now, though, close gedit (via File > Quit) and, with it, hello.txt.
-
-Incidentally, if you encounter an issue whereby clicking icons on John
-Harvard’s desktop (or in John Harvard’s home directory or in pset1) fails to
-trigger gedit to open, even if those files end in .c or .txt. (Instead, you
-may only see a spinning cursor.) If so, not to worry. Simply launch gedit via
-Menu > Programming > gedit, and then open the file in question manually via
-File > Open.
-
-O hai, world!
+* Okay, with `hello.txt` still open in gedit, notice that beneath your document
+  is a “terminal window,” a command-line (i.e., text-based) interface via which
+  you can navigate the appliance’s hard drive and run programs (by typing their
+  name). Notice that the window’s “prompt” is
+  
+      jharvard@appliance (~):
+  
+  which means that you are logged into the appliance as John Harvard and that
+  you are currently inside of ~ (i.e., John Harvard’s home directory). If that’s
+  the case, there should be a pset1 directory somewhere inside. Let’s confirm as
+  much.
+  
+  Click somewhere inside of that terminal window, and the prompt should start to
+  blink. Type
+  
+  ls
+  
+  and then Enter. That’s a lowercase L and a lowercase S, which is shorthand
+  notation for “list.” Indeed, you should then see a (short!) list of the
+  folders inside of John Harvard’s home directory, namely Desktop and pset1!
+  Let’s open the latter. Type
+  
+  cd pset1
+  
+  or even
+  
+  cd ~/pset1
+  
+  followed by Enter to change your directory to pset1 (ergo, cd). You should
+  find that your prompt
+  
+  changes to
+  
+  jharvard@appliance (~/pset1):
+  
+  confirming that you are indeed now inside of ~/pset1 (i.e., a directory called
+  pset1 inside of John Harvard’s home directory). Now type
+  
+  ls
+  
+  followed by Enter. You should see hello.txt! Now, you can’t click or
+  double-click on that file’s name there; it’s just text. But that listing does
+  confirm that hello.txt is where we hoped it would be.
+  
+  Let’s poke around a bit more. Go ahead and type
+  
+  cd
+  
+  and then Enter. If you don’t provide cd with a “command-line argument” (i.e.,
+  a directory’s
+  
+  name), it whisks you back to your home directory by default. Indeed, your
+  prompt should now be: 4 < 16
+  
+  jharvard@appliance (~):
+  
+  This is CS50. Harvard College Fall 2011
+  
+  Phew, home sweet home. Make sense? If not, no worries; it soon will! It’s in
+  this terminal window that you’ll soon be compiling your first program! For
+  now, though, close gedit (via File > Quit) and, with it, hello.txt.
+  
+  Incidentally, if you encounter an issue whereby clicking icons on John
+  Harvard’s desktop (or in John Harvard’s home directory or in pset1) fails to
+  trigger gedit to open, even if those files end in .c or .txt. (Instead, you
+  may only see a spinning cursor.) If so, not to worry. Simply launch gedit via
+  Menu > Programming > gedit, and then open the file in question manually via
+  File > Open.
+  
+  O hai, world!
 
 * Shall we have you write your first program?
 
