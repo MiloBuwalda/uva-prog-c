@@ -29,24 +29,17 @@ University of Amsterdam
 
 To call in sick and for special appointments:
 
-Martijn Stegeman (docent)
-<stegeman@uva.nl>
-kamer: | C3.204
-telefoon: | 525 5235
-
 > Martijn Stegeman (docent)
-> <stegeman@uva.nl>
-> kamer: | C3.204
-> telefoon: | 525 5235
 
-    Martijn Stegeman (docent)
-    <stegeman@uva.nl>
-    kamer: | C3.204
-    telefoon: | 525 5235
+> <stegeman@uva.nl>
+
+> kamer: C3.204
+
+> telefoon: 525 5235
 
 For questions about the website and the course materials:
 
-Marin van Beek
+Marin van Beek <br />
 <m.vanbeek@uva.nl>
 
 
