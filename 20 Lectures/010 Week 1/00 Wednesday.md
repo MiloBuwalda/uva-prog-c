@@ -1,4 +1,4 @@
-> *This week on* CS50:
+> *This week on* CS50:<br />
 > *C. Source code. Compilers. Object code. GCC. Functions. Comments. Standard
 > output. Arithmetic operators. Precedence. Local variables. Types. Casting.
 > Standard input. Libraries. Boolean expressions, continued. Conditions,

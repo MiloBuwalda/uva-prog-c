@@ -1,4 +1,4 @@
-> *This week on* CS50:
+> *This week on* CS50:<br />
 > *Life after 50.*
 
 # Monday lecture
