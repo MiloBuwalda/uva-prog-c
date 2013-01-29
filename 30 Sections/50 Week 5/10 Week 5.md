@@ -1,4 +1,4 @@
-# Sections Week 1
+# Sections Week 5
 
 * [Video](http://cs50.tv/2011/fall/sections/5/section5.mp4)
 * [Slides](http://cdn.cs50.net/2011/fall/sections/5/section5.pdf)
