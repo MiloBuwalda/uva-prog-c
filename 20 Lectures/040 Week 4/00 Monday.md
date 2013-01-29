@@ -1,5 +1,6 @@
-> This week on CS50:
-> Merge sort. Structures. Dynamic memory allocation. Pointers. Debugging, continued.
+> *This week on *CS50:
+> *Merge sort. Structures. Dynamic memory allocation. Pointers. Debugging,
+> continued.*
 
 # Monday lecture
 

@@ -1,5 +1,6 @@
-> This week on CS50:
-> Linear search. Binary search. Asymptotic notation. Recursion. Bubble sort. Selection sort. Debugging.
+> *This week on *CS50:
+> *Linear search. Binary search. Asymptotic notation. Recursion. Bubble sort.
+> Selection sort. Debugging.*
 
 # Monday lecture
 

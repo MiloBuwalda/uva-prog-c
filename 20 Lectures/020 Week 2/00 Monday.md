@@ -1,5 +1,6 @@
-> This week on CS50:
-> Functions, continued. Global variables. Parameters. Return values. Stack. Frames. Scope. Arrays. Strings. Command-line arguments. Cryptography.
+> *This week on *CS50:
+> *Functions, continued. Global variables. Parameters. Return values. Stack.
+> Frames. Scope. Arrays. Strings. Command-line arguments. Cryptography.*
 
 # Monday lecture
 

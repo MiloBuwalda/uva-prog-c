@@ -1,5 +1,8 @@
-> This week on CS50:
-> C. Source code. Compilers. Object code. GCC. Functions. Comments. Standard output. Arithmetic operators. Precedence. Local variables. Types. Casting. Standard input. Libraries. Boolean expressions, continued. Conditions, continued. Loops, continued.
+> *This week on *CS50:
+> *C. Source code. Compilers. Object code. GCC. Functions. Comments. Standard
+> output. Arithmetic operators. Precedence. Local variables. Types. Casting.
+> Standard input. Libraries. Boolean expressions, continued. Conditions,
+> continued. Loops, continued.*
 
 # Wednesday lecture
 

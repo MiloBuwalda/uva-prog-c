@@ -1,5 +1,5 @@
-> This week on CS50:
-> Exciting conclusion.
+> *This week on *CS50:
+> *Exciting conclusion.*
 
 # Monday lecture
 

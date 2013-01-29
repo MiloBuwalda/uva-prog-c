@@ -1,5 +1,5 @@
-> This week on CS50:
-> JavaScript. Ajax. APIs.
+> *This week on *CS50:
+> *JavaScript. Ajax. APIs.*
 
 # Monday lecture
 

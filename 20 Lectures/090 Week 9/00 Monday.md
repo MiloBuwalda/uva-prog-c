@@ -1,5 +1,5 @@
-> This week on CS50:
-> HTTP. HTML. CSS. PHP.
+> *This week on *CS50:
+> *HTTP. HTML. CSS. PHP.*
 
 # Monday lecture
 
