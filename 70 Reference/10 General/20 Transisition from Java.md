@@ -6,5 +6,5 @@
 * Read problem set 5, mark things you don't understand
 * Watch the Week 5 lectures
 * Try starting on pset 5
-* Watch the pest 5 walkthrough
+* Watch the pset 5 walkthrough
 
