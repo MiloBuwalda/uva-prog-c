@@ -1,3 +1,6 @@
+> This week on CS50:
+> HTTP. HTML. CSS. PHP.
+
 # Monday lecture
 
 [Video](http://cs50.tv/2011/fall/lectures/9/week9m.mp4)

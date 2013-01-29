@@ -1,3 +1,6 @@
+> This week on CS50:
+> Introduction. Bits. Binary. ASCII. Programming. Algorithms. Scratch. Statements. Boolean expressions. Conditions. Loops. Variables. Threads. Events.
+
 # Wednesday lecture
 
 [Video](http://cs50.tv/2011/fall/lectures/0/week0w.mp4)

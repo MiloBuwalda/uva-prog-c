@@ -1,3 +1,6 @@
+> This week on CS50:
+> File I/O. Linked lists. Stacks. Queues. Valgrind. Hash tables. Trees. Binary search trees. Tries.
+
 # Monday lecture
 
 [Video](http://cs50.tv/2011/fall/lectures/8/week8m.mp4)

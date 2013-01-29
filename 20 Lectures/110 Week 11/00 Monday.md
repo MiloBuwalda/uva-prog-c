@@ -1,3 +1,6 @@
+> This week on CS50:
+> Life after 50.
+
 # Monday lecture
 
 [Video](http://cs50.tv/2011/fall/lectures/11/week11m.mp4)

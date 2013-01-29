@@ -1,3 +1,6 @@
+> This week on CS50:
+> CS50 Library. Heap. Pointers, continued. Forensics.
+
 # Monday lecture
 
 [Video](http://cs50.tv/2011/fall/lectures/5/week5m.mp4)
