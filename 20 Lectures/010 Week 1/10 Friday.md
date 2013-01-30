@@ -5,57 +5,18 @@
 [Slides](http://cdn.cs50.net/2011/fall/lectures/1/week1f.pdf)
 
 
-## Announcements and Demos (0:00–7:00)
-
-* 0 new handouts.
-
-* Thanks for coming back, all 646 of you! Once again, we’ve hit record
-numbers for CS50 enrollment. Let the fun begin! Of course, you do
-retain the right to leave the course if you’re truly feeling overwhelmed,
-but please listen to David when he implores you to reach out to a member
-of the teaching staff before you do so. There’s a good chance we’ll be able
-to address your frustrations and fears so that you’ll be able to soldier on!
-
-* You’re invited to CS50 Lunches on Fridays at 1:15 p.m.! These are op-
-portunities for you to interact on a more personal level with the teaching
-staff, so we hope you’ll take advantage of them.
-
-* To get an idea of just how many people are dedicated to helping you get
-through this semester, check out cs50.net/staff.
-
-* A few statistics from the first installment of new-and-improved Office
-Hours:
-> – A total of almost 200 questions were asked, with a peak of about 100
-> occurring on Tuesday.
-> – Average wait time ranged from under 25 seconds on Monday to just
-> over 150 seconds on Tuesday.
-
-* Sectioning starts later today and ends Monday at noon. Supersections,
-which are open to all, will be held this Sunday, Monday, and Tuesday.
-
-* This week’s problem set will be our first in C. You’ll be writing a few
-programs, the first of which will be nothing more than a “hello, world”
-app. The second program will involve solving a greedy counting prob-
-lem and the third program will require implementing a crude graph of
-isawyouharvard.com statistics. In general, we’ll focus this week on get-
-ting comfortable with the syntax in C. If you’re feeling adventurous, try
-tackling the Hacker Edition!
-
-* This week’s Walkthrough will be held on Sunday at 7 p.m.
-
-
 ## From Last Time (7:00–31:00)
 
 * As we transitioned from Scratch to C, we discovered that learning a little
 bit of cryptic syntax is all that stands between us and the tremendous
 power of a low-level programming language.
 
-* Recall that we set up the CS50 Appliance which allows you to run an op-
-erating system within your personal computer’s default operating system.
-Once we did so, we opened a program called gedit, a text editor with a
-built-in command line that allows us to write, compile, and run our code
-all within the same window. If you come to find the command line in gedit
-too small for your needs, you can open Terminal for a full-screen version.
+* Recall that we set up the CS50 Appliance which allows you to run an operating
+system within your personal computer’s default operating system.
+Once we did so, we opened a program called *gedit*, a text editor with a built-in
+command line that allows us to write, compile, and run our code all within the
+same window. If you come to find the command line in gedit too small for your
+needs, you can open Terminal for a full-screen version.
 
 * By convention, we saved our C source code file with a .c extension. To
 compile our program, we ran the `make` command followed by the name of
@@ -144,11 +105,11 @@ is first executed. In contrast, `make` is a program that takes input at the
 command line. When we type `make hello`, we are providing the word
 “hello” as an argument to the `main` function of the `make` program.
 
-* Question: is all of the whitespace strictly necessary? No, even the inden-
-tation isn’t necessary for the program to compile and run. However, it
+* Question: is all of the whitespace strictly necessary? No, even the
+indentation isn’t necessary for the program to compile and run. However, it
 makes for a more readable program, so we’ll encourage it as part of proper
-style throughout the semester. Before Problem Set 1, we’ll ask you to read
-a short style guide that will outline best practices.
+style throughout the semester. Before Problem Set 1, we’ll ask you to read a
+short style guide that will outline best practices.
 
 * Question: is it necessary to explicitly return 0 at the end of a C program?
 No. By default, the program will return 0 once it is finished executing
@@ -156,12 +117,12 @@ unless it is instructed to return something else.
 
 * The CS50 Library defines the following functions:
 
-> – `GetChar`
-> – `GetDouble`
-> – `GetFloat`
-> – `GetInt`
-> – `GetLongLong`
-> – `GetString`
+> – `GetChar`<br />
+> – `GetDouble`<br />
+> – `GetFloat`<br />
+> – `GetInt`<br />
+> – `GetLongLong`<br />
+> – `GetString`<br />
 
 What is a `char`? A `char` is a single character which requires 1 byte of
 storage. A `float` is a floating point number or, in other words, a number
@@ -182,7 +143,7 @@ together form a word or phrase.
 ### Operator Precedence and Formatting Strings
 
 * Many of the operators that you’re familiar with from math (e.g. +, −,
-\∗, /) are identical in C. And, as in arithmetic, there is an order in which
+∗, /) are identical in C. And, as in arithmetic, there is an order in which
 operations are applied. In the world of computer science, this is called
 *operator precedence*. For example, the grouping operator (i.e. parentheses)
 has the highest precedence in the C language. Here is a full list of operators
@@ -191,11 +152,11 @@ and their precedence.
 * As we mentioned earlier, the `printf` function can take many different
 formatting characters. Just a few of them are:
 
-> – `%c for char`
-> – `%%d for int`
-> – `%%f for float`
-> – `%%lld for long long`
-> – `%%s for string.`
+> – `%c for char`<br />
+> – `%%d for int`<br />
+> – `%%f for float`<br />
+> – `%%lld for long long`<br />
+> – `%%s for string.`<br />
 
 Be sure to use `%lld` if you want to print out a number larger than a `long` 
 can store, lest you get a negative number when you try to print it out with
@@ -221,6 +182,7 @@ can store, lest you get a negative number when you try to print it out with
 * Question: does `#` work for comments in C? No.
 
 * When we have two forks in the road, we can use if-else:
+
       if (condition)
       {
           // do this
@@ -302,11 +264,11 @@ welcome to use any text editor you choose.
 
   At the top of this file we have a multi-line comment that we’ve pretty-
   printed using a lot of asterisks in order to create the effect of a header.
-  This, along with the single-line comments scattered throughout the pro-
-  gram, are matters of good style. You’ll thank yourself if you choose to
-  comment your code as you write it rather than at the very end since you’re
-  less likely to wake up the morning after and wonder what the heck your
-  program does.
+  This, along with the single-line comments scattered throughout the program,
+  are matters of good style. You’ll thank yourself if you choose to comment
+  your code as you write it rather than at the very end since you’re less
+  likely to wake up the morning after and wonder what the heck your program
+  does.
 
 * C is a *strictly typed* language, which means we have to be explicit about
 what type each variable is. In this case, since we’re asking the user for an
@@ -412,11 +374,11 @@ to tackle it on your own!
           // do this again and again
       }
 
-  Within the parentheses after the for keyword, there are three parts. Be-
-  fore the first semicolon, we are initializing a variable which will be our
-  iterator or counter, often named i by convention. Between the two semi-
-  colons, we’re providing a condition which, if true, will cause another iter-
-  ation of the loop to be executed. Finally, we provide code to update our
+  Within the parentheses after the for keyword, there are three parts. Before
+  the first semicolon, we are initializing a variable which will be our
+  iterator or counter, often named i by convention. Between the two
+  semi-colons, we’re providing a condition which, if true, will cause another
+  iteration of the loop to be executed. Finally, we provide code to update our
   iterator.
 
 * Let’s write a simple loop to demonstrate how they’re used:
@@ -464,7 +426,7 @@ line. Oops, 0 ∗ 2 = 0 so we need a different starting value for `i`. Once we
 change it to 1, the program works as intended.
 
 * Very quickly, this program terminates. Why? Once it reached a value
-above 2 billion, the largest number an 32-bit integer1 can store, `i` actually
+above 2 billion, the largest number an 32-bit integer can store, `i` actually
 became negative. One of the bits in this integer is actually reserved for
 storing the sign of the integer, so once we filled that in with a 1, our
 program interpreted `i` as being negative and suddenly `i` was no longer

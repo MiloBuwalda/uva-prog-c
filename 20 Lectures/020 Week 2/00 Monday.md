@@ -16,57 +16,17 @@ one or more bugs. The very first bug was, in fact, a real bug—a moth that
 got stuck in the Harvard Mark II and was subsequently preserved inside
 the log book. This is where the term “bug” actually comes from.
 
-* Don’t forget to RSVP if you’re interested in CS50 Lunch!
-
-* Please return your Scratch board if you still have one from Problem Set
-0.
-
-* Sectioning needs to be done by 5 p.m. today!
-
-* Supersections will be held today and tomorrow at 6 p.m., locations to be
-announced on the course website. The video from last night’s supersection
-is available online.
-
-* Some interesting statistics:
-> – 33% of you own an iPhone, 17% of you own an Android device, 13% of
-> you own a Blackberry, and 33% own a “normal” or non-smartphone.
-> – 39% of you have AT&T, 36% of you have Verizon, 15% of you have
-> T-Mobile.
-> – Sophomores have the highest representation as a class among you, as
-> does Adams as a house.
-> – 56% of you are running Mac OS, 41% of you are running Windows.
-> – Interestingly, this year for the first year, those “less comfortable” are
-> the majority. You’re definitely not alone!
-> – **54% of you have no prior programming experience.**
-
-* Check out the manual for the CS50 Appliance before you ask your question
-at Office Hours or on help.cs50.net. If you’re using a PC and you find
-the Appliance so slow as to be unusable, follow the instructions here to
-see if it’s because your computer’s manufacturer has turned off hardware
-virtualization by default.
-
 * Our aim is to give you as much qualitative feedback as possible on your
   work in CS50. Grades will be broken down as follows:
   
-  > – Scope – how much of the problem set did you actually attempt?
-  > – Correctness – does your code do what it’s supposed to?
-  > – Design – is your code efficient and elegant?
+  > – Scope – how much of the problem set did you actually attempt?<br />
+  > – Correctness – does your code do what it’s supposed to?<br />
+  > – Design – is your code efficient and elegant?<br />
   > – Style – is your code readable and well-commented?
   
   You’ll be given a score of 1 (poor) through 5 (best) for each of these axes.
   Early in the semester, the expected range is 2-3, not so much 4-5. 3 is
   actually good, it does not translate to 60%!
-
-* A word on academic honesty, which we take very seriously in this course.
-Over the past four years, we have sent 37 students to the Ad Board.
-We’d like to never have to send another one. For your convenience, our
-policy is spelled out very clearly on the second page of *every* problem
-set we release. It describes in detail the line between collaboration and
-plagiarism, which essentially boils down to one guideline: don’t talk in
-real code. If you want to discuss ideas or specific problems, feel free to
-go so far as to write out pseudocode, but don’t go any farther. What you
-write in C, PHP, SQL, JavaScript, etc., should ultimately be your own. If
-you are ever in doubt, feel free to contact us with your specific situation.
 
 
 ## From Last Time (1:00–3:00)
@@ -86,55 +46,55 @@ you are ever in doubt, feel free to contact us with your specific situation.
 
 * Conditions allow us to handle more than one fork in the road:
 
-  if (condition)
-  {
-      // do this
-  }
-  else if (condition)
-  {
-      // do that
-  }
-  else
-  {
-      // do this other thing
-  }
+      if (condition)
+      {
+          // do this
+      }
+      else if (condition)
+      {
+          // do that
+      }
+      else
+      {
+          // do this other thing
+      }
 
   Alternatively, we could use switch statements to achieve the same, but
   perhaps more elegantly:
 
-  switch (expression)
-  {
-      case i:
-          // do this
-          break;
-      case j:
-          // do that
-          break;
-      default:
-          // do this other thing
-  }
+      switch (expression)
+      {
+          case i:
+              // do this
+              break;
+          case j:
+              // do that
+              break;
+          default:
+              // do this other thing
+      }
 
 * When we wanted to complete the same task over and over again, we made
   use of loops:
 
-  for (initializations; condition; updates)
-  {
-      // do this again and again
-  }
-  while (condition)
-  {
-      // do this again and again
-  }
+      for (initializations; condition; updates)
+      {
+          // do this again and again
+      }
+      while (condition)
+      {
+          // do this again and again
+      }
 
   Functionally, for and while loops are identical, but in certain cases one
   might be more elegant than the other. There’s even one more kind of loop
   that might come in handy with Problem Set 1:
 
-  do
-  {
-      // do this again and again
-  }
-  while (condition);
+      do
+      {
+          // do this again and again
+      }
+      while (condition);
 
   The do-while construct ensures that the code will always execute at least
   once. It is particularly useful in prompting the user for input.
@@ -514,11 +474,11 @@ loop? Yes, just be careful not to redeclare it.
   Notice that the return value of `GetInt` is not actually stored in a variable,
   but instead directly compared to 0. If that return value turns out to be
   greater than 0, we set the boolean variable `thankful` to `true`. Here we
-  also introduce the == operator, which returns true if it’s two operands
-  are equal to each other. Why == instead of =? The latter is actually the
-  assignment operator, so if you wrote `thankful = false`, `thankful` would
-  be assigned the value false instead of compared to the value false. Thus,
-  no matter what value the user provided, the loop would not repeat itself.
+  also introduce the `==` operator, which returns true if it’s two operands
+  are equal to each other. Why `==` instead of `=`? The latter is actually the
+  assignment operator, so if you wrote `thankful = false`, `thankful` would be
+  assigned the value false instead of compared to the value false. Thus, no
+  matter what value the user provided, the loop would not repeat itself.
 
 
 ### `positive3.c`
@@ -701,7 +661,7 @@ contains all the formatting codes.
 
 ### `ascii1.c`
 
-* As ascii1.c demonstrates, you can actually explicitly convert an integer
+* As `ascii1.c` demonstrates, you can actually explicitly convert an integer
   to an ASCII character simply by casting it:
 
       /*****************************************

@@ -16,53 +16,6 @@ Q: Why did the computer programmer get upset when he forgot
 how to program?
 A: Because he had to start again from Scratch!
 
-* If you still have a Scratch Board, please drop it off with one of the TFs or
-CAs this week!
-
-* You can resection at cs50.net/resection. Feel free to e-mail section@cs50.net
-if we seem to have forgotten about your request.
-
-* Join us for CS50 Lunch this Friday at 1:15 p.m.! RSVP here. We’ll vary
-the times and locations to allow everyone the possible of joining at least
-once.
-
-* Wednesday Office Hours have proven quite popular. They will now be held
-at Quincy House. Other sessions will be held tonight in Pfoho, tomorrow
-in Leverett, and Thursday in Lowell.
-
-* For those of you more comfortable, we’re looking to fork off special Hacker
-hours to give you help on the Hacker Edition of problem sets.
-
-* Problem Set 0 and Problem Set 1 will be returned to you with comments
-in the next few days. For the remainder of the semester, we’ll aim to give
-feedback on your problem sets within one week of their deadlines.
-
-* Please leave more detailed notes than simply “it doesn’t work” when post-
-ing to help.cs50.net! It’s just not enough for us to go on. Try stating the
-exact problem you’re seeing, the symptoms you’re experiencing, the spe-
-cific error message, the steps to reproduce, etc. What have you tried that’s
-not worked? What operating system are you running? The idea is that if
-you provide enough detail, we can reply to you with an answer rather than
-another question. Our goal (which we’ve met so far with one exception)
-is to respond to your questions within 24 hours!
-
-* It’s that time of the semester where you might be asking yourself “Should
-I stay or should I go now?”1 Realize that if you’re feeling like posting
-to HarvardFML about CS50, you’re not alone. We know that this course
-is difficult and frustrating at times! If you keep at it, you’ll eventually
-leave behind the mistakes you’re making now and even come to look at
-them as silly. Keep in mind that you didn’t see anyone crying at the CS50
-Fair. They were all extremely proud at what they had accomplished! If
-you’re already feeling stressed out as a result of CS50, consider altering
-your work habits. For example, you might be able to start problem sets
-1 If you go there will be trouble. Well, actually, there won’t be any trouble, just a lot of
-fun you’ll be missing out on!
-earlier so that you can go to Office Hours for help. The frustration you
-feel is a part of every programmer’s life, irrespective of his experience
-level. Please reach out to David, Rob, Matt, or any of the other
-teaching fellows with any and all of your concerns!
-
-
 ## Security (4:00–10:00, 12:00–22:00)
 
 * One of the files we included in the source code for last week was `iUnlock.c`,
@@ -480,7 +433,7 @@ store in this row is 4. This is because we need space for the null terminator
   rather a `const char *`. As a teaser, the `*` means this type is a *pointer*,
   or actually a memory address. We’ll come back to this. In fact, the
   `string` data type we declared in the CS50 Library is just a synonym for
-  `const char *`. What about the size_t? It’s another custom data type
+  `const char *`. What about the `size_t`? It’s another custom data type
   which, in this case, is synonymous with `int`. Know that you can get
   similar information from the C Reference linked from the course website.
 

@@ -26,13 +26,13 @@ lante, a CS professor at Stanford.
 * We looked at a few different sorting algorithms and their big O runtimes.
   Here is a bit of vocabulary that will allow you to refer to big O runtimes:
 
-  > $O(1)$        | “constant”
-  > $O(log n)$    | “logarithmic”
-  > $O(n)$        | “linear”
-  > $O(n log n)$  | “supralinear”
-  > $O(n^2)$      | “quadratic”
-  > $O(^nc)$      | “polynomial”
-  > $O(n!)$       | “factorial”
+  > $$O(1)$$        | “constant”
+  > $$O(log n)$$    | “logarithmic”
+  > $$O(n)$$        | “linear”
+  > $$O(n log n)$$  | “supralinear”
+  > $$O(n^2)$$      | “quadratic”
+  > $$O(^nc)$$      | “polynomial”
+  > $$O(n!)$$       | “factorial”
 
   Thus far, linear runtimes have been mostly unrealistic whereas quadratic
   runtimes have been exceedingly slow. So-called supralinear runtimes are
@@ -41,8 +41,8 @@ lante, a CS professor at Stanford.
 
 ## Pointers (3:00–13:00)
 
-* Recall our problems in the past few weeks involving writing a swap func-
-  tion that actually worked. Let’s reenact this problem using pseudocode:
+* Recall our problems in the past few weeks involving writing a swap function
+  that actually worked. Let’s reenact this problem using pseudocode:
 
       a = OJ;
       b = milk;
@@ -129,10 +129,11 @@ dresses. Although generally we won’t care what number a memory address
 is, we do care that is a memory address, so it’s important that we learn
 to recognize hexadecimal so that we can recognize memory addresses.
 
-* Hexadecimal numbers conventionally begin with 0x. Whereas in binary
+* Hexadecimal numbers conventionally begin with `0x`. Whereas in binary
   there are 2 possible digits and in decimal there are 10 possible digits, in
   hexadecimal there are 16 possible digits. Where do the extra 6 digits come
   from? Once we get to 9, we begin using the letters A through F:
+
       0x00
       0x01
       0x02
@@ -167,8 +168,9 @@ amount of blue. Hence, RGB.
   two strings passed to us by the user and announces whether they are equal
   or not:
 
-      #include <cs50.h>
-      #include <stdio.h>
+      \#include <cs50.h>
+      \#include <stdio.h>
+
       int
       main(void)
       {
@@ -309,9 +311,9 @@ useful in implementing binary search, for example.
   this, we could simply compare the lengths of our two strings and return
   early if they’re different:
 
-  #include <cs50.h>
-  #include <stdio.h>
-  #include <string.h>
+      #include <cs50.h>
+      #include <stdio.h>
+      #include <string.h>
 
       int
       main(void)
@@ -347,14 +349,14 @@ useful in implementing binary search, for example.
 * One optimization we can make is to move the call to `strlen` into the
   initializations of the for loop like so:
 
-  for (int i = 0, n = strlen(s1); i < n; i++)
-  {
-      if (s1[i] != s2[i])
+      for (int i = 0, n = strlen(s1); i < n; i++)
       {
-          printf(‘‘You typed different things!\n’’);
-          return 1;
+          if (s1[i] != s2[i])
+          {
+              printf(‘‘You typed different things!\n’’);
+              return 1;
+          }
       }
-  }
 
   Previously, `strlen` was called on each iteration of the loop. Here, it will
   only be called once. Actually, technically, we already called it once before

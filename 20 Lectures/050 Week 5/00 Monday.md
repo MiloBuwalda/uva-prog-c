@@ -10,9 +10,6 @@
 
 ## Announcements and Demos (0:00–7:00, 9:00–12:00)
 
-* From now on, we’ll be using a camera onstage to allow those of you in the
-back rows to see what David scribbles on the blackboard.
-
 * For this week’s problem set, you’ll be implementing the popular logic game
 Sudoku. If you don’t get this joke, hopefully you will by the end of the
 week.
@@ -28,26 +25,6 @@ power of technology. For example, there is no such thing as infinite zoom:
 you can’t keep zooming and enhancing forever. Furthermore, spewing a
 bunch of jargon does not a computer scientist make. Jurassic Park, CSI,
 and Numb3rs offer some unfortunate examples of this.
-
-* You may have noticed that David is sporting some CS50 apparel. It is
-our tradition to offer you to the chance to take away a piece of CS50 that
-you can wear so as to show off to your friends. If you’d like to contribute
-to the design process for this year’s apparel, e-mail store@cs50.net.
-
-* The deadline for pass/fail is approaching. We wholeheartedly encourage
-this route if you want to take part in the fun, but aren’t sure you have
-the time to commit fully to the work. One of our aims in allowing you
-to take the course pass/fail is to enable you to turn in problem sets when
-they’re 95% done rather than 100% done. That way, you’ll get the full
-learning experience, but won’t have to worry about lingering tiny bugs.
-Don’t forget, this is how David started his foray into computer science, by
-taking CS50 pass/fail! Looking at his notes from the first day of lecture,
-it seems the only thing he took away was that precision and correctness
-(and exclamation points) are important.
-
-* We hope you feel this way each and every time you finish a problem set
-for this course.
-
 
 
 ## Problem Set 4 (7:00–9:00)
@@ -201,8 +178,8 @@ values 2 and 1, respectively. Since we’ve now verified that the values are
 properly swapped, we can type `continue` to run the rest of the program
 as normal.
 
-* Two takeaways here: the difference between `a` (pointer) and `*a` (integer)
-and the difference between `x` (integer) and `&x` (pointer).
+* Two takeaways here: the difference between `a` (*pointer*) and `*a`
+  (*integer*) and the difference between `x` (*integer*) and `&x` (*pointer*).
 
 * Question: do pointers have scope? Yes. `a` and `b` only exist within `swap`.
 
@@ -228,10 +205,11 @@ printed it out in GDB.
           printf(‘‘%d’’, *p);
       }
 
-  Interestingly, we could modify this program as follows to avoid a segmen-
-  tation fault:
+  Interestingly, we could modify this program as follows to avoid a
+  segmentation fault:
 
       #include <stdio.h>
+
       int
       main(void)
       {
@@ -273,41 +251,41 @@ get incorrect results.
   the end of the strings. This is, in fact, what the built-in function `strcmp`
   does, which we make use of in `compare2.c`:
 
-  /*****************************************
-   * compare2.c
-   *
-   * Computer Science 50
-   * David J. Malan
-   *
-   * Compares two strings.
-   *
-   * Demonstrates strings as pointers to arrays.
-   *****************************************/
+      /*****************************************
+       * compare2.c
+       *
+       * Computer Science 50
+       * David J. Malan
+       *
+       * Compares two strings.
+       *
+       * Demonstrates strings as pointers to arrays.
+       *****************************************/
 
-  #include <cs50.h>
-  #include <stdio.h>
-  #include <string.h>
+      #include <cs50.h>
+      #include <stdio.h>
+      #include <string.h>
 
-  int
-  main(void)
-  {
-      // get line of text
-      printf("Say something: ");
-      char *s1 = GetString();
-
-      // get another line of text
-      printf("Say something: ");
-      char *s2 = GetString();
-
-      // try to compare strings
-      if (s1 != NULL && s2 != NULL)
+      int
+      main(void)
       {
-          if (strcmp(s1, s2) == 0)
-              printf("You typed the same thing!\n");
-          else
-              printf("You typed different things!\n");
+          // get line of text
+          printf("Say something: ");
+          char *s1 = GetString();
+
+          // get another line of text
+          printf("Say something: ");
+          char *s2 = GetString();
+
+          // try to compare strings
+          if (s1 != NULL && s2 != NULL)
+          {
+              if (strcmp(s1, s2) == 0)
+                  printf("You typed the same thing!\n");
+              else
+                  printf("You typed different things!\n");
+          }
       }
-  }
 
   Notice the error checking: because we’ve peeked under the hood of the
   CS50 Library, we know that we need to check that `GetString` didn’t
@@ -542,7 +520,7 @@ heap, not the stack.
   overrun attack. As this diagram indicates, the stack is used to store not
   only function frames and parameters, but also a function’s return address:
   
-        TODO INSERT PICTURE 
+  ![program_memory](program_memory.png)!
   
   This way, when a function finishes executing, the program will know where
   in memory to return in order to continue.

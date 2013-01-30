@@ -18,42 +18,16 @@ CS50 when his sister accidentally formatted her memory card. He went
 from being “less comfortable” to salvaging 1000+ photos and saving the
 day!
 
-* CS50 Lunch this Friday at 1:15 p.m.! RSVP here. We’ll be hosting a
-dinner, as well, in future weeks.
-
-* Quiz 0 is on Wednesday! There’s no lecture on Monday. We will announce
-on the course website where you are to report to take the quiz (it won’t be
-Sanders). A review session will take place this Sunday at the same time
-and place as the Walkthroughs. Office Hours will be held on Monday and
-Tuesday nights. There are four years’ worth of past quizzes available on
-the course website for you to practice with, but keep in mind that the
-material has changed slightly from year to year, so don’t be alarmed if
-there’s some topic covered there that you haven’t seen at all this year.
-Transcripts of the videos are linked from the course website, as are these
-scribe notes, which you should make use of!1
-
-* Just for fun, David uploaded the transcripts of his lectures to a free tool
-that creates word clouds, or visualizations in which the size of a word
-corresponds to the frequency with which it appears. Turns out that “just”
-is David’s favorite word!
-
-* The Harvard Innovation Lab is now open! This is meant to be an open
-space for entrepreneurial spirits to meet and discuss ideas. The week after
-next, we’ll hold Office Hours there (complete with pizza and sodas) so you
-can get a feel for it, if you so choose. Shuttles will also be available to
-take you there, although it’s not that far to walk, either.
-
-
 
 ## The CS50 Library (2:00–40:00)
 
 * Recall the functions that are defined by the CS50 Library:
   
-  > – `GetChar`
-  > – `GetDouble`
-  > – `GetFloat`
-  > – `GetInt`
-  > – `GetLongLong`
+  > – `GetChar`<br />
+  > – `GetDouble`<br />
+  > – `GetFloat`<br />
+  > – `GetInt`<br />
+  > – `GetLongLong`<br />
   > – `GetString`
   
   We’ve been taking these functions for granted for several weeks now, but
@@ -116,7 +90,7 @@ input? Yup. They wait indefinitely for the user to enter something valid.
 
 
 
-### scanf1.c
+### `scanf1.c`
 
 * `scanf1.c` demonstrates the traditional way of obtaining user input via
   `scanf`:
@@ -154,7 +128,7 @@ input? Yup. They wait indefinitely for the user to enter something valid.
 
 
 
-### scanf2.c
+### `scanf2.c`
 
 * Now that the training wheels are off, let’s try to get a string from the user
   without the help of the CS50 Library:
@@ -185,7 +159,7 @@ input? Yup. They wait indefinitely for the user to enter something valid.
 what places restrictions on the maximum amount of RAM a computer can
 have. If you’ve ever heard of a computer that can only upgrade to 2GB
 of RAM, for example, it might be because its pointers have only 31 bits
-to store memory addresses ($2^31$ ≈ 2 billion).
+to store memory addresses ($$2^31$$ ≈ 2 billion).
 
 * Question: are strings native to C? No. `printf` has a formatting place-
 holder for them, but it treats them as arrays of characters, not as a native
@@ -233,7 +207,7 @@ must pass the address of `x`, or `&x` as an argument to `scanf`.
 
 
 
-### scanf3.c
+### `scanf3.c`
 
 * One final way that we could go about initializing a string is demonstrated
   in scanf3.c:
@@ -282,11 +256,11 @@ is known as a buffer overrun attack.
 
 
 
-### pointers.c
+### `pointers.c`
 
 * Another feature of pointers is demonstrated in pointers.c:
 
-      /****************************************************************************
+      /*****************************************
        * pointers.c
        *
        * Computer Science 50
@@ -295,7 +269,7 @@ is known as a buffer overrun attack.
        * Prints a given string one character per line.
        *
        * Demonstrates pointer arithmetic.
-       ***************************************************************************/
+       *****************************************/
 
       #include <cs50.h>
       #include <stdio.h>

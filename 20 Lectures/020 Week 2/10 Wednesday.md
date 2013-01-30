@@ -5,26 +5,6 @@
 [Slides](http://cdn.cs50.net/2011/fall/lectures/2/week2w.pdf)
 
 
-## Announcements and Demos (0:00–4:00, 8:00–10:00)
-
-* Ever wanted to see Star Wars drawn completely in ASCII art? Here is
-your chance. ASCII art is simply a form of drawing that uses only the
-characters from ASCII.
-
-* To set the stage for our discussion of cryptography, we’ll watch a scene
-from Spaceballs in which King Roland reveals that the password to the
-air shield is 12345.
-
-* Office Hours will be held tonight and tomorrow night in Lowell from 9
-p.m. to midnight. The houses are working on installing additional access
-points so that wireless speeds will be improved.
-
-* If you’re having issues with the Appliance, please reach out to us via
-help@cs50.net or otherwise. We also have a new solution for those of you
-with older or otherwise resource-limited computers like netbooks that will
-allow you to connect to our servers.
-
-
 ## Cryptography (4:00–8:00)
 
 * Odds are that some of you out there have a password that’s not too much
@@ -191,22 +171,22 @@ grams as well as step through them line by line.
           return 0;
       }
 
-  /*
-   * Sings about specified number of bottles.
-   */
-  void
-  chorus(int b)
-  {
-      // use proper grammar
-      string s1 = (b == 1) ? "bottle" : "bottles";
-      string s2 = (b == 2) ? "bottle" : "bottles";
+      /*
+       * Sings about specified number of bottles.
+       */
+      void
+      chorus(int b)
+      {
+          // use proper grammar
+          string s1 = (b == 1) ? "bottle" : "bottles";
+          string s2 = (b == 2) ? "bottle" : "bottles";
 
-      // sing verses
-      printf("%d %s of beer on the wall,\n", b, s1);
-      printf("%d %s of beer,\n", b, s1);
-      printf("Take one down, pass it around,\n");
-      printf("%d %s of beer on the wall.\n\n", b - 1, s2);
-  }
+          // sing verses
+          printf("%d %s of beer on the wall,\n", b, s1);
+          printf("%d %s of beer,\n", b, s1);
+          printf("Take one down, pass it around,\n");
+          printf("%d %s of beer on the wall.\n\n", b - 1, s2);
+      }
 
   As before, we quit if the user provides input. This time, however, the
   actual printing of the song is accomplished in two lines. We’ve effectively
@@ -228,17 +208,17 @@ grams as well as step through them line by line.
 * What about those first two lines of chorus? Well, they might make more
   sense if we rewrote them as follows:
 
-  string s1;
-  if (b == 1)
-      s1 = "bottle";
-  else
-      s1 = "bottles";
+      string s1;
+      if (b == 1)
+          s1 = "bottle";
+      else
+          s1 = "bottles";
 
-  string s2;
-  if (b == 2)
-      s2 = "bottle";
-  else
-      s2 = "bottles";
+      string s2;
+      if (b == 2)
+          s2 = "bottle";
+      else
+          s2 = "bottles";
 
   First, we declare a string named `s1`. Second, we initialize `s1` to the value
   “bottle” if the number of bottles is 1, else we initialize it to the value
@@ -273,9 +253,9 @@ declared.
   complex, this solution will be less and less ideal. Imagine you are reading
   through someone else’s code to figure out what it does. You don’t want to
   read through a number of helper functions before you get to `main`, which
-  is the heart of the program. So, to compromise, we write function proto-
-  types at the tops of our programs and the function implementations at
-  the bottoms of our programs.
+  is the heart of the program. So, to compromise, we write function prototypes
+  at the tops of our programs and the function implementations at the bottoms
+  of our programs.
 
 * Question: why do you have to tell the compiler what the type of a func-
 tion’s output is; couldn’t it infer this from your program? Yes and no.
@@ -323,16 +303,16 @@ several conditions.
           printf("y is %d\n", y);
       }
 
-  /*
-   * Swap arguments’ values.
-   */
-  void
-  swap(int a, int b)
-  {
-      int tmp = a;
-      a = b;
-      b = tmp;
-  }
+      /*
+       * Swap arguments’ values.
+       */
+      void
+      swap(int a, int b)
+      {
+          int tmp = a;
+          a = b;
+          b = tmp;
+      }
 
   Everything looks fine, but when we run the program, we get the following
   output:
@@ -372,15 +352,15 @@ lose the value of `a` and both would assume the value of `b`.
   on the hard disk, a more permanent kind of memory. We can visualize a
   computer’s RAM like so:
 
-        TODO INSERT PICTURE
+  ![stack](stack.png)!
 
-According to this visualization, we can number all of the bytes in a com-
-puter’s RAM from 0 to 2 billion or so (assuming your computer has 2 GB
-of RAM). When we execute a program, then, the variables that belong to
-`main` (first its arguments or parameters, then its locals) will be assigned to
-the lowest numbered bytes in the program’s memory, which appear here
-at the bottom of this rectangle. When `main` calls another function, say
-foo, that function’s variables get stacked on top of `main`’s in memory.
+  According to this visualization, we can number all of the bytes in a com-
+  puter’s RAM from 0 to 2 billion or so (assuming your computer has 2 GB
+  of RAM). When we execute a program, then, the variables that belong to
+  `main` (first its arguments or parameters, then its locals) will be assigned to
+  the lowest numbered bytes in the program’s memory, which appear here
+  at the bottom of this rectangle. When `main` calls another function, say
+  foo, that function’s variables get stacked on top of `main`’s in memory.
 
 * Interestingly, often when a website is hacked it is by a buffer overrun
 attack, which is just a fancy way of saying that a malicious user provided
@@ -480,29 +460,29 @@ argument.
   different scope than `main`.
 
 * Why is this program `bad`? Because bad always calls itself, it will repeat
-infinitely. Not only that, each time it calls itself, another chunk of memory
-will be reserved for its variables and parameters, as our visualization of the
-stack showed. Since our outer rectangle is finitely big, we’ll eventually run
-out of space for adding inner rectangles. That is, we’ll run out of memory,
-or worse, we’ll overwrite memory that is being used for other purposes by
-the operating system. Let’s look at a more complete visualization of a
-program’s memory:
-
-        TODO INSERT PICTURE
-
-Notice that the stack grows upward as we call more and more functions,
-but something called the heap grows downward. As this visualization
-suggests, the two can potentially collide if one or the other takes up too
-much space. When we compile and run `bad.c`, this happens very quickly
-and we get a message saying that a *segmentation fault* has occurred. This
-is the operating system’s safety mechanism which kills a program when it
-tries to touch memory that doesn’t belong to it. You may have heard of the
-concept of cracking a program, meaning that the need for an authorization
-code or a serial number is bypassed so that you can install Microsoft Word
-or Photoshop without purchasing it. In effect, these cracks are simply
-touching memory that they don’t own and causing the program to skip
-past the simple if condition that asks the user to provide an authorization
-code or serial number.
+  infinitely. Not only that, each time it calls itself, another chunk of memory
+  will be reserved for its variables and parameters, as our visualization of the
+  stack showed. Since our outer rectangle is finitely big, we’ll eventually run
+  out of space for adding inner rectangles. That is, we’ll run out of memory,
+  or worse, we’ll overwrite memory that is being used for other purposes by
+  the operating system. Let’s look at a more complete visualization of a
+  program’s memory:
+  
+  ![memory](memory.png)!
+  
+  Notice that the stack grows upward as we call more and more functions,
+  but something called the heap grows downward. As this visualization
+  suggests, the two can potentially collide if one or the other takes up too
+  much space. When we compile and run `bad.c`, this happens very quickly
+  and we get a message saying that a *segmentation fault* has occurred. This
+  is the operating system’s safety mechanism which kills a program when it
+  tries to touch memory that doesn’t belong to it. You may have heard of the
+  concept of cracking a program, meaning that the need for an authorization
+  code or a serial number is bypassed so that you can install Microsoft Word
+  or Photoshop without purchasing it. In effect, these cracks are simply
+  touching memory that they don’t own and causing the program to skip
+  past the simple if condition that asks the user to provide an authorization
+  code or serial number.
 
 
 ## Arrays and Command-line Arguments (59:00–73:00)

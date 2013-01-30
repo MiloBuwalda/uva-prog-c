@@ -15,13 +15,6 @@
 a restaurant as $1.48999, a clear indication of floating point errors in the
 cash register. Computer science in the real world!
 
-* CS50 wifi is now available in Sanders! The SSID is cs50 and the password
-is 12345678. Yup.
-
-* Another CS50 Lunch is this Friday, this time with an alumnus who now
-works at a venture capital firm called NEA. RSVP if you’d like to join!
-
-
 
 ## Problem Set 3 (1:00–4:00)
 
@@ -38,9 +31,9 @@ solved.
 
 * Also in Problem Set 3, you’ll be asked to implement binary search and one
 of the sorting algorithms we’ve looked at so far, perhaps bubble sort or
-selection sort which are in $O(n2)$. If you’re taking on the Hacker Edition,
+selection sort which are in $$O(n2)$$. If you’re taking on the Hacker Edition,
 you’ll also need to implement a sorting algorithm, but one that runs in
-$O(n)$.
+$$O(n)$$.
 
 
 ## From Last Time (5:00–10:00)
@@ -52,8 +45,8 @@ comparing two adjacent values, swapping them if they are out of order,
 and stopping when no more swaps are made. We also looked at selection
 sort, which works by finding the smallest number and placing it in its
 correct position on each pass. We discovered that selection sort takes
-$n^2$ steps in both the best- and worst-case scenarios whereas bubble sort
-takes $n^2$ steps in the worst-case scenario, but only n steps in the best-case
+$$n^2$$ steps in both the best- and worst-case scenarios whereas bubble sort
+takes $$n^2$$ steps in the worst-case scenario, but only n steps in the best-case
 scenario.
 
 * As this demo shows, there are many more sorting algorithms than the
@@ -218,7 +211,7 @@ function should stop calling itself.
   If someone asked you how you would sort a list of items, you could actually
   push back on them and say that you would sort the left half and sort
   the right half, then merge the two sorted halves. In turn, this person
-  could follow up and ask you how you would sort each half. In response,3
+  could follow up and ask you how you would sort each half. In response,
   you could again say that you would sort the left half and sort the right
   half, then merge the two sorted halves. As you can see, this algorithm,
   which is actually a description of merge sort, lends itself quite naturally to
@@ -227,8 +220,8 @@ function should stop calling itself.
   to a point where one half of the original list is actually only one item. At
   that point, that half of the list is already sorted, and your work is done.
 
-* To unravel this concept of recursion, let’s begin with a non-recursive func-
-  tion that sums up the numbers 1 through n:
+* To unravel this concept of recursion, let’s begin with a non-recursive
+  function that sums up the numbers 1 through n:
 
       /*****************************************
        * sigma1.c
@@ -296,10 +289,10 @@ the maximum that a 32-bit integer can store? The program seems to loop
 infinitely, although it might just be choking on the very large number.
 
 * Interestingly, we can implement the same functionality in an entirely dif-
-  ferent way using recursion. After all, the sum of the numbers 1 through $n$
-  is equivalent to n plus the sum of the numbers 1 through $n − 1$. And the
-  sum of the numbers 1 through $n − 1$ is equivalent to $n − 1$ plus the sum of
-  the numbers 1 through $n − 2$. And so on until we’re considering the sum
+  ferent way using recursion. After all, the sum of the numbers 1 through $$n$$
+  is equivalent to n plus the sum of the numbers 1 through $$n − 1$$. And the
+  sum of the numbers 1 through $$n − 1$$ is equivalent to $$n − 1$$ plus the sum of
+  the numbers 1 through $$n − 2$$. And so on until we’re considering the sum
   of the numbers 0 through 0, which is, of course, 0. This case which ends
   our recursion we’ll call the *base case*. Take a look at how we utilize this
   approach in `sigma2.c`:
@@ -409,8 +402,8 @@ return.
 
       2 4 6 8 1 3 7 5
 
-* When we repeat this algorithm for the right half of the original size-8 ar-
-  ray, we get the following:
+* When we repeat this algorithm for the right half of the original size-8
+  array, we get the following:
 
       2 4 6 8 1 3 5 7
 
@@ -439,35 +432,35 @@ return.
 
 * Now, how many steps did this take? Although we used the divide-and-
 conquer approach, the answer isn’t just log n. At the very least, we had
-to examine each element once, so our lower bound here is $n$ steps. But
+to examine each element once, so our lower bound here is $$n$$ steps. But
 it appears that every time we need to complete the merge step, we have
 to walk through both halves to do so. We can simplify this by saying it
-takes $n$ steps per merge. How many merges are there? $log n$ since there
-are $log n$ divisions. So our merge sort algorithm is in $O(n log n)$.
+takes $$n$$ steps per merge. How many merges are there? $$log n$$ since there
+are $$log n$$ divisions. So our merge sort algorithm is in $$O(n log n)$$.
 
-* Let’s try to represent merge sort’s running time, $T (n)$, formulaically:
+* Let’s try to represent merge sort’s running time, $$T (n)$$, formulaically:
 
-  > Let $T (n) =$ running time if list size is $n$.
-  > $T (n) = 0$ if $n < 2$
-  > $T (n) = T (n/2) + T (n/2) + n$ if $n > 1$
+  > Let $$T (n) =$$ running time if list size is $$n$$.<br />
+  > $$T (n) = 0$$ if $$n < 2$$<br />
+  > $$T (n) = T (n/2) + T (n/2) + n$$ if $$n > 1$$
 
-  That is, we have to sort the left half, which takes $T(n/2)$, sort the right
-  half, which takes $T(n/2)$, and merge, which takes n!
+  That is, we have to sort the left half, which takes $$T(n/2)$$, sort the right
+  half, which takes $$T(n/2)$$, and merge, which takes n!
 
-* Ex: Suppose we want to find $T(16)$:
+* Ex: Suppose we want to find $$T(16)$$:
 
-  > $T (16) = 2T (8) + 16$
-  > $T (8) = 2T (4) + 8$
-  > $T (4) = 2T (2) + 4$
-  > $T (2) = 2T (1) + 2$
-  > $T (1) = 0$
-  > $T (16) = 2(2(2(2(0 + 2) + 4) + 8) + 16) = 64$
+  > $$T (16) = 2T (8) + 16$$<br />
+  > $$T (8) = 2T (4) + 8$$<br />
+  > $$T (4) = 2T (2) + 4$$<br />
+  > $$T (2) = 2T (1) + 2$$<br />
+  > $$T (1) = 0$$<br />
+  > $$T (16) = 2(2(2(2(0 + 2) + 4) + 8) + 16) = 64$$
 
   We add 16 in the first step because it takes 16 steps to merge both lists
-  of 8. Eventually we boil down to $T(1)$, which is 0 because a list of size
+  of 8. Eventually we boil down to $$T(1)$$, which is 0 because a list of size
   one is already sorted. Does our final result, 64, agree with our original
-  determination of $O(n log n)$. Well, 16 × log 16 = 64, so yes. Compare this
-  to $O(n^2)$, which would take $16^2 = 256 steps$. Already we’re reaping the
+  determination of $$O(n log n)$$. Well, 16 × log 16 = 64, so yes. Compare this
+  to $$O(n^2)$$, which would take $$16^2 = 256 steps$$. Already we’re reaping the
   benefits.
 
 * Have a listen to What different sorting algorithms sound like! They all
