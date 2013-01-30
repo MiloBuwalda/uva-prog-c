@@ -11,10 +11,6 @@
 
 ## Announcements and Demos (0:00–1:00)
 
-* This is CS50.
-
-* 3 new handouts.
-
 * 77% of the people around you have no prior experience in computer science!
   Don't be afraid!
 
@@ -23,19 +19,6 @@
   misconceptions. Last year, women made up 37% of the CS50 class!
 
 * 46% of CS50 students consider themselves among those "less comfortable."
-
-* Welcome to our 87 staff members! A special welcome to Matthew Chartier and
-  Rob Bowden, our head teaching fellows. If you ever have a problem during
-  the semester and you're not sure who to reach out to, contact Matt or Rob
-  at heads@cs50.net.
-
-* The first ever CS50 Puzzle Day, sponsored by Facebook, will take place this
-  Saturday! If you're interested, sign up at cs50.net/register. Form a team
-  with at least two members and up to four and compete to win gift 
-  certificates. A raffle for a Wii will also be held.
-
-* Dinner with CS50 and Facebook will happen this Friday night! RSVP at
-  cs50.net/rsvp.
 
 ## Introduction to Computer Science (1:00–45:00)
 
@@ -158,7 +141,7 @@
   seem so outrageous. If you have 100 Facebook friends and each of your
   friends has 100 Facebook friends and each of their friends has 100 Facebook
   friends, and so on, then within 6 degrees of separation, the number of
-  people that are connected to each other is 1 trillion ($100^6$). That’s way
+  people that are connected to each other is 1 trillion ($$100^6$$). That’s way
   more than the number of people on earth.
 
 [^3]: Actually, we're not even calculating the sum here. On the 31st day
@@ -216,15 +199,6 @@
 * take two quizzes
 * submit a final project
 
-### Grades
-
-* pass/fail (David did!)
-* letter grade
-
-Please do not subscribe to the misguided notion that taking the course
-pass/fail somehow makes you less adequate. We at CS50 wholeheartedly encourage
-you to take the course pass/fail if you think it will be a more enjoyable
-experience that way.
 
 ### Problem Sets
 
@@ -239,20 +213,6 @@ experience that way.
 * Problem Sets come in two editions: standard and Hacker. If you want a little
   extra challenge out of these projects, try the Hacker Edition.
 
-* You have a certain number of late days that will be provided to you for
-  turning in problem sets after the deadline with no penalty. We understand
-  that life happens and you might not have time for that problem set when a
-  midterm rolls around in another of your courses. Make use of your late days
-  and buy yourself some time.
-
-* The lowest score of your problem sets will be dropped, as well, but see the
-  syllabus for fine print.
-
-### The Unofficial Guide to CS at Harvard
-
-* Oh, the places you'll go! Check out the Unofficial Guide to CS at Harvard
-  for different paths you can take after CS50 and Harvard.
-
 ### CS50 Appliance
 
 * This year, for the first time, we'll be transitioning away from using remote
@@ -262,46 +222,11 @@ experience that way.
   computer's native operating system. Just double click the icon and suddenly
   you've launched an instance of Linux!
 
-### Office Hours
-
-* Office Hours are being rebooted this year! In recent years, the sheer volume
-  of students that have shown up to Office Hours have made them overwhelming.
-  We're hoping to fix this this year by moving Office Hours to the dining
-  halls to coincide with Brain Break. Instead of a handful of TFs, we will
-  have a dozen or so on duty at all times from 9 p.m. to midnight on Mondays
-  through Thursdays.
-
-* When you attend Office Hours this year, you'll need only login to cs50.net
-  and virtually raise your hand. Your question will be displayed to the TFs
-  and it will be answered in the order it was received relative to other
-  questions. We even have a fancy iPad app that will allow the CS50 Greeter to
-  match staff members and students, alerting students when it's their turn
-  with a TF.
-
-### Lectures
-
-* This year for the first time, students at Harvard Business School, Belmont
-  High School, and Watertown High School will be taking the class virtually.
-  Welcome, guys!
-
-* Check out a week-by-week breakdown of the course material and problem sets
-  in the syllabus.[^6]
-
-[^6]: Note that we follow the computer science convention of counting up from
-      0, not 1. Thus, this is Week 0.
-
-### Walkthroughs, Course Videos, The Lounge
+### Walkthroughs
 
 * Learn how to begin each problem set at Walkthroughs on Sunday nights. When
   you find yourself completely lost after reading the specification PDF and
   you are staring at a blinking cursor on your screen (hopefully not on
   Thursday night), come to the Walkthrough (or watch the video) which will
   jumpstart you.
-
-* Course videos will be available online along with word-for-word transcripts
-  in case you miss a live lecture or you just don't want to get out of bed
-  before 1 p.m.!
-
-* Come hang out with us at the CS50 Lounge, stocked with a Wii, a foosball
-  table, candy machines, and even Ceiling Cat!
 

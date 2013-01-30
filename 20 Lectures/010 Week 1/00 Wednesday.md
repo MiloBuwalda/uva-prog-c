@@ -11,46 +11,6 @@
 [Slides](http://cdn.cs50.net/2011/fall/lectures/1/week1w.pdf)
 
 
-## Announcements and Demos (0:00–6:00)
-
-* 0 new handouts.
-
-* Problem Set 0 is due at noon tomorrow! You need to upload your project
-to MIT’s website and also fill out this form.
-
-* Don’t forget about Walkthroughs on Sunday nights at 33 Oxford Street!
-Sometimes we have trouble getting everyone’s ID card activated to get
-into the building, so if you find yourself locked out, dial 617-BUG-CS50
-and hit the secret option 0 to get in touch with one of the TFs.
-
-* Post your questions to help.cs50.net.
-
-* Office Hours will be held tonight. When you arrive, point your web
-browser to queue.cs50.net, answer a few questions about the reason for
-your visit, and virtually raise your hand! The CS50 Greeter will then pair
-you with a TF and your browser will begin to flash when it’s your turn to
-be helped.
-
-* Scribe Notes are here for your viewing pleasure! If you’re reading this,
-then you’re already benefiting from my ability to turn David into a pretty
-PDF document.
-
-* Full transcripts of the lectures are also available alongside the videos. In
-the interest of saving paper, we don’t print many hard copies of the slides
-and source code used in lecture, but they’re available online in advance of
-class.
-
-* Sectioning will commence this weekend. More on that during Friday’s
-lecture.
-
-* Ever wondered what that big honkin’ contraption is in a glass case in
-the Science Center? It’s the Harvard Mark I, a computer used by Harvard
-starting in 1944. It was capable of doing computations up to 23 significant
-digits and weighed 10,000 pounds. Multiplication took 6 seconds, division
-took 15.3 seconds, and a logarithmic or trigonometric function took over
-1 minute.
-
-
 ## From Last Time (6:00–14:00)
 
 * Recall from last time that ASCII is a mapping from binary numbers to al-
@@ -102,27 +62,29 @@ A `while` loop is denoted in C between curly braces like so:
       }
 
 * The “repeat” loop from Scratch is equivalent to a for loop in C that looks
-like so:
+  like so:
 
       for (int i = 0; i < 10; i++)
       {
           printf("O hai!\n");
       }
 
-This syntax declares an integer named i (a convention used for variables
-that are only used for counting) which is set to 0 to begin with. `i < 10`
-implies that the code within the loop will execute as long as i is less than
-10. Finally, on each iteration of the loop, the statement `i++` increments i
-by one. All in all, this code causes “O hai!” to be printed 10 times.
+  This syntax declares an integer named i (a convention used for variables
+  that are only used for counting) which is set to 0 to begin with. `i < 10`
+  implies that the code within the loop will execute as long as i is less than
+  10. Finally, on each iteration of the loop, the statement `i++` increments i
+  by one. All in all, this code causes “O hai!” to be printed 10 times.
 
 * In C, a loop that increments a variable and announces its value would look
   like so:
+
       int counter = 0;
       while (true)
       {
           printf("%d\n", counter);
           counter++;
       }
+
   Here we declare a variable named `counter` and then create an infinite loop
   that prints its value then increments it.
 
@@ -131,6 +93,7 @@ by one. All in all, this code causes “O hai!” to be printed 10 times.
 the “and” operator is represented as `&&` in C.
 
 * Conditions in C look much the same as they do in Scratch:
+
       if (x < y)
       {
           printf("x is less than y\n");
@@ -164,7 +127,7 @@ Problem Set 0 tomorrow.
 
 ## Introduction to C (24:00–76:00)
 
-* In our first C program, we wrote a few cryptic words, among them int
+* In our first C program, we wrote a few cryptic words, among them `int
 main(void). We can gloss over this for now, but know that this is telling
 the compiler that our main function (which is comparable to the “when
 green flag clicked” puzzle piece in Scratch), will return an integer value
@@ -242,7 +205,7 @@ the following output:
 
   `cd` stands for change directory. Within the parentheses, we are reminded
   that we are currently in the Desktop, a subdirectory of the home directory
-  which is represented by the ~.
+  which is represented by the `~`.
 
 * Now to compile our program. At the command line, we’ll pass our source
   code file into a compiler named GCC (GNU Compiler Collection) like so:
@@ -270,7 +233,7 @@ the following output:
   were a built-in program in Linux, we wouldn’t need to tell it where to
   look.
 
-* a.out isn’t a very descriptive name for our program, so let’s modify our
+* `a.out` isn’t a very descriptive name for our program, so let’s modify our
   compiler command to name its output more appropriately:
 
       jharvard@appliance (~/Desktop): gcc -o hello hello.c
@@ -350,7 +313,7 @@ Appliance.
   denotes a new line.
 
 * C has a number of *primitive types* built into it. These include `int`,
- `char`, `float`, and more. int is the integer type which stores numbers using
+ `char`, `float`, and more. `int` is the integer type which stores numbers using
  4 bytes or 32 bits of memory. How many numbers can we store using 4 bytes?
  Each bit has 2 possible values, so in total, we can store 232 , or around 4
  billion, numbers. Generally, this means we can store the numbers from negative
@@ -375,12 +338,12 @@ to C with more interesting tasks, we’ve written some functions to accom-
 plish this for you. These are available to you in the CS50 library which
 lives at `cs50.h`:
 
-> – `GetChar`
-> – `GetDouble`
-> – `GetFloat`
-> – `GetInt`
-> – `GetLongLong`
-> – `GetString`
+> – `GetChar`<br />
+> – `GetDouble`<br />
+> – `GetFloat`<br />
+> – `GetInt`<br />
+> – `GetLongLong`<br />
+> – `GetString`<br />
 
 These functions get input of different types (e.g. `characters`, `doubles`,
 `floats`, `integers`) from the user as he enters them on the keyboard.

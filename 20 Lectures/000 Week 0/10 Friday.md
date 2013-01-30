@@ -10,25 +10,16 @@
 * Check out what is possible in the programming language called Scratch that we
 will begin the course with!
 
-* Be sure to check out the first-ever CS50 Puzzle Day this Saturday! Thanks
-to Facebook for sponsoring!
-
-* Dinner with CS50 and Facebook is tonight at 6:30 at Maxwell Dworkin!
-Well, not at Maxwell Dworkin, but we’ll meet there. RSVP here.
-
 * As you make your way through the semester, try to keep the following snippet
 in mind:
 
-* As you make your way through the semester, try to keep the following snippet
-in mind:
-
-> what ultimately matters in this course is not so much where you end up
+> What ultimately matters in this course is not so much where you end up
 > relative to your classmates but where you, in Week 12, end up relative to
-> yourself in Week 0 There’s no predetermined scale or grading curve in this
+> yourself in Week 0. There’s no predetermined scale or grading curve in this
 > course. Grades are assigned on an individual basis and take into account your
-> background coming into the semester. There are three types of sections: for
+> background coming into the semester. There are three types of students: for
 > those less comfortable, those more comfortable, and those somewhere in
-> between.  Keep that in mind as you section next week!
+> between.
 
 * The first problem set was released today and is due next Friday. There
 will be a Walkthrough on Sunday to help get you started!
@@ -39,25 +30,7 @@ website for locations.
 
 * CS50 is an amazing, empowering, exciting, liberating experience! But
 don’t take it from me, take it from former students, teaching fellows, and
-even our beloved President.1
-
-* Fresh off your CS50 experience, consider participating in Hack Harvard
-during J-Term. There you’ll get the manpower you need to turn your
-Harvard-related final project into a full-fledged campus app.
-
-* The Harvard College Innovation Challenge will give you a chance to receive
-funding for your entrepreneurial idea.
-
-* Soon you’ll be able to take advantage of the Harvard Innovation Lab
-which will provide you with a workspace and central hub for collaboration
-at Harvard.
-
-* If you’re interested in checking out what’s going on in technology on the
-west coast, apply after September 15 for the Winter Break Silicon Valley
-Trip to take place during J-Term.
-
-* If you just want to bounce ideas off like-minded classmates, sign up for
-the Harvard College Entrepreneurship Forum.
+even our beloved President.
 
 
 ## Computer Science in the Real World (15:00–25:00)
@@ -349,16 +322,16 @@ store information of interest to our program.
 * Now is a good time to introduce the concept of *threads*. This is a fairly
 complicated concept which doesn’t usually get introduced in the first week of a
 computer science course, let alone in the first semester of computer science
-training. However, let’s Scratch the surface of a threading discus- sion.2 In
+training. However, let’s Scratch the surface of a threading discussion. In
 the context of your computer, threads are what allow you to have multiple
 software applications open at once. Your computer isn’t ac- tually doing
 multiple things at once; rather, it’s switching back and forth between tasks
 faster than you can perceive.
 
 * Threading refers to the notion of multiple threads of code executing si-
-multaneously. In Move1.sb, we have a simple animation of a duck moving back and
+multaneously. In `Move1.sb`, we have a simple animation of a duck moving back and
 forth across the screen, screaming and turning around every time it touches the
-edge. This is a single thread. In Move2.sb, we achieve “multithreading,” at
+edge. This is a single thread. In `Move2.sb`, we achieve “multithreading,” at
 least in appearance. In terms of programming, we have two different scripts
 associated with two different sprites, a cat and a bird. For the cat, we begin
 by placing him in a given spot on the stage and orienting him in a random
