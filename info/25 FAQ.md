@@ -2,10 +2,6 @@
 
 Als je nog andere vragen hebt kun je die hieronder stellen. We proberen vragen zo snel mogelijk te beantwoorden. Je kunt ook vragen stellen op de pagina's van de Lectures en de Problem Sets, als je vraag over een bepaald college of een bepaalde opgave hebt.
 
-### In welk lokaal ben ik geroosterd?
-
-Voor de roosters zie: <https://datanose.nl/#timetable(Min%20Prog|1,36,2012)> of de vakpagina op Datanose.
-
 ### Hoeveel tijd moet ik aan de minor besteden?
 
 We verwachten dan een normale student 20 uur en een hi-speed student 40 uur per week aan de minor besteed. Dit is inclusief de verplichte aanwezigheid.
