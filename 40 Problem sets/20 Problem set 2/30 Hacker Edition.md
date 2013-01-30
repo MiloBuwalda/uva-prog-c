@@ -1,3 +1,8 @@
+# Specification and source files
+
+* [passwd](http://cdn.cs50.net/2011/fall/psets/2/hacker2/passwd)
+* [Specification](http://cdn.cs50.net/2011/fall/psets/2/hacker2.pdf)
+
 # Problem Set 2: Crypto
 
 Per the directions at this document’s end, submitting this problem set

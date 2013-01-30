@@ -1,3 +1,7 @@
+# Specification and source files
+
+* [Specification](http://cdn.cs50.net/2011/fall/psets/2/pset2.pdf)
+
 # Problem Set 2: Crypto
 
 This is CS50. Harvard College Fall 2011

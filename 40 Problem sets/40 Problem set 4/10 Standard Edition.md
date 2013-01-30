@@ -1,1 +1,9 @@
+# Specification and source files
+
+* [Specification](http://cdn.cs50.net/2011/fall/psets/4/pset4.pdf)
+
+* [git](http://cdn.cs50.net/2011/fall/psets/4/pset4.git/)
+* [Index](http://cdn.cs50.net/2011/fall/psets/4/pset4/)
+* [ZIP](http://cdn.cs50.net/2011/fall/psets/4/pset4.zip)
+
 # 4

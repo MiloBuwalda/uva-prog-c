@@ -1,3 +1,11 @@
+# Specification and source files
+
+* [Specification](http://cdn.cs50.net/2011/fall/psets/5/hacker5.pdf)
+
+* [git](http://cdn.cs50.net/2011/fall/psets/5/hacker5.git/)
+* [Index](http://cdn.cs50.net/2011/fall/psets/5/hacker5/)
+* [ZIP](http://cdn.cs50.net/2011/fall/psets/5/hacker5.zip)
+
 # Problem Set 5: Forensics
 
 Per the directions at this document’s end, submitting this problem set
