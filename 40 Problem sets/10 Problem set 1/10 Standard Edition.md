@@ -114,6 +114,7 @@ elegantly, and/or logically)?
   By default, the appliance’s resolution is only 800 × 600 (i.e., 800 pixels
   wide by 600 pixels tall), in case you have a small screen. But you can
   increase it to 1024 × 768 via *Menu > Preferences > Display* if you’d like.
+  [^1]
 
   Feel free to poke around, particularly the CS50 Menu in the appliance’s
   bottom-left corner. You should find the graphical user interface (GUI), called
@@ -136,6 +137,9 @@ elegantly, and/or logically)?
   “host key” on your keyboard: on Mac OS, hit left-⌘; on Windows or Linux, hit
   right-Ctrl. Once you do, you should have full control of your trackpad or
   mouse again.
+
+  [^1]: To increase its resolution further, see
+  https://manual.cs50.net/Appliance#How_to_Change_Resolution.
 
 * Even if you just downloaded the appliance, ensure that it’s completely
   up-to-date by selecting *Menu > Administration > Software Update*. If updates
@@ -441,9 +445,9 @@ elegantly, and/or logically)?
   For instance, your program might behave as follows, whereby boldfaced text
   represents some user’s input.
   
-      jharvard@appliance (~/pset1): ./pennies Days in month: 32
-      Days in month: 31
-      Pennies on first day: 1
+      jharvard@appliance (~/pset1): ./pennies Days in month: **32**
+      Days in month: **31**
+      Pennies on first day: **1**
       $21474836.47
 
   [^4]: I’ll admit it. I had to look at a calendar.
@@ -513,7 +517,7 @@ elegantly, and/or logically)?
   greedy algorithm is one “that always takes the best immediate, or local,
   solution while finding an answer. Greedy algorithms find the overall, or
   globally, optimal solution for some optimization problems, but may find
-  less-than-optimal solutions for some instances of other problems.”6
+  less-than-optimal solutions for some instances of other problems.” [^6]
   
   What’s all that mean? Well, suppose that a cashier owes a customer some change
   and on that cashier’s belt are levers that dispense quarters, dimes, nickels,
