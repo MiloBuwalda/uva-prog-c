@@ -41,16 +41,37 @@ For questions about the website and the course materials:
 
 
 
-# Grades
+# Programmeren 1
 
-All students must ordinarily submit all nine problem sets, take both quizzes, and submit a final project in order to be eligible for a passing grade (i.e., 6-10) unless granted an exception in writing by the course’s instructor.
+Programmeren 1 is composed of the problem sets 1 through 5 and a written test.
+The final grade is determined by a weighed average of all these problem sets.
+The test has to be passed, but is not weighed in your final grade.
 
-Final grades will be determined using the following weights:
+> **Problem Sets 1-5**: 100%
+
+
+# Programmeren 2
+
+Programmeren 2 is composed of the problem sets 6 through 8, a final project and
+a written test. The final grade is determined by a weighed average of the
+problem sets 5 through 8, which count for 60% of your final grade, and the
+final project, which counts for 40% of your final grade. The test has to be
+passed, but is not weighed in your final grade.
+
+> **Problem Sets 6-8**: 60%
+> **Final Project**: 40%
+
+
+# Programmeren 1 and Programmeren 2
+
+When both Programmeren 1 and Programmeren 2 are taken, the grade is determined
+as follows:
 
 > **Problem Sets**: 80%  
 > **Final Project**: 20%
 
-Please note that you also have to do two tests. You do not have to pass the first test (for *Programmeren 1*), but it is compulsory to pass the second one (for *Programmeren 2*).
+
+# Grading
 
 Problem sets and the final project will be evaluated along axes of:
 
