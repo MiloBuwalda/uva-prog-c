@@ -1,7 +1,3 @@
-# Specification and source files
-
-* [Specification](http://cdn.cs50.net/2011/fall/psets/1/hacker1.pdf)
-
 # Problem Set 1: C - *Hacker Edition*
 
 ## Goals
@@ -412,9 +408,9 @@ elegantly, and/or logically)?
   For instance, your program might behave as follows, whereby boldfaced text
   represents some user’s input.
   
-      jharvard@appliance (~/pset1): ./pennies Days in month: **32**
-      Days in month: **31**
-      Pennies on first day: **1**
+      jharvard@appliance (~/pset1): ./pennies Days in month: 32
+      Days in month: 31
+      Pennies on first day: 1
       $21474836.47
 
   [^4]: I’ll admit it. I had to look at a calendar.
@@ -511,8 +507,7 @@ elegantly, and/or logically)?
   
   1. For the sake of discussion, let’s first make every other digit bold,
   starting with the number’s second-to-last digit:
-  
-      3**7**8**2**8**2**2**4**6**3**1**0**0**0**5
+  3**7**8**2**8**2**2**4**6**3**1**0**0**0**5
   
   Okay, let’s multiply each of the underlined digits by 2: 
 
@@ -575,12 +570,12 @@ elegantly, and/or logically)?
   passed a valid credit card number (sans hyphens); highlighted in bold is some
   user’s input.
   
-      jharvard@appliance (~/hacker1): ./credit Number: **378282246310005**
+      jharvard@appliance (~/hacker1): ./credit Number: 378282246310005
       AMEX
   
   Of course, GetLongLong itself will reject hyphens (and more) anyway:
   
-      jharvard@appliance (~/hacker1): ./credit Number: **3782-822-463-10005**
+      jharvard@appliance (~/hacker1): ./credit Number: 3782-822-463-10005
       Retry: foo
       Retry: 378282246310005
       AMEX
@@ -588,7 +583,7 @@ elegantly, and/or logically)?
   But it’s up to you to catch inputs that are not credit card numbers (e.g., my
   phone number), even if numeric:
   
-      jharvard@appliance (~/hacker1): ./credit Number: **6175230925**
+      jharvard@appliance (~/hacker1): ./credit Number: 6175230925
       INVALID
   
   Test out your program with a whole bunch of inputs, both valid and invalid.
@@ -680,31 +675,23 @@ elegantly, and/or logically)?
   terminal window’s lefthand side. Consider the sample output below; assume that
   the boldfaced text is what some user has typed.
   
-      jharvard@appliance (~/hacker1): **./chart**
+      jharvard@appliance (~/hacker1): ./chart
 
-      M spotting F: **3**
-      F spotting M: **4**
-      F spotting F: **1**
-      M spotting M: **2**
+      M spotting F: 3
+      F spotting M: 4
+      F spotting F: 1
+      M spotting M: 2
   
       Who is Spotting Whom
   
            ###
-  
            ###
-  
       ###  ###
-  
       ###  ###
-  
       ###  ###  ###
-  
       ###  ###  ###
-  
       ###  ###  ###  ###
-  
       ###  ###  ###  ###
-  
       M4F  F4M  F4F  M4M
   
   If you’d like to play with the staff’s own implementation of chart in the

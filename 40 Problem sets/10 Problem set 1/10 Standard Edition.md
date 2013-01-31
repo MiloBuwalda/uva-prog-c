@@ -445,9 +445,9 @@ elegantly, and/or logically)?
   For instance, your program might behave as follows, whereby boldfaced text
   represents some user’s input.
   
-      jharvard@appliance (~/pset1): ./pennies Days in month: **32**
-      Days in month: **31**
-      Pennies on first day: **1**
+      jharvard@appliance (~/pset1): ./pennies Days in month: 32
+      Days in month: 31
+      Pennies on first day: 1
       $21474836.47
 
   [^4]: I’ll admit it. I had to look at a calendar.
