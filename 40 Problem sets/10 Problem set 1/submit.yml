@@ -1,0 +1,5 @@
+name: pset1
+required:
+    - pennies.c
+    - greedy.c
+    - chart.c
