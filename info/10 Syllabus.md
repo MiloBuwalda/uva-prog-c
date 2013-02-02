@@ -1,12 +1,6 @@
-![CS50 banner](cs50.png)
-
-<br />
-<br />
-
-# CS50 @ Minor Programmeren
+![CS50 @ Minor Programmeren](cs50.png)
 
 *Edition: February 2013*
-
 
 CS50 is an introduction to the intellectual enterprises of computer science and
 the art of programming. This course teaches students how to think
@@ -18,60 +12,24 @@ real-world domains of biology, cryptography, finance, forensics, and gaming.
 Designed for concentrators and non-concentrators alike, with or without prior
 programming experience.
 
-# Docent
+## Staff
 
-> **Martijn Stegeman**  
-> University of Amsterdam  
-> <stegeman@uva.nl>
+To contact the course's staff about almost anything, feel free to e-mail
+<help@mprog.nl>. We'll usually respond within 24 hours.
 
+Coordinator
 
-# Staff
+> Martijn Stegeman (docent)  
+> <stegeman@uva.nl>  
+> room: C3.204  
+> phone: 525 5235
 
-To call in sick and for special appointments:
+Web site
 
-> Martijn Stegeman (docent) <br />
-> <stegeman@uva.nl> <br />
-> kamer: C3.204 <br />
-> telefoon: 525 5235
-
-For questions about the website and the course materials:
-
-> Marin van Beek <br />
+> Marin van Beek  
 > <m.vanbeek@uva.nl>
 
-
-
-# Programmeren 1
-
-Programmeren 1 is composed of the problem sets 1 through 5 and a written test.
-The final grade is determined by a weighed average of all these problem sets.
-The test has to be passed, but is not weighed in your final grade.
-
-> **Problem Sets 1-5**: 100%
-
-
-# Programmeren 2
-
-Programmeren 2 is composed of the problem sets 6 through 8, a final project and
-a written test. The final grade is determined by a weighed average of the
-problem sets 5 through 8, which count for 60% of your final grade, and the
-final project, which counts for 40% of your final grade. The test has to be
-passed, but is not weighed in your final grade.
-
-> **Problem Sets 6-8**: 60%
-> **Final Project**: 40%
-
-
-# Programmeren 1 and Programmeren 2
-
-When both Programmeren 1 and Programmeren 2 are taken, the grade is determined
-as follows:
-
-> **Problem Sets**: 80%  
-> **Final Project**: 20%
-
-
-# Grading
+## Grading
 
 Problem sets and the final project will be evaluated along axes of:
 
@@ -84,6 +42,27 @@ Know that CS50 draws quite the spectrum of students, including *those less
 comfortable*, *those more comfortable*, and those somewhere in between.  However, what ultimately matters in this course is not so much where you end up relative to your classmates but where you end up relative to yourself before you took this course.
 
 The course is *not* graded on a curve. The course does *not* have pre-determined cutoffs for final grades. Those less comfortable and somewhere in between are *not at a disadvantage* vis-à-vis those more comfortable. Each student's final grade is individually determined at term’s end after input from the assistants. Remarkable effort and upward trending do not go unnoticed.
+
+### Programmeren 1
+
+Programmeren 1 is composed of the problem sets 1 through 5 and a written test.
+The final grade is determined by a weighed average of all these problem sets.
+The test has to be passed, but is not weighed in your final grade.
+
+> **Problem Sets 1-5**: 100%
+
+### Programmeren 2
+
+Programmeren 2 is composed of the problem sets 6 through 8, a final project and
+a written test. The final grade is determined by a weighed average of the
+problem sets 5 through 8, which count for 60% of your final grade, and the
+final project, which counts for 40% of your final grade. You have to pass the 
+test, but is not weighed in your final grade.
+
+> **Problem Sets 6-8**: 60%
+> **Final Project**: 40%
+
+
 
 <!--
     # Lectures
@@ -243,7 +222,7 @@ The course is *not* graded on a curve. The course does *not* have pre-determined
     Extensions on the final project are not granted, except in cases of emergency. Technical difficulties are not considered emergencies. Problem sets' late days cannot be spent on the final project. Lateness of submissions is determined down to the minute by submissions' timestamps. Submitting more than seven minutes late is equivalent to not submitting at all.
 -->
 
-# Academic Honesty
+## Academic Honesty
 
 All work that you do toward fulfillment of this course’s expectations must be your own unless collaboration is explicitly allowed in writing by the course’s instructor. Collaboration in the completion of problem sets is not permitted unless otherwise stated by some problem set’s specification.
 
@@ -257,9 +236,8 @@ All forms of academic dishonesty are dealt with harshly. If the course refers so
 
 For more information on the specific UvA rules see: [Fraude, plagiaat en bronvermelding](http://studentenserviceplein.uva.nl/serviceplein/content/fraude-plagiaat-en-bronvermelding/fraude-en-plagiaatregeling.html) or: [Plagiarism and fraud](http://studentenserviceplein.uva.nl/en/service-point/content/plagiarism-and-fraud/plagiarism-and-fraud.html)
 
-# Books
+## Books
 
 No books are required for this course. However, we do have a number of books
 available for you to read during office hours. You are welcome to pick up one
 of these and read them as a preparation for or review of one of the lectures.
-
