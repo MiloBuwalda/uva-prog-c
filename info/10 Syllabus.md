@@ -17,17 +17,17 @@ programming experience.
 To contact the course's staff about almost anything, feel free to e-mail
 <help@mprog.nl>. We'll usually respond within 24 hours.
 
-Coordinator
+### Coordinator
 
-> Martijn Stegeman (docent)  
-> <stegeman@uva.nl>  
-> room: C3.204  
-> phone: 525 5235
+Martijn Stegeman  
+<stegeman@uva.nl>  
+room: C3.204  
+phone: 525 5235
 
-Web site
+### Course content manager
 
-> Marin van Beek  
-> <m.vanbeek@uva.nl>
+Marin van Beek  
+<m.vanbeek@uva.nl>
 
 ## Grading
 
