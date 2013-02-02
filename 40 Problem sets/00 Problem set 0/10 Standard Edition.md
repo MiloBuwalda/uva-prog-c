@@ -218,7 +218,7 @@ All students must ordinarily submit this and all other problem sets to be eligib
 
 * When done admiring your work, head on over to the URL below. 
 
-  <http://scratch.mit.edu/galleries/view/175969>
+  <http://scratch.mit.edu/galleries/view/190914>
 
   Make sure that you're still logged into MIT's website. (If you 
   see "Welcome" followed by your username atop the page, you are.) 
@@ -233,11 +233,7 @@ All students must ordinarily submit this and all other problem sets to be eligib
   more or reach out to the course's staff for assistance.
 
   If you really, really don't want your work included in the 
-  course's gallery, you may opt out of this particular step. 
-  But you must still upload your project to MIT's server
-  (by clicking *Share &rarr; Share This Project Online...*), 
-  per the previous step. And you must still "submit" your project
-  to us, per this document's end.
+  course's gallery, email Marin: <m.vanbeek@uva.nl>.
 
 ### How Stuff Works.
 
@@ -258,18 +254,6 @@ All students must ordinarily submit this and all other problem sets to be eligib
 
 ### How to Submit.
 
-* To submit this problem set, head to the URL below. 
-
-  <https://docs.google.com/spreadsheet/viewform?formkey=dHNTcWhjOUllZTZXSlU4YWhlY1NjeVE6MQ>
-
-  You'll find that a few questions await. Be extra-sure that your
-  answers are correct, particularly your email address(es) and your
-  project's URL, else we may overlook your submission! And be sure 
-  to click *Submit* on the last page of that form in order to 
-  submit this, your first CS50 problem set!
-
-* kthxbai!
-
-
-
+* You can submit this first problem set by pasting a link to your online
+  project in the submit tab.
 
