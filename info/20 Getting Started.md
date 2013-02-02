@@ -1,9 +1,9 @@
 # Where do I start?
 
-* Watch the first two lectures: [Week 0 Wednesday and Friday](lectures/week-0)
+* Watch the first two lectures: [Week 0 Wednesday and Friday](/lectures/week-0)
 
 * Start programming in Scratch in the [first problem
-  set](problem-sets/problem-set-0)!
+  set](/problem-sets/problem-set-0)!
 
 
 # Workflow
