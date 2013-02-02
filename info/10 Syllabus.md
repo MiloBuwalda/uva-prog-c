@@ -49,7 +49,7 @@ Programmeren 1 is composed of the problem sets 1 through 5 and a written test.
 The final grade is determined by a weighed average of all these problem sets.
 The test has to be passed, but is not weighed in your final grade.
 
-> **Problem Sets 1-5**: 100%
+- **Problem Sets 1-5**: 100%
 
 ### Programmeren 2
 
@@ -59,8 +59,8 @@ problem sets 5 through 8, which count for 60% of your final grade, and the
 final project, which counts for 40% of your final grade. You have to pass the 
 test, but is not weighed in your final grade.
 
-> **Problem Sets 6-8**: 60%
-> **Final Project**: 40%
+- **Problem Sets 6-8**: 60%
+- **Final Project**: 40%
 
 
 
