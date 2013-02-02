@@ -1,4 +1,4 @@
-name: pset1
+name: 1
 required:
     - pennies.c
     - greedy.c

@@ -1,0 +1,7 @@
+name: 2
+required:
+    - oldman.c
+    - caesar.c
+    - vigenere.c
+optional:
+    - crack.c

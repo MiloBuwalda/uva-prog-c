@@ -1,6 +1,6 @@
 # Specification and source files
 
-* [Specification](http://cdn.cs50.net/2011/fall/psets/1/pset1.pdf)
+* [Specification](http://cdn.cs50.net/2011/fall/psets/3/pset3.pdf)
 
 * [git](http://cdn.cs50.net/2011/fall/psets/3/pset3.git/)
 * [Index](http://cdn.cs50.net/2011/fall/psets/3/pset3/)
