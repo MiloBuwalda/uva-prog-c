@@ -1,3 +1,11 @@
+# Specification and source files
+
+* [Specification](http://cdn.cs50.net/2011/fall/psets/8/pset8.pdf)
+
+* [git](http://cdn.cs50.net/2011/fall/psets/8/pset8.git/)
+* [Index](http://cdn.cs50.net/2011/fall/psets/8/pset8/)
+* [ZIP](http://cdn.cs50.net/2011/fall/psets/8/pset8.zip)
+
 # Problem Set 8: CS50 Shuttle
 
 Per the directions at this document’s end, submitting this problem set

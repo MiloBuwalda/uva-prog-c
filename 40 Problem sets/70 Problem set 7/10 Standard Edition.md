@@ -1,3 +1,11 @@
+# Specification and source files
+
+* [Specification](http://cdn.cs50.net/2011/fall/psets/7/pset7.pdf)
+
+* [git](http://cdn.cs50.net/2011/fall/psets/7/pset7.git/)
+* [Index](http://cdn.cs50.net/2011/fall/psets/7/pset7/)
+* [ZIP](http://cdn.cs50.net/2011/fall/psets/7/pset7.zip)
+
 # Problem Set 7: C$50 Finance
 
 Per the directions at this document’s end, submitting this problem set
