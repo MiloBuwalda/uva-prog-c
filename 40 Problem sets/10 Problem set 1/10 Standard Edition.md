@@ -93,12 +93,12 @@ elegantly, and/or logically)?
   whatever computer you already have. Plus, the CS50 Appliance is pre-configured
   for CS50, so, as soon as you install it, you can hit the ground running.
 
-  So let’s get both VirtualBox and the CS50 Appliance installed. Head to
+  So let’s get both VirtualBox (for Mac users) or VMware Player (Windows and
+  Linux users) and the CS50 Appliance installed. Head to
   
-  > [https://manual.cs50.net/Appliance#VirtualBox](https://manual.cs50.net/Appliance#VirtualBox)
+  > <https://manual.cs50.net/Appliance#How_to_Install_Appliance>
   
-  where instructions await. If you run into any problems whatsoever, simply post
-  to the Appliance category at help.cs50.net!
+  where instructions await.
 
 * Once you have the CS50 Appliance installed, go ahead and start it (as by
   launching VirtualBox, clicking the appliance in VirtualBox’s lefthand menu,
@@ -111,7 +111,7 @@ elegantly, and/or logically)?
   particularly if several years old or a somewhat slow netbook, contact us and
   we’ll offer some tips on boosting its speed.*
 
-  By default, the appliance’s resolution is only 800 × 600 (i.e., 800 pixels
+  In VirtualBox the appliance’s resolution is only 800 × 600 (i.e., 800 pixels
   wide by 600 pixels tall), in case you have a small screen. But you can
   increase it to 1024 × 768 via *Menu > Preferences > Display* if you’d like.
   [^1]
@@ -125,7 +125,7 @@ elegantly, and/or logically)?
   also welcome to play with the appliance’s various features, per the
   instructions at
 
-  > [https://manual.cs50.net/Appliance#How_to_Use_Appliance](https://manual.cs50.net/Appliance#How_to_Use_Appliance)
+  > <https://manual.cs50.net/Appliance#How_to_Use_Appliance>
 
   but this problem set will explicitly mention anything that you need know or
   do.
@@ -138,8 +138,9 @@ elegantly, and/or logically)?
   right-Ctrl. Once you do, you should have full control of your trackpad or
   mouse again.
 
-  [^1]: To increase its resolution further, see
-  https://manual.cs50.net/Appliance#How_to_Change_Resolution.
+  [^1]: To further increase the resolution in VirtualBox you have to install
+  the guest additions, see </reference/general> > *Software* > *Installing guest
+  additions in Virtual Box*.
 
 * Even if you just downloaded the appliance, ensure that it’s completely
   up-to-date by selecting *Menu > Administration > Software Update*. If updates
@@ -480,12 +481,12 @@ elegantly, and/or logically)?
   pennies. How to get both those numbers? Perhaps the CS50 Library offers some
   options?
   
-  Of course, if you store the user’s amount due in an int (which is only 32 bits
-  in the CS50 Appliance), the total will be bounded by 231 – 1 pennies. (Why 231
-  and not 232? And why 1 less than 231?) Best, then, to store your total in a
-  long long, so that the user benefits from 64 bits. (Don’t worry if users’
-  totals overflow 64 bits and even go negative; consider it punishment for
-  greed!)
+  Of course, if you store the user’s amount due in an int (which is only 32
+  bits in the CS50 Appliance), the total will be bounded by $$2^31$$ – 1
+  pennies.  (Why $$2^31$$ and not $$2^32$$? And why 1 less than $$2^31$$?)
+  Best, then, to store your total in a long long, so that the user benefits
+  from 64 bits. (Don’t worry if users’ totals overflow 64 bits and even go
+  negative; consider it punishment for greed!)
   
   Do take care to format the user’s total as dollars and cents (to just 2
   decimal places), prefixed with a dollar sign, just as we did in the output
