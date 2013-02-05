@@ -335,7 +335,7 @@ to C.
   do some arithmetic with it. Ah, much better. Incidentally, you can assume that
   the user will only type integers at the prompt. You don’t have to worry about
   them typing, say, `foo`, just to be difficult; `atoi` will just return 0 in
-  such cases. Incidentally, you’ll need to #include a header file other than
+  such cases. Incidentally, you’ll need to `#include` a header file other than
   cs50.h and stdio.h in order to use of atoi without getting yelled at by gcc.
   We leave it to you to figure out which one!4
 
@@ -446,10 +446,10 @@ two-dimensional array.
 
   So that we can automate some tests of your code, your program must behave per
   the below; highlighted in bold are some sample inputs.
-  
-  jharvard@appliance (~/pset2): ./vigenere 
-  FOOBAR HELLO, WORLD
-  MSZMO, NTFZE
+      
+      jharvard@appliance (~/pset2): ./vigenere 
+      FOOBAR HELLO, WORLD
+      MSZMO, NTFZE
 
   How to test your program, besides predicting what it should output, given
   some input? Well, recall that we’re nice people. And so we’ve written a
