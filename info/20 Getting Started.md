@@ -5,6 +5,11 @@
 * Start programming in Scratch in the [first problem
   set](/problem-sets/problem-set-0)!
 
+## Can't log in on a linux pc?
+
+* Send an email to Marin van Beek <m.vanbeek@uva.nl>, explaining that you
+  cannot log in.
+
 
 # Workflow
 
