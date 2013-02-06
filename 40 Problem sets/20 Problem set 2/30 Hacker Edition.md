@@ -14,7 +14,7 @@
 
 ## Recommended Reading.
 
-* Sections 11 – 14 and 39 of http://www.howstuffworks.com/c.htm.
+* Sections 11 – 14 and 39 of <http://www.howstuffworks.com/c.htm>.
 
 * Chapters 7, 8, and 10 of Programming in C.
 

@@ -41,7 +41,7 @@ Recommended Reading.1
 
 * http://en.wikipedia.org/wiki/Jpg
 
-diff hacker5.pdf hacker5.pdf.
+## Differences with the normal edition
 
 * Hacker Edition challenges you to reduce (and enlarge) BMPs.
 
