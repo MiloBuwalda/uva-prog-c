@@ -18,19 +18,19 @@
 
 * Help Mr. Boddy.
 
-## Recommended Reading. [^1]
+## Recommended Reading.[^1]
 
-* http://www.cprogramming.com/tutorial/cfileio.html
+* <http://www.cprogramming.com/tutorial/cfileio.html>
 
 * Chapters 18, 24, 25, 27, and 28 of Absolute Beginner’s Guide to C
 
 * Chapters 9, 11, 14, and 16 of Programming in C
 
-* http://en.wikipedia.org/wiki/BMP_file_format
+* <http://en.wikipedia.org/wiki/BMP_file_format>
 
-* http://en.wikipedia.org/wiki/Hexadecimal
+* <http://en.wikipedia.org/wiki/Hexadecimal>
 
-* http://en.wikipedia.org/wiki/Jpg
+* <http://en.wikipedia.org/wiki/Jpg>
 
 [^1]: The Wikipedia articles are a bit dense; feel free to skim or skip!
 
@@ -116,7 +116,7 @@
 
   ![whodunit](whodunit.png)!
 
-[^4]: Realize that this BMP is in color even though you might have printed this document in black and white. 4 < 18
+[^4]: Realize that this BMP is in color even though you might have printed this document in black and white.
 
   You long ago threw away that piece of red plastic from childhood that would
   solve this mystery for you, and so you must attack it as a computer scientist
@@ -461,7 +461,7 @@
 
 * Well that was fun. Bit late for Mr. Boddy, though.
 
-  Let’s have you write more than, what, two lines of code? Implement now in
+* Let’s have you write more than, what, two lines of code? Implement now in
   `resize.c` a program called `resize` that resizes 24-bit uncompressed BMPs by a
   factor of `n`. Your program should accept exactly three command-line arguments,
   per the below usage, whereby the first (`n`) must be a positive integer less
@@ -511,7 +511,9 @@
 
 [^18]: As we do in the Hacker Edition!
 
-[^19]: But we do expect you to support n = 1, the result of which should be an outfile with dimensions identical to infile’s. 20 We’ve not made solutions available for this problem set’s other programs, lest they spoil the forensic fun.
+[^19]: But we do expect you to support n = 1, the result of which should be an outfile with dimensions identical to infile’s.
+
+[^20]: We’ve not made solutions available for this problem set’s other programs, lest they spoil the forensic fun.
 
 [^21]: Computer Science Investigation
 
@@ -534,7 +536,7 @@
 
   from first byte to fourth byte, left to right. Odds are, if you find one of
   these patterns of bytes on a disk known to store photos (e.g., my CF card),
-  they demark the start of a JPEG.23
+  they demark the start of a JPEG.[^23]
 
   Fortunately, digital cameras tend to store photographs contiguously on CF
   cards, whereby each photo is stored immediately after the previously taken
