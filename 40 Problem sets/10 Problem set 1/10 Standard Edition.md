@@ -400,7 +400,7 @@ elegantly, and/or logically)?
  writing hello.c, given its brevity, but you’re about to start writing programs
  where you’ll need to make some stylistic decisions.
  
- Before you do, read over the [Style Guide](reference/general).
+ Before you do, read over the [Style Guide](/reference/general).
  
  Inasmuch as style is, to some extent, a matter of personal preference, CS50
  doesn’t mandate that you mimic the styles that you see in lecture and section.
