@@ -10,6 +10,15 @@
 * Send an email to Marin van Beek <m.vanbeek@uva.nl>, explaining that you
   cannot log in.
 
+## Working on UvA lab machines
+
+Before you start working on problem set 1, execute the following command in the
+terminal of a linux-machine on the UvA:
+
+	/home/mstegem1/soft/bin/cs50
+
+You only have to do this **once**.
+
 
 # Workflow
 
@@ -50,17 +59,18 @@ If the assignment was a breeze, we strongly urge you to do the hacker edition
 of the assignment. This edition provides an extra challenge for those *more
 comfortable*.
 
+## Submitting problem sets
+
+Once you're done with your problem set you can submit it using the submit tab,
+that you can find on the page of that problem set. If a .tar.gz file is
+required, use the following commands to create this archive:
+
+    make clean
+    tar -xzvf psetX.tar.gz *
+
 ## Test preparation
 
 To prepare for the tests, you should regularly reread the lecture notes and ask
 the assistants to help you if anything is unclear, e.g. pointers in C.
 
-## Working on UvA lab machines
-
-Before you start working on problem set 1, execute the following command in the
-terminal of a linux-machine on the UvA:
-
-	/home/mstegem1/soft/bin/cs50
-
-You only have to do this **once**.
 
