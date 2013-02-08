@@ -611,7 +611,7 @@
   Just be careful with that -f switch, as it “forces” deletion. 
   
   
-<--
+<!--
 ## I Saw You Harvard.
 
 * And now the real fun begins. You and your section are hereby challenged to
