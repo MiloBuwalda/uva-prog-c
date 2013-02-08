@@ -66,7 +66,7 @@ that you can find on the page of that problem set. If a .tar.gz file is
 required, use the following commands to create this archive:
 
     make clean
-    tar -xzvf psetX.tar.gz *
+    tar -czvf psetX.tar.gz *
 
 ## Test preparation
 
