@@ -6,4 +6,3 @@
 * [Index](http://cdn.cs50.net/2011/fall/psets/4/pset4/)
 * [ZIP](http://cdn.cs50.net/2011/fall/psets/4/pset4.zip)
 
-# 4

@@ -1,6 +1,6 @@
 # 8-week schedule for hi-speed students
 
-*NB This schedule could be subject to change.*
+**All deadlines are on a Thursday!**
 
 ## Week 1.
 

@@ -3,7 +3,7 @@
 ### Virtual Machine
 
 To avoid having to install all necessary software yourself you can do the assignments in an already prepared Virtual Machine (VM). The VM for this course can be found here:
-<http://mirror.cs50.net/appliance/2.3/cs50-appliance-2.3-14-ovf.zip>
+<http://mirror.cs50.net/appliance50/17/i386/appliance50-17-9-ovf.zip>
 
 ### Virtual Box
 *NB: The information below is work in progress*
@@ -12,7 +12,7 @@ To avoid having to install all necessary software yourself you can do the assign
 e.g. [VMWare Player](http://www.vmware.com/products/player/)*
 
 * Download and install Virtual Box and all it's components: <https://www.virtualbox.org/wiki/Downloads>
-* Create a new VM (Linux) from an existing disk, with at least 512mb memory. There is a special VM for CS50; version 2.3 of this disk (or as they call it: appliance) can be found here: <http://mirror.cs50.net/appliance/2.3/cs50-appliance-2.3-14-ovf.zip>. Remember to unpack this zip file.
+* Create a new VM (Linux) from an existing disk, with at least 512mb memory. There is a special VM for CS50; version 2.3 of this disk (or as they call it: appliance) can be found here: <http://mirror.cs50.net/appliance50/17/i386/appliance50-17-9-ovf.zip>. Remember to unpack this zip file.
 * Now you can start the VM, but the resolution will not match the native resolution of your computer. To solve this problem, you have to install guest additions	for Linux (the OS of the VM). You can find full instructions on how to do this here, but the instructions below should be sufficient: <http://www.virtualbox.org/manual/ch04.html#idp18411760>
 
 ##### Installing guest additions in Virtual Box

@@ -58,10 +58,10 @@ All students must ordinarily submit this and all other problem sets to be eligib
   directions. If unsure how to install, don't hesitate to post a 
   question on this problem set's web page!
 
-* Next head to <http://cs50.mprog.nl/page/3> and follow the Source Code
-  link to Scratch Scratch Revolution by Ann Chi '08 (aka lindorniel). 
-  You should find yourself at MIT's website with Ann's project 
-  (screenshot below) embedded in your browser.
+* Next head to <http://scratch.mit.edu/projects/lindorniel/40241> to Scratch
+  Scratch Revolution by Ann Chi '08 (aka lindorniel). 
+  You should find yourself at MIT's website with Ann's project (screenshot
+  below) embedded in your browser.
 
   If you do not see Ann’s project, you may need to download and 
   install a "Java Runtime Environment" (aka "Java Virtual Machine" or 

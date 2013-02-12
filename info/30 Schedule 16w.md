@@ -1,5 +1,7 @@
 # 16-week schedule
 
+**All deadlines are on a Thursday!**
+
 We have listed the activities that you should have done **before** the lab
 session.  And remember to harass your assistant with difficult questions during
 the lab session!
@@ -18,7 +20,6 @@ the lab session!
 * deadline: pset 0
 
 ## Week 3.
-
 
 * hacker edition bekijken
 * lecture 2 Monday
