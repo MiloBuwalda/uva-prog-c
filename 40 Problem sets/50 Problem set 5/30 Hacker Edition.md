@@ -947,24 +947,24 @@ in the JPEGs you recover; they should still be viewable.
 
 Now, I only have one CF card, but there are a whole lot of you! And so I’ve
 gone ahead and created a “forensic image” of the card, storing its contents,
-byte after byte, in a file called card.raw in /home/cs50/hacker5/. So that you
+byte after byte, in a file called [`card.raw` (download)](card.raw). So that you
 don’t waste time iterating over millions of 0s unnecessarily, I’ve only imaged
 the first few megabytes CF card. Since you’re only going to be reading it, you
 don’t need your own copy of this forensic image. (Might as well save space!)
 Simply open our copy with fopen via its full path, as in the below.23
 
-FILE *fp = fopen("/home/cs50/hacker5/card.raw", "r");
+FILE *fp = fopen("card.raw", "r");
 
 You should find that this image contains 37 JPEGs.
 
 Notice, incidentally, that ~/hacker5/jpg/ contains only recover.c, but it's
 devoid of any code. (We leave it to you to decide how to implement and compile
-recover!) For simplicity, you may hard-code the path to card.raw in your
+recover!) For simplicity, you may hard-code the path to `card.raw` in your
 program; your program need not accept any command- line arguments. When
 executed, though, your program should recover every one of the JPEGs from
-card.raw, storing each as a separate file in your current working directory.
-Your program should number the files it outputs by naming each ###.jpg, where
-### is three-digit decimal
+`card.raw`, storing each as a separate file in your current working directory.
+Your program should number the files it outputs by naming each `###.jpg`,
+where `###` is three-digit decimal.
 
 22 To be sure, you might encounter these patterns on some disk purely by
 chance, so data recovery isn’t an exact science. 23 It’s fine to hard-code
