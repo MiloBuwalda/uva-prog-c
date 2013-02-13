@@ -2,29 +2,29 @@
 
 *Edition: February 2013*
 
-CS50 is an introduction to the intellectual enterprises of computer science and
-the art of programming. This course teaches students how to think
+CS50 is an introduction to the intellectual enterprises of computer science
+and the art of programming. This course teaches students how to think
 algorithmically and solve problems efficiently. Topics include abstraction,
 algorithms, encapsulation, data structures, databases, memory management,
-security, software development, virtualization, and websites. Languages include
-C, PHP, and JavaScript plus SQL, CSS, and HTML. Problem sets inspired by
-real-world domains of biology, cryptography, finance, forensics, and gaming.
-Designed for concentrators and non-concentrators alike, with or without prior
-programming experience.
+security, software development, virtualization, and websites. Languages
+include C, PHP, and JavaScript plus SQL, CSS, and HTML. Problem sets inspired
+by real-world domains of biology, cryptography, finance, forensics, and
+gaming. Designed for concentrators and non-concentrators alike, with or
+without prior programming experience.
 
 ## Staff
 
 To contact the course's staff about almost anything, feel free to e-mail
 <help@mprog.nl>. We'll usually respond within 24 hours.
 
-### Coordinator
+### Course coordinator
 
 Martijn Stegeman  
 <stegeman@uva.nl>  
 room: C3.204  
 phone: 525 5235
 
-### Course content manager
+### Course maintainer
 
 Marin van Beek  
 <m.vanbeek@uva.nl>
@@ -39,24 +39,32 @@ Problem sets and the final project will be evaluated along axes of:
 * Style.
 
 Know that CS50 draws quite the spectrum of students, including *those less
-comfortable*, *those more comfortable*, and those somewhere in between.  However, what ultimately matters in this course is not so much where you end up relative to your classmates but where you end up relative to yourself before you took this course.
+comfortable*, *those more comfortable*, and those somewhere in between.
+However, what ultimately matters in this course is not so much where you end
+up relative to your classmates but where you end up relative to yourself
+before you took this course.
 
-The course is *not* graded on a curve. The course does *not* have pre-determined cutoffs for final grades. Those less comfortable and somewhere in between are *not at a disadvantage* vis-à-vis those more comfortable. Each student's final grade is individually determined at term’s end after input from the assistants. Remarkable effort and upward trending do not go unnoticed.
+The course is *not* graded on a curve. The course does *not* have
+pre-determined cutoffs for final grades. Those less comfortable and somewhere
+in between are *not at a disadvantage* vis-à-vis those more comfortable. Each
+student's final grade is individually determined at term’s end after input
+from the assistants. Remarkable effort and upward trending do not go
+unnoticed.
 
-### Programmeren 1
+### Part 1
 
-Programmeren 1 is composed of the problem sets 1 through 5 and a written test.
-The final grade is determined by a weighed average of all these problem sets.
-The test has to be passed, but is not weighed in your final grade.
+This part is composed of the problem sets 0 through 4 and a written test. The
+final grade is determined by a weighed average of all these problem sets. The
+test has to be passed, but is not weighed in your final grade.
 
-- **Problem Sets 1-4**: 100%
+- **Problem Sets 0-4**: 100%
 
-### Programmeren 2
+### Part 2
 
-Programmeren 2 is composed of the problem sets 6 through 8, a final project and
-a written test. The final grade is determined by a weighed average of the
+This part is composed of the problem sets 5 through 7, a final project and a
+written test. The final grade is determined by a weighed average of the
 problem sets 5 through 8, which count for 60% of your final grade, and the
-final project, which counts for 40% of your final grade. You have to pass the 
+final project, which counts for 40% of your final grade. You have to pass the
 test, but is not weighed in your final grade.
 
 - **Problem Sets 5-7**: 60%
@@ -135,10 +143,6 @@ test, but is not weighed in your final grade.
 
     On Sunday nights from 7:00pm until 8:30pm, the teaching fellows hold a "walkthrough" for the current week’s problem set during which you receive direction on where to begin and how to approach the week's challenges.
     Each walkthrough is filmed and made available within 24 hours in streaming and downloadable formats (MP3 and MP4). You are expected to attend or watch walkthroughs before asking questions about problem sets.
-
-    # Office Hours
-
-    Office hours are opportunities for one-on-one assistance with problem sets alongside the course's teaching fellows and course assistants.
 
     # Problem Sets
 
@@ -224,17 +228,7 @@ test, but is not weighed in your final grade.
 
 ## Academic Honesty
 
-All work that you do toward fulfillment of this course’s expectations must be your own unless collaboration is explicitly allowed in writing by the course’s instructor. Collaboration in the completion of problem sets is not permitted unless otherwise stated by some problem set’s specification.
-
-Viewing or copying another individual’s work (even if left by a printer, stored in an executable directory, or accidentally shared in the course’s virtual terminal room) or lifting material from a book, website, or other source—even in part—and presenting it as your own constitutes academic dishonesty, as does showing or giving your work, even in part, to another student or soliciting the work of another individual. Similarly is dual submission academic dishonesty: you may not submit the same or similar work to this course that you have submitted or will submit to another. Nor may you provide or make available solutions to problem sets to individuals who take or may take this course in the future. Moreover, submission of any work that you intend to use outside of the course (e.g., for a job) must be approved by the staff.
-
-You are welcome to discuss the course’s material with others in order to better understand it. You may even discuss problem sets with classmates, but you may not share code. In other words, you may communicate with classmates in English, but you may not communicate in, say, C. If in doubt as to the appropriateness of some discussion, contact the course’s instructor.
-
-You may turn to the Web for instruction beyond the course’s lectures and sections, for references, and for solutions to technical difficulties, but not for outright solutions to problems on problem sets or your own final project. However, failure to cite (as with comments) the origin of any code or technique that you do discover outside of the course’s lectures and sections (even while respecting these constraints) and then integrate into your own work may be considered academic dishonesty.
-
-All forms of academic dishonesty are dealt with harshly. If the course refers some matter to the Administrative Board and the outcome for some student is Admonish, Probation, Requirement to Withdraw, or Recommendation to Dismiss, the course reserves the right to impose local sanctions on top of that outcome for that student that may include, but not be limited to, a failing grade for work submitted or for the course itself.
-
-For more information on the specific UvA rules see: [Fraude, plagiaat en bronvermelding](http://studentenserviceplein.uva.nl/serviceplein/content/fraude-plagiaat-en-bronvermelding/fraude-en-plagiaatregeling.html) or: [Plagiarism and fraud](http://studentenserviceplein.uva.nl/en/service-point/content/plagiarism-and-fraud/plagiarism-and-fraud.html)
+For more information on the UvA-specific rules, see: [Fraude, plagiaat en bronvermelding](http://studentenserviceplein.uva.nl/serviceplein/content/fraude-plagiaat-en-bronvermelding/fraude-en-plagiaatregeling.html) or: [Plagiarism and fraud](http://studentenserviceplein.uva.nl/en/service-point/content/plagiarism-and-fraud/plagiarism-and-fraud.html)
 
 ## Books
 

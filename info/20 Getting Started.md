@@ -1,76 +1,64 @@
-# Where do I start?
+# Getting Started #
 
-* Watch the first two lectures: [Week 0 Wednesday and Friday](/lectures/week-0)
+This is quite the course, so let's start simple.
 
-* Start programming in Scratch in the [first problem
-  set](/problem-sets/problem-set-0)!
+- Read the Syllabus.
+- Read about Acing this course.
+- Have a good look at the 8-week or 16-week schedule.
+- Watch the first lecture.
+- Start your first assignment!
 
-## Can't log in on a linux pc?
+## Using Linux machines
 
-* Send an email to Marin van Beek <m.vanbeek@uva.nl>, explaining that you
-  cannot log in.
+Linux computers are available at the Faculty of Science. It is very well
+possible that you are not yet allowed to login. If you are not using the CS50
+Appliance, you will need to be able to login by Problem Set 1!
 
-## Working on UvA lab machines
+If needed, please send an email to <help@mprog.nl>, explaining that you cannot
+log in.
 
-Before you start working on problem set 1, execute the following command in the
-terminal of a linux-machine on the UvA:
+Before you start working on Problem Set 1, execute the following command in
+the terminal of those computers:
 
 	/home/mstegem1/soft/bin/cs50
 
 You only have to do this **once**.
 
+## Submitting your programs ##
 
-# Workflow
-
-## Lecture notes
-
-Start by reading the lecture notes. These can be found on the page of that
-specific lecture. These give you a good indication of what you should know to
-finish a problem set.
-
-## Lecture
-
-Now you can watch the lecture. Do this before or on your way to the lab
-sessions, so that you can spend your lab time, when you can ask questions, on
-the assignments.
-
-## Problem set
-
-Read the problem set specification completely and try to work out by hand, e.g.
-with pen and paper, how you would perform the tasks of that problem set before
-you start writing code.
-
-## *(Sections)*
-
-If you haven't fully grasped the lecture, the sections of the following week
-are a more in depth discussion of the material discussed in that lecture. The
-sections also provide some extra examples that might help you to get started on
-your problem set.
-
-## *(Walkthrough)*
-
-If after all of this you are still unsure where to start with your problem set,
-you can watch the walkthrough. You can find the walkthrough in the second tab
-of the problem set.
-
-## *(Hacker Edition)*
-
-If the assignment was a breeze, we strongly urge you to do the hacker edition
-of the assignment. This edition provides an extra challenge for those *more
-comfortable*.
-
-## Submitting problem sets
-
-Once you're done with your problem set you can submit it using the submit tab,
-that you can find on the page of that problem set. If a .tar.gz file is
-required, use the following commands to create this archive:
+Once you're done with your problem set, you can submit it using the submit tab
+that you'll find on the page of that problem set. If a .tar.gz file is
+required, you can use the following commands to create this archive:
 
     make clean
     tar -czvf psetX.tar.gz *
 
-## Test preparation
+## Transitioning from other courses ##
 
-To prepare for the tests, you should regularly reread the lecture notes and ask
-the assistants to help you if anything is unclear, e.g. pointers in C.
+### Transitioning from Java
 
+If you have done a 6 credit Java course you can start like this. Note that you
+cannot do this program if you already have a web programming course in your
+major!
 
+* Read "[C for Java programmers](http://faculty.ksu.edu.sa/jebari_chaker/papers/C_for_Java_Programmers.pdf)".
+* Watch the Week 4 Wednesday lecture.
+* Watch the Week 4 section.
+* Read problem set 5, mark things you don't understand.
+* Watch the Week 5 lectures.
+* Try starting on pset 5.
+* Watch the pset 5 walkthrough.
+
+### Transitioning from MIT 6.00 in Python ###
+
+If you've done the first part of the MIT 600 course, it's best to do a few
+more problem sets from that course, and then return here for pset7.
+
+* Do MIT problem sets [5 and 6](http://py.mprog.nl/).
+* Come back here.
+* Start with the lectures from week 8.
+* Start with Problem Set 7.
+
+Mind that you take about one week per problem set, be it from 600 or CS50, so
+you'll have plenty of time left to do a nice project in the second part of
+this course.
