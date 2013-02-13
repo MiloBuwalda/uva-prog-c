@@ -1,12 +1,21 @@
-# Specification and source files
+# Problem Set 6: Mispellings
 
-* [Specification](http://cdn.cs50.net/2011/fall/psets/6/pset6.pdf)
+Editing of this pset is not finished. Please download the PDF [specification](http://cdn.cs50.net/2011/fall/psets/6/pset6.pdf).
+
+## Files
+
+### Source code
 
 * [git](http://cdn.cs50.net/2011/fall/psets/6/pset6.git/)
 * [Index](http://cdn.cs50.net/2011/fall/psets/6/pset6/)
 * [ZIP](http://cdn.cs50.net/2011/fall/psets/6/pset6.zip)
 
-# Problem Set 6: Mispellings
+### Dictionaries
+
+* [Large dictionary](large)
+* [Small dictionary](small)
+
+## Instructions
 
 Per the directions at this document’s end, submitting this problem set
 involves submitting source code via submit50 as well as filling out a
