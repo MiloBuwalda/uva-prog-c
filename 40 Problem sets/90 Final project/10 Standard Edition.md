@@ -1,9 +1,6 @@
-# Problem Set <number>: <name>
-
-## Source code
-
-* [Index]()
-* [ZIP]()
+# Final Project
 
 ## Specification
+
+* [Final Project](ftp://anonymous@ftp.cs50.net/cdn.cs50.net/2011/fall/projects/project.pdf)
 
