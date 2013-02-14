@@ -1,14 +1,14 @@
 # 16-week schedule
 
-**All deadlines are on a Thursday!**
-
 We have listed the activities that you should have done **before** the lab
 session.  And remember to harass your assistant with difficult questions during
 the lab session!
 
+Note: all deadlines are on Thursdays!
+
 ## Week 1.
 
-* Lecture 0 Wednesday and Friday, start with Scratch
+* Lecture 0 [Wednesday and Friday](/lectures/week-0), start with [Scratch](/problem-sets/problem-set-0)
 * continue with Scratch
 * lecture 1 Wednesday
 * deadline: None
