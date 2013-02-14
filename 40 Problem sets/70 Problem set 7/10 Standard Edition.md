@@ -6,6 +6,32 @@
 * [Index](http://cdn.cs50.net/2011/fall/psets/7/pset7/)
 * [ZIP](http://cdn.cs50.net/2011/fall/psets/7/pset7.zip)
 
+## Working on a UvA lab machine
+
+* Get a websec.science.uva.nl database: email Marin <m.vanbeek@uva.nl> with
+  your UvAnetID
+
+* Connect to websec.science.uva.nl via *Places > Connect to server* and go to
+  the folder `/home/<your uvanetid>`.
+
+* Create a new folder called public_html and put all files of the assignment in
+  here.
+
+* To `chmod` files and folders connect to `websec.science.uva.nl` in a terminal:
+
+        ssh websec.science.uva.nl
+
+  Then, for example, make the public_html executable:
+
+        chmod a+x public_html
+
+  Now all files inside public_html can be accessed at
+  websec.science.uva.nl/~<your uvanetid>/file_name.
+
+* PHP MyAdmin can be found here: websec.science.uva.nl/phpmyadmin. Here you log
+  in with the credentials that Marin gave you.
+
+
 # Problem Set 7: C$50 Finance
 
 Per the directions at this document’s end, submitting this problem set
