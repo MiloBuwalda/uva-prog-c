@@ -6,6 +6,8 @@
 * [Index](http://cdn.cs50.net/2011/fall/psets/5/pset5/)
 * [ZIP](http://cdn.cs50.net/2011/fall/psets/5/pset5.zip)
 
+* [card.raw](card.raw)
+
 # Problem Set 5: Forensics
 
 ## Goals.
