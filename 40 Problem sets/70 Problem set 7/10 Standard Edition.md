@@ -262,8 +262,8 @@ appropriateness of some discussion, contact the staff.
 * UvA lab: You will edit the files that reside on the server on your UvA lab
   machine. You can get access to these files by opening a file browser that
   connects to `websec.science.uva.nl` via *Places > Connect to server*. Now
-  select SSH and go to
-  the folder `/home/<your uvanetid>`
+  select that you want to connect via SSH enter the folder `/home/<your
+  uvanetid>`
 
 * It’s time to make yourself a home page! Create a file called `index.html` with
   gedit, save it in ~/public_html, and fill that file with valid HTML (version
