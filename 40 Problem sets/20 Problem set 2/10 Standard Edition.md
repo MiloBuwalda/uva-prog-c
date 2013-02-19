@@ -363,7 +363,6 @@ to C.
 
       jharvard@appliance (~/pset2): ./caesar 13 
       Be sure to drink your Ovaltine!
-
       Or fher gb qevax lbhe Binygvar!
 
 [^4]: https://www.cs50.net/resources/cppreference.com/stdstring/atoi.html
@@ -442,8 +441,8 @@ two-dimensional array.
   So that we can automate some tests of your code, your program must behave per
   the below; highlighted in bold are some sample inputs.
       
-      jharvard@appliance (~/pset2): ./vigenere 
-      FOOBAR HELLO, WORLD
+      jharvard@appliance (~/pset2): ./vigenere FOOBAR 
+      HELLO, WORLD
       MSZMO, NTFZE
 
   How to test your program, besides predicting what it should output, given
