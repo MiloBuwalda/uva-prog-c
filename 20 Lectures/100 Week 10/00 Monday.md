@@ -7,6 +7,8 @@
 
 [Slides](http://cdn.cs50.net/2011/fall/lectures/10/week10m.pdf)
 
+[Notes](http://cdn.cs50.net/2011/fall/lectures/10/week10m.pdf)
+
 
 ## Announcements and Demos (0:00–4:00)
 

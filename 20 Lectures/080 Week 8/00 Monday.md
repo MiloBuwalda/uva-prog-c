@@ -8,6 +8,8 @@
 
 [Slides](http://cdn.cs50.net/2011/fall/lectures/8/week8m.pdf)
 
+[Notes](http://cdn.cs50.net/2011/fall/lectures/8/week8m.pdf)
+
 
 ## Announcements and Demos (0:00–11:00)
 
