@@ -94,31 +94,32 @@ For those who like books anyway, here are some good suggestions:
 
 > **For Those Less Comfortable**
 > 
-> Absolute Beginner’s Guide to C, Second Edition
-> Greg Perry
-> Sams Publishing, 1994
+> Absolute Beginner’s Guide to C, Second Edition  
+> Greg Perry  
+> Sams Publishing, 1994  
 > ISBN 0-672-30510-0
 > 
 > **For Those More Comfortable**
-> Programming in C, Third Edition
-> Stephen Kochan
-> Sams Publishing, 2004
+> 
+> Programming in C, Third Edition  
+> Stephen Kochan  
+> Sams Publishing, 2004  
 > ISBN 0-672-32666-3
 
 The book below is recommended for those interested in understanding how their
 own computers work for personal edification.
 
-> How Computers Work, Ninth Edition Ron White
-> Que Publishing, 2007
+> How Computers Work, Ninth Edition Ron White  
+> Que Publishing, 2007  
 > ISBN 0-7897-3613-6
 
 This last book below is recommended for aspiring hackers, those interested in
 programming tricks and low-level optimization of code for applications beyond
 the scope of this course.
 
-> Hacker's Delight
-> Henry S. Warren Jr.
-> Addison-Wesley, 2003
+> Hacker's Delight  
+> Henry S. Warren Jr.  
+> Addison-Wesley, 2003  
 > ISBN 0-201-91465-4
 
 ## Course contents
