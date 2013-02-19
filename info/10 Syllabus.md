@@ -39,8 +39,14 @@ None -- definitely no programming experience needed.
 
 ## Expectations
 
-You are expected to watch all lectures and sections, submit eight problem
-sets, take two quizzes, and submit a final project.
+You are expected to watch all lectures and sections (but not in the lab),
+submit eight problem sets, take two quizzes, and submit a final project.
+
+## Getting help
+
+You are required to work in the lab for some amount of time during the week.
+During these hours, the teaching assistants are available to answer any
+questions you may have about the lectures, quizzes or problem sets.
 
 ## Grades
 
@@ -72,8 +78,8 @@ Problem sets and the final project will be evaluated along axes of:
 * Design and 
 * Style.
 
-Know that CS50 draws quite the spectrum of students, including *those less
-comfortable*, *those more comfortable*, and those somewhere in between.
+Know that this course draws quite the spectrum of students, including *those
+less comfortable*, *those more comfortable*, and those somewhere in between.
 However, what ultimately matters in this course is not so much where you end
 up relative to your classmates but where you end up relative to yourself
 before you took this course.
