@@ -31,6 +31,16 @@ Marin van Beek
 
 ## Grading
 
+You will receive a final grade for the course if:
+
+* you've attended all lab sessions during the course;
+* you've submitted every problem set working and on time;
+* you've passed the quizzes.
+
+Should you not have succeeded in doing one of those, we cannot give you a
+final grade. Still, we are most certain that every student should be able to
+pass the course!
+
 Problem sets and the final project will be evaluated along axes of:
 
 * Scope, 
