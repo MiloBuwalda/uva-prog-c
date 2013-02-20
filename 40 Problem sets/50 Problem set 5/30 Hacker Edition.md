@@ -1,12 +1,4 @@
-# Specification and source files
-
-* [Specification](http://cdn.cs50.net/2011/fall/psets/5/hacker5.pdf)
-
-* [git](http://cdn.cs50.net/2011/fall/psets/5/hacker5.git/)
-* [Index](http://cdn.cs50.net/2011/fall/psets/5/hacker5/)
-* [ZIP](http://cdn.cs50.net/2011/fall/psets/5/hacker5.zip)
-
-# Problem Set 5: Forensics
+# Hacker Edition.
 
 ## Goals.
 
@@ -32,12 +24,19 @@
 
 * <http://en.wikipedia.org/wiki/Jpg>
 
-## Differences with the normal edition
+## Differences with the normal edition.
 
 * Hacker Edition challenges you to reduce (and enlarge) BMPs.
 
 [^1]: The Wikipedia articles are a bit dense; feel free to skim or skip!
 
+# Specification and source files.
+
+* [Specification](http://cdn.cs50.net/2011/fall/psets/5/hacker5.pdf)
+
+* [git](http://cdn.cs50.net/2011/fall/psets/5/hacker5.git/)
+* [Index](http://cdn.cs50.net/2011/fall/psets/5/hacker5/)
+* [ZIP](http://cdn.cs50.net/2011/fall/psets/5/hacker5.zip)
 
 ## Getting Started.
 
