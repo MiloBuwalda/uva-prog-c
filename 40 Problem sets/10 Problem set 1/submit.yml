@@ -3,3 +3,5 @@ required:
     - pennies.c
     - greedy.c
     - chart.c
+optional:
+    - credit.c
