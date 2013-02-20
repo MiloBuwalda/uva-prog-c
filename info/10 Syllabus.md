@@ -42,11 +42,10 @@ None -- definitely no programming experience needed.
 You are expected to watch all lectures and sections (but not in the lab),
 submit eight problem sets, take two quizzes, and submit a final project.
 
-## Getting help
-
-You are required to work in the lab for some amount of time during the week.
-During these hours, the teaching assistants are available to answer any
-questions you may have about the lectures, quizzes or problem sets.
+You are required to work in the lab for some amount of time during the week,
+as agreed upon with the course coordinator. During these hours, the teaching
+assistants are available to answer any questions you may have about the
+lectures, quizzes or problem sets.
 
 ## Grades
 
