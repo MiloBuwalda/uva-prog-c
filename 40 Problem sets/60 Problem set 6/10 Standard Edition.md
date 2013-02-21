@@ -12,8 +12,8 @@ Editing of this pset is not finished. Please download the PDF [specification](ht
 
 ### Dictionaries
 
-* [Large dictionary](large)
-* [Small dictionary](small)
+* [Large dictionary](dictionaries/large)
+* [Small dictionary](dictionaries/small)
 
 ## Instructions
 
