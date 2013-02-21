@@ -1,14 +1,4 @@
-# Specification and source files
-
-* [Specification](http://cdn.cs50.net/2011/fall/psets/5/pset5.pdf)
-
-* [git](http://cdn.cs50.net/2011/fall/psets/5/pset5.git/)
-* [Index](http://cdn.cs50.net/2011/fall/psets/5/pset5/)
-* [ZIP](http://cdn.cs50.net/2011/fall/psets/5/pset5.zip)
-
-* [card.raw](card.raw)
-
-# Problem Set 5: Forensics
+# Standard Edition.
 
 ## Goals.
 
@@ -36,6 +26,15 @@
 
 [^1]: The Wikipedia articles are a bit dense; feel free to skim or skip!
 
+# Specification and source files.
+
+* [Specification](http://cdn.cs50.net/2011/fall/psets/5/pset5.pdf)
+
+* [git](http://cdn.cs50.net/2011/fall/psets/5/pset5.git/)
+* [Index](http://cdn.cs50.net/2011/fall/psets/5/pset5/)
+* [ZIP](http://cdn.cs50.net/2011/fall/psets/5/pset5.zip)
+
+* [card.raw](card.raw)
 
 ## Getting Started.
 
