@@ -453,10 +453,10 @@
   (Know that you can force your program to quit by hitting `ctrl-c`.) Be sure
   that you (and we) cannot crash your program, as by providing bogus tile
   numbers.  And know that, much like you automated input into find, so can you
-  automate execution of this game. In fact, in `~cs50/pset3/` are `3x3.txt` and
-  `4x4.txt`, winning sequences of moves for a 3 × 3 board and a 4 × 4 board,
-  respectively.  To test your program with, say, the first of those inputs,
-  execute the below.
+  automate execution of this game. In fact [3x3.txt](3x3.txt) and
+  [4x4.txt](4x4.txt) are winning sequences of moves for a 3 × 3 board and a 4 ×
+  4 board, respectively.  To test your program with, say, the first of those
+  inputs, execute the below.
 
       ./fifteen 3 < ~cs50/pset3/3x3.txt
 
