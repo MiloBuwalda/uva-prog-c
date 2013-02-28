@@ -8,8 +8,6 @@
 
 [Slides](http://cdn.cs50.net/2011/fall/lectures/7/week7m.pdf)
 
-[Notes](http://cdn.cs50.net/2011/fall/lectures/7/week7m.pdf)
-
 ## Problem Set 5 (6:00–10:00)
 
 * Problem Set 5 will introduce you to the basics of storing images as bytes.
