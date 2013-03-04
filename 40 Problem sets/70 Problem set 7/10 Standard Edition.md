@@ -6,31 +6,6 @@
 * [Index](http://cdn.cs50.net/2011/fall/psets/7/pset7/)
 * [ZIP](http://cdn.cs50.net/2011/fall/psets/7/pset7.zip)
 
-## Working on a UvA lab machine
-
-* Get a websec.science.uva.nl database: email Marin <m.vanbeek@uva.nl> with
-  your UvAnetID
-
-* Connect to websec.science.uva.nl via *Places > Connect to server* and go to
-  the folder `/home/<your uvanetid>`.
-
-* Create a new folder called public_html and put all files of the assignment in
-  here.
-
-* To `chmod` files and folders connect to `websec.science.uva.nl` in a terminal:
-
-        ssh websec.science.uva.nl
-
-  Then, for example, make the public_html executable:
-
-        chmod a+x public_html
-
-  Now all files inside public_html can be accessed at
-  websec.science.uva.nl/~<your uvanetid>/file_name.
-
-* PHP MyAdmin can be found here: websec.science.uva.nl/phpmyadmin. Here you log
-  in with the credentials that Marin gave you.
-
 
 # Problem Set 7: C$50 Finance
 
@@ -88,241 +63,64 @@ appropriateness of some discussion, contact the staff.
 
     - Safari
 
-* UvA lab: Go ahead and open a terminal window. Then connect to
-  `websec.science.uva.nl` using your normal UvAnetID password:
-      
-      ssh websec.science.uva.nl
-  
-  Appliance: Go ahead and open up a terminal window (whether by opening gedit via
-  Menu > Programming > gedit or by opening Terminal itself via Menu >
-  Programming > Terminal). 
-  
-  Then execute
-
-      mkdir ~/public_html
-
-  in order to create a directory called public_html within John Harvard's /
-  your home directory. Then download this problem set's distro into that
-  directory by executing
-
-      cd ~/public_html
-      git clone http://cdn.cs50.net/2011/fall/psets/7/pset7.git
-
-  You should see Cloning into pset7... and then your prompt again. If you
-  instead see fatal followed by not found: did you run, odds are you made a
-  typo. Best to try again!
-
-  Once successful, you should find that you have a brand-new pset7 directory
-  inside of your home directory's `public_html` directory. You can confirm as
-  much with:
-
-      cd ~/public_html 
-      ls
-
-  Next make each of `~`, `~/public_html`, and `~/public_html/pset7`
-  "world-executable" by executing
-
-      chmod a+x ~
-      chmod a+x ~/public_html
-      chmod a+x ~/public_html/pset7
-
-  Appliance: restart network:
-
-      sudo service network restart
-
-  Appliance: But if that doesn’t work, best to restart the appliance.  so that
-  the appliance's web server (and you, from your own computer) will be able to
-  access your work.
-
-  Now navigate your way to ~/public_html/pset7 (wherein lies, recall, this
-  problem set's distro) by executing the command below.
-
-      cd ~/public_html/pset7
-
-  Then run `ls`. You should see the below.
-
-      css/ images/ includes/ index.php login.php login2.php logout.php
-
-  Let’s make two of those directories world-executable. In fact, let's chmod
-  both at the same time (by enumerating them on the command line, one after the
-  other) to save some keystrokes:
-
-      chmod a+x css images
-
-  Now let's make some files within those directories world-readable:
-
-      chmod a+r css/* images/*
-
-  Recall that `*` is a "wildcard character," so `css/*` means "all files within the
-  css directory" and `images/*` means "all files within the images directory."
-
-  For security's sake, don't make includes world-executable or its contents
-  world-readable, as they shoudn't be accessible to the whole world (only to
-  your PHP code, as you'll soon see). In fact, even more secure would be to put
-  includes outside of public_html altogether, but for simplicity, let's leave
-  it where it is.
-
-  Just to be clear now, realize that you have not created a directory called
-  `pset7` in your home directory for this problem set. Rather, you have created a
-  directory called pset7 in `~/public_html/`. All of the work that you do for this
-  problem set will reside in `~/public_html/` and `~/public_html/pset7/`.
-
-* Alright, time for a test! 
-
-  Appliance: Open up Firefox within the appliance and visit: [^2]
-
-      http://localhost/~jharvard/pset7/
-
-  UvA lab: Open up a web browser and browse to (replace <your UvAnetID> with
-  your UvAnetID):
-
-      http://websec.science.uva.nl/~<your UvAnetID>
-
-  You should find yourself redirected to `login.php`, where an apology
-  (regarding `jharvard_pset7`) awaits! Not to worry. That just means you don't
-  have a database called `jharvard_pset7` yet. (If you instead see Forbidden,
-  odds are you missed a step earlier; best to try all those chmod steps again.)
-  Let's create the database that's missing.
-
-[^2]: Incidentally, you can also access C$50 Finance within the appliance at http://127.0.0.1/~jharvard/pset7/, since 127.0.0.1 is the appliance's (and most computers') "loopback" address.
-
-  Appliance: Head to:
-
-      http://localhost/phpMyAdmin/
-
-  UvA lab: Head to:
-
-      http://websec.science.uva.nl/phpMyAdmin
-
-  to access phpMyAdmin, a Web-based tool (that happens to be written in PHP)
-  with which you can manage MySQL databases.  Log in as John Harvard if
-  prompted (with a username of jharvard and a password of crimson). You should
-  then find yourself at phpMyAdmin’s main page. In phpMyAdmin's top-left
-  corner, you should see No databases. Normally, you can create a database by
-  clicking phpMyAdmin's Databases tab, but you can also execute some SQL
-  commands manually. Download the following file with a whole bunch of SQL
-  statements in it:
-
-  - [Appliance](pset7_appliance.sql)
-  - [UvA lab](pset7_uva_lab.sql)
-
-  Open this file with a text editor and highlight all sql statements (the
-  entire contents), then select Edit > Copy (or hit ctrl-C), then return to
-  phpMyAdmin. Click phpMyAdmin's SQL tab, and paste everything you copied into
-  that page's big text box. Skim what you just pasted to get a sense of the
-  commands you're about to execute, then click Go. You should then see a green
-  banner, proclaiming Your SQL query has been executed successfully. In
-  phpMyAdmin's top-left corner, you should now see link to a database called
-  jharvard_pset7, beneath which is a link to a table called users. But more on
-  those later.
-
-  Appliance: Return to
-
-      http://localhost/~jharvard/pset7/
-
-  UvA lab: Return to
-
-      http://websec.science.uva.nl/~<your UvAnetID>
-
-  and reload that page. Instead of an apology, you should now see the login page
-  for your own copy of C$50 Finance! As excited as you may be, don’t try to
-  register or log in just yet.
-
-* Appliance (until next section): Recall that the appliance also has a private
-  IP address, 192.168.56.50, via which you can access it, both within the
-  appliance itself and from your own computer (but not from some other computer
-  on the Internet). Confirm as much by visiting
-
-      http://192.168.56.50/~jharvard/pset7/
-
-  using Firefox within the appliance. You should again find yourself redirected
-  to C$50 Finance's login page.
-
-  Now open up a browser on your own computer and visit the same URL:
-
-      http://192.168.56.50/~jharvard/pset7/
-
-  You should again see the same. Note that you cannot access the appliance from
-  your own computer via the localhost URL, since, when using a browser on your
-  own computer, localhost refers to your own computer, which probably isn't
-  running a web server!
-
-  If unable to access the appliance from your own computer via 192.168.56.50,
-  be sure that you haven't disabled any of the appliance's network adapters
-  (perhaps long ago). To check, shut down the appliance (if running), then
-  single-click the appliance in VirtualBox's lefthand menu to highlight it,
-  click Settings, click Network, and make sure that Enable Network Adapter is
-  checked for each of Adapter 1, Adapter 2, and Adapter 3. Then re-start the
-  appliance. If you encounter any error messages, ask the assistance for help
-  for some troubleshooting tips. And turn to help.cs50.net if you still need a
-  hand!
+* If you haven't already, follow the "Getting Started - UvA lab" or 
+  "Getting Started - Appliance" guide if you are working on a UvA machine or on 
+  your own laptop respectively.
 
 ## Home, sweet home page.
 
-* UvA lab: You will edit the files that reside on the server on your UvA lab
-  machine. You can get access to these files by opening a file browser that
-  connects to `websec.science.uva.nl` via *Places > Connect to server*. Now
-  select that you want to connect via SSH enter the folder `/home/<your
-  uvanetid>`
-
 * It’s time to make yourself a home page! Create a file called `index.html` with
-  gedit, save it in ~/public_html, and fill that file with valid HTML (version
+  gedit, save it in `~/public_html`, and fill that file with valid HTML (version
   5). In other words, whip yourself up a home page. Works of art, though
   encouraged, are by no means required. I didn’t exactly set the artistic bar
   very high in lecture, after all. So long as your HTML is valid, your home page
   may contain as much or as little actual content as you would like.
 
   When ready to examine your masterpiece (or work in progress), save your file,
-  then execute the commandbelowwithin~/public_html.
-  (Recallthatthelin-lisalowercaseL.)
+  then execute the command below within `~/public_html`.
 
-  ls -l
+      ls -l
 
   The output you see should resemble the below.
 
-  -rw-r--r-- 1 jharvard students 50 Oct 28 19:01 index.html drwx--x--x 5
-  jharvard students 4096 Oct 28 19:01 pset7/
+      -rw-r--r-- 1 jharvard students 50 Oct 28 19:01 index.html
+      drwx--x--x 5 jharvard students 4096 Oct 28 19:01 pset7/
 
   In the past, you’ve probably ignored the sequence of ten symbols (mostly
-  hyphens) prefixing each line of ls’s long output. No longer! Recall that each
+  hyphens) prefixing each line of `ls`’s long output. No longer! Recall that each
   sequence represents a set of “permissions” that govern who (besides you) can
-  read (r), write (w), or execute (x) access some file or directory.3,4 Linux
+  read (`r`), write (`w`), or execute (`x`) access some file or directory.[^3],[^4]
+  Linux
   lets you specify separate permissions for a file’s or directory’s owner (i.e.,
   you), for a file’s or directory’s group (e.g., you plus all other students),
   and for the “world” (i.e., anyone with access to your appliance).
+
+[^3]: To read a file means to, well, read its contents; to read a directory means to list its contents. To write to a file means to change its contents; to write to a directory means to add another file or directory to it. To execute a file means to run it like a program; to execute a directory means to enter it, as with `cd`.
+
+[^4]: The first symbol in a sequence indicates whether the permissions describe a directory (`d`) or a symbolic link (`l`), the latter of which is an alias of sorts.
 
   Confirm that your homepage is indeed world-readable (at least by anyone with
   access to the appliance) by visiting the URL below, either with Firefox within
   the appliance or with a browser on your own computer.
 
-  http://192.168.56.50/~jharvard/
+      http://192.168.56.50/~jharvard/
 
-  3 To read a file means to, well, read its contents; to read a directory means
-  to list its contents. To write to a file means to change its contents; to
-  write to a directory means to add another file or directory to it. To execute
-  a file means to run it like a program; to execute a directory means to enter
-  it, as with cd.
+  or
 
-  4 The first symbol in a sequence indicates whether the permissions describe a
-  directory (d) or a symbolic link (l), the latter of which is an alias of
-  sorts.
-
-  ￼6 < 27
-
-  This is CS50. Harvard College Fall 2011
+      http://www.websec.science.uva.nl/~<your uvanetid>/
 
   Wow, that page is ugly. (Okay, maybe it’s not.) Make any improvements you'd
-  like to index.html. You may certainly, but need not, employ CSS. Anytime you
+  like to `index.html`. You may certainly, but need not, employ CSS. Anytime you
   save changes, be sure to reload your page in your browser. You should not need
   to run chmod again for this particular file.
 
   Ultimately, be sure that your HTML is valid according to the W3C’s Markup
   Validation Service. To determine as much, visit
 
-  http://validator.w3.org/
+      http://validator.w3.org/
 
   using Firefox within the appliance, click Validate by Direct Input, then
-  copy/paste your HTML from gedit into that website's text box, then click
+  copy/paste your HTML from `gedit` into that website's text box, then click
   Check. Or, ctrl- or right-click somewhere on your web page (in Firefox within
   the appliance), then select Web Developer > Tools > Validate Local HTML, which
   will automate that same process. Do not select Validate HTML, since that
@@ -339,106 +137,99 @@ appropriateness of some discussion, contact the staff.
   a friendly green banner. Warnings are okay. Errors (and big red banners) are
   not.
 
-  * Okay, time for a heads-up. Anytime you create a new file or directory in
-  ~/public_html or some subdirectory therein for this problem set, you'll want
-  to set its permissions with chmod. Thus far, we've relied on a+r and a+x, but
+* Okay, time for a heads-up. Anytime you create a new file or directory in
+  `~/public_html` or some subdirectory therein for this problem set, you'll want
+  to set its permissions with `chmod`. Thus far, we've relied on `a+r` and `a+x`, but
   let's empower you with more precise control over permissions.
 
   Henceforth, for any non-PHP file, file, that you create (or upload), execute
-  chmod 644 file
+
+      chmod 644 file
 
   so that it's accessible via a browser (if that's indeed your intention). For
   any PHP file, file, that you create, execute
 
-  chmod 600 file
+      chmod 600 file
 
   so that it's accessible only by you (and the appliance's webserver). Recall
   that we don't want visitors to see the contents of PHP files; rather, we want
   them to see the output of PHP files once executed (or, rather, interpreted) by
   the appliance's web server.
 
-  And for any directory, directory, that you create, execute chmod 711 directory
+  And for any directory, directory, that you create, execute
 
-  ￼7 < 27
-
-  This is CS50. Harvard College Fall 2011
+      chmod 711 directory
 
   so that its contents are accessible via a browser (if that's indeed your
   intention).
 
-  What’s with all these numbers we’re having you type? Well, 644 happens to mean
-  rw-r--r--, and so all non-PHP files are to be readable and writable by you and
-  just readable by everyone else; 600 happens to mean rw-------, and so all PHP
-  files are made readable and writable only by you; and 711 happens to mean
-  rwx--x--x, and so all directories are to be readable, writable, and executable
+  What’s with all these numbers we’re having you type? Well, `644` happens to mean
+  `rw-r--r--`, and so all non-PHP files are to be readable and writable by you and
+  just readable by everyone else; `600` happens to mean `rw-------`, and so all PHP
+  files are made readable and writable only by you; and `711` happens to mean
+  `rwx--x--x`, and so all directories are to be readable, writable, and executable
   by you and just executable by everyone else. Wait a minute, don’t we want
   everyone to be able to read (i.e., interpret) your PHP files? Nope! For
   security reasons, PHP- based web pages are interpreted “as you” (i.e., under
-  John Harvard's username) in the appliance.5
+  John Harvard's username) in the appliance.[^5]
 
-  Okay, still, what’s with all those numbers? Well, think of rw-r--r-- as
-  representing three triples ofbits,thefirsttripleofwhich,tobeclear,isrw-.
-  Imaginethat-represents0,whereasr,w,and xrepresent1.
-  And,so,thissametriple(rw-)isjust110inbinary,or6indecimal! Theothertwo triples,
-  r-- and r--, then, are just 100 and 100 in binary, or 4 and 4 in decimal! How,
-  then, to expressapatternlikerw-r--r--withnumbers? Why,with644.
+[^5]: For the curious, we’re using suPHP (http://www.suphp.org/) with Apache (http://httpd.apache.org/).
+
+  Okay, still, what’s with all those numbers? Well, think of `rw-r--r--` as
+  representing three triples of bits,the first triple of which,to be clear, is `rw-`.
+  Imagine that `-` represents `0`, where as `r`, `w`, and `x` represent `1`.
+  And, so, this same triple (`rw-`) is just `110` in binary, or `6` in decimal! The other two triples,
+  `r--` and `r--`, then, are just `100` and `100` in binary, or `4` and `4` in decimal! How,
+  then, to express a pattern like `rw-r--r--` with numbers? Why, with `644`.
 
   Actually, this is a bit of a white lie. Because you can represent only eight
   possible values with three bits, these numbers (6, 4, and 4) are not actually
   decimal digits but “octal.” So you can now tell your friends that you speak
   not only binary, decimal, and hexadecimal, but octal as well.
 
-  Yahoo!
+## Yahoo!
 
-  * If you’re not quite sure what it means to buy and sell stocks (i.e., shares
+* If you’re not quite sure what it means to buy and sell stocks (i.e., shares
   of a company), surf on over to the URL below for a tutorial.
 
-  http://www.investopedia.com/university/stocks/
+      http://www.investopedia.com/university/stocks/
 
   You’re about to implement C$50 Finance, a Web-based tool with which you can
   manage portfolios of stocks. Not only will this tool allow you to check real
   stocks’ actual prices and portfolios’ values, it will also let you buy (okay,
-  “buy”) and sell (fine, “sell”) stocks!6
+  “buy”) and sell (fine, “sell”) stocks![^6]
 
-  * Allow me to share some excerpts from my spam folder with you.
+[^6]: Per Yahoo’s fine print, “Quotes delayed [by a few minutes], except where indicated otherwise.”
 
-  ￼￼￼￼￼Savvy Stock Investor:
+* Allow me to share some excerpts from my spam folder with you.
 
-  A5 Laboratories (ticker: AFLB.OB) Has Just Announced What Could Be One Of The
-  Greatest Medical Discoveries Of The 21st Century
+### Savvy Stock Investor:
 
-  This could be one of the most important medical advances in 80 years.
-
-  Mark my words, AFLB.OB may have the single greatest breakthrough in drug
+  > A5 Laboratories (ticker: AFLB.OB) Has Just Announced What Could Be One Of The
+  > Greatest Medical Discoveries Of The 21st Century
+  >
+  > This could be one of the most important medical advances in 80 years.
+  >
+  > Mark my words, AFLB.OB may have the single greatest breakthrough in drug
   technology in my lifetime.
+  >
+  > Do NOT MISS this one. Here's to solid investing,
+  >
+  > Tim Fields,
 
-  Do NOT MISS this one. Here's to solid investing,
+### Untapped Wealth
 
-  Tim Fields,
-
-  Untapped Wealth
-
-  ￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼5 For the curious, we’re using suPHP
-  (http://www.suphp.org/) with Apache (http://httpd.apache.org/). 6 Per Yahoo’s
-  fine print, “Quotes delayed [by a few minutes], except where indicated
-  otherwise.”
-
-  8 < 27
-
-  This is CS50. Harvard College Fall 2011
-
-  * Wow, what a nice guy this Tim must be, giving me such a hot stock tip.
+* Wow, what a nice guy this Tim must be, giving me such a hot stock tip.
   Stupid Gmail for calling this spam! Let’s get in on this opportunity now. Head
   on over to Yahoo! Finance at the URL below.
 
-  http://finance.yahoo.com/
+      http://finance.yahoo.com/
 
   Type the symbol for A5 Laboratories, AFLB.OB, into the text field in that
   page’s top-left corner
+  and click GET QUOTES.
 
-  and click GET QUOTES. Odds are you’ll see a table like the below.7
-
-  ￼Wow, looks like this stock only costs a penny! That must be a good thing.
+  Wow, looks like this stock only costs a penny! That must be a good thing.
   Anyhow, notice how Yahoo reports not only a stock’s most recent price (Last
   Trade) but also when the stock last changed hands (Trade Time), the percent by
   which the stock’s price changed over the course of the most recent business
@@ -454,13 +245,7 @@ appropriateness of some discussion, contact the staff.
   should see a “row” of values, all excerpted from that table. It turns out that
   the link you just clicked led to the URL below.
 
-  http://download.finance.yahoo.com/d/quotes.csv?s=AFLB.OB&f=sl1d1t1c1ohgv&e=.csv
-
-  7 Ha, seems 14 people “Like” this stock!
-
-  ￼￼9 < 27
-
-  This is CS50. Harvard College Fall 2011
+      http://download.finance.yahoo.com/d/quotes.csv?s=AFLB&f=sl1d1t1c1ohgv&e=.csv
 
   Notice how A5’s symbol is embedded in this URL (as the value of the HTTP
   parameter called s); that’s how Yahoo knows whose data to return. Notice also
@@ -468,14 +253,16 @@ appropriateness of some discussion, contact the staff.
   undocumented), but the value of that parameter tells Yahoo which fields of
   data to return to you. If curious as to what they mean, head to the URL below.
 
-  http://www.gummy-stuff.org/Yahoo-data.htm
+      http://www.gummy-stuff.org/Yahoo-data.htm
 
   It’s worth noting that a lot of websites that integrate data from other
   websites do so via “screen scraping,” a process that requires writing programs
   that parse (or, really, search) HTML for data of interest (e.g., air fares,
   stock prices, etc.). Writing a screen scraper for a site tends to be a
   nightmare, though, because a site’s markup is often a mess, and if the site
-  changes the format of its pages overnight, you need to re-write your scraper.8
+  changes the format of its pages overnight, you need to re-write your scraper.[^8]
+
+[^8]: See https://manual.cs50.net/Screen_Scraping if curious as to how it can be done nonetheless.
 
   Thankfully, because Yahoo provides data in CSV, C$50 Finance will avoid screen
   scraping altogether by downloading (effectively pretending to be a browser)
@@ -484,106 +271,85 @@ appropriateness of some discussion, contact the staff.
 
   In fact, let’s turn our attention to the code you’ve been given.
 
-  * Navigate your way to ~/public_html/pset7 and open up index.php with gedit.
+* Navigate your way to `~/public_html/pset7` and open up `index.php` with gedit.
   (Remember how?) You’ll see HTML for a pretty simple page, the same page you
   tried to pull up earlier when testing your framework (just before you were
-  redirected to login.php). Notice how we’ve structured the page, with three div
-  elements inside of body, each of which happens to have a unique id attribute.
-  Notice next the references to styles.css and logo.gif. Those files can be
-  found in ~/public_html/pset7/css and ~/public_html/pset7/images, respectively.
+  redirected to `login.php`). Notice how we’ve structured the page, with three `div`
+  elements inside of `body`, each of which happens to have a unique `id` attribute.
+  Notice next the references to `styles.css` and `logo.gif`. Those files can be
+  found in `~/public_html/pset7/css` and `~/public_html/pset7/images`, respectively.
   We placed those two files into subdirectories in the interests of keeping
-  ~/public_html/pset7 tidy. As you proceed to implement C$50 Finance, you’re
+  `~/public_html/pset7` tidy. As you proceed to implement C$50 Finance, you’re
   welcome to drop additional files into either directory.
 
-  Go ahead and open up styles.css. That file defines styles for various HTML
+  Go ahead and open up `styles.css`. That file defines styles for various HTML
   elements so that we don’t have to include style attributes for those same
   elements in every PHP file. No need to master CSS for this problem set, but do
-  know that you should not have more than one div element per page whose id
-  attribute has a value of bottom, more than one div element per page whose id
-  attribute has a value of middle, or more than one div element per page whose
-  id attribute has a value of top; an id must be unique. In any case, you are
-  welcome to modify styles.css as you see fit.
+  know that you should not have more than one `div` element per page whose `id`
+  attribute has a value of `bottom`, more than one `div` element per page whose `id`
+  attribute has a value of `middle`, or more than one `div` element per page whose
+  `id` attribute has a value of `top`; an `id` must be unique. In any case, you are
+  welcome to modify `styles.css` as you see fit.
 
-  Anyhow, notice next that index.php “requires” (i.e., includes) a file called
-  common.php that can be found in ~/public_html/pset7/includes. Any PHP file
+  Anyhow, notice next that `index.php` “requires” (i.e., `includes`) a file called
+  `common.php` that can be found in `~/public_html/pset7/includes`. Any PHP file
   that you create for this problem set that’s meant to be visited by a user must
   also contain, before any other code, that very same line, excerpted below.
 
-  require_once("includes/common.php");
-
-  8 See https://manual.cs50.net/Screen_Scraping if curious as to how it can be
-  done nonetheless. 10 < 27
-
-  ￼
-
-  This is CS50. Harvard College Fall 2011
+      require_once("includes/common.php");
 
   Note that if you decide to place PHP files within subdirectories of
-  ~/public_html/pset7, you may need to specify a different path for common.php
-  (e.g., ../includes/common.php).
+  `~/public_html/pset7`, you may need to specify a different path for `common.php`
+  (e.g., `../includes/common.php`).
 
-  Let’s take a look at the code we’re requiring via require_once. Navigate your
-  way to ~/public_html/pset7/includesandopenupcommon.phpwithgedit.
-  Becauseindex.php requires this file (via that call to require_once), every one
-  of this file’s lines will be executed before anything else in index.php. The
-  first few lines of actual code in common.php ensure that you’ll be informed of
-  errors in your own code via your browser. The call to session_start ensures
-  that you’ll have access to $_SESSION, a “superglobal” variable via which we’ll
-  remember that a user is logged in.9,10 The next few lines “require” yet three
+  Let’s take a look at the code we’re requiring via `require_once`. Navigate your
+  way to `~/public_html/pset7/includes` and open up `common.php` with gedit.
+  Because `index.php` requires this file (via that call to `require_once`), every one
+  of this file’s lines will be executed before anything else in `index.php`. The
+  first few lines of actual code in `common.php` ensure that you’ll be informed of
+  errors in your own code via your browser. The call to `session_start` ensures
+  that you’ll have access to `$_SESSION`, a “superglobal” variable via which we’ll
+  remember that a user is logged in.[^9],[^10] The next few lines “require” yet three
   other files; we’ll return to those shortly. The next lines of code ensure that
   users will be required to log in to access most pages. The last lines of code
   ensure that you’re connected to your database, where you’ll store users’
   portfolios.
 
-  Alright, now open constants.php with gedit. In this file have we defined some
-  global constants. Because all of your PHPs shall require common.php, which, in
-  turn, requires constants.php, you will have access to this file’s globals from
-  each of your PHPs. Among those constants are DB_USERNAME and DB_PASSWORD,
-  whose values are jharvard and crimson, respectively. By default, the appliance
+[^9]: The calls to preg_match and session_set_cookie_params tell PHP to associate cookies with your pset7 directory specifically.
+
+[^10]: Even though HTTP is a “stateless” protocol, whereby browsers are supposed to disconnect from servers as soon as they’re done downloading pages, “cookies” allow browsers to remind servers who they (or, really, you) are on subsequent requests for content. PHP uses “session cookies” to provide you with $_SESSION, an associative array in which you can store any data to which you’d like to have access for the duration of some user’s visit. The moment a user ends his or her “session” (i.e., visit) by quitting his or her browser, the contents of $_SESSION are lost for that user specifically because the next time that user visits, he or she will be assigned a new cookie!
+
+  Alright, now open `constants.php` with gedit. In this file have we defined some
+  global constants. Because all of your PHPs shall require `common.php`, which, in
+  turn, requires `constants.php`, you will have access to this file’s globals from
+  each of your PHPs. Remember that if you work on a UvA lab machine you have to 
+  **change** these constants! Among those constants are `DB_USERNAME` and `DB_PASSWORD`,
+  whose values are `jharvard` and `crimson`, respectively. By default, the appliance
   comes not only with MySQL preinstalled and running but also with an account
   for John Harvard. (Technically, that account is MySQL-specific and unrelated
   to John Harvard's account on the appliance itself, but we've made the former's
   username and password identical to the latter's for simplicity.) Also among
-  those constants is DB_SERVER, the value of which is localhost because MySQL is
+  those constants is `DB_SERVER`, the value of which is localhost because MySQL is
   indeed running on the local host (i.e., on the appliance itself). And the
-  value of DB_NAME is jharvard_pset7, which refers to that database that you
+  value of `DB_NAME` is `jharvard_pset7`, which refers to that database that you
   created with phpMyAdmin earlier. The value of YAHOO, meanwhile, should look
   pretty familiar (though we did alter its parameters so that s would be last).
   Missing from YAHOO, though, is a value for that parameter s. Let’s see why
   that is.
 
-  Open up stock.php with gedit, and you’ll see something that resembles a C
-  struct. Indeed, this code defines a structure (a “class” in PHP) called Stock,
-  whose purpose is to encapsulate data related to a stock.11 Although Yahoo
+  Open up `stock.php` with gedit, and you’ll see something that resembles a C
+  `struct`. Indeed, this code defines a structure (a “class” in PHP) called `Stock`,
+  whose purpose is to encapsulate data related to a stock.[^11] Although Yahoo
   provides more fields than those encapsulated in this structure, our framework,
   out of the box, provides only the basics.
 
-  Now take a look at helpers.php with gedit. You need not understand how all of
+[^11]: By convention, classes’ names are usually capitalized.
+
+  Now take a look at `helpers.php` with gedit. You need not understand how all of
   that code works, but make sure you understand what its functions can do for
   you by reading, at least, comments therein. Notice, in particular, how lookup
   expects, as its sole argument, a stock’s symbol, which it appends to YAHOO
-  using PHP’s concatenation operator (.) in order to download the right CSV.
-
-  9 The calls to preg_match and session_set_cookie_params tell PHP to associate
-  cookies with your pset7 directory specifically.
-
-  10 Even though HTTP is a “stateless” protocol, whereby browsers are supposed
-  to disconnect from servers as soon as they’re done downloading pages,
-  “cookies” allow browsers to remind servers who they (or, really, you) are on
-  subsequent requests for content. PHP uses “session cookies” to provide you
-  with $_SESSION, an associative array in which you can store any data to which
-  you’d like to have access for the duration of some user’s visit. The moment a
-  user ends his or her “session” (i.e., visit) by quitting his or her browser,
-  the contents of $_SESSION are lost for that user specifically because the next
-  time that user visits, he or she will be assigned a new cookie!
-
-  11 By convention, classes’ names are usually capitalized.
-
-  11 < 27
-
-  ￼
-
-  This is CS50. Harvard College Fall 2011
+  using PHP’s concatenation operator (`.`) in order to download the right CSV.
 
   Finally,takeapeekatapology.phpwithgedit.
   Thisfileservesasa“template”forapologizein helpers.php so that, via just one
