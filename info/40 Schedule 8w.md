@@ -32,6 +32,7 @@ Note: all deadlines are on Thursdays!
 * lecture 5 Monday
 * lecture 5 Wednesday
 * deadline: pset 4
+* tentamen: 1
 
 ## Week 6.
 
@@ -50,4 +51,5 @@ Note: all deadlines are on Thursdays!
 * lecture 9 Monday
 * lecture 9 Wednesday
 * deadline: pset 7
+* tentamen: 2
 
