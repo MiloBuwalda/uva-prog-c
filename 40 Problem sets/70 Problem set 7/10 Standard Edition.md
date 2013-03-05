@@ -65,7 +65,7 @@ appropriateness of some discussion, contact the staff.
 
 * If you haven't already, follow the "Getting Started - UvA lab" or 
   "Getting Started - Appliance" guide if you are working on a UvA machine or on 
-  your own laptop respectively.
+  your own laptop, respectively.
 
 ## Home, sweet home page.
 
@@ -351,103 +351,106 @@ appropriateness of some discussion, contact the staff.
   expects, as its sole argument, a stock’s symbol, which it appends to YAHOO
   using PHP’s concatenation operator (`.`) in order to download the right CSV.
 
-  Finally,takeapeekatapology.phpwithgedit.
-  Thisfileservesasa“template”forapologizein helpers.php so that, via just one
+  Finally, take a peek at `apology.php` with gedit.
+  This file serves as a “template” for `apologize` in `helpers.php` so that, via just one
   function, you can apologize to users for (i.e., report) all sorts of problems.
 
   Alright, let’s examine just three more files, each of whose names ends in
-  .php. Navigate back to ~/public_html/pset7, and open up login.php with gedit.
+  `.php`. Navigate back to `~/public_html/pset7`, and open up `login.php` with gedit.
   Recall that you were redirected to this page when you tried to pull up
-  index.php with your browser. Notice that this file doesn’t contain too much
-  code. In fact, much like index.php, it’s almost entirely HTML. But it’s that
+  `index.php` with your browser. Notice that this file doesn’t contain too much
+  code. In fact, much like `index.php`, it’s almost entirely HTML. But it’s that
   HTML that implements that login page that you saw. Note that it lays out a
-  form using a table.12 Notice next the line excerpted below.
+  form using a table.[^12] Notice next the line excerpted below.
 
-  <form action="login2.php" method="post">
+[^12]: Many developers frown upon using tables for layout, but they’re worth using sometimes. 
 
-  This line instructs your browser to “submit” the form’s data to login2.php via
-  POST. It must be login2.php, then, that handles actual authentication of
-  users. Let’s check. Open up login2.php.
+      <form action="login2.php" method="post">
 
-  It turns out that login2.php isn’t terribly long. Its first line of code, just
-  like index.php and login.php, requires that file called common.php. Its next
+  This line instructs your browser to “submit” the form’s data to `login2.php` via
+  POST. It must be `login2.php`, then, that handles actual authentication of
+  users. Let’s check. Open up `login2.php`.
+
+  It turns out that `login2.php` isn’t terribly long. Its first line of code, just
+  like `index.php` and `login.php`, requires that file called `common.php`. Its next
   lines of code “escape” the user’s inputted username for safety using
-  mysql_real_escape_string, lest C$50 Finance’s database fall victim to a “SQL
+  `mysql_real_escape_string`, lest C$50 Finance’s database fall victim to a “SQL
   injection attack,” whereby a user submits SQL instead of a username and/or
-  password. Seehttp://www.php.net/mysql_real_escape_stringforreference.
+  password. See `http://www.php.net/mysql_real_escape_string` for reference.
 
   The next line of code prepares a string of SQL as follows.
 
-  $sql = "SELECT * FROM users WHERE username='$username'";
+      $sql = "SELECT * FROM users WHERE username='$username'";
 
   To be clear, suppose that President Skroob tries to log into C$50 Finance by
-  inputting his username and password.13 That line of code will assign to $sql
+  inputting his username and password.[^13] That line of code will assign to $sql
   the value below.
 
-  SELECT * FROM users WHERE username='skroob'
+      SELECT * FROM users WHERE username='skroob'
 
-  Perhaps needless to say, login2.php’s next line of code executes that SELECT
-  with mysql_query, storing the “result set” (i.e., rows returned) in a variable
-  called $result. Only if Skroob’s username exists in the table, though, will
-  the database return an actual row. And, so, if mysql_num_rows returns 1,
+[^13]: [http://en.wikipedia.org/wiki/Spaceballs#Spaceballs](http://en.wikipedia.org/wiki/Spaceballs#Spaceballs)
+
+  Perhaps needless to say, `login2.php`’s next line of code executes that
+  `SELECT`
+  with `mysql_query`, storing the “result set” (i.e., rows returned) in a variable
+  called `$result`. Only if Skroob’s username exists in the table, though, will
+  the database return an actual row. And, so, if `mysql_num_rows` returns 1,
   Skroob indeed has an account. But we still need to confirm that he knows his
   own password, lest somebody else be trying to hack in! And so we "fetch" the
   returned row from the result set so as to compare a "hash" of Skroob's
   inputted password against a hash in the database. (Recall that it's best to
   store hashes of passwords rather than passwords themselves so that if a server
   is compromised by some adversary, he or she does not obtain everyone's
-  password.) If those hashes indeed match, login2.php proceeds to "remember"
-  that Skroob is logged in by storing his numeric user ID (id) in $_SESSION; it
+  password.) If those hashes indeed match, `login2.php` proceeds to "remember"
+  that Skroob is logged in by storing his numeric user ID (`id`) in `$_SESSION`; it
   then redirects him to
-
-  12 Many developers frown upon using tables for layout, but they’re worth using
-  sometimes. 13 http://en.wikipedia.org/wiki/Spaceballs#Spaceballs
-
-  ￼12 < 27
-
-  This is CS50. Harvard College Fall 2011
-
-  index.php, where his portfolio (once you implement it) awaits!14 If, however,
+  `index.php`, where his portfolio (once you implement it) awaits![^14] If, however,
   Skroob inputted the wrong username or password, he is instead informed via a
-  call to apologize.
+  call to `apologize`.
 
-  Incidentally, why does this redirection back to index.php, upon successful
-  authentication, not resultinaninfiniteloop?
-  Well,recallthatindex.phprequirescommon.php,whichcontainsthe following code.
+[^14]: Rather than “remember” users by way of their usernames (which are, by nature, strings), you’ll see that we instead rely, for efficiency’s sake, on “user IDs” (which are integers) that uniquely identify users.
 
-  if (!preg_match("/\/login|logout|register)\d*\.php$/", $_SERVER["PHP_SELF"]))
-  {
+  Incidentally, why does this redirection back to `index.php`, upon successful
+  authentication, not result in an infinite loop?
+  Well, recall that `index.php` requires common.php, which contains the following code.
 
-  if (!isset($_SESSION["id"])) redirect("login.php");
-
-  }
+      if (!preg_match("/\/login|logout|register)\d*\.php$/", $_SERVER["PHP_SELF"]))
+      {
+          if (!isset($_SESSION["id"])) redirect("login.php");
+      }
 
   Though a bit scary (I prefer “elegant”), that code simply asks whether
-  $_SESSION["id"] has been assigned any value (e.g., Skroob’s user ID). If not,
-  it must be that no one’s logged in, else login2.php would have assigned it a
-  value, and so we had best redirect traffic to login.php (by calling redirect,
-  a function defined in helpers.php). If, though, $_SESSION["id"] is indeed set,
+  `$_SESSION["id"]` has been assigned any value (e.g., Skroob’s user ID). If not,
+  it must be that no one’s logged in, else `login2.php` would have assigned it a
+  value, and so we had best redirect traffic to `login.php` (by calling redirect,
+  a function defined in `helpers.php`). If, though, `$_SESSION["id"]` is indeed set,
   we won’t redirect but will, instead, leave the logged-in user wherever he or
-  she is. Of course, if the user is already at login.php, logout.php, or
-  register.php, this code won’t redirect either, thanks to the “regular
-  expression” that we’ve passed to preg_match.15
+  she is. Of course, if the user is already at `login.php`, `logout.php`, or
+  `register.php`, this code won’t redirect either, thanks to the “regular
+  expression” that we’ve passed to `preg_match`.[^15]
 
-  Now, how do we enable Skroob to log out? Why, by including in index.php a
-  hyperlink to logout.php! Take a look at the latter. Note that it calls logout,
-  a function defined in common.php. (We call that same function atop login.php.)
-  Alternatively, Skroob can simply quit his own browser, as $_SESSION is lost in
+[^15]: [http://en.wikipedia.org/wiki/Regular_expression](http://en.wikipedia.org/wiki/Regular_expression)
+
+  Now, how do we enable Skroob to log out? Why, by including in `index.php` a
+  hyperlink to `logout.php`! Take a look at the latter. Note that it calls
+  `logout`,
+  a function defined in `common.php`. (We call that same function atop
+  `login.php`.)
+  Alternatively, Skroob can simply quit his own browser, as `$_SESSION` is lost in
   that case as well.
 
-  * Phew, that was a lot. Go have a snack.
+* Phew, that was a lot. Go have a snack.
 
-  * Alright, let’s talk about that database we keep mentioning. So that you have
+* Alright, let’s talk about that database we keep mentioning. So that you have
   someplace to store users’ portfolios, the appliance comes with a MySQL
-  database (jharvard_pset7).16 We’ve even pre-populated it with a table called
+  database (`jharvard_pset7`).[^16] We’ve even pre-populated it with a table called
   users! Let's take a look.
+
+16 MySQL is a free, open-source database that CS50 apps, Facebook, and lots of other sites use.
 
   Head back to
 
-  http://192.168.56.50/phpMyAdmin/
+      http://192.168.56.50/phpMyAdmin/
 
   to access phpMyAdmin. Log in as John Harvard if prompted (with a username of
   jharvard and a password of crimson). You should then find yourself at
@@ -456,50 +459,41 @@ appropriateness of some discussion, contact the staff.
   folks. In fact, there’s President Skroob’s username and a hash of his password
   (which is the same as the combination to his luggage)!
 
-  14 Rather than “remember” users by way of their usernames (which are, by
-  nature, strings), you’ll see that we instead rely, for efficiency’s sake, on
-  “user IDs” (which are integers) that uniquely identify users.
-
-  15 http://en.wikipedia.org/wiki/Regular_expression
-
-  16 MySQL is a free, open-source database that CS50 apps, Facebook, and lots of
-  other sites use.
-
-  ￼13 < 27
-
-  This is CS50. Harvard College Fall 2011
-
   Now click the tab labeled Structure. Ah, some familiar fields. Recall that
-  login2.php generates queries like the below.
+  `login2.php` generates queries like the below.
 
-  SELECT id FROM users WHERE username='skroob'
+      SELECT id FROM users WHERE username='skroob'
 
-  As phpMyAdmin makes clear, this table called users contains three fields: id
-  (the type of which is an INT that’s UNSIGNED) along with username and password
+  As phpMyAdmin makes clear, this table called users contains three fields:
+  `id`
+  (the type of which is an INT that’s UNSIGNED) along with `username` and
+  `password`
   (each of whose types is VARCHAR). It appears that none of these fields is
   allowed to be NULL, and the maximum length for each of each of username and
-  password is 255. A neat feature of id, meanwhile, is that it will
+  password is 255. A neat feature of `id`, meanwhile, is that it will
   AUTO_INCREMENT: when inserting a new user into the table, you needn’t specify
-  a value for id; the user will be assigned the next available INT. Finally, per
-  the rows below Indexes, it appears that this table’s PRIMARY key is id, the
+  a value for `id`; the user will be assigned the next available INT. Finally, per
+  the rows below Indexes, it appears that this table’s PRIMARY key is `id`, the
   implication of which is that (as expected) no two users can share the same
-  user ID.17 Of course, username should also be unique across users, and so we
+  user ID.[^17] Of course, `username` should also be unique across users, and so we
   have also defined it to be so (per the additional Yes under Unique). To be
   sure, we could have defined username as this table’s primary key. But, for
-  efficiency’s sake, the more conventional approach is to use an INT like id.
+  efficiency’s sake, the more conventional approach is to use an INT like `id`.
   Incidentally, these fields are called “indexes” because, for primary keys and
   otherwise unique fields, databases tend to build “indexes,” data structures
   that enable them to find rows quickly by way of those fields.
 
+[^17]: A primary key is a field with no duplicates (i.e., that is guaranteed to identify rows uniquely).
+
   Make sense? Okay, head on back to
 
-  http://192.168.56.50/~jharvard/pset7/login.php
+      http://192.168.56.50/~jharvard/pset7/login.php
 
   and try to log in as President Skroob (whose username and password should be
-  quite familiar by now). If successful, you’ll find yourself at index.php,
+  quite familiar by now). If successful, you’ll find yourself at `index.php`,
   where (for the moment) very little awaits.
 
-  * Head on back to phpMyAdmin and click the tab labeled Structure for that
+* Head on back to phpMyAdmin and click the tab labeled Structure for that
   table called users. Let’s give each of your users some cash. In that page’s
   middle is a form with which you can Add ... column(s) ... After another. Click
   the radio button immediately to the left of After, select hash from the
@@ -508,16 +502,9 @@ appropriateness of some discussion, contact the staff.
   Via the form that appears, define a field of type DECIMAL called cash using
   the settings depicted below, then click Save.
 
-  17 A primary key is a field with no duplicates (i.e., that is guaranteed to
-  identify rows uniquely). 14 < 27
-
-  ￼￼
-
-  This is CS50. Harvard College Fall 2011
-
   If you pull up the documentation for MySQL at
 
-  http://dev.mysql.com/doc/refman/5.5/en/numeric-types.html
+      http://dev.mysql.com/doc/refman/5.5/en/numeric-types.html
 
   you’ll see that the DECIMAL data type is used to “store exact numeric data
   values.” A length of 65,4 for a DECIMAL means that values for cash can have no
@@ -525,131 +512,120 @@ appropriateness of some discussion, contact the staff.
   point. (Ooo, fractions of pennies. Sounds like Office Space.)
 
   Okay, return to the tab labeled Browse and give everyone $10,000.00
-  manually.18 The easiest way is to click Check All, then click Change to the
+  manually.[^18] The easiest way is to click Check All, then click Change to the
   right of the pencil icon. On the page that appears, change 0.0000 to
   10000.0000 for each of your users, then click Go. Won’t they be happy!
 
-  * It’s now time to code! Let’s empower new users to register.
+[^18]: In theory, we could have defined cash as having a default value of 10000.000, but, in general, best to put such settings in code, not your database, so that they’re easier to change.
 
-  Return to a terminal window and navigate your way to ~/public_html/pset7.
+
+* It’s now time to code! Let’s empower new users to register.
+
+  Return to a terminal window and navigate your way to `~/public_html/pset7`.
   Execute
 
-  cp login.php register.php
+      cp login.php register.php
 
   followed by
 
-  cp login2.php register2.php
+      cp login2.php register2.php
 
-  to jumpstart this process.19 Then use chmod to ensure all permissions are set
-  properly. Open up register.php and change the head’s title as you see fit.
-  Then change the value of form’s action attribute from login2.php to
-  register2.php. Next add an additional row to the HTML table containing a new
-  field called password2. (We want registrants to type passwords twice to
+  to jumpstart this process.[^19] Then use `chmod` to ensure all permissions are set
+  properly. Open up `register.php` and change the head’s title as you see fit.
+  Then change the value of form’s action attribute from `login2.php` to
+  `register2.php`. Next add an additional row to the HTML table containing a new
+  field called `password2`. (We want registrants to type passwords twice to
   discourage mistakes.) Finally, change the submit button’s value from Log In to
-  Register and make that bottommost anchor (i.e., link) point back to login.php
+  Register and make that bottommost anchor (i.e., link) point back to
+  `login.php`
   (so that users can navigate away from this page if they already have
   accounts).
 
+[^19]: You are welcome, particularly if among those more comfortable, to stray from these filename conventions and structure your site as you see fit, so long as your implementation adheres to all other requirements.
+
   Alright, let’s take a look at your work! Bring up
 
-  http://192.168.56.50/~jharvard/pset7/login.php
+      http://192.168.56.50/~jharvard/pset7/login.php
 
-  and click that page’s link to register.php. If that page appears broken (or
+  and click that page’s link to `register.php`. If that page appears broken (or
   perhaps simply ugly),
-
   feel free to make further tweaks, saving your changes, thereafter reloading
   the page.
 
-  18 In theory, we could have defined cash as having a default value of
-  10000.000, but, in general, best to put such settings in code, not your
-  database, so that they’re easier to change.
-
-  19 You are welcome, particularly if among those more comfortable, to stray
-  from these filename conventions and structure your site as you see fit, so
-  long as your implementation adheres to all other requirements.
-
-  ￼15 < 27
-
-  This is CS50. Harvard College Fall 2011
-
   Once the page looks okay, return to your text editor and open up
-  register2.php. Needless to say, you need to replace the code there so that it
+  `register2.php`. Needless to say, you need to replace the code there so that it
   actually registers users. Allow us to offer some hints.
 
-  i. If $_POST["username"] or $_POST["password"] is blank or if
-  $_POST["password"] does not equal $_POST["password2"], you’ll want to return
-  to the registrant a page that apologizes, explaining at least one of the
-  problems.
+  1. If `$_POST["username"]` or `$_POST["password"]` is blank or if
+     `$_POST["password"]` does not equal `$_POST["password2"]`, you’ll want to return
+     to the registrant a page that apologizes, explaining at least one of the
+     problems.
 
-  ii. To insert a new user into your database, you might want to pass
-  mysql_query a string like INSERT INTO users (username, hash, cash)
-  VALUES('$username', '$hash', 10000.00)
+  2. To insert a new user into your database, you might want to pass
+     `mysql_query` a string like `INSERT INTO users (username, hash, cash)
+     VALUES('$username', '$hash', 10000.00)`
 
   where
 
-  $username = mysql_real_escape_string($_POST["username"]);
+      $username = mysql_real_escape_string($_POST["username"]);
 
   and
 
-  $hash = crypt($_POST["password"]);
+      $hash = crypt($_POST["password"]);
 
   though we leave it to you to decide how much cash your code should give to new
   users. Note that, because $username and $hash are strings, they need to be
   quoted in SQL queries; a number like 10000.00 does not.
 
-  iii. Know that mysql_query will return false if your INSERT fails (as can
-  happen if, say, username already exists).20 Of course, if you cannot INSERT,
-  you should certainly apologize to the user, as by calling apologize.
+  3. Know that `mysql_query` will return false if your `INSERT` fails (as can
+     happen if, say, `username` already exists).[^20] Of course, if you cannot
+     `INSERT`,
+     you should certainly apologize to the user, as by calling `apologize`.
 
-  iv. If, though, your INSERT succeeds, know that you can find out which id was
-  assigned to that user with a call to mysql_insert_id right after your call to
-  mysql_query.21
+[^20]: See http://www.php.net/mysql_query for reference.
 
-  v. If registration succeeds, you might as well log the new user in (as by
-  “remembering” that id in $_SESSION), thereafter redirecting to index.php.
+  4. If, though, your `INSERT` succeeds, know that you can find out which `id` was
+     assigned to that user with a call to `mysql_insert_id` right after your call to
+     `mysql_query`.[^21]
+
+[^21]: See http://www.php.net/mysql_insert_id for reference.
+
+  5. If registration succeeds, you might as well log the new user in (as by
+     “remembering” that id in `$_SESSION`), thereafter redirecting to
+     `index.php`.
 
   All done with the above? Ready to test? Head back to
 
-  http://192.168.56.50/~jharvard/pset7/register.php
+      http://192.168.56.50/~jharvard/pset7/register.php
 
-  and try to register a new username. If you reach index.php, odds are you done
+  and try to register a new username. If you reach `index.php`, odds are you done
   good! Confirm as much by returning to phpMyAdmin, clicking once more that tab
   labeled Browse for the table called users. May that you see your new user. If
   not, it’s time to debug!
 
-  You may have noticed, incidentally, that helpers.php provides a function
+  You may have noticed, incidentally, that `helpers.php` provides a function
   called dump that spits out to your browser the value(s) in any variable you
-  pass it, using ~/public_html/pset7/includes/dump.php as its template. For
-  instance, if you’d like to dump the entire contents of $_POST, simply add
+  pass it, using `~/public_html/pset7/includes/dump.php` as its template. For
+  instance, if you’d like to dump the entire contents of `$_POST`, simply add
 
-  dump($_POST);
+      dump($_POST);
 
   to your code temporarily wherever you’d like, much like you used to use printf
   whilst debugging
-
   C code. Note that dump is meant only for debugging, not apologies to users.
 
-  Be sure, incidentally, that any HTML generated by register.php and
-  register2.php is valid by checking it with the W3C's validator. Take care to
+  Be sure, incidentally, that any HTML generated by `register.php` and
+  `register2.php` is valid by checking it with the W3C's validator. Take care to
   validate the HTML that your PHP code outputs to a browser, not the PHP code
   itself. In other words, ctrl- or right-click somewhere on
-
-  20 See http://www.php.net/mysql_query for reference.
-
-  21 See http://www.php.net/mysql_insert_id for reference.
-
-  ￼16 < 27
-
-  This is CS50. Harvard College Fall 2011
-
   your web page (in Firefox within the appliance), then select Web Developer >
   Tools > Validate Local HTML.
 
-  * Do bear in mind as you proceed further that you are welcome to play with and
+* Do bear in mind as you proceed further that you are welcome to play with and
   learn from the staff’s implementation of C$50 Finance, available at the URL
   below.
 
-  https://www.cs50.net/finance/
+  > [https://www.cs50.net/finance/](https://www.cs50.net/finance/)
 
   In particular, you are welcome to register with as many (fake) usernames as
   you would like in order to play. And you are welcome to view our pages’ HTML
@@ -662,113 +638,102 @@ appropriateness of some discussion, contact the staff.
   tastes as well as incorporate your own images and more. In fact, may that your
   version of C$50 Finance be nicer than ours!
 
-  * Now let’s empower users to get quotes for individual stocks. Go ahead and
-  create a new pair of files, these two named quote.php and quote2.php. It’s up
+* Now let’s empower users to get quotes for individual stocks. Go ahead and
+  create a new pair of files, these two named `quote.php` and `quote2.php`. It’s up
   to you whether you want to create these from scratch or base them on your
-  files for logins and registrations. Ultimately, though, quote.php should
-  present users with a form (that gets submitted to quote2.php) that expects a
-  stock’s symbol in a text field. Upon receipt of that symbol, quote2.php must
+  files for logins and registrations. Ultimately, though, `quote.php` should
+  present users with a form (that gets submitted to `quote2.php`) that expects a
+  stock’s symbol in a text field. Upon receipt of that symbol, `quote2.php` must
   inform the user of the current price of the stock described by that symbol.
 
-  But how now? Well, recall that function called lookup in helpers.php. Why not
+  But how now? Well, recall that function called lookup in `helpers.php`. Why not
   invoke it with code like the below?
 
-  $s = lookup($_POST["symbol"]);
+      $s = lookup($_POST["symbol"]);
 
-  Assuming $_POST["symbol"] is non-NULL and contains a symbol for an actual
+  Assuming `$_POST["symbol"]` is non-NULL and contains a symbol for an actual
   stock, lookup will return an “object” of type stock. (Recall that stock was
-  defined in stock.php.) If you think of $s as a pointer (a “reference” in PHP),
+  defined in `stock.php`.) If you think of $s as a pointer (a “reference” in PHP),
   you can access (or, better yet, print) individual fields in that object with
   code like the below.
 
-  print($s->price);
+      print($s->price);
 
   Incidentally, remember that your PHP code need not appear only at the top of
-  .php files. In fact, you can intersperse PHP and HTML, as in the below,
-  provided $s has already been assigned elsewhere (e.g., atop your file) the
+  `.php` files. In fact, you can intersperse PHP and HTML, as in the below,
+  provided `$s` has already been assigned elsewhere (e.g., atop your file) the
   return value of lookup.
 
-  <div style="text-align: center">
+      <div style="text-align: center">
 
-  A share of <? print($s->symbol); ?> currently costs $<? print($s->price); ?>.
+  A share of `<? print($s->symbol); ?>` currently costs `$<? print($s->price);
+  ?>`.
 
-  </div>
-
-  17 < 27
-
-  This is CS50. Harvard College Fall 2011
+      </div>
 
   Actually, if all you want to do is print some value(s), you can use this more
   concise syntax instead:
 
-  <div style="text-align: center">
+      <div style="text-align: center">
 
-  A share of <?= $s->name ?> currently costs $<?= $s->price ?>.
+  A share of `<?= $s->name ?>` currently costs `$<?= $s->price ?>`.
 
-  </div>
+      </div>
 
   However, be sure to display prices to at least two decimal places but no more
-  than four. You might find PHP's number_format function of assistance.
+  than four. You might find PHP's `number_format` function of assistance.
 
   Of course, if the user submits an invalid symbol (for which lookup returns
   NULL), be sure to apologize to the user, explaining the problem!
 
-  Be sure, too, that any HTML generated by quote.php and quote2.php is valid,
+  Be sure, too, that any HTML generated by `quote.php` and `quote2.php` is valid,
   per the W3C's validator.
 
-  * And now it’s time to do a bit of design. At present, your database has no
-  way of keeping track of users’ portfolios, only users themselves.22 It doesn’t
+* And now it’s time to do a bit of design. At present, your database has no
+  way of keeping track of users’ portfolios, only users themselves.[^22] It doesn’t
   really make sense to add additional fields to users itself in order to keep
   track of the stocks owned by users (using, say, one field per company owned).
   After all, how many different stocks might a user own? Better to maintain that
   data in a new table altogether so that we do not impose limits on users’
   portfolios or waste space with potentially unused fields.
 
+[^22]: By “portfolio,” we mean a collection of stocks (i.e., shares of companies) that some user owns.
+
   Exactly what sort of information need we keep in this new table in order to
   “remember” users’ portfolios? Well, we probably want a field for users’ IDs
-  (id) so that we can cross-reference holdings with entries in users. We
+  (`id`) so that we can cross-reference holdings with entries in users. We
   probably want to keep track of stocks owned by way of their symbols since
   those symbols are likely shorter (and thus more efficiently stored) than
-  stocks’ actual names.23 And we probably want to keep track of how many shares
+  stocks’ actual names.[^23] And we probably want to keep track of how many shares
   a user owns of a particular stock. In other words, a table with three fields
-  (id, symbol, and shares) sounds pretty good, but you’re welcome to proceed
+  (`id`, `symbol`, and `shares`) sounds pretty good, but you’re welcome to proceed
   with a design of your own. Whatever your decision, head back to phpMyAdmin and
   create this new table, naming it however you see fit. To create a new table,
   click Create table in phpMyAdmin's top-left corner. (You may need to click
-  your database’s name (i.e., jharvard_pset7) in the top-left corner first.) On
+  your database’s name (i.e., `jharvard_pset7`) in the top-left corner first.) On
   the screen that appears, input a name for your table and then define (in any
   order) each of your fields. By default, phpMyAdmin will allow you to create
   two fields at once; to add a third, click Go in the page's bottom-right corner
   before clicking Save.
 
-  If you decide to go with three fields (namely id, symbol, and shares), realize
+[^23]: Of course, you could also assign unique numeric IDs to stocks and remember those instead of their symbols. But then you’d have to maintain your own database of companies, built up over time based on data from, say, Yahoo. It’s probably better (and it’s certainly simpler), then, to keep track of stocks simply by way of their symbols.
+
+  If you decide to go with three fields (namely `id`, `symbol`, and `shares`), realize
   that id should not be defined as a primary key in this table, else each user
-  could own no more than one company’s stock (since his or her id could not
-  appear in more than one row). Realize, too, that you shouldn’t let some id and
+  could own no more than one company’s stock (since his or her `id` could not
+  appear in more than one row). Realize, too, that you shouldn’t let some `id` and
   some symbol to appear together in more than one row. Better to consolidate
   users’ holdings by updating shares whenever some user sells or buys more
   shares of some stock he or she already owns. A neat way to impose this
   restriction while creating your table is to define a “joint primary key” by
-  selecting an Index of PRIMARY for both id and symbol. That way,
+  selecting an Index of PRIMARY for both `id` and `symbol`. That way,
+  `mysql_query` will return false if you try to insert more than one row for some
+  pair of `id` and `symbol`. We leave it to you, though, to decide your fields’
+  types.[^24] When done defining your table, click Save!
 
-  22 By “portfolio,” we mean a collection of stocks (i.e., shares of companies)
-  that some user owns.
+[^24]: If you include id in this table, know that its type should match that in users. But don’t specify `auto_increment` for that field in this new table, as you only want auto-incrementation when user IDs are created (by `register2.php`) for new users. And don’t call your table `tbl`.
 
-  23 Of course, you could also assign unique numeric IDs to stocks and remember
-  those instead of their symbols. But then you’d have to maintain your own
-  database of companies, built up over time based on data from, say, Yahoo. It’s
-  probably better (and it’s certainly simpler), then, to keep track of stocks
-  simply by way of their symbols.
-
-  ￼18 < 27
-
-  This is CS50. Harvard College Fall 2011
-
-  mysql_query will return false if you try to insert more than one row for some
-  pair of id and symbol. We leave it to you, though, to decide your fields’
-  types.24 When done defining your table, click Save!
-
-  * Before we let users buy and sell stocks themselves, let’s give some shares
+* Before we let users buy and sell stocks themselves, let’s give some shares
   to Skroob and friends at no charge. Click, in phpMyAdmin’s left-hand frame,
   the link to users and remind yourself of your current users’ IDs. Then click,
   in phpMyAdmin’s left-hand frame, the link to your new table (for users’
@@ -780,21 +745,23 @@ appropriateness of some discussion, contact the staff.
 
   Once you’ve bought your users some shares, let’s see what you did. Click the
   tab labeled SQL and run a query like the below, where tbl represents your new
-  table’s name.25
+  table’s name.[^25]
 
-  SELECT * FROM tbl WHERE id = 7
+[^25]: Incidentally, because 2 is a number (just as 10000.00 was earlier), you need not enclose it in quotes like you do strings.
 
-  Assuming 7 is Skroob’s user ID, that query should return all rows from tbl
+      SELECT * FROM tbl WHERE id = 7
+
+  Assuming `7` is Skroob’s user ID, that query should return all rows from tbl
   that represent the the president’s holdings. If the only fields in table are,
   say, id, symbol, and shares, then know that the above is actually equivalent
   to the below.
 
-  SELECT id, symbol, shares FROM tbl WHERE id = 7
+      SELECT id, symbol, shares FROM tbl WHERE id = 7
 
   If, meanwhile, you’d like to retrieve only Skroob’s shares of A5, you might
-  like to try a query like the below.
+  like to try a query like the below
 
-  SELECT shares FROM tbl WHERE id = 7 AND symbol = 'AFLB.OB'
+      SELECT shares FROM tbl WHERE id = 7 AND symbol = 'AFLB.OB'
 
   If you happened to buy Skroob some shares of that company, the above should
   return one row with one column, the number of shares. If you did not get him
@@ -804,95 +771,80 @@ appropriateness of some discussion, contact the staff.
   INSERT statements. But phpMyAdmin’s GUI saved you the trouble.
 
   Alright, let’s put this knowledge to use. It’s time to let users peruse their
-  portfolios! Overhaul index.php, in such a way that it reports each of the
+  portfolios! Overhaul `index.php`, in such a way that it reports each of the
   stock’s in a user’s portfolio, including number of shares and current value
   thereof, along with a user’s current cash balance. You are welcome, though not
   required, to make use of the stock class’s other data. Needless to say,
-  index.php will need to invoke lookup much like quote2.php did, though perhaps
-  multiple times. Know that a PHP script can certainly invoke mysql_query
+  `index.php` will need to invoke lookup much like `quote2.php` did, though perhaps
+  multiple times. Know that a PHP script can certainly invoke `mysql_query`
   multiple times, even though, thus far, we’ve seen it used in each file no more
-  than once. Similarly can you call mysql_fetch_array multiple times,
+  than once. Similarly can you call `mysql_fetch_array` multiple times,
   particularly in loops.
-
-  24 If you include id in this table, know that its type should match that in
-  users. But don’t specify auto_increment for that field in this new table, as
-  you only want auto-incrementation when user IDs are created (by register2.php)
-  for new users. And don’t call your table tbl.
-
-  25 Incidentally, because 2 is a number (just as 10000.00 was earlier), you
-  need not enclose it in quotes like you do strings.
-
-  ￼19 < 27
-
-  This is CS50. Harvard College Fall 2011
 
   For instance, if your goal is simply to display, say, President Skroob’s
   holdings, one per row in some HTML table, you can generate rows with code like
-  the below.26
+  the below.[^26]
 
-  <?
+[^26]: Note that developers tend to use single quotes around HTML, lest the HTML itself contain double quotes, as around attributes’ values.
 
-  $result = mysql_query("SELECT symbol, shares FROM tbl WHERE id = 7"); while
-  ($row = mysql_fetch_array($result))
+      <?
 
-  {
+      $result = mysql_query("SELECT symbol, shares FROM tbl WHERE id = 7"); while
+      ($row = mysql_fetch_array($result))
 
-  $s = lookup($row["symbol"]); print('<tr>');
+      {
 
-  print('<td>' . $s->name . '</td>'); print('<td>' . $row["shares"] . '</td>');
-  print('</tr>');
+      $s = lookup($row["symbol"]); print('<tr>');
 
-  } ?>
+      print('<td>' . $s->name . '</td>'); print('<td>' . $row["shares"] . '</td>');
+      print('</tr>');
 
-  Alternatively, you can avoid using the concatenation operator (.) via syntax
-  like the below: <?
+      } ?>
 
-  $result = mysql_query("SELECT symbol, shares FROM tbl WHERE id = 7"); while
-  ($row = mysql_fetch_array($result))
+  Alternatively, you can avoid using the concatenation operator (`.`) via syntax
+  like the below: 
+  
+      <?
 
-  {
+      $result = mysql_query("SELECT symbol, shares FROM tbl WHERE id = 7"); while
+      ($row = mysql_fetch_array($result))
 
-  $s = lookup($row["symbol"]); print("<tr>"); print("<td>{$s->name}</td>");
-  print("<td>{$row["shares"]}</td>"); print("</tr>");
+      {
 
-  } ?>
+      $s = lookup($row["symbol"]); print("<tr>"); print("<td>{$s->name}</td>");
+      print("<td>{$row["shares"]}</td>"); print("</tr>");
+
+      } ?>
 
   Note that, in the above version, we’ve surrounded the lines of HTML with
-  double quotes instead of single quotes so that the variables within ($n->name
-  and $row["shares"]) are interpolated (i.e., substituted with their values) by
+  double quotes instead of single quotes so that the variables within
+  (`$n->name`
+  and `$row["shares"]`) are interpolated (i.e., substituted with their values) by
   PHP’s interpreter; variables between single quotes are not interpolated. And
   we’ve also surrounded those same variables with curly braces so that PHP
-  realizes they’re variables; variables with simpler syntax (e.g., $foo) do not
-  require the curly braces for interpolation.27 Anyhow, though commonly done,
+  realizes they’re variables; variables with simpler syntax (e.g., `$foo`) do not
+  require the curly braces for interpolation.[^27] Anyhow, though commonly done,
   generating HTML via calls to print isn’t terribly elegant. An alternative
   approach, though still a bit inelegant, is code more like the below.
 
-  <? $result = mysql_query("SELECT symbol, shares FROM tbl WHERE id = 7"); ?> <?
-  while ($row = mysql_fetch_array($result)): ?>
+      <? $result = mysql_query("SELECT symbol, shares FROM tbl WHERE id = 7"); ?> <?
+      while ($row = mysql_fetch_array($result)): ?>
 
-  <? $s = lookup($row["symbol"]); ?>
+      <? $s = lookup($row["symbol"]); ?>
 
-  <tr>
+      <tr>
 
-  <td><?= $s->name ?></td> <td><?= $row["shares"] ?></td>
+      <td><?= $s->name ?></td> <td><?= $row["shares"] ?></td>
 
-   </tr>
+      </tr>
 
-   <? endwhile ?>
+      <? endwhile ?>
 
-  26 Note that developers tend to use single quotes around HTML, lest the HTML
-  itself contain double quotes, as around attributes’ values.
-
-  27 It’s fine to use double quotes inside those curly braces, even though we’ve
-  also used double quotes to surround the entire argument to print.
-
-  ￼20 < 27
-
-  This is CS50. Harvard College Fall 2011
+[^27]: It’s fine to use double quotes inside those curly braces, even though we’ve also used double quotes to surround the entire argument to print.
 
   As for what HTML to generate, look, as before, to
 
-  https://www.cs50.net/finance/
+      https://www.cs50.net/finance/
 
   for inspiration or hints. But do not feel obliged to mimic our design. Make
   this website your own! Although any HTML and PHP code that you yourself write
@@ -900,20 +852,20 @@ appropriateness of some discussion, contact the staff.
   characters in length. HTML that you generate dynamically (as via calls to
   print), though, does not need to be pretty-printed.
 
-  As with quote2.php, be sure to display portfolio's values and cash balances to
+  As with `quote2.php`, be sure to display portfolio's values and cash balances to
   at least two decimal places but no more than four.
 
   Incidentally, though we keep using President Skroob in examples, your code
   should work for whichever user is logged in.
 
-  As always, be sure that the HTML generated by index.php is valid.
+  As always, be sure that the HTML generated by `index.php` is valid.
 
-  * And now it is time to implement the ability to sell in, say, sell.php and
-  sell2.php. We leave the design of the former, in particular, to you. But know,
+* And now it is time to implement the ability to sell in, say, `sell.php` and
+  `sell2.php`. We leave the design of the former, in particular, to you. But know,
   for the latter, that you can delete rows from your table (on behalf of, say,
   Skroob) with SQL like the below.
 
-  DELETE FROM tbl WHERE id = 7 AND symbol = 'AFLB.OB'
+      DELETE FROM tbl WHERE id = 7 AND symbol = 'AFLB.OB'
 
   We leave it to you to infer exactly what that statement should do. Of course,
   you could try the above out via phpMyAdmin’s SQL tab. Now what about the
@@ -922,9 +874,11 @@ appropriateness of some discussion, contact the staff.
   portfolios but users as well. We leave it to you to determine how to compute
   how much cash a user is owed upon sale of some stock. But once you know that
   amount (say, $500), SQL like the below should take care of the deposit (for,
-  say, Skroob).28
+  say, Skroob).[^28]
 
-  UPDATE users SET cash = cash + 500 WHERE id = 7
+[^28]: Of course, if the database or web server happens to die between this DELETE and UPDATE, Skroob might lose out on all of that cash. You need not worry about such cases! It’s also possible, because of multithreading and, thus, race conditions, that a clever Skroob could trick your site into paying out more than once. You need not worry about such cases either! Though, if you’re so very inclined, you can employ MyISAM locks or InnoDB tables with SQL transactions. See <http://dev.mysql.com/doc/refman/5.5/en/innodb.html> for reference.
+
+      UPDATE users SET cash = cash + 500 WHERE id = 7
 
   It’s fine, for simplicity, to require that users sell all shares of some stock
   or none, rather than only a few. Needless to say, try out your code by logging
@@ -933,35 +887,24 @@ appropriateness of some discussion, contact the staff.
 
   As always, be sure that your HTML is valid!
 
-  28 Of course, if the database or web server happens to die between this DELETE
-  and UPDATE, Skroob might lose out on all of that cash. You need not worry
-  about such cases! It’s also possible, because of multithreading and, thus,
-  race conditions, that a clever Skroob could trick your site into paying out
-  more than once. You need not worry about such cases either! Though, if you’re
-  so very inclined, you can employ MyISAM locks or InnoDB tables with SQL
-  transactions. See http://dev.mysql.com/doc/refman/5.5/en/innodb.html for
-  reference.
-
-  ￼21 < 27
-
-  This is CS50. Harvard College Fall 2011
-
-  * Now it’s time to support actual buys. Implement the ability to buy, in, say,
-  buy.php and buy2.php.29 The interface with which you provide a user is
+* Now it’s time to support actual buys. Implement the ability to buy, in, say,
+  `buy.php` and `buy2.php`.[^29] The interface with which you provide a user is
   entirely up to you, though, as before, feel free to look to
 
-  https://www.cs50.net/finance/
+[^29]: As before, you need not worry about interruptions of service or race conditions. 22 < 27
+
+      https://www.cs50.net/finance/
 
   for inspiration or hints. Of course, you’ll need to ensure that a user cannot
   spend more cash than he or she has on hand. And you’ll want to make sure that
   users can only buy whole shares of stocks, not fractions thereof. For this
   latter requirement, know that a call like
 
-  preg_match("/^\d+$/", $_POST["shares"])
+      preg_match("/^\d+$/", $_POST["shares"])
 
-  will return true if and only if $_POST["shares"] contains a non-negative
+  will return true if and only if `$_POST["shares"]` contains a non-negative
   integer, thanks to its use of a regular expression. See
-  http://www.php.net/preg_match for details. Take care to apologize to the user
+  <http://www.php.net/preg_match> for details. Take care to apologize to the user
   if you must reject their input for any reason. In other words, be sure to
   perform rigorous error-checking. (We leave to you to determine what needs to
   be checked!)
@@ -978,224 +921,90 @@ appropriateness of some discussion, contact the staff.
   the specified pair of id and symbol already exists in some row, in which case
   that row’s number of shares will simply be increased (say, by 10).
 
-  INSERT INTO table (id, symbol, shares) VALUES(7, 'AFLB.OB', 10) ON DUPLICATE
-  KEY UPDATE shares = shares + VALUES(shares)
+      INSERT INTO table (id, symbol, shares) VALUES(7, 'AFLB.OB', 10) 
+            ON DUPLICATE KEY UPDATE shares = shares + VALUES(shares)
 
   As always, be sure to bang on your code. And be sure that your HTML is valid!
 
-  * And now for your big finale. Your users can now buy and sell stocks and even
+* And now for your big finale. Your users can now buy and sell stocks and even
   check their portfolio’s value. But they have no way of viewing their history
   of transactions.
 
   Enhance your implementations for buying and selling in such a way that you
   start logging transactions, recording for each:
 
-  * Whether a stock was bought or sold.
+  - Whether a stock was bought or sold.
 
-  * The symbol bought or sold.
+  - The symbol bought or sold.
 
-  * The number of shares bought or sold.
+  - The number of shares bought or sold.
 
-  * The price of a share at the time of transaction.
+  - The price of a share at the time of transaction.
 
-  * The date and time of the transaction.
+  - The date and time of the transaction.
 
-  29 As before, you need not worry about interruptions of service or race
-  conditions. 22 < 27
-
-  ￼
-
-  This is CS50. Harvard College Fall 2011
-
-  Then, by way of a file called history.php, enable users to peruse their own
+  Then, by way of a file called `history.php`, enable users to peruse their own
   history of transactions, formatted as you see fit. Provide a hyperlink to that
-  file somewhere in index.php. Be sure that your HTML is valid!
+  file somewhere in `index.php`. Be sure that your HTML is valid!
 
-  * Phew. Glance back at index.php now and, if not there already, make that it
-  somehow links to, at least, buy.php, history.php, logout.php, quote.php, and
-  sell.php (or their equivalents) so that each is only one click away from a
+* Phew. Glance back at `index.php` now and, if not there already, make that it
+  somehow links to, at least, `buy.php`, `history.php`, `logout.php`,
+  `quote.php`, and
+  `sell.php` (or their equivalents) so that each is only one click away from a
   user’s portfolio!
 
-  * And now the icing on the cake. Only one feature to go, but you get to
+* And now the icing on the cake. Only one feature to go, but you get to
   choose. Implement at least one (1) of the features below. You may interpret
   each of the below as you see fit; we leave all design decisions to you. Just
   take care to make clear to your TF (as via an appropriately named hyperlink in
-  index.php) which feature you tackled. And be sure that your HTML is valid.
+  `index.php`) which feature you tackled. And be sure that your HTML is valid.
 
-  * Empower users (who're already logged in) to change their passwords.
+  - Empower users (who're already logged in) to change their passwords.
 
-  * Empower users who’ve forgotten their password to reset it (as by having them
-  register with
+  - Empower users who’ve forgotten their password to reset it (as by having them
+    register with
+    an email address so that you can email them a link via which to do so).
 
-  an email address so that you can email them a link via which to do so).
+  - Email users “receipts” anytime they buy or sell stocks.
 
-  * Email users “receipts” anytime they buy or sell stocks.
-
-  * Empower users to deposit additional funds.
+  - Empower users to deposit additional funds.
 
   For tips on how to send email programmatically, see:
 
-  https://manual.cs50.net/Sending_Mail
+      https://manual.cs50.net/Sending_Mail
 
-  CS50 in the Cloud.
 
-  * Once you think you’re all done, it’s time to invite one or more friends to
-  try out your site. Of course, your website isn't technically on the Web just
-  yet, since it lives on your own computer within the appliance. But recall that
-  you have, thanks to Problem Set 1, a CS50 Cloud account. Not only does that
-  account allow you to log into the course's website and run submit50, it also
-  provides you with access to cloud.cs50.net on which you can host your
-  implementation of C$50 Finance!
+## Sanity Checks.
 
-  If you would like to upload your work to cloud.cs50.net so that friends and
-  family can try it out via their own computers, head to
-
-  https://manual.cs50.net/Cloud
-
-  for instructions. If you'd rather not, that's okay too, but at least invite
-  someone over to try out your site on the appliance itself.
-
-  Encourage them to try breaking it, like a good adversary would. Under no
-  circumstances should they (or we) be able to crash your code (i.e., trigger
-  some warning or error from PHP’s own interpreter). You’d best catch and/or
-  apologize for any error that a user’s input, malicious or otherwise, might
-  induce! And you’d best scrub all user input for safety’s sake, as with
-  mysql_real_escape_string!
-
-  23 < 27
-
-  Another Big Board.
-
-  This is CS50. Harvard College Fall 2011
-
-  * Just for fun, why don’t we give you some cash out of our own pocket. How
-  does $10K for each of you sound? If you would like, surf on over to
-
-  https://www.cs50.net/finance/
-
-  and you’ll find that $10K awaits you if you follow the link to play the BIG
-  BOARD. We shall see, come the course’s final lecture on Mon 11/21, who exits
-  this course with the most money in hand.30 Last year's winner pocketed
-  $34,261,456,955.42. (He's now a CA.)
-
-  Sanity Checks.
-
-  Before you consider this problem set done, best to ask yourself these
+* Before you consider this problem set done, best to ask yourself these
   questions and then go back and improve your code as needed! Do not consider
   the below an exhaustive list of expectations, though, just some helpful
   reminders. The checkboxes that have come before these represent the exhaustive
   list! To be clear, consider the questions below rhetorical. No need to answer
   them in writing for us, since all of your answers should be “yes!”
 
-  * Is your homepage’s HTML valid according to validator.w3.org?
+  - Is your homepage’s HTML valid according to <validator.w3.org>?
 
-  * Is the HTML generated by all of your PHP files valid according to
-  validator.w3.org?
+  - Is the HTML generated by all of your PHP files valid according to
+    <validator.w3.org>?
 
-  * Do your pages detect and handle invalid inputs properly?
+  - Do your pages detect and handle invalid inputs properly?
 
-  * Are you recording users’ histories of transactions properly?
+  - Are you recording users’ histories of transactions properly?
 
-  * Did you add one (1) additional feature of your own?
+  - Did you add one (1) additional feature of your own?
 
-  * Does every page (other than your login, logout, and registration pages)
-  require authentication?
+  - Does every page (other than your login, logout, and registration pages)
+    require authentication?
 
-  * Did you choose appropriate data types for your database tables’ fields?
+  - Did you choose appropriate data types for your database tables’ fields?
 
-  * Are you displaying any dollar amounts to at least two decimal places but no
-  more than four?
+  - Are you displaying any dollar amounts to at least two decimal places but no
+    more than four?
 
-  * Are you storing stocks' symbols in your table(s) in uppercase?
+  - Are you storing stocks' symbols in your table(s) in uppercase?
 
-  * Does your site behave the same in at least two major browsers?
+  - Does your site behave the same in at least two major browsers?
 
-  As always, if you can’t answer “yes” to one or more of the above because
-  you’re having some trouble, do turn to help.cs50.net!
+  This was Problem Set 7.
 
-  ￼30 Money may not be legal tender.
-
-  24 < 27
-
-  How to Submit.
-
-  This is CS50. Harvard College Fall 2011
-
-  In order to submit this problem set, you must first execute a command in the
-  appliance and then submit a (brief) form online.
-
-  * Recall that you obtained a CS50 Cloud account (i.e., username and password)
-  for Problem Set 1. If you don’t remember your username and/or password, head
-  to https://cloud.cs50.net/ look up the former and/or change the latter. You’ll
-  be prompted to log in with your HUID (or XID) and PIN.
-
-  * Just in case we updated submit50 since you started this problem set, open a
-  terminal window and execute the below, inputting crimson if prompted for John
-  Harvard’s password.
-
-  sudo yum -y update
-
-  If there was something to update, you should see Complete! after a few seconds
-  or minutes. If there was nothing to update, you should instead see No packages
-  marked for Update. If you see any errors, try the command once more, try to
-  restart the appliance and then try once more, then head to
-  https://manual.cs50.net/FAQs followed by http://help.cs50.net/ as needed for
-  help!
-
-  * To actually submit, first open a terminal window and execute: cd
-  ~/public_html
-
-  Then execute:
-
-  ls
-
-  At a minimum, you should see index.html and pset7. If not, odds are you
-  skipped some more steps earlier! If everything is as it should be, you are
-  ready to submit your source code and database to us. First execute
-
-  cd ~/public_html/pset7
-
-  mysqldump -u jharvard -p jharvard_pset7 > jharvard_pset7.sql
-
-  in order to "dump" your MySQL database to a file called jharvard_pset7.sql (so
-  that we can re- create it on our end). Input a password of crimson if
-  prompted. Then execute:
-
-  submit50 ~/public_html
-
-  When prompted for Course, input cs50; when prompted for Repository, input
-  pset7. When prompted for a username and password, input your CS50 Cloud
-  username and password. For security, you won’t see your password as you type
-  it. That command will essentially upload your entire ~/public_html directory
-  to CS50’s repository, where your TF will be able to access it. The command
-  will inform you whether your submission was successful or not. If provided
-  with the URL of a PDF of your code (which further confirms its submission),
-  right-click (or ctrl-click) the link, then choose Open Link from the menu that
-  appears to open the PDF in Document Viewer.
-
-  ￼25 < 27
-
-  This is CS50. Harvard College Fall 2011
-
-  You may re-submit as many times as you’d like; we’ll grade your most recent
-  submission. But take care not to submit after the problem set’s deadline, lest
-  you spend a late day unnecessarily or risk rejection entirely.
-
-  If you run into any trouble at all, let us know via help.cs50.net and we’ll
-  try to assist! Just take care to seek help well before the problem set’s
-  deadline, as we can’t always reply within minutes!
-
-  If you decided to upload your work to cloud.cs50.net but ended up making some
-  changes there to your code, be sure that you made those changes on your
-  appliance as well so that you ultimately submit the right version of your
-  work.
-
-  * Anytime after lecture on Mon 10/31 but before this problem set’s deadline,
-  head to the URL below where a short form awaits:
-
-  https://www.cs50.net/psets/7/
-
-  Once you have submitted that form (as well as your source code and database),
-  you are done! This was Problem Set 7.
-  
-  26 < 27
