@@ -358,6 +358,12 @@
   seed.  Before you ultimately submit, though, be sure to remove any such calls
   to `printf`, as we like our programs’ outputs just they way they are!
 
+  If you’d like to play with the staff’s own implementation of  find in the
+  appliance, you may execute the below. 
+
+      ~cs50/pset3/find
+
+
 * Now that sort (presumably) works, it’s time to improve upon search, the
   other function that lives in helpers.c. Notice that our version implements
   “linear search,” whereby search looks for value by iterating over the integers

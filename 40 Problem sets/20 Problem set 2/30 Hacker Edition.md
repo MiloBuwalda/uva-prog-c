@@ -194,6 +194,9 @@ be sure that you have version 17.
   questioning designs, as vulnerabilities (if not regrets) often result from
   poor ones.
 
+  If you’d like to play with the staff’s own implementation of `crack`, well,
+  sorry!  :‐)  Where’d be the fun in that?
+
   Don’t forget to back up your files!
 
 [^6]: In fact, do bear in mind the policies at <http://www.fas-it.fas.harvard.edu/services/student/policies/rules_and_responsibilities>.

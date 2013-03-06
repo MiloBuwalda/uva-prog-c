@@ -1006,5 +1006,13 @@ appropriateness of some discussion, contact the staff.
 
   - Does your site behave the same in at least two major browsers?
 
+## Submitting.
+
+* To save the graders going through the troubles of having to import your
+  database, we would like you to show your website to one of the assistants. He
+  or she will then check the scope and correctness of your website. Please show
+  that your website works correctly and that you have implemented an extra
+  feature.
+
   This was Problem Set 7.
 

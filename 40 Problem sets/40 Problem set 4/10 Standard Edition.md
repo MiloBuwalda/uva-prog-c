@@ -9,10 +9,9 @@
 
 ## Prerequisites
 
-* NB: You have to run the following command in order to install the ncurses
+* If you have the following error: `ncurses.h not found`.
+  You have to run the following command in order to install the ncurses
   header files:
 
       sudo yum install ncurses-devel ncurses
-
-  This fixes the error `ncurses.h not found`.
 

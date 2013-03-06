@@ -196,7 +196,10 @@ to C.
       int
       main(void)
 
-  without any mention of argc or argv.
+  without any mention of argc or argv. If you’d like to play with the staff’s
+  own implementation of oldman in the appliance, you may execute the below. 
+  
+      ~cs50/pset2/oldman
 
   Alright, off you go! Don’t forget to back up your files!
 

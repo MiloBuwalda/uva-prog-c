@@ -50,7 +50,7 @@ elegantly, and/or logically)?
   So let’s get both VirtualBox (for Mac users) or VMware Player (Windows and
   Linux users) and the CS50 Appliance installed. Head to
   
-  > <https://manual.cs50.net/Appliance#How_to_Install_Appliance>
+  > <https://manual.cs50.net/CS50_Appliance_2.3>
   
   where instructions await.
 
