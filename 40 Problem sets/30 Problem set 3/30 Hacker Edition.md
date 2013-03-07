@@ -503,9 +503,10 @@
   > <http://en.wikipedia.org/wiki/A*_search_algorithm>
 
   Consider using “Manhattan distance” (aka “city-block distance”) as your
-  implementation’s heuristic. If you find that A* takes up too much memory
-  (particularly for d ≥ 4), though, you might want to take a look at iterative
-  deepening A* (IDA*) instead:
+  implementation’s [heuristic](http://en.wikipedia.org/wiki/Heuristic). Note
+  that an heuristic does **not** guarantee a solution! If you find that A*
+  takes up too much memory (particularly for d ≥ 4), though, you might want to
+  take a look at iterative deepening A* (IDA*) instead:
 
   > <http://webdocs.cs.ualberta.ca/~tony/RecentPapers/pami94.pdf>
 
