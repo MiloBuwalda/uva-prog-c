@@ -302,7 +302,7 @@
   or if you tried to open a file in a directory for which you didn’t have the
   proper permissions.
 
-[^1]: FYI, if you’ve seen this written elsewhere as `wb`, know that `w` is functionally equivalent on the Appliance and many other systems.
+  [^1]: FYI, if you’ve seen this written elsewhere as `wb`, know that `w` is functionally equivalent on the Appliance and many other systems.
 
 * The `FILE` type is actually implemented as a `struct`. You can imagine it to
   be like a cassette tape in that you have to manually rewind if you want to
@@ -318,7 +318,7 @@
   names and houses of students. Why don’t we call `free` on `id`, though?
   We didn’t allocate memory for it using `malloc`.[^2]
 
-[^2]: Technically, we called malloc in `GetInt` because it calls `GetString`, but we also called `free` immediately afterward.
+  [^2]: Technically, we called malloc in `GetInt` because it calls `GetString`, but we also called `free` immediately afterward.
 
 * When we compile and run `structs2.c` and enter information correspond-
   ing to three students, we see that a file named database is, in fact, created
@@ -360,7 +360,7 @@
   node. The order of these steps is important. If we first pointed first to
   our newly allocated node, we would lose track of our entire linked list!
 
-[^3]: That is, after traversing the entire list to determine that the number belongs at the beginning.
+  [^3]: That is, after traversing the entire list to determine that the number belongs at the beginning.
 
 * Insertion into the middle of a linked list is the most complicated case.
   Again, we traverse the list until we find the right position for our new

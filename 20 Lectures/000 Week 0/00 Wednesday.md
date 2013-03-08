@@ -74,8 +74,8 @@
   us some 600 and 300 steps, respectively, the algorithm above took us only 9
   or 10 steps.
 
-[^1]: Technically, I'm #1, but I'll let it slide this time.
-[^2]: The teaching fellows, akshully.
+  [^1]: Technically, I'm #1, but I'll let it slide this time.
+  [^2]: The teaching fellows, akshully.
 
 ### More Real World Examples
 
@@ -144,9 +144,9 @@
   people that are connected to each other is 1 trillion ($$100^6$$). That’s way
   more than the number of people on earth.
 
-[^3]: Actually, we're not even calculating the sum here. On the 31st day
+  [^3]: Actually, we're not even calculating the sum here. On the 31st day
       alone, you would receive over \$10 million.
-[^4]: I know him personally, so now you’re only 1 degree of separation from
+  [^4]: I know him personally, so now you’re only 1 degree of separation from
       him.
 
 ### HarvardCourses, Shuttleboy, and APIs
@@ -189,7 +189,7 @@
   simply want you to be able to use these wonderful tools called computers to
   their full advantage.
 
-[^5]: Seriously, it’s not that hard. I happen to know that David spends most
+  [^5]: Seriously, it’s not that hard. I happen to know that David spends most
       of his time playing Wii Tennis.
 
 ### Expectations

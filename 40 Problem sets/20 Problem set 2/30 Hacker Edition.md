@@ -149,9 +149,9 @@ be sure that you have version 17.
   certainly work on inputs other than these as well; hard-coding into your
   program the solutions to the above is not acceptable.
 
-[^3]: Take a look at `/etc/passwd` in the appliance, for instance; wherever you see `x` a password once was.
-[^4]: http://cdn.cs50.net/2011/fall/psets/2/hacker2/passwd
-[^5]: In case you test your code with other ciphertexts, know that command-line arguments with certain characters (e.g., ?) must be enclosed in single or double quotes; those quotation marks will not end up in argv itself.
+  [^3]: Take a look at `/etc/passwd` in the appliance, for instance; wherever you see `x` a password once was.
+  [^4]: http://cdn.cs50.net/2011/fall/psets/2/hacker2/passwd
+  [^5]: In case you test your code with other ciphertexts, know that command-line arguments with certain characters (e.g., ?) must be enclosed in single or double quotes; those quotation marks will not end up in argv itself.
 
   So that we can automate some tests of your code, your program must behave per
   the below.
@@ -199,7 +199,7 @@ be sure that you have version 17.
 
   Don’t forget to back up your files!
 
-[^6]: In fact, do bear in mind the policies at <http://www.fas-it.fas.harvard.edu/services/student/policies/rules_and_responsibilities>.
+  [^6]: In fact, do bear in mind the policies at <http://www.fas-it.fas.harvard.edu/services/student/policies/rules_and_responsibilities>.
 
 This was Problem Set 2.
 

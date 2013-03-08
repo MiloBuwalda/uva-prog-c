@@ -119,7 +119,7 @@ Editing of this pset is not finished. Please download the PDF [specification](ht
   where text is the file you wish to spell-check.[^2] Suffice it to say, the former
   is easier to type!
 
-[^2]: Of course, speller will not be able to load any dictionaries until you implement load in dictionary.c! Until then, you'll see Could not load.
+  [^2]: Of course, speller will not be able to load any dictionaries until you implement load in dictionary.c! Until then, you'll see Could not load.
 
 
   Within the default dictionary, mind you, are 143,091 words, all of which must
@@ -139,7 +139,7 @@ Editing of this pset is not finished. Please download the PDF [specification](ht
   sure you understand
   how speller itself works!
 
-[^3]: Ibid.
+  [^3]: Ibid.
 
 * Odds are, you didn’t spend enough time looking over `speller.c`. Go back one
   square and walk yourself through it again!
@@ -273,7 +273,7 @@ Editing of this pset is not finished. Please download the PDF [specification](ht
   will eventually resemble the below.[^4]: For now, try executing the staff's
   solution (using the default dictionary) with the below.
 
-[^4]: Ibid.
+  [^4]: Ibid.
 
       ~cs50/pset6/speller ~cs50/pset6/texts/austinpowers.txt
 

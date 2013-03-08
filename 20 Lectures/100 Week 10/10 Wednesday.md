@@ -954,5 +954,5 @@
   just as we did in `ajax5.html`. In order to inject HTML into the span
   elements as before, we can simply call the html function defined by jQuery.
 
-[^3]: We’ve called it data, but we can actually call it anything we want.
+  [^3]: We’ve called it data, but we can actually call it anything we want.
 

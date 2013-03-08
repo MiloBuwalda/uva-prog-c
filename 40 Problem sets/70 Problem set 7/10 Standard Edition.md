@@ -95,9 +95,9 @@ appropriateness of some discussion, contact the staff.
   you), for a file’s or directory’s group (e.g., you plus all other students),
   and for the “world” (i.e., anyone with access to your appliance).
 
-[^3]: To read a file means to, well, read its contents; to read a directory means to list its contents. To write to a file means to change its contents; to write to a directory means to add another file or directory to it. To execute a file means to run it like a program; to execute a directory means to enter it, as with `cd`.
+  [^3]: To read a file means to, well, read its contents; to read a directory means to list its contents. To write to a file means to change its contents; to write to a directory means to add another file or directory to it. To execute a file means to run it like a program; to execute a directory means to enter it, as with `cd`.
 
-[^4]: The first symbol in a sequence indicates whether the permissions describe a directory (`d`) or a symbolic link (`l`), the latter of which is an alias of sorts.
+  [^4]: The first symbol in a sequence indicates whether the permissions describe a directory (`d`) or a symbolic link (`l`), the latter of which is an alias of sorts.
 
   Confirm that your homepage is indeed world-readable (at least by anyone with
   access to the appliance) by visiting the URL below, either with Firefox within
@@ -173,7 +173,7 @@ appropriateness of some discussion, contact the staff.
   security reasons, PHP- based web pages are interpreted “as you” (i.e., under
   John Harvard's username) in the appliance.[^5]
 
-[^5]: For the curious, we’re using suPHP (http://www.suphp.org/) with Apache (http://httpd.apache.org/).
+  [^5]: For the curious, we’re using suPHP (http://www.suphp.org/) with Apache (http://httpd.apache.org/).
 
   Okay, still, what’s with all those numbers? Well, think of `rw-r--r--` as
   representing three triples of bits,the first triple of which,to be clear, is `rw-`.
@@ -199,7 +199,7 @@ appropriateness of some discussion, contact the staff.
   stocks’ actual prices and portfolios’ values, it will also let you buy (okay,
   “buy”) and sell (fine, “sell”) stocks![^6]
 
-[^6]: Per Yahoo’s fine print, “Quotes delayed [by a few minutes], except where indicated otherwise.”
+  [^6]: Per Yahoo’s fine print, “Quotes delayed [by a few minutes], except where indicated otherwise.”
 
 * Allow me to share some excerpts from my spam folder with you.
 
@@ -262,7 +262,7 @@ appropriateness of some discussion, contact the staff.
   nightmare, though, because a site’s markup is often a mess, and if the site
   changes the format of its pages overnight, you need to re-write your scraper.[^8]
 
-[^8]: See https://manual.cs50.net/Screen_Scraping if curious as to how it can be done nonetheless.
+  [^8]: See https://manual.cs50.net/Screen_Scraping if curious as to how it can be done nonetheless.
 
   Thankfully, because Yahoo provides data in CSV, C$50 Finance will avoid screen
   scraping altogether by downloading (effectively pretending to be a browser)
@@ -315,9 +315,9 @@ appropriateness of some discussion, contact the staff.
   ensure that you’re connected to your database, where you’ll store users’
   portfolios.
 
-[^9]: The calls to preg_match and session_set_cookie_params tell PHP to associate cookies with your pset7 directory specifically.
+  [^9]: The calls to preg_match and session_set_cookie_params tell PHP to associate cookies with your pset7 directory specifically.
 
-[^10]: Even though HTTP is a “stateless” protocol, whereby browsers are supposed to disconnect from servers as soon as they’re done downloading pages, “cookies” allow browsers to remind servers who they (or, really, you) are on subsequent requests for content. PHP uses “session cookies” to provide you with $_SESSION, an associative array in which you can store any data to which you’d like to have access for the duration of some user’s visit. The moment a user ends his or her “session” (i.e., visit) by quitting his or her browser, the contents of $_SESSION are lost for that user specifically because the next time that user visits, he or she will be assigned a new cookie!
+  [^10]: Even though HTTP is a “stateless” protocol, whereby browsers are supposed to disconnect from servers as soon as they’re done downloading pages, “cookies” allow browsers to remind servers who they (or, really, you) are on subsequent requests for content. PHP uses “session cookies” to provide you with $_SESSION, an associative array in which you can store any data to which you’d like to have access for the duration of some user’s visit. The moment a user ends his or her “session” (i.e., visit) by quitting his or her browser, the contents of $_SESSION are lost for that user specifically because the next time that user visits, he or she will be assigned a new cookie!
 
   Alright, now open `constants.php` with gedit. In this file have we defined some
   global constants. Because all of your PHPs shall require `common.php`, which, in
@@ -343,7 +343,7 @@ appropriateness of some discussion, contact the staff.
   provides more fields than those encapsulated in this structure, our framework,
   out of the box, provides only the basics.
 
-[^11]: By convention, classes’ names are usually capitalized.
+  [^11]: By convention, classes’ names are usually capitalized.
 
   Now take a look at `helpers.php` with gedit. You need not understand how all of
   that code works, but make sure you understand what its functions can do for
@@ -363,7 +363,7 @@ appropriateness of some discussion, contact the staff.
   HTML that implements that login page that you saw. Note that it lays out a
   form using a table.[^12] Notice next the line excerpted below.
 
-[^12]: Many developers frown upon using tables for layout, but they’re worth using sometimes. 
+  [^12]: Many developers frown upon using tables for layout, but they’re worth using sometimes. 
 
       <form action="login2.php" method="post">
 
@@ -388,7 +388,7 @@ appropriateness of some discussion, contact the staff.
 
       SELECT * FROM users WHERE username='skroob'
 
-[^13]: [http://en.wikipedia.org/wiki/Spaceballs#Spaceballs](http://en.wikipedia.org/wiki/Spaceballs#Spaceballs)
+  [^13]: [http://en.wikipedia.org/wiki/Spaceballs#Spaceballs](http://en.wikipedia.org/wiki/Spaceballs#Spaceballs)
 
   Perhaps needless to say, `login2.php`’s next line of code executes that
   `SELECT`
@@ -408,7 +408,7 @@ appropriateness of some discussion, contact the staff.
   Skroob inputted the wrong username or password, he is instead informed via a
   call to `apologize`.
 
-[^14]: Rather than “remember” users by way of their usernames (which are, by nature, strings), you’ll see that we instead rely, for efficiency’s sake, on “user IDs” (which are integers) that uniquely identify users.
+  [^14]: Rather than “remember” users by way of their usernames (which are, by nature, strings), you’ll see that we instead rely, for efficiency’s sake, on “user IDs” (which are integers) that uniquely identify users.
 
   Incidentally, why does this redirection back to `index.php`, upon successful
   authentication, not result in an infinite loop?
@@ -429,7 +429,7 @@ appropriateness of some discussion, contact the staff.
   `register.php`, this code won’t redirect either, thanks to the “regular
   expression” that we’ve passed to `preg_match`.[^15]
 
-[^15]: [http://en.wikipedia.org/wiki/Regular_expression](http://en.wikipedia.org/wiki/Regular_expression)
+  [^15]: [http://en.wikipedia.org/wiki/Regular_expression](http://en.wikipedia.org/wiki/Regular_expression)
 
   Now, how do we enable Skroob to log out? Why, by including in `index.php` a
   hyperlink to `logout.php`! Take a look at the latter. Note that it calls
@@ -483,7 +483,7 @@ appropriateness of some discussion, contact the staff.
   otherwise unique fields, databases tend to build “indexes,” data structures
   that enable them to find rows quickly by way of those fields.
 
-[^17]: A primary key is a field with no duplicates (i.e., that is guaranteed to identify rows uniquely).
+  [^17]: A primary key is a field with no duplicates (i.e., that is guaranteed to identify rows uniquely).
 
   Make sense? Okay, head on back to
 
@@ -516,7 +516,7 @@ appropriateness of some discussion, contact the staff.
   right of the pencil icon. On the page that appears, change 0.0000 to
   10000.0000 for each of your users, then click Go. Won’t they be happy!
 
-[^18]: In theory, we could have defined cash as having a default value of 10000.000, but, in general, best to put such settings in code, not your database, so that they’re easier to change.
+  [^18]: In theory, we could have defined cash as having a default value of 10000.000, but, in general, best to put such settings in code, not your database, so that they’re easier to change.
 
 
 * It’s now time to code! Let’s empower new users to register.
@@ -541,7 +541,7 @@ appropriateness of some discussion, contact the staff.
   (so that users can navigate away from this page if they already have
   accounts).
 
-[^19]: You are welcome, particularly if among those more comfortable, to stray from these filename conventions and structure your site as you see fit, so long as your implementation adheres to all other requirements.
+  [^19]: You are welcome, particularly if among those more comfortable, to stray from these filename conventions and structure your site as you see fit, so long as your implementation adheres to all other requirements.
 
   Alright, let’s take a look at your work! Bring up
 
@@ -582,13 +582,13 @@ appropriateness of some discussion, contact the staff.
      `INSERT`,
      you should certainly apologize to the user, as by calling `apologize`.
 
-[^20]: See http://www.php.net/mysql_query for reference.
+  [^20]: See http://www.php.net/mysql_query for reference.
 
   4. If, though, your `INSERT` succeeds, know that you can find out which `id` was
      assigned to that user with a call to `mysql_insert_id` right after your call to
      `mysql_query`.[^21]
 
-[^21]: See http://www.php.net/mysql_insert_id for reference.
+  [^21]: See http://www.php.net/mysql_insert_id for reference.
 
   5. If registration succeeds, you might as well log the new user in (as by
      “remembering” that id in `$_SESSION`), thereafter redirecting to
@@ -697,7 +697,7 @@ appropriateness of some discussion, contact the staff.
   data in a new table altogether so that we do not impose limits on users’
   portfolios or waste space with potentially unused fields.
 
-[^22]: By “portfolio,” we mean a collection of stocks (i.e., shares of companies) that some user owns.
+  [^22]: By “portfolio,” we mean a collection of stocks (i.e., shares of companies) that some user owns.
 
   Exactly what sort of information need we keep in this new table in order to
   “remember” users’ portfolios? Well, we probably want a field for users’ IDs
@@ -716,7 +716,7 @@ appropriateness of some discussion, contact the staff.
   two fields at once; to add a third, click Go in the page's bottom-right corner
   before clicking Save.
 
-[^23]: Of course, you could also assign unique numeric IDs to stocks and remember those instead of their symbols. But then you’d have to maintain your own database of companies, built up over time based on data from, say, Yahoo. It’s probably better (and it’s certainly simpler), then, to keep track of stocks simply by way of their symbols.
+  [^23]: Of course, you could also assign unique numeric IDs to stocks and remember those instead of their symbols. But then you’d have to maintain your own database of companies, built up over time based on data from, say, Yahoo. It’s probably better (and it’s certainly simpler), then, to keep track of stocks simply by way of their symbols.
 
   If you decide to go with three fields (namely `id`, `symbol`, and `shares`), realize
   that id should not be defined as a primary key in this table, else each user
@@ -731,7 +731,7 @@ appropriateness of some discussion, contact the staff.
   pair of `id` and `symbol`. We leave it to you, though, to decide your fields’
   types.[^24] When done defining your table, click Save!
 
-[^24]: If you include id in this table, know that its type should match that in users. But don’t specify `auto_increment` for that field in this new table, as you only want auto-incrementation when user IDs are created (by `register2.php`) for new users. And don’t call your table `tbl`.
+  [^24]: If you include id in this table, know that its type should match that in users. But don’t specify `auto_increment` for that field in this new table, as you only want auto-incrementation when user IDs are created (by `register2.php`) for new users. And don’t call your table `tbl`.
 
 * Before we let users buy and sell stocks themselves, let’s give some shares
   to Skroob and friends at no charge. Click, in phpMyAdmin’s left-hand frame,
@@ -747,7 +747,7 @@ appropriateness of some discussion, contact the staff.
   tab labeled SQL and run a query like the below, where tbl represents your new
   table’s name.[^25]
 
-[^25]: Incidentally, because 2 is a number (just as 10000.00 was earlier), you need not enclose it in quotes like you do strings.
+  [^25]: Incidentally, because 2 is a number (just as 10000.00 was earlier), you need not enclose it in quotes like you do strings.
 
       SELECT * FROM tbl WHERE id = 7
 
@@ -785,7 +785,7 @@ appropriateness of some discussion, contact the staff.
   holdings, one per row in some HTML table, you can generate rows with code like
   the below.[^26]
 
-[^26]: Note that developers tend to use single quotes around HTML, lest the HTML itself contain double quotes, as around attributes’ values.
+  [^26]: Note that developers tend to use single quotes around HTML, lest the HTML itself contain double quotes, as around attributes’ values.
 
       <?
 
@@ -840,7 +840,7 @@ appropriateness of some discussion, contact the staff.
 
       <? endwhile ?>
 
-[^27]: It’s fine to use double quotes inside those curly braces, even though we’ve also used double quotes to surround the entire argument to print.
+  [^27]: It’s fine to use double quotes inside those curly braces, even though we’ve also used double quotes to surround the entire argument to print.
 
   As for what HTML to generate, look, as before, to
 
@@ -876,7 +876,7 @@ appropriateness of some discussion, contact the staff.
   amount (say, $500), SQL like the below should take care of the deposit (for,
   say, Skroob).[^28]
 
-[^28]: Of course, if the database or web server happens to die between this DELETE and UPDATE, Skroob might lose out on all of that cash. You need not worry about such cases! It’s also possible, because of multithreading and, thus, race conditions, that a clever Skroob could trick your site into paying out more than once. You need not worry about such cases either! Though, if you’re so very inclined, you can employ MyISAM locks or InnoDB tables with SQL transactions. See <http://dev.mysql.com/doc/refman/5.5/en/innodb.html> for reference.
+  [^28]: Of course, if the database or web server happens to die between this DELETE and UPDATE, Skroob might lose out on all of that cash. You need not worry about such cases! It’s also possible, because of multithreading and, thus, race conditions, that a clever Skroob could trick your site into paying out more than once. You need not worry about such cases either! Though, if you’re so very inclined, you can employ MyISAM locks or InnoDB tables with SQL transactions. See <http://dev.mysql.com/doc/refman/5.5/en/innodb.html> for reference.
 
       UPDATE users SET cash = cash + 500 WHERE id = 7
 
@@ -891,7 +891,7 @@ appropriateness of some discussion, contact the staff.
   `buy.php` and `buy2.php`.[^29] The interface with which you provide a user is
   entirely up to you, though, as before, feel free to look to
 
-[^29]: As before, you need not worry about interruptions of service or race conditions. 22 < 27
+  [^29]: As before, you need not worry about interruptions of service or race conditions.
 
       https://www.cs50.net/finance/
 

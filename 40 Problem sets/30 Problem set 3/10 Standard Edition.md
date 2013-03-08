@@ -57,7 +57,7 @@
   is to download (i.e., “clone”) this problem set’s distro code into your home
   directory. [^2]
 
-[^2]: If already familiar with git, you’re welcome to use it for local commits.
+  [^2]: If already familiar with git, you’re welcome to use it for local commits.
 
   Okay, now execute
 
@@ -162,8 +162,8 @@
   atop that file explain the program’s overall functionality. But it looks like
   we forgot to comment the code itself.
 
-[^3]: https://www.cs50.net/resources/cppreference.com/stdother/rand.html
-[^4]: https://www.cs50.net/resources/cppreference.com/stdother/srand.html
+  [^3]: https://www.cs50.net/resources/cppreference.com/stdother/rand.html
+  [^4]: https://www.cs50.net/resources/cppreference.com/stdother/srand.html
 
   Read over the code carefully until you understand each line and then comment
   our code for us, replacing each `TODO` with a phrase that describes the purpose
@@ -403,11 +403,11 @@
   numbered 1 and 2 must be swapped, as in the below. [^7] The puzzle is
   solvable from this configuration.
 
-[^5]: No need to tear anything in half.
+  [^5]: No need to tear anything in half.
 
-[^6]: Figure from http://en.wikipedia.org/wiki/Fifteen_puzzle.
+  [^6]: Figure from http://en.wikipedia.org/wiki/Fifteen_puzzle.
 
-[^7]: Figure adapted from http://en.wikipedia.org/wiki/Fifteen_puzzle.
+  [^7]: Figure adapted from http://en.wikipedia.org/wiki/Fifteen_puzzle.
 
 * Navigate your way to `~/pset3/fifteen/`, and take a look at `fifteen.c` with
   gedit. Within this file is an entire framework for The Game of Fifteen. The

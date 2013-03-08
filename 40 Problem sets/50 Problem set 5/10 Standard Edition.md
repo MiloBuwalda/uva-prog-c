@@ -24,7 +24,7 @@
 
 * <http://en.wikipedia.org/wiki/Jpg>
 
-[^1]: The Wikipedia articles are a bit dense; feel free to skim or skip!
+  [^1]: The Wikipedia articles are a bit dense; feel free to skim or skip!
 
 # Specification and source files.
 
@@ -88,7 +88,7 @@
 * Recall how Wi-Fi works? That's okay. History suggests I'll forget to ask
   about it anyway!
 
-[^3]: For this question, you’re welcome to consult How Computers Work, Google, Wikipedia, a friend, or anyone else, so long as your words are ultimately your own!
+  [^3]: For this question, you’re welcome to consult How Computers Work, Google, Wikipedia, a friend, or anyone else, so long as your words are ultimately your own!
 
 * Curl up with the article from MIT below.
 
@@ -117,7 +117,7 @@
 
   ![whodunit](whodunit.png)!
 
-[^4]: Realize that this BMP is in color even though you might have printed this document in black and white.
+  [^4]: Realize that this BMP is in color even though you might have printed this document in black and white.
 
   You long ago threw away that piece of red plastic from childhood that would
   solve this mystery for you, and so you must attack it as a computer scientist
@@ -182,11 +182,11 @@
   Because we’ve presented these bits from left to right, top to bottom, in 8
   columns, you can actually see the red smiley if you take a step back.
 
-[^5]: Image adapted from http://www.brackeen.com/vga/bitmaps.html.
+  [^5]: Image adapted from http://www.brackeen.com/vga/bitmaps.html.
 
-[^6]: BMP actually supports 1-, 4-, 8-, 16-, 24-, and 32-bit color.
+  [^6]: BMP actually supports 1-, 4-, 8-, 16-, 24-, and 32-bit color.
 
-[^7]: Incidentally, these headers have evolved over time. This problem set only expects that you support version 4.0 (the latest) of Microsoft’s BMP format, which debuted with Windows 95.
+  [^7]: Incidentally, these headers have evolved over time. This problem set only expects that you support version 4.0 (the latest) of Microsoft’s BMP format, which debuted with Windows 95.
 
   To be clear, recall that a hexadecimal digit represents 4 bits. Accordingly,
   `ffffff` in hexadecimal actually signifies `111111111111111111111111` in binary.
@@ -209,9 +209,9 @@
 
   ![big_smiley](big_smiley.png)!
 
-[^8]: In 1-, 4-, and 16-bit BMPs (but not 24- or 32-), there’s an additional header right after `BITMAPINFOHEADER` called `RGBQUAD`, an array that defines “intensity values” for each of the colors in a device’s palette.
+  [^8]: In 1-, 4-, and 16-bit BMPs (but not 24- or 32-), there’s an additional header right after `BITMAPINFOHEADER` called `RGBQUAD`, an array that defines “intensity values” for each of the colors in a device’s palette.
 
-[^9]: Some BMPs also store the entire bitmap backwards, with an image’s top row at the end of the BMP file. But we’ve stored this problem set’s BMPs as described herein, with each bitmap’s top row first and bottom row last.
+  [^9]: Some BMPs also store the entire bitmap backwards, with an image’s top row at the end of the BMP file. But we’ve stored this problem set’s BMPs as described herein, with each bitmap’s top row first and bottom row last.
 
   Okay, go ahead and return your attention to a terminal window, and navigate
   your way to `~/pset5/bmp/`. (Remember how?) Let's look at the underlying bytes
@@ -346,7 +346,7 @@
   bmp.h allow us to do. Rather than think of some file as one long sequence of
   bytes, we can instead think of it as a sequence of structs.
 
-[^10]: Note that some programs (e.g., Photoshop) include trailing zeroes at the ends of some BMPs. Our version of copy throws those away, so don’t be too worried if you try to copy a BMP (that you’ve downloaded or made) only to find that the copy is actually a few bytes smaller than the original.
+  [^10]: Note that some programs (e.g., Photoshop) include trailing zeroes at the ends of some BMPs. Our version of copy throws those away, so don’t be too worried if you try to copy a BMP (that you’ve downloaded or made) only to find that the copy is actually a few bytes smaller than the original.
 
   Recall that `smiley.bmp` is 8 by 8 pixels, and so it should take up $$14 + 40
   + 8 ·∙ 8 ·∙ 3 = 246$$ bytes on disk. (Confirm as much if you’d like using
@@ -370,7 +370,7 @@
 
   > <http://www.cs50.net/resources/cppreference.com/stdio/>
 
-[^11]: Our use, incidentally, of the __attribute__ called __packed__ ensures that gcc does not try to “word-align” members (whereby the address of each member’s first byte is a multiple of 4), lest we end up with “gaps” in our structs that don’t actually exist on disk.
+  [^11]: Our use, incidentally, of the __attribute__ called __packed__ ensures that gcc does not try to “word-align” members (whereby the address of each member’s first byte is a multiple of 4), lest we end up with “gaps” in our structs that don’t actually exist on disk.
 
   Allow us to suggest that you also run `copy` within `gdb` while answering these
   questions. Set a breakpoint at `main` and walk through the program. Recall that
@@ -422,9 +422,9 @@
 
   Okay, back to Mr. Boddy.
 
-[^12]: Assume a 32-bit architecture like the CS50 Appliance.
+  [^12]: Assume a 32-bit architecture like the CS50 Appliance.
 
-[^13]: Leading bytes used to identify file formats (with high probability) are generally called “magic numbers.”
+  [^13]: Leading bytes used to identify file formats (with high probability) are generally called “magic numbers.”
 
 * Write a program called `whodunit` in a file called `whodunit.c` that reveals Mr.
   Boddy’s final words.
@@ -484,13 +484,13 @@
   need to add or subtract padding to scanlines. And be thankful that we don’t
   expect you to support fractional `n` between 0 and 1! [^18] [^19]
 
-[^14]: If you remember no such piece of plastic, best to ask a friend or TF about his or her childhood. 
+  [^14]: If you remember no such piece of plastic, best to ask a friend or TF about his or her childhood. 
   
-[^15]: Or maybe there is a message hidden in smiley.bmp too.  No, there’s not.
+  [^15]: Or maybe there is a message hidden in smiley.bmp too.  No, there’s not.
 
-[^16]: And yet we used Photoshop.
+  [^16]: And yet we used Photoshop.
 
-[^17]: You may assume that n times the size of infile will not exceed 232 – 1.
+  [^17]: You may assume that n times the size of infile will not exceed 232 – 1.
 
   If you’d like to play with the staff’s own implementation of resize in the
   appliance, you may execute the below.[^20]
@@ -510,15 +510,15 @@
   “deleted” tends not to mean “deleted” so much as “forgotten.” My computer
   insists that the CF card is now blank, but I’m pretty sure it’s lying to me.
 
-[^18]: As we do in the Hacker Edition!
+  [^18]: As we do in the Hacker Edition!
 
-[^19]: But we do expect you to support n = 1, the result of which should be an outfile with dimensions identical to infile’s.
+  [^19]: But we do expect you to support n = 1, the result of which should be an outfile with dimensions identical to infile’s.
 
-[^20]: We’ve not made solutions available for this problem set’s other programs, lest they spoil the forensic fun.
+  [^20]: We’ve not made solutions available for this problem set’s other programs, lest they spoil the forensic fun.
 
-[^21]: Computer Science Investigation
+  [^21]: Computer Science Investigation
 
-[^22]: It’s possible I actually spent the past several days on Facebook instead.
+  [^22]: It’s possible I actually spent the past several days on Facebook instead.
 
   Write a program in `~/pset5/jpg/` called recover that recovers these photos.
 
@@ -563,9 +563,9 @@
 
   You should find that this image contains 37 JPEGs.
 
-[^23]: To be sure, you might encounter these patterns on some disk purely by chance, so data recovery isn’t an exact science.
+  [^23]: To be sure, you might encounter these patterns on some disk purely by chance, so data recovery isn’t an exact science.
 
-[^24]: It’s fine to hard-code this path into your program rather than define it as some constant.
+  [^24]: It’s fine to hard-code this path into your program rather than define it as some constant.
 
   Notice, incidentally, that `~/pset5/jpg/` contains only `recover.c`, but it's
   devoid of any code. (We leave it to you to decide how to implement and
@@ -610,7 +610,7 @@
   win a fabulous prize. In the event of a tie, the section that submitted first
   shall be decreed the winner.
 
-[^25]: You should probably nominate someone(s) in your section to take charge.
+  [^25]: You should probably nominate someone(s) in your section to take charge.
 -->
 
 ## Sanity Checks.

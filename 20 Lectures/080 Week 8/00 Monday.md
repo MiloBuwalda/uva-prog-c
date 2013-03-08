@@ -64,7 +64,7 @@
   can find your current IP address in the network settings of your computer.
   David’s right now is `140.247.118.68`. Most Harvard IPs start with `140.247`.
 
-[^1]: At least IPv4 addresses. IPv6 addresses take a different form.
+  [^1]: At least IPv4 addresses. IPv6 addresses take a different form.
 
 * We’d be happy to address our web page request to Google’s IP if only
   we knew it. Thankfully, DNS, or domain name system, allows us to look
@@ -120,7 +120,7 @@
   the order of hundreds of milliseconds, presumably because it actually has
   to traverse the United State and then the Pacific Ocean!
 
-[^2]: Alternatively, you can use `traceroute` to [discover someone’s IP address and connection speed](http://www.youtube.com/watch?v=SXmv8quf_xM)!!!!1111 Okay, actually, please please know that this video is just plain wrong. I don’t want to have to give points back to someone on a quiz.
+  [^2]: Alternatively, you can use `traceroute` to [discover someone’s IP address and connection speed](http://www.youtube.com/watch?v=SXmv8quf_xM)!!!!1111 Okay, actually, please please know that this video is just plain wrong. I don’t want to have to give points back to someone on a quiz.
 
 
 ### HTTP

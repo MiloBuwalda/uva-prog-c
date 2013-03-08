@@ -111,7 +111,7 @@
   entirely be necessary given that the letters X, Y, and Z, for example, are
   unlikely to have more than one name.
 
-[^1]: Sigh, isn’t there always?
+  [^1]: Sigh, isn’t there always?
 
 * Given that X, Y, and Z are unlikely to have more than one name associated
   with them, perhaps we could use their indexes in the array to store the
@@ -272,7 +272,7 @@
   to store names in which each array is of size 26 for the number of letters
   in the alphabet:
 
-[^2]: The name supposedly comes from the word “retrieval” although it is typically pronounced
+  [^2]: The name supposedly comes from the word “retrieval” although it is typically pronounced
 
   ![trie](trie.png)
   

@@ -90,7 +90,7 @@
   All of the work that you do for this problem set must ultimately reside in
   your `hacker3` directory for submission.
 
-[^2]: If already familiar with git, you’re welcome to use it for local commits.
+  [^2]: If already familiar with git, you’re welcome to use it for local commits.
 
 ## The Real World.
 
@@ -179,8 +179,8 @@
   atop that file explain the program’s overall functionality. But it looks like
   we forgot to comment the code itself.
 
-[^3]: https://www.cs50.net/resources/cppreference.com/stdother/rand.html
-[^4]: https://www.cs50.net/resources/cppreference.com/stdother/srand.html
+  [^3]: https://www.cs50.net/resources/cppreference.com/stdother/rand.html
+  [^4]: https://www.cs50.net/resources/cppreference.com/stdother/srand.html
 
   Read over the code carefully until you understand each line and then comment
   our code for us, replacing each `TODO` with a phrase that describes the purpose
@@ -385,9 +385,9 @@
   Before you ultimately submit, though, be sure to remove any such calls to
   `printf`, as we like our programs’ outputs just they way they are!
 
-[^5]: Technically, because we’ve bounded with a constant the amount of hay that find will accept (and because the value of sort’s second parameter is bounded by an int’s 32 bits) the running time of sort, however implemented, is arguably $$O(1)$$. Even so, for the sake of this asymptotic challenge, think of the size of sort’s input as `n`.
+  [^5]: Technically, because we’ve bounded with a constant the amount of hay that find will accept (and because the value of sort’s second parameter is bounded by an int’s 32 bits) the running time of sort, however implemented, is arguably $$O(1)$$. Even so, for the sake of this asymptotic challenge, think of the size of sort’s input as `n`.
 
-[^6]: Leverage that assumption!
+  [^6]: Leverage that assumption!
 
   If you’d like to play with the staff’s own implementation of  find in the
   appliance, you may execute the below. 
@@ -413,9 +413,9 @@
   right, top to bottom, with an empty space in board’s bottom-right corner, as
   in the below.[^8]
 
-[^7]: No need to tear anything in half.
+  [^7]: No need to tear anything in half.
 
-[^8]: Figure from http://en.wikipedia.org/wiki/Fifteen_puzzle.
+  [^8]: Figure from http://en.wikipedia.org/wiki/Fifteen_puzzle.
 
   Sliding any tile that borders the board’s empty space into that space
   constitutes a “move.” Although the configuration above depicts a game already
@@ -448,9 +448,9 @@
   program to some pseudorandom but solvable state). That’d be, um, cheating. At
   cheating.
 
-[^9]: Figure adapted from http://en.wikipedia.org/wiki/Fifteen_puzzle.
+  [^9]: Figure adapted from http://en.wikipedia.org/wiki/Fifteen_puzzle.
 
-[^10]: To be clear, whereas the standard edition of this problem set requires that the board be initialized to a specific configuration, this Hacker Edition requires that it be initialized to a pseudorandom but still solvable configuration.
+  [^10]: To be clear, whereas the standard edition of this problem set requires that the board be initialized to a specific configuration, this Hacker Edition requires that it be initialized to a pseudorandom but still solvable configuration.
 
   To test your implementation, you can certainly try playing it yourself, with
   or without God Mode enabled. (Know that you can quit your program by hitting

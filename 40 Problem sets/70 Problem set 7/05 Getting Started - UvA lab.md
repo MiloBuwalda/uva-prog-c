@@ -91,7 +91,7 @@
   odds are you missed a step earlier; best to try all those chmod steps again.)
   Let's create the database that's missing.
 
-[^2]: Incidentally, you can also access C$50 Finance within the appliance at http://127.0.0.1/~jharvard/pset7/, since 127.0.0.1 is the appliance's (and most computers') "loopback" address.
+  [^2]: Incidentally, you can also access C$50 Finance within the appliance at http://127.0.0.1/~jharvard/pset7/, since 127.0.0.1 is the appliance's (and most computers') "loopback" address.
 
 * To test if everything worked correctly, browse to:
 

@@ -71,8 +71,8 @@
   > old days,[^2] a packet such as this was often enough to cause a web
   > server to crash.
 
-[^1]: Much to David’s dismay, since all he does is play Wii Tennis.
-[^2]: Like when David was in his twenties.
+  [^1]: Much to David’s dismay, since all he does is play Wii Tennis.
+  [^2]: Like when David was in his twenties.
 
 
 
@@ -239,8 +239,8 @@
   in a single, that’s a billion unnecessary bytes that Google’s servers have
   transmitted.[^4] An errant space could mean a lot of money lost!
 
-[^3]: Yes, we only have one.
-[^4]: One time, I introduced a slash into our source code and broke Google.
+  [^3]: Yes, we only have one.
+  [^4]: One time, I introduced a slash into our source code and broke Google.
 
 * To clean up the mess of Google’s HTML, we can use a tool called Firebug
   that is installed by default in Firefox on the Appliance. When we right

@@ -110,7 +110,7 @@
   you’ll see status updates pop up periodically. If you haven’t refreshed your
   page, then how has Facebook sent you these updates? Using JavaScript.
 
-[^1]: Very, very long in David’s case.
+  [^1]: Very, very long in David’s case.
 
 ### Events
 
@@ -143,7 +143,7 @@
   also detect keystrokes, page loads, form submissions, and more. With
   JavaScript, you can do almost anything![^2]
 
-[^2]: [Anything at all](http://html5zombo.com/).
+  [^2]: [Anything at all](http://html5zombo.com/).
 
 ### Form Validation
 
@@ -269,7 +269,7 @@
 
 * At the top, in the head element, we have our script tag.[^3]
 
-[^3]: Incidentally, the script tag can be placed elsewhere on the page other than in the head element. There are good reasons one might do so and we’ll see examples of it later in the course.
+  [^3]: Incidentally, the script tag can be placed elsewhere on the page other than in the head element. There are good reasons one might do so and we’ll see examples of it later in the course.
   
 * Within `validate`, the first if condition checks for a blank e-mail field.
   We do this by accessing a global object named `document` that is provided
@@ -469,7 +469,7 @@
   checked, the `toggle` function will be called. If the checkbox is checked,
   the `disabled` attribute of the Submit button will be set to `false`.
 
-[^4]: Yes, it’s a stupid convention.  
+  [^4]: Yes, it’s a stupid convention.  
 
 #### `form5.html`
 

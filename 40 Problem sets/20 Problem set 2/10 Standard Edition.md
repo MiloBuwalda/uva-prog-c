@@ -249,8 +249,8 @@ to C.
   In the real world, though, it’s probably best to use ROT26, which is believed
   to be twice as secure.[^3]
 
-[^2]: Okay, fine, conciseness. So much for parallelism.
-[^3]: http://www.urbandictionary.com/define.php?term=ROT26
+  [^2]: Okay, fine, conciseness. So much for parallelism.
+  [^3]: http://www.urbandictionary.com/define.php?term=ROT26
 
   Anyhow, your next goal is to write, in `caesar.c`, a program that encrypts
   messages using Caesar’s cipher. Your program must accept a single
@@ -368,8 +368,8 @@ to C.
       Be sure to drink your Ovaltine!
       Or fher gb qevax lbhe Binygvar!
 
-[^4]: https://www.cs50.net/resources/cppreference.com/stdstring/atoi.html
-[^5]: https://www.cs50.net/resources/cppreference.com/stdstring/strlen.html
+  [^4]: https://www.cs50.net/resources/cppreference.com/stdstring/atoi.html
+  [^5]: https://www.cs50.net/resources/cppreference.com/stdstring/strlen.html
 
   Besides `atoi`, you might find some handy functions documented at:
   `http://www.cs50.net/resources/cppreference.com/stdstring/`
@@ -433,9 +433,7 @@ to C.
   next character in `k`. Finally, your program must preserve the case of each
   letter in `p`.
 
-[^6]: Do not be mislead by the article’s discussion of a tabula recta. Each
-$$c_i$$ can be computed with relatively simple arithmetic! You do not need a
-two-dimensional array.
+  [^6]: Do not be mislead by the article’s discussion of a tabula recta. Each $$c_i$$ can be computed with relatively simple arithmetic! You do not need a two-dimensional array.
 
   Not sure where to begin? As luck would have it, this program’s pretty similar
   to caesar! Only this time, you need to decide which character in `k` to use as
