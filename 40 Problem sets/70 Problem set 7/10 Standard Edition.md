@@ -974,6 +974,23 @@ appropriateness of some discussion, contact the staff.
       https://manual.cs50.net/Sending_Mail
 
 
+## Javascript
+
+* Last, but not least, when a user is registering for a new account, you have
+  to check if the filled in username already exists without the user ever
+  leaving the page. 
+
+* To do this, you have to use Ajax to call your own, separate php script that
+  checks if the user name already exists. You might find the examples in
+  Lecture 10 interesting.
+
+  Don't forget to tell the user that his username already exists. Because the
+  page is never refreshed, you have to change the page's html using javascript.
+
+* To give feedback even before the user clicks the register button, look into
+  the `onblur` event.
+
+
 ## Sanity Checks.
 
 * Before you consider this problem set done, best to ask yourself these
@@ -1006,6 +1023,9 @@ appropriateness of some discussion, contact the staff.
 
   - Does your site behave the same in at least two major browsers?
 
+  - Do you warn the user about an already existing username, before he clicks
+    the register button?
+
 ## Submitting.
 
 * To save the graders going through the troubles of having to import your
@@ -1014,5 +1034,5 @@ appropriateness of some discussion, contact the staff.
   that your website works correctly and that you have implemented an extra
   feature.
 
-  This was Problem Set 7.
+This was Problem Set 7.
 
