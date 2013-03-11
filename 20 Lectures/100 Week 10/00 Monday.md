@@ -22,9 +22,9 @@
 * Recall that along with the response, web servers return an HTTP status
   code such as one of the following:
 
-  > – 401 - unauthorized
-  > – 403 - forbidden
-  > – 404 - not found
+  > – 401 - unauthorized<br>
+  > – 403 - forbidden<br>
+  > – 404 - not found<br>
   > – 500 - internal server error
 
   If we create a new file named `foo.html` in our `public_html` directory, but
@@ -63,7 +63,7 @@
       }
 
 * One of the biggest selling points of JavaScript is a technology called Ajax
-  which will delve into later today. Ajax makes use of JavaScdript Object
+  which will delve into later today. Ajax makes use of JavaScript Object
   Notation (JSON) to communicate with a web server. Objects in JavaScript are
   implemented as follows:
 
@@ -122,20 +122,20 @@
   associated with it. If we want to respond to these events, we can implement
   event handlers, some of which are named below:
 
-  > – `onblur`
-  > – `onchange`
-  > – `onclick`
-  > – `onfocus`
-  > – `onkeydown`
-  > – `onkeyup`
-  > – `onload`
-  > – `onmousedown`
-  > – `onmouseup`
-  > – `onmouseout`
-  > – `onmouseover`
-  > – `onmouseup`
-  > – `onresize`
-  > – `onselect`
+  > – `onblur`<br>
+  > – `onchange`<br>
+  > – `onclick`<br>
+  > – `onfocus`<br>
+  > – `onkeydown`<br>
+  > – `onkeyup`<br>
+  > – `onload`<br>
+  > – `onmousedown`<br>
+  > – `onmouseup`<br>
+  > – `onmouseout`<br>
+  > – `onmouseover`<br>
+  > – `onmouseup`<br>
+  > – `onresize`<br>
+  > – `onselect`<br>
   > – `onsubmit`
 
   If you want to implement a popup that displays when a user hovers over
