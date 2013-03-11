@@ -574,6 +574,10 @@
   space!) Simply open our copy with fopen via its full path, as in the
   below.[^23]
 
+  If you want to join the hunt for prices, don't forget to check out
+  [`uva.raw`](http://websec.science.uva.nl/~mvbeek1/uva.raw). This file
+  contains pictures taken at the Science Park 904.
+
       FILE *fp = fopen("/home/cs50/pset5/card.raw", "r");
 
   You should find that this image contains 37 JPEGs.
