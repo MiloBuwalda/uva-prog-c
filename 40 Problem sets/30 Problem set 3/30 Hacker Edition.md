@@ -1,6 +1,4 @@
-# Specification and source files
-
-* [Specification](http://cdn.cs50.net/2011/fall/psets/3/hacker3.pdf)
+# Source files
 
 * [git](http://cdn.cs50.net/2011/fall/psets/3/hacker3.git/)
 * [Index](http://cdn.cs50.net/2011/fall/psets/3/hacker3/)

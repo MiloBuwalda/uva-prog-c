@@ -30,9 +30,7 @@
 
   [^1]: The Wikipedia articles are a bit dense; feel free to skim or skip!
 
-# Specification and source files.
-
-* [Specification](http://cdn.cs50.net/2011/fall/psets/5/hacker5.pdf)
+# Source files.
 
 * [git](http://cdn.cs50.net/2011/fall/psets/5/hacker5.git/)
 * [Index](http://cdn.cs50.net/2011/fall/psets/5/hacker5/)

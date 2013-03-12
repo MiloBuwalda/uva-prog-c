@@ -1,9 +1,7 @@
 # NB: Deze problem set wordt eruit gehaald.
 * Ben je nog niet begonnen? Ga door met het eindproject!
 
-# Specification and source files
-
-* [Specification](http://cdn.cs50.net/2011/fall/psets/8/pset8.pdf)
+# Source files
 
 * [git](http://cdn.cs50.net/2011/fall/psets/8/pset8.git/)
 * [Index](http://cdn.cs50.net/2011/fall/psets/8/pset8/)
