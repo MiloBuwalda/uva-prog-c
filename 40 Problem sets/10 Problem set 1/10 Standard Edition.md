@@ -462,6 +462,8 @@ elegantly, and/or logically)?
   mathematical skills) with this spring-loaded changer that you wear on your
   belt to dispense quarters, dimes, nickels, and pennies into your hand.” Or so
   says the website on which we found this here fashion accessory. [^5]
+
+  ![cents_disposer](cents_disposer.png)
   
   Of course, the novelty of this thing quickly wears off, especially when
   someone pays for a newspaper with big bill. Fortunately, computer science has
@@ -561,14 +563,13 @@ elegantly, and/or logically)?
   If you’d like to play with the staff’s own implementation of greedy in the
   appliance, you may execute the below.
   
-      ~cs50/pset1/greedy
+        ~cs50/pset1/greedy
+        float f = 0.01; 
+        printf("%.10f\n", f);
 
   [^7]: By contrast, suppose that a cashier runs out of nickels but still owes some customer 41¢. How many coins does that cashier, if greedy, dispense? How about a “globally optimal” cashier?
  
   [^8]: For instance, 0.01 cannot be represented exactly as a float. Try printing its value to, say, ten decimal places with code like the below:
- 
-     float f = 0.01; 
-     printf("%.10f\n", f);
  
   [^9]: Don’t just cast the user’s input from a float to an int! After all, how many cents does one dollar equal?
 
@@ -585,6 +586,8 @@ elegantly, and/or logically)?
   Anyhow, once we have your attention again, follow the link to Statistics atop
   the site, where you’ll find some neat visuals, among them a bar chart. As of
   the end of Week 1, here’s who is spotting whom:
+
+  ![spotting](spotting.png)
   
   It turns out it’s quite easy to integrate such things into a website these
   days. Tej happens to be using the Google Chart API (a free library of sorts)
