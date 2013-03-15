@@ -563,18 +563,14 @@ elegantly, and/or logically)?
   
       ~cs50/pset1/greedy
 
- [^7]: By contrast, suppose that a cashier runs out of nickels but still owes some
- customer 41¢. How many coins does that cashier, if greedy, dispense? How about
- a “globally optimal” cashier?
+  [^7]: By contrast, suppose that a cashier runs out of nickels but still owes some customer 41¢. How many coins does that cashier, if greedy, dispense? How about a “globally optimal” cashier?
  
- [^8]: For instance, 0.01 cannot be represented exactly as a float. Try printing
- its value to, say, ten decimal places with code like the below:
+  [^8]: For instance, 0.01 cannot be represented exactly as a float. Try printing its value to, say, ten decimal places with code like the below:
  
      float f = 0.01; 
      printf("%.10f\n", f);
  
- [^9]: Don’t just cast the user’s input from a float to an int! After all, how many
- cents does one dollar equal? 11 < 16
+  [^9]: Don’t just cast the user’s input from a float to an int! After all, how many cents does one dollar equal?
 
 
 ## I Saw You.
