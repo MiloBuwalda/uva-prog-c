@@ -1,4 +1,4 @@
-# Quiz 0 
+# Quiz 1 
 
 * [Questions](http://cdn.cs50.net/2011/fall/quizzes/1/quiz1.pdf)
 * [Answers](http://cdn.cs50.net/2011/fall/quizzes/1/key1.pdf)
