@@ -985,6 +985,9 @@ appropriateness of some discussion, contact the staff.
   Don't forget to tell the user that his username already exists. Because the
   page is never refreshed, you have to change the page's html using javascript.
 
+* Also, you have to change common.php to prevent the server from redirecting
+  your Ajax request to login.php. We'll leave the details up to you.
+
 * To give feedback even before the user clicks the register button, look into
   the `onblur` event.
 
