@@ -10,10 +10,11 @@ Editing of this pset is not finished. Please download the PDF [specification](ht
 * [Index](http://cdn.cs50.net/2011/fall/psets/6/pset6/)
 * [ZIP](http://cdn.cs50.net/2011/fall/psets/6/pset6.zip)
 
-### Dictionaries
+### Dictionaries & texts
 
 * [Large dictionary](dictionaries/large)
 * [Small dictionary](dictionaries/small)
+* [Texts](http://websec.science.uva.nl/~mvbeek1/texts.tar.gz)
 
 ## Goals.
 
