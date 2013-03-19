@@ -45,11 +45,16 @@ Note: all deadlines are on Thursdays!
 * lecture 8 Monday
 * lecture 8 Wednesday
 * deadline: pset 6
+* lecture 9 Monday
 
 ## Week 8.
 
-* lecture 9 Monday
 * lecture 9 Wednesday
+* lecture 10 Monday
+* lecture 10 Wednesday
 * deadline: pset 7
+
+## Week 9.
+
 * tentamen: 2
 
