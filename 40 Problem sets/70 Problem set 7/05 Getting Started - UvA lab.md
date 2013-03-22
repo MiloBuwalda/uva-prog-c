@@ -1,6 +1,8 @@
 
 ## Working on a UvA lab machine
 
+* This guide is **only** meant for students that work on a UvA lab machine.
+
 ### Getting Started
 
 #### Websec account
