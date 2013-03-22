@@ -7,5 +7,6 @@
   students, a fabulous price awaits.
 
   | NAME | TIME IN `load` | TIME IN `check` | TIME IN `size` | TIME IN `unload` | TIME IN TOTAL | 
+  | Rezk | 0.11 | 0.10 | 0.00 | 0.01 | 0.23 |
   | CS50 | 0.13 | 1.99 | 0.00 | 0.00 | 2.12 |
 
