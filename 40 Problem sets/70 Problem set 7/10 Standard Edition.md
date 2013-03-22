@@ -985,6 +985,8 @@ appropriateness of some discussion, contact the staff.
   Don't forget to tell the user that his username already exists. Because the
   page is never refreshed, you have to change the page's html using javascript.
 
+  Hint: it's easier to do this via a GET request than a POST request.
+
 * Also, you have to change common.php to prevent the server from redirecting
   your Ajax request to login.php. We'll leave the details up to you.
 
