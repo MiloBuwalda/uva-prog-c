@@ -6,6 +6,12 @@
   the table below. If you turn out to have the fastest implementation of all
   students, a fabulous price awaits.
 
+## DEADLINE
+
+* We will accept entries up and until the **2nd of April 2013**.
+
+## Leaderboard
+
   | NAME | TIME IN `load` | TIME IN `check` | TIME IN `size` | TIME IN `unload` | TIME IN TOTAL | 
   | Rezk | 0.11 | 0.10 | 0.00 | 0.01 | 0.23 |
   | CS50 | 0.13 | 1.99 | 0.00 | 0.00 | 2.12 |
