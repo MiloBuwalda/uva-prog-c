@@ -5,6 +5,11 @@
 * [ZIP](http://cdn.cs50.net/2011/fall/psets/7/pset7.zip)
 
 
+# NB: Use another appliance
+
+* Appliance 17 is NOT fit for this problem set. Please use version 2.3:
+  <http://mirror.cs50.net/appliance/2.3/cs50-appliance-2.3-14-ovf.zip>
+
 # Problem Set 7: C$50 Finance
 
 ## Goals.
