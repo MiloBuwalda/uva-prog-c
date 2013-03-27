@@ -9,5 +9,5 @@
 
 ## DEADLINE
 
-* We will accept entries up and until the **26th of March 2013**.
+* We will accept entries up and until the **2nd of april, 2013**.
 

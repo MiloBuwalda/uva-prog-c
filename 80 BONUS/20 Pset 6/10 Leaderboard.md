@@ -8,7 +8,7 @@
 
 ## DEADLINE
 
-* We will accept entries up and until the **2nd of April 2013**.
+* We will accept entries up and until the **8th of April, 2013**.
 
 ## Leaderboard
 
