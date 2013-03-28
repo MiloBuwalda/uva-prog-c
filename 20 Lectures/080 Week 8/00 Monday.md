@@ -1,6 +1,5 @@
 > *This week on* CS50:<br />
-> *File I/O. Linked lists. Stacks. Queues. Valgrind. Hash tables. Trees. Binary
-> search trees. Tries.*
+> *HTTP. HTML. CSS. PHP.*
 
 # Monday lecture
 
