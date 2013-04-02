@@ -9,6 +9,9 @@
 * Your solution is run on Marin's laptop, using the text `iliad.txt` and the
   dictionary `large`.
 
+* Please note that you are allowed to make an attempt at being the fastest
+  **more than once**!
+
 ## DEADLINE
 
 * We will accept entries up and until the **8th of April, 2013**.
