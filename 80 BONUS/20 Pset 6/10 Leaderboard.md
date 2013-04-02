@@ -18,7 +18,8 @@
 
 ## Leaderboard
 
-  | NAME | TIME IN `load` | TIME IN `check` | TIME IN `size` | TIME IN `unload` | TIME IN TOTAL | 
-  | Rezk | 0.18 | 3.55 | 0.00 | 0.01 | 3.74 |
-  | CS50 | 0.33 | 3.64 | 0.00 | 0.07 | 4.04 |
+  | NAME  | TIME IN `load` | TIME IN `check` | TIME IN `size` | TIME IN `unload` | TIME IN TOTAL | 
+  | Rezk  | 0.18 | 3.55 | 0.00 | 0.01 | 3.74 |
+  | CS50  | 0.33 | 3.64 | 0.00 | 0.07 | 4.04 |
+  | David | 0.09 | 4.23 | 0.00 | 0.00 | 4.32 |
 
