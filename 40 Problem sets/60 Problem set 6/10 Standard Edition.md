@@ -1,7 +1,5 @@
 # Problem Set 6: Mispellings
 
-Editing of this pset is not finished. Please download the PDF [specification](http://cdn.cs50.net/2011/fall/psets/6/pset6.pdf).
-
 ## Files
 
 ### Source code
