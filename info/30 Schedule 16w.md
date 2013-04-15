@@ -52,7 +52,7 @@ Note: all deadlines are on Thursdays!
 
 ## Week 8.
 
-Quiz 0.
+* Tentamen Programmeren 1
 
 ## Week 9.
 
@@ -64,27 +64,22 @@ Quiz 0.
 
 * lecture 9 Monday
 * lecture 9 Wednesday
-* deadline: pset 7
 
 ## Week 11.
 
 * deadline: project pre-proposal
 * lecture 10 Monday
 * lecture 10 Wednesday
-* deadline: pset 8
+* deadline: pset 7
 
 ## Week 12.
 
 * deadline: project proposal
 * lecture 11 Monday
-* tentamen
-* dag 3:
 
 ## Week 13.
 
 * lecture 12 Monday
-* dag 2:
-* dag 3:
 
 ## Week 14.
 
@@ -97,5 +92,5 @@ Zaterdag?: hackathon.
 
 ## Week 16.
 
-Quiz 1.
+* Tentamen Programmeren 2
 
