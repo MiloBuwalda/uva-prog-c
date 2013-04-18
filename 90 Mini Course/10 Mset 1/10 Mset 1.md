@@ -1,4 +1,4 @@
 # Mini Course 1: Linked Lists
 
-<mset.zip>
+[Materials for the first Mini Course](mset.zip)
 
