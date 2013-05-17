@@ -831,15 +831,12 @@ appropriateness of some discussion, contact the staff.
       <? $result = mysql_query("SELECT symbol, shares FROM tbl WHERE id = 7"); ?> 
       
       <?  while ($row = mysql_fetch_array($result)): ?>
-
           <? $s = lookup($row["symbol"]); ?>
 
           <tr>
-
-              <td><?= $s->name ?></td> <td><?= $row["shares"] ?></td>
-
+              <td><?= $s->name ?></td>
+              <td><?= $row["shares"] ?></td>
           </tr>
-
       <? endwhile ?>
 
   [^27]: It’s fine to use double quotes inside those curly braces, even though we’ve also used double quotes to surround the entire argument to print.
