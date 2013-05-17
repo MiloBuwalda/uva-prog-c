@@ -141,9 +141,9 @@
   browser that connects to `websec.science.uva.nl` via *Places > Connect to 
   server*. Now select the following:
 
-  > Service type: **SSH**
-  > Server: **`websec.science.uva.nl`**
-  > Folder: **`/home/<your uvanetid>`**
+  > Service type: **SSH** <br>
+  > Server: **`websec.science.uva.nl`** <br>
+  > Folder: **`/home/<your uvanetid>`** <br>
 
   Click Connect and log in with your UvAnetID and your password. You now have a 
   file browser that contains all files on `websec.science.uva.nl` and you can
@@ -154,7 +154,7 @@
 * In `constants.php` change the values of `DB_USERNAME`, `DB_PASSWORD` and 
   `DB_NAME` to:
 
-  > `DB_USERNAME`: <websec username>
-  > `DB_PASSWORD`: <websec password>
-  > `DB_NAME`: <your uvanetid>
+  > `DB_USERNAME`: <websec username> <br>
+  > `DB_PASSWORD`: <websec password> <br>
+  > `DB_NAME`: <your uvanetid> <br>
 

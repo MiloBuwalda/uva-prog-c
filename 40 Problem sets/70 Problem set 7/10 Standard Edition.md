@@ -787,32 +787,35 @@ appropriateness of some discussion, contact the staff.
 
       <?
 
-      $result = mysql_query("SELECT symbol, shares FROM tbl WHERE id = 7"); while
-      ($row = mysql_fetch_array($result))
-
+      $result = mysql_query("SELECT symbol, shares FROM tbl WHERE id = 7"); 
+      
+      while ($row = mysql_fetch_array($result))
       {
+          $s = lookup($row["symbol"]); print('<tr>');
 
-      $s = lookup($row["symbol"]); print('<tr>');
+          print('<td>' . $s->name . '</td>');
+          print('<td>' . $row["shares"] . '</td>');
+          print('</tr>');
+      } 
 
-      print('<td>' . $s->name . '</td>'); print('<td>' . $row["shares"] . '</td>');
-      print('</tr>');
-
-      } ?>
+      ?>
 
   Alternatively, you can avoid using the concatenation operator (`.`) via syntax
   like the below: 
   
       <?
 
-      $result = mysql_query("SELECT symbol, shares FROM tbl WHERE id = 7"); while
-      ($row = mysql_fetch_array($result))
-
+      $result = mysql_query("SELECT symbol, shares FROM tbl WHERE id = 7");
+      
+      while ($row = mysql_fetch_array($result))
       {
-
-      $s = lookup($row["symbol"]); print("<tr>"); print("<td>{$s->name}</td>");
-      print("<td>{$row["shares"]}</td>"); print("</tr>");
-
-      } ?>
+          $s = lookup($row["symbol"]);
+          print("<tr>"); 
+          print("<td>{$s->name}</td>");
+          print("<td>{$row["shares"]}</td>"); 
+          print("</tr>");
+      } 
+      ?>
 
   Note that, in the above version, we’ve surrounded the lines of HTML with
   double quotes instead of single quotes so that the variables within
@@ -825,16 +828,17 @@ appropriateness of some discussion, contact the staff.
   generating HTML via calls to print isn’t terribly elegant. An alternative
   approach, though still a bit inelegant, is code more like the below.
 
-      <? $result = mysql_query("SELECT symbol, shares FROM tbl WHERE id = 7"); ?> <?
-      while ($row = mysql_fetch_array($result)): ?>
+      <? $result = mysql_query("SELECT symbol, shares FROM tbl WHERE id = 7"); ?> 
+      
+      <?  while ($row = mysql_fetch_array($result)): ?>
 
-      <? $s = lookup($row["symbol"]); ?>
+          <? $s = lookup($row["symbol"]); ?>
 
-      <tr>
+          <tr>
 
-      <td><?= $s->name ?></td> <td><?= $row["shares"] ?></td>
+              <td><?= $s->name ?></td> <td><?= $row["shares"] ?></td>
 
-      </tr>
+          </tr>
 
       <? endwhile ?>
 
