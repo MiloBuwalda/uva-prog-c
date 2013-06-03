@@ -8,9 +8,9 @@ algorithmically and solve problems efficiently. Topics include abstraction,
 algorithms, encapsulation, data structures, databases, memory management,
 security, software development, virtualization, and websites. Languages
 include C, PHP, and JavaScript plus SQL, CSS, and HTML. Problem sets inspired
-by real-world domains of biology, cryptography, finance, forensics, and
-gaming. Designed for concentrators and non-concentrators alike, with or
-without prior programming experience.
+by real-world domains of biology, cryptography, finance and forensics. Designed
+for concentrators and non-concentrators alike, with or without prior
+programming experience.
 
 ## Staff
 
@@ -43,7 +43,7 @@ You are expected to watch all lectures and sections (but not in the lab),
 submit eight problem sets, take two quizzes, and submit a final project.
 
 You are required to work in the lab for some amount of time during the week,
-as agreed upon with the course coordinator. During these hours, the teaching
+as agreed upon with the course coordinator. During these hours, teaching
 assistants are available to answer any questions you may have about the
 lectures, quizzes or problem sets.
 
@@ -70,7 +70,7 @@ The grade of **Part 2** will be determined using the following weights:
 * Final Project: 40%
 * Quiz 1: 0% (but needs to be passed)
 
-Problem sets and the final project will be evaluated along axes of:
+Problem sets and the final project will be evaluated along the following axes:
 
 * Scope, 
 * Correctness, 
@@ -83,19 +83,14 @@ However, what ultimately matters in this course is not so much where you end
 up relative to your classmates but where you end up relative to yourself
 before you took this course.
 
-The course is *not* graded on a curve. The course does *not* have
-pre-determined cutoffs for final grades. Those less comfortable and somewhere
-in between are *not at a disadvantage* vis-à-vis those more comfortable. Each
-student's final grade is individually determined at term’s end after input
-from the assistants. Remarkable effort and upward trending do not go
-unnoticed.
-
 ## Books
 
 No books are required for this course. However, we do have a number of books
 available for you to read during office hours. You are welcome to pick up one
 of these and read them as a preparation for or review of one of the lectures.
-For those who like books anyway, here are some good suggestions:
+
+For those who would like to have their own book, here are some good
+suggestions:
 
 > **For Those Less Comfortable**
 > 
@@ -109,14 +104,16 @@ For those who like books anyway, here are some good suggestions:
 > Programming in C, Third Edition  
 > Stephen Kochan  
 > Sams Publishing, 2004  
-> ISBN 0-672-32666-3
+> ISBN 0-672-32666-3 
+> *Note that we have a copy of this book available during office hours*
 
 The book below is recommended for those interested in understanding how their
 own computers work for personal edification.
 
 > How Computers Work, Ninth Edition Ron White  
 > Que Publishing, 2007  
-> ISBN 0-7897-3613-6
+> ISBN 0-7897-3613-6 
+> *Note that we have a copy of this book available during office hours*
 
 This last book below is recommended for aspiring hackers, those interested in
 programming tricks and low-level optimization of code for applications beyond
@@ -125,7 +122,8 @@ the scope of this course.
 > Hacker's Delight  
 > Henry S. Warren Jr.  
 > Addison-Wesley, 2003  
-> ISBN 0-201-91465-4
+> ISBN 0-201-91465-4 
+> *Note that we have a copy of this book available during office hours*
 
 ## Course contents
 
@@ -168,8 +166,7 @@ cover the same material. But the Hacker Edition typically presents that
 material from a more technical angle and poses more sophisticated questions.
 Hacker Editions are graded separately from standard editions, but those
 students who submit the former do not receive any form of extra credit
-outright. When determining grades at term's end, however, we do bear in mind
-submissions of Hacker Editions.
+outright.
 
 To be clear, we encourage most students (including aspiring computer
 scientists) to tackle the standard editions. However, you may choose, week to
@@ -178,7 +175,7 @@ two.
 
 ### Quizzes
 
-The course has two 75-minute quizzes. These quizzes are "closed-book," but you
+The course has two 2-hour quizzes. These quizzes are "closed-book," but you
 may utilize during each quiz one two-sided page (A4) of notes, typed or
 written, and a pen or pencil, nothing else.
 
