@@ -4,9 +4,13 @@ This is quite the course, so let's start simple.
 
 - Read the Syllabus.
 - Read about Acing this course.
-- Have a good look at the 8-week or 16-week schedule.
+- Have a good look at schedule you will follow, the 8-week or the 16-week
+  schedule.
 - Watch the first lecture.
 - Start your first assignment!
+
+If you get stuck know that there are walkthroughs available for each problem
+set. For an in depth discussion of the lectures, see the sections.
 
 ## Using Linux machines
 
@@ -14,21 +18,22 @@ Linux computers are available at the Faculty of Science. It is very well
 possible that you are not yet allowed to login. If you are not using the CS50
 Appliance, you will need to be able to login by Problem Set 1!
 
-If needed, please send an email to <help@mprog.nl>, explaining that you cannot
+If needed, please send an email to <help@mprog.nl> explaining that you cannot
 log in.
 
-Before you start working on Problem Set 1, execute the following command in
-the terminal of those computers:
+Before you start working on Problem Set 1, execute the following command once
+in the terminal of a linux machine:
 
 	/home/mstegem1/soft/bin/cs50
 
 You only have to do this **once**.
 
-## Submitting your programs ##
+## Submitting your solutions ##
 
 Once you're done with your problem set, you can submit it using the submit tab
 that you'll find on the page of that problem set. If a .tar.gz file is
-required, you can use the following commands to create this archive:
+required, you can navigate to the folder of that problem set in a terminal and
+use the following commands to create this archive:
 
     make clean
     tar -czvf psetX.tar.gz *
