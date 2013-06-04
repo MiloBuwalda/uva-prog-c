@@ -1,3 +1,4 @@
 name: final
 optional:
+    - proposal.pdf
     - final_project.tar.gz

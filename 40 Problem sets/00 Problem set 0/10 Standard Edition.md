@@ -16,7 +16,10 @@ Your work on this problem set will be evaluated along two axes primarily.
 
 **Correctness**. To what extent is your code consistent with our specifications and free of bugs?
 
-All students must ordinarily submit this and all other problem sets to be eligible for a passing grade unless granted an exception in writing by the course's instructor.
+All students must ordinarily submit this and all other problem sets to be
+eligible for a passing grade unless granted an exception in writing by the
+course's instructor. Please note that this problem set does not count towards
+your final grade.
 
 ### Getting Started.
 

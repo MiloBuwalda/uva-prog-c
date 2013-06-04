@@ -27,6 +27,68 @@ cannot be spent on the final project. Lateness of submissions is determined
 down to the minute by submissions' timestamps. Submitting more than seven
 minutes late is equivalent to not submitting at all.
 
-## Specification
+## Pre‐Proposal 
+ 
+* Intended to promote early thought, the pre‐proposal is your opportunity to
+  bounce one or more ideas off of your teaching assistant. Quite simply, by this
+  pre‐proposal’s deadline, send an email to your teaching fellow describing one
+  or more ideas that you have for your final project.
+  
+  Short, casual emails are fine, but do explain the motivation behind
+  each of your ideas (i.e., why it interests you). Treat this
+  requirement as an opportunity for counsel. Certainly include any
+  questions or concerns that you have in this email. 
+   
+  The subject line of your email should be **Pre-Proposal**. 
 
-* [Final Project](ftp://anonymous@ftp.cs50.net/cdn.cs50.net/2011/fall/projects/project.pdf)
+## Proposal
+ 
+* The proposal is your opportunity to receive approval and counsel from your
+  teaching fellow before you proceed to design. Submitting a proposal amounts to
+  answering a few questions about your idea. Once you have a project in mind,
+  create a text document with the following information and upload it using the
+  submit tab:
+
+  > your project’s title;
+  > a sentence summarizing your project;
+  > a bulleted list of features;
+  > a bulleted list of any frameworks, languages, libraries, or other technologies with which you’ll implement your project;
+  > mockups of the screens a user might encounter, and the way these are linked together;
+   
+  We will either approve your proposal or require modifications on your part
+  for subsequent approval. Your proposal, even if approved, is not binding; you
+  may alter your plan at any point, provided you obtain the staff’s approval
+  for any modifications. Projects submitted without approval may not receive
+  credit. 
+
+## Implementation 
+   
+* Ultimately due are implementation and documentation of your final project.
+  Your submission thereof must include all of the below. 
+   
+  1. Documentation for your project in the form of a file called
+     `documentation.html`, `documentation.pdf` or `README.txt`. This
+     documentation is to be a user’s manual for your project. Though the
+     structure of your documentation is entirely up to you, it should be
+     incredibly clear to the staff how and where, if applicable, to compile,
+     configure, and use your project. Your documentation should be at least
+     several paragraphs in length, if not several pages.
+
+  2. A “design document” for your project in the form of a file called
+     `design.html`, `design.pdf`, design.txt that discusses, technically, how
+     you implemented your project and why you made the design decisions you
+     did. Your design document should be at least several paragraphs in length,
+     if not several pages. Whereas your documentation is meant to be a user’s
+     manual, consider your design document your opportunity to give the staff a
+     technical tour of your project underneath its hood. 
+
+  3. Any and all files required to compile and execute your software, including
+     source code as well as, if applicable, configuration files, Makefiles,
+     sample inputs, and so forth. Needless to say, all source code should be
+     thoroughly commented. If your project uses a MySQL database, be sure to
+     export it to a file (e.g., project.sql), as with phpMyAdmin’s Export tab,
+     and include that file in the directory that you submit. 
+
+  If you have met all these requirements, please submit your final project
+  using the submit tab.
+

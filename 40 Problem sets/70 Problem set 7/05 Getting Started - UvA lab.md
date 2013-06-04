@@ -3,14 +3,12 @@
 
 * This guide is **only** meant for students that work on a UvA lab machine.
 
-### Getting Started
+### Websec account
 
-#### Websec account
-
-* Get a `websec.science.uva.nl` database: email Marin <m.vanbeek@uva.nl> asking
+* Get a `websec.science.uva.nl` database: email Marin (<m.vanbeek@uva.nl>) asking
   for a websec database and give him your UvAnetID.
 
-#### Downloading the assignment files to websec
+### Downloading the assignment files on websec
 
 * Connect to
   `websec.science.uva.nl` using your normal UvAnetID password:
@@ -100,9 +98,9 @@
       http://websec.science.uva.nl/~<your UvAnetID>/pset7
 
 
-#### Create a database on websec
+### Create a database on websec
 
-  Head to:
+* Head to:
 
       websec.science.uva.nl/phpmyadmin
 
@@ -115,7 +113,7 @@
   commands manually. Download the following file with a whole bunch of SQL
   statements in it:
 
-  - [`pset7_uva_lab.sql`](pset7_uva_lab.sql)
+      [`pset7_uva_lab.sql`](pset7_uva_lab.sql)
 
   Open this file with a text editor and highlight all sql statements (the
   entire contents), then select Edit > Copy (or hit ctrl-C), then return to
@@ -154,7 +152,7 @@
 * In `constants.php` change the values of `DB_USERNAME`, `DB_PASSWORD` and 
   `DB_NAME` to:
 
-  > `DB_USERNAME`: <websec username> <br>
-  > `DB_PASSWORD`: <websec password> <br>
-  > `DB_NAME`: <your uvanetid> <br>
+  > `DB_USERNAME`: *websec username* 
+  > `DB_PASSWORD`: *websec password* 
+  > `DB_NAME`: *your uvanetid*
 

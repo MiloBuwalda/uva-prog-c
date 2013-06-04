@@ -1,13 +1,8 @@
 # Working on the Appliance
 
-# NB: Use another appliance
-
-* Appliance 17 is NOT fit for this problem set. Please use version 2.3:
-  <http://mirror.cs50.net/appliance/2.3/cs50-appliance-2.3-14-ovf.zip>
-
 ## Getting Started
 
-  Go ahead and open up a terminal window (whether by opening gedit via
+* Go ahead and open up a terminal window (whether by opening gedit via
   Menu > Programming > gedit or by opening Terminal itself via Menu >
   Programming > Terminal). 
   

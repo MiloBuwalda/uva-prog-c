@@ -1,8 +1,7 @@
 # 16-week schedule
 
 We have listed the activities that you should have done **before** the lab
-session.  And remember to harass your assistant with difficult questions during
-the lab session!
+session.  And remember to harass your assistant with difficult questions!
 
 Note: all deadlines are on Thursdays!
 
