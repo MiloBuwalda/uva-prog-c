@@ -214,75 +214,72 @@ elegantly, and/or logically)?
 
 * Shall we have you write your first program?
 
- Okay, go ahead and launch gedit. (Remember how?) You should find yourself
- faced with another Unsaved Document 1. Go ahead and save the file as hello.c
- (not hello.txt) inside of pset1, just as before. (Remember how?) Once the file
- is saved, the window’s title should change to hello.c (~/pset1) - gedit, and
- the tab’s title should change to hello.c. (If either does not, best to close
- gedit and start fresh! Or ask for help!)
- 
- Go ahead and write your first program by typing these lines into the file
- (though you’re welcome to change the words between quotes to whatever you’d
- like): [^2]
-     
-     #include <stdio.h>
-     
-     int main(void)
-     {
-         printf("hello, world!\n");
-     }
-     
- Notice how gedit adds “syntax highlighting” (i.e., color) as you type. Those
- colors aren’t actually saved inside of the file itself; they’re just added by
- gedit to make certain syntax stand out. Had you not saved the file as hello.c
- from the start, gedit wouldn’t know (per the filename’s extension) that you’re
- writing C code, in which case those colors would be absent. Notice, too, that
- gedit sometimes tries to help you along by completing your thought: you should
- find that, when you type that first curly parenthesis (and curly brace), the
- second appears for you automatically. [^3]
- 
- Do be sure that you type in this program just right, else you’re about to
- experience your first bug! In particular, capitalization matters, so don’t
- accidentally capitalize words (unless they’re between those two quotes). And
- don’t overlook that one semicolon. C is quite nitpicky!
- 
- When done typing, select File > Save (or hit ctrl-s), but don’t quit. Recall
- that the leading asterisk in the tab’s name should then disappear. Click
- anywhere in the terminal window beneath your code, and its prompt should start
- blinking. But odds are the prompt itself is just
- 
-     jharvard@appliance (~):
- 
- which means that, so far as the terminal window’s concerned, you’re still
- inside of John Harvard’s home directory, even though you saved the program you
- just wrote inside of `~/pset1` (per the top of gedit’s window). No problem, go
- ahead and type
-     
-     cd pset1
-     
- or
-     
-     cd ~/pset1
-     
- at the prompt, and the prompt should change to
- 
-     jharvard@appliance (~/pset1):
- 
- in which case you’re where you should be! Let’s confirm that hello.c is there.
- Type 
+  Okay, go ahead and launch gedit. (Remember how?) You should find yourself
+  faced with another Unsaved Document 1. Go ahead and save the file as hello.c
+  (not hello.txt) inside of pset1, just as before. (Remember how?) Once the file
+  is saved, the window’s title should change to hello.c (~/pset1) - gedit, and
+  the tab’s title should change to hello.c. (If either does not, best to close
+  gedit and start fresh! Or ask for help!)
+  
+  Go ahead and write your first program by typing these lines into the file
+  (though you’re welcome to change the words between quotes to whatever you’d
+  like): [^2]
+      
+      #include <stdio.h>
+      
+      int main(void)
+      {
+          printf("hello, world!\n");
+      }
+      
+  Notice how gedit adds “syntax highlighting” (i.e., color) as you type. Those
+  colors aren’t actually saved inside of the file itself; they’re just added by
+  gedit to make certain syntax stand out. Had you not saved the file as hello.c
+  from the start, gedit wouldn’t know (per the filename’s extension) that you’re
+  writing C code, in which case those colors would be absent. Notice, too, that
+  gedit sometimes tries to help you along by completing your thought: you should
+  find that, when you type that first curly parenthesis (and curly brace), the
+  second appears for you automatically. [^3]
+  
+  Do be sure that you type in this program just right, else you’re about to
+  experience your first bug! In particular, capitalization matters, so don’t
+  accidentally capitalize words (unless they’re between those two quotes). And
+  don’t overlook that one semicolon. C is quite nitpicky!
+  
+  When done typing, select File > Save (or hit ctrl-s), but don’t quit. Recall
+  that the leading asterisk in the tab’s name should then disappear. Click
+  anywhere in the terminal window beneath your code, and its prompt should start
+  blinking. But odds are the prompt itself is just
+  
+      jharvard@appliance (~):
+  
+  which means that, so far as the terminal window’s concerned, you’re still
+  inside of John Harvard’s home directory, even though you saved the program you
+  just wrote inside of `~/pset1` (per the top of gedit’s window). No problem, go
+  ahead and type
+      
+      cd pset1
+      
+  or
+      
+      cd ~/pset1
+      
+  at the prompt, and the prompt should change to
+  
+      jharvard@appliance (~/pset1):
+  
+  in which case you’re where you should be! Let’s confirm that hello.c is there.
+  Type 
 
-    ls 
+     ls 
 
- at the prompt followed by Enter, and you should see both `hello.c` and
- `hello.txt`? If not, no worries; you probably just missed a small step. Best to
- restart these past several steps or ask for help!
+  at the prompt followed by Enter, and you should see both `hello.c` and
+  `hello.txt`? If not, no worries; you probably just missed a small step. Best to
+  restart these past several steps or ask for help!
  
- [^2]: Do type in this program keystroke by keystroke inside of the appliance;
- don’t try to copy/paste from the PDF! Odds are copy/paste won’t work yet
- anyway until you install “Guest Additions,” but more on those some other time!]
+[^2]: Do type in this program keystroke by keystroke inside of the appliance; don’t try to copy/paste from the PDF! Odds are copy/paste won’t work yet anyway until you install “Guest Additions,” but more on those some other time!]
  
- [^3]: If you find that annoying, you can disable the feature by unchecking Edit >
- Preferences > Plugins > Bracket Completion.
+[^3]: If you find that annoying, you can disable the feature by unchecking Edit > Preferences > Plugins > Bracket Completion.
 
 * Assuming you indeed see hello.c, let’s try to compile! Cross your fingers and
   then type 
@@ -339,28 +336,28 @@ elegantly, and/or logically)?
 ## Story Time.
 
 * We explored in Week 1 how hard drives work, but computers actually have a
- few types of memory (i.e., storage), among them level-1 cache, level-2 cache,
- RAM, and ROM. Curl up with the article below to learn a bit about each:
+  few types of memory (i.e., storage), among them level-1 cache, level-2 cache,
+  RAM, and ROM. Curl up with the article below to learn a bit about each:
+  
+  > [http://computer.howstuffworks.com/computer-memory.htm](http://computer.howstuffworks.com/computer-memory.htm) 
+  
+  Odds are you’ll want to peruse, at least, pages 1 through 5 of that article.
+  
+  That’s it for now. Bet this topic comes up again, though!
  
- > [http://computer.howstuffworks.com/computer-memory.htm](http://computer.howstuffworks.com/computer-memory.htm)
- 
- Odds are you’ll want to peruse, at least, pages 1 through 5 of that article.
- 
- That’s it for now. Bet this topic comes up again, though!
- 
- * Recall that “style” generally refers to source code’s aesthetics, the extent
- to which code is readable (i.e., commented and indented with variables aptly
- named). Odds are you didn’t have to give too much thought to style when
- writing hello.c, given its brevity, but you’re about to start writing programs
- where you’ll need to make some stylistic decisions.
- 
- Before you do, read over the [Style Guide](/reference/general).
- 
- Inasmuch as style is, to some extent, a matter of personal preference, CS50
- doesn’t mandate that you mimic the styles that you see in lecture and section.
- But we do expect that you model your own style after common conventions.
- You’ll find that CS50’s Style Guide introduces you to some of those common
- conventions. Do keep them in mind as you start churning out code!
+* Recall that “style” generally refers to source code’s aesthetics, the extent
+  to which code is readable (i.e., commented and indented with variables aptly
+  named). Odds are you didn’t have to give too much thought to style when
+  writing hello.c, given its brevity, but you’re about to start writing programs
+  where you’ll need to make some stylistic decisions.
+  
+  Before you do, read over the [Style Guide](/reference/general).
+  
+  Inasmuch as style is, to some extent, a matter of personal preference, CS50
+  doesn’t mandate that you mimic the styles that you see in lecture and section.
+  But we do expect that you model your own style after common conventions.
+  You’ll find that CS50’s Style Guide introduces you to some of those common
+  conventions. Do keep them in mind as you start churning out code!
  
 
 ## Take the Pennies.
