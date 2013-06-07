@@ -5,8 +5,8 @@
 
 ### Websec account
 
-* Get a `websec.science.uva.nl` database: email Marin (<m.vanbeek@uva.nl>) asking
-  for a websec database and give him your UvAnetID.
+* Get a `websec.science.uva.nl` database: email <help@mprog.nl> asking
+  for a websec database. Don't forget to provide your UvAnetID.
 
 ### Downloading the assignment files on websec
 

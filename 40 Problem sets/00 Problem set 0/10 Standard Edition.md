@@ -236,7 +236,7 @@ your final grade.
   more or reach out to the course's staff for assistance.
 
   If you really, really don't want your work included in the 
-  course's gallery, email Marin: <m.vanbeek@uva.nl>.
+  course's gallery, email <help@mprog.nl>.
 
 ### How Stuff Works.
 

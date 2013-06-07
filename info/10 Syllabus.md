@@ -30,8 +30,7 @@ phone: 525 5235
 
 For feedback on this course web site and the course contents.
 
-Marin van Beek  
-<m.vanbeek@uva.nl>
+<help@mprog.nl>
 
 ## Prerequisite
 
