@@ -8,20 +8,18 @@ Note: all deadlines are on Thursdays!
 ## Week 1.
 
 * Lecture 0 [Wednesday and Friday](/lectures/week-0), start with [Scratch](/problem-sets/problem-set-0)
-* continue with Scratch
 * lecture 1 Wednesday
-* deadline: None
+* deadline: pset 0
 
 ## Week 2.
 
 * lecture 1 Friday
 * lecture 2 Monday
-* deadline: pset 0
+* deadline: none
 
 ## Week 3.
 
 * hacker edition bekijken
-* lecture 2 Monday
 * lecture 2 Wednesday
 * deadline: pset 1 
 
@@ -75,6 +73,7 @@ Note: all deadlines are on Thursdays!
 
 * deadline: project proposal
 * lecture 11 Monday
+* start project
 
 ## Week 13.
 
@@ -82,12 +81,11 @@ Note: all deadlines are on Thursdays!
 
 ## Week 14.
 
-Zaterdag?: hackathon.
+* deadline: status report
 
 ## Week 15.
 
-* deadline: status report
-* project deadline
+* deadline: final project
 
 ## Week 16.
 

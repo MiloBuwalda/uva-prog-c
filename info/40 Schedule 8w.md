@@ -39,7 +39,7 @@ Note: all deadlines are on Thursdays!
 * lecture 7 Monday
 * lecture 7 Wednesday
 * deadline: pset 5
-* tentamen: 1
+* tentamen: Programmeren 1
 
 ## Week 6.
 
@@ -58,5 +58,5 @@ Note: all deadlines are on Thursdays!
 * lecture 10 Monday
 * lecture 10 Wednesday
 * deadline: final project
-* tentamen: 2
+* tentamen: Programmeren 2
 
