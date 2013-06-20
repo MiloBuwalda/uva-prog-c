@@ -978,7 +978,8 @@ appropriateness of some discussion, contact the staff.
 * Last, but not least, when a user is registering for a new account, you have
   to check if the filled in username already exists without the user ever
   leaving the page. It might be useful to watch the lectures of week 10 before
-  doing this part of the exercise.
+  doing this part of the exercise. Please note that you are not required to
+  apply all of the lessons learned in week 10. Just the points below.
 
 * To do this, you have to use Ajax to call your own, separate php script that
   checks if the user name already exists. You might find the examples in
