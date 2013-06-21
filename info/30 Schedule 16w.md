@@ -7,19 +7,19 @@ Note: all deadlines are on Thursdays!
 
 ## Week 1.
 
-* Lecture 0 [Wednesday and Friday](/lectures/week-0), start with [Scratch](/problem-sets/problem-set-0)
-* lecture 1 Wednesday
-* deadline: pset 0
+* Lecture 0 [Wednesday and Friday](/lectures/week-0)
+* Start with [Scratch](/problem-sets/problem-set-0)
 
 ## Week 2.
 
+* deadline: pset 0
+* lecture 1 Wednesday
 * lecture 1 Friday
-* lecture 2 Monday
-* deadline: none
 
 ## Week 3.
 
 * hacker edition bekijken
+* lecture 2 Monday
 * lecture 2 Wednesday
 * deadline: pset 1 
 
