@@ -1,6 +1,5 @@
 # Problem Set 0: Scratch
 
-Test test test...
 
 Per the directions at this document's end, submitting this problem set involves filling out a Web-based form that may take a few minutes, so best not to wait until the very last minute, lest you spend a late day unnecessarily.
 
