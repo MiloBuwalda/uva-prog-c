@@ -1,3 +1,0 @@
-# Cryptography.
-
-![Meme](VBsyN.png)

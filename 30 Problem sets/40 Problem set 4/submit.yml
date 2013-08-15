@@ -1,3 +1,6 @@
 name: 4
 required:
-    - pset4.tar.gz
+    - whodunit.c
+    - resize.c
+    - recover.c
+    - questions.txt

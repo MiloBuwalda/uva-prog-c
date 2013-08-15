@@ -1,7 +1,5 @@
 name: 1
 required:
-    - pennies.c
-    - greedy.c
-    - chart.c
-optional:
-    - credit.c
+    - hello.c
+    - mario.c
+    - greedy.c (for Normal edition) or credit.c (for Hacker edition)

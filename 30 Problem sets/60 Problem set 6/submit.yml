@@ -1,3 +1,13 @@
 name: 6
 required:
-    - pset6.tar.gz
+    - dump.c
+    - forest.c
+    - forest.h
+    - hth.txt
+    - huffile.c
+    - huffile.h
+    - puff.c
+    - tale.txt
+    - tree.c
+    - tree.h
+    - Makefile

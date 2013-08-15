@@ -1,3 +1,6 @@
 name: 5
 required:
-    - pset5.tar.gz
+    - dictionary.c
+    - dictionary.h
+    - Makefile
+    - questions.txt
