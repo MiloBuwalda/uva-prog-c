@@ -7,6 +7,5 @@
 
 ## Source code (used during Walkthrough)
 
-* [Download source (.ZIP)](http://cdn.cs50.net/2012/fall/psets/7/walkthrough7.zip)
-
-
+* This and future problem sets will no longer have downloadable source attached
+  to walkthroughs.
