@@ -3,7 +3,6 @@
 * Problem sets come with a PDF file describing the assignment(s) required for a
   given week. You can download these files (called **specifications**) for each
   week under the **Problem set** tab, just above this description.
-  tab, just above this description.
 
 * Problem sets always come with extra video tutorials and other resources to
   help you along the way. You can find these under the **Walkthrough** tab.
