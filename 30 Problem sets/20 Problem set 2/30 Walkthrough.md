@@ -1,10 +1,12 @@
 # Walkthrough
 
-* [Video](http://cs50.tv/2011/fall/psets/2/walkthrough2.mp4)
-* [Slides](http://cdn.cs50.net/2011/fall/psets/2/walkthrough2.pdf)
+## Walkthrough
 
-## Source Code
+* [Watch video (YouTube)](http://www.youtube.com/watch?v=ZKZTsipbVPY)
+* [Download slides (.PDF)](http://cdn.cs50.net/2012/fall/psets/2/walkthrough2.pdf)
 
-* [Index](http://cdn.cs50.net/2011/fall/psets/2/walkthrough2/)
-* [ZIP](http://cdn.cs50.net/2011/fall/psets/2/walkthrough2.zip)
+## Source code (used during Walkthrough)
+
+* [Download source (.ZIP)](http://cdn.cs50.net/2012/fall/psets/2/walkthrough2.zip)
+
 
