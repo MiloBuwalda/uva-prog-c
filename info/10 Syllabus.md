@@ -1,6 +1,6 @@
 ![CS50 @ Minor Programmeren](cs50.png)
 
-*Edition: February 2013*
+*Edition: September 2013*
 
 Introduction to the intellectual enterprises of computer science and the art of
 programming. This course teaches students how to think algorithmically and
