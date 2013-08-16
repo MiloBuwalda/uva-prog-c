@@ -5,7 +5,7 @@ Keywords: CS50 Library. Pointers, continued. Forensics.
 ## Videos
 
 * Lecture 1: [Watch video (YouTube)](http://www.youtube.com/watch?v=m9XDkMD1uVE)
-* *(There's no second video this week.)*
+* *(There's no second lecture this week.)*
 
 ## Lecture notes
 
