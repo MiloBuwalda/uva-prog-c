@@ -1,5 +1,3 @@
-# Section 6
-
 ## Section 6
 
 * Less comfortable: [Watch video (YouTube)](http://www.youtube.com/watch?v=Y4E71NDa7Gw)

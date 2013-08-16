@@ -1,5 +1,3 @@
-# Section 1
-
 ## Introduction to sections
 
 * Sections supplement lectures and offer a more detailed approach to the matter

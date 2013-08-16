@@ -1,10 +1,10 @@
-# Quiz 0 
+# Quiz 0
 
-* [Questions](http://cdn.cs50.net/2011/fall/quizzes/0/quiz0.pdf)
-* [Answers](http://cdn.cs50.net/2011/fall/quizzes/0/key0.pdf)
+* [Download quiz (.PDF)](http://cdn.cs50.net/2012/fall/quizzes/0/quiz0.pdf)
+* [Download answers (.PDF)](http://cdn.cs50.net/2012/fall/quizzes/0/key0.pdf)
 
 ## Review session
 
-* [Slides](http://cdn.cs50.net/2011/fall/quizzes/0/review0.pdf)
-* [Video](http://cs50.tv/2011/fall/quizzes/0/review0.mp4)
+* [Watch video (YouTube)](http://www.youtube.com/watch?v=5nAmeSOeWMI)
+* [Download slides (.PDF)](http://cdn.cs50.net/2012/fall/quizzes/0/review0.pdf)
 
