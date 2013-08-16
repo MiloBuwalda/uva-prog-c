@@ -57,16 +57,16 @@ final grade. Still, we are most certain that every student should be able to
 pass the course!
 
 <div class="row">
-	<div class="col-lg-4">
+<div class="col-lg-4">
 
 The grade of **Part 1** will be determined using the following weights:
 
 * Problem Sets 0--4: 100%
 * Quiz 0: 0% (but needs to be passed)
 
-	</div>
+</div>
 
-	<div class="col-lg-4">
+<div class="col-lg-4">
 
 The grade of **Part 2** will be determined using the following weights:
 
@@ -74,7 +74,7 @@ The grade of **Part 2** will be determined using the following weights:
 * Final Project: 40%
 * Quiz 1: 0% (but needs to be passed)
 
-	</div>
+</div>
 </div>
 
 Know that this course draws quite the spectrum of students, including *those
