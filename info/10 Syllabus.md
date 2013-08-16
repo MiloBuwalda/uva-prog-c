@@ -57,7 +57,7 @@ final grade. Still, we are most certain that every student should be able to
 pass the course!
 
 <div class="row">
-<div class="col-lg-4">
+<div class="col-lg-6">
 
 The grade of **Part 1** will be determined using the following weights:
 
@@ -66,7 +66,7 @@ The grade of **Part 1** will be determined using the following weights:
 
 </div>
 
-<div class="col-lg-4">
+<div class="col-lg-6">
 
 The grade of **Part 2** will be determined using the following weights:
 
