@@ -2,15 +2,14 @@
 
 *Edition: February 2013*
 
-CS50 is an introduction to the intellectual enterprises of computer science
-and the art of programming. This course teaches students how to think
-algorithmically and solve problems efficiently. Topics include abstraction,
-algorithms, encapsulation, data structures, databases, memory management,
-security, software development, virtualization, and websites. Languages
-include C, PHP, and JavaScript plus SQL, CSS, and HTML. Problem sets inspired
-by real-world domains of biology, cryptography, finance and forensics. Designed
-for concentrators and non-concentrators alike, with or without prior
-programming experience.
+Introduction to the intellectual enterprises of computer science and the art of
+programming. This course teaches students how to think algorithmically and
+solve problems efficiently. Topics include abstraction, algorithms, data
+structures, encapsulation, resource management, security, software engineering,
+and web development. Languages include C, PHP, and JavaScript plus SQL, CSS,
+and HTML. Problem sets inspired by real-world domains of biology, cryptography,
+finance, forensics, and gaming. Designed for concentrators and
+non-concentrators alike, with or without prior programming experience.
 
 ## Staff
 
@@ -36,8 +35,8 @@ None -- definitely no programming experience needed.
 
 ## Expectations
 
-You are expected to watch all lectures and sections (but not in the lab),
-submit eight problem sets, take two quizzes, and submit a final project.
+You are expected to watch all lectures and sections, submit eight problem sets,
+take two quizzes, and submit a final project.
 
 You are required to work in the lab for some amount of time during the week,
 as agreed upon with the course coordinator. During these hours, teaching
@@ -77,11 +76,17 @@ The grade of **Part 2** will be determined using the following weights:
 </div>
 </div>
 
-Know that this course draws quite the spectrum of students, including *those
-less comfortable*, *those more comfortable*, and those somewhere in between.
+Know that this course draws quite the spectrum of students, including "those
+less comfortable", "those more comfortable", and those somewhere in between.
 However, what ultimately matters in this course is not so much where you end
 up relative to your classmates but where you end up relative to yourself
-before you took this course.
+in Week 0.
+
+The course is not graded on a curve. The course does not have pre-determined
+cutoffs for final grades. Those less comfortable and somewhere in between are
+not at a disadvantage vis-à-vis those more comfortable. Each student's final
+grade is individually determined at term's end after input from the teaching
+fellows. Remarkable effort and upward trending do not go unnoticed.
 
 ## Books
 
@@ -104,16 +109,15 @@ suggestions:
 > Programming in C, Third Edition  
 > Stephen Kochan  
 > Sams Publishing, 2004  
-> ISBN 0-672-32666-3 
-> *Note that we have a copy of this book available during office hours*
+> ISBN 0-672-32666-3
 
 The book below is recommended for those interested in understanding how their
 own computers work for personal edification.
 
-> How Computers Work, Ninth Edition Ron White  
+> How Computers Work, Ninth Edition
+> Ron White  
 > Que Publishing, 2007  
-> ISBN 0-7897-3613-6 
-> *Note that we have a copy of this book available during office hours*
+> ISBN 0-7897-3613-6
 
 This last book below is recommended for aspiring hackers, those interested in
 programming tricks and low-level optimization of code for applications beyond
@@ -122,5 +126,4 @@ the scope of this course.
 > Hacker's Delight  
 > Henry S. Warren Jr.  
 > Addison-Wesley, 2003  
-> ISBN 0-201-91465-4 
-> *Note that we have a copy of this book available during office hours*
+> ISBN 0-201-91465-4

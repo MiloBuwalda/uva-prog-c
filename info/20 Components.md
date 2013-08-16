@@ -1,39 +1,36 @@
 # Course components
 
+You're on your own through this course most of the time, though we will be,
+quite literally, on your side when you're in the labs.
 
+Make good use of the various materials that are in the course. Here's a guided
+tour through the important parts.
 
-Problem sets and the final project will be evaluated along the following axes:
+## Lectures
 
-* Scope, 
-* Correctness, 
-* Design and 
-* Style.
+These discuss all theory that is needed to pass the quizzes. Lecture notes can
+be found on the page of each lecture. The lectures help you to finish your
+Problem Sets and are the source of questions for the Quizzes.
 
+Watch the lectures before or on your way to the lab sessions, i.e. not during
+the lab sessions, in order to be able to spend your lab time programming and
+asking good questions about the problem sets.
 
-
-
-## Course contents
-
-### Lectures
-
-These discuss all theory that is needed to pass the quizzes.
-
-### Sections
+## Sections
 
 Lectures are supplemented by weekly, 90-minute sections led by the Harvard
 teaching fellows. Sections provide you with opportunities to explore and
 discuss course materials in a more intimate environment.
 
-### Walkthroughs
+## Walkthroughs
 
 These discuss the current week's problem set. This is where you receive
 direction on where to begin and how to approach the week's challenges.
 
-### Problem Sets
+## Problem Sets
 
 The eight problem sets are the hard work of the course. You are supposed to
-work on them in the lab most of the time, where you can ask questions to the
-teaching assistants.
+work on them in the lab, where you can ask questions to the teaching assistants.
 
 You have four "late days" that you may "spend" during the semester, each of
 which provides you with an extension of twenty-four hours. You may spend no
@@ -60,13 +57,31 @@ scientists) to tackle the standard editions. However, you may choose, week to
 week, which edition to submit. You may not submit both or some amalgam of the
 two.
 
-### Quizzes
+Problem sets and the final project will be evaluated along the following axes:
+
+* Scope, 
+* Correctness, 
+* Design and 
+* Style.
+
+Grades are ordinarily determined by scope × (3 × correctness + 2 × design + 1 ×
+style). Scores are normalized across TFs at term's end, so mid-semester
+comparisons among students of scores are not reliable indicators of standing.
+
+Although you must submit all eight problem sets, your lowest score among those
+problem sets on which you received perfect scores for the axis of scope will be
+dropped when final grades are determined.
+
+## Quizzes
 
 The course has two 2-hour quizzes. These quizzes are "closed-book," but you
 may utilize during each quiz one two-sided page (A4) of notes, typed or
 written, and a pen or pencil, nothing else.
 
-### Final Project
+To prepare, regularly re-read the lecture notes and be sure to ask the course
+assistants to help you find answers if anything is unclear.
+
+## Final Project
 
 The climax of this course is its final project. The final project is your
 opportunity to take your knowledge of programming out for a spin and develop
@@ -94,58 +109,3 @@ Technical difficulties are not considered emergencies. Problem sets' late days
 cannot be spent on the final project. Lateness of submissions is determined
 down to the minute by submissions' timestamps. Submitting more than seven
 minutes late is equivalent to not submitting at all.
-
-
-
-
-
-# How to ace this course #
-
-You're on your own through this course most of the time, though we will be,
-quite literally, on your side when you're in the labs.
-
-Make good use of the various materials that are in the course. Here's a guided
-tour through the important parts.
-
-## Lecture notes
-
-Start by reading the lecture notes. These can be found on the page of that
-specific lecture. These give you a good indication of what you should know to
-finish a problem set.
-
-## Lectures
-
-Now you can watch the lecture. Do this before or on your way to the lab
-sessions (so not *during* the lab sessions), in order to be able to spend your
-lab time programming and asking good questions about the problem sets.
-
-## Problem sets
-
-Read the problem set specification completely and try to work out by hand,
-with pen and paper, what tasks your program should perform, *before*
-you start writing code.
-
-## Sections
-
-If you haven't fully grasped the lecture, the sections of the following week
-are a more in depth discussion of some of the best stuff discussed in that
-lecture. The sections also provide some extra examples that may help you get
-started on your problem set.
-
-## Walkthrough
-
-If after all of this you are still unsure where to start with your problem
-set, you can watch the walkthrough. You can find the walkthroughs on the
-problem set pages.
-
-## Hacker Edition
-
-If the assignment was a breeze, we would love you to do the hacker edition of
-the assignment. This is quite a bit more difficult, and a great challenge for
-those *more comfortable*.
-
-## Test preparation
-
-To prepare for the tests, you should regularly re-read the lecture notes and
-ask the assistants to help you if anything is unclear, like those darn
-*pointers*.

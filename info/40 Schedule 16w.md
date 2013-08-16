@@ -7,8 +7,8 @@ Note: all deadlines are on Thursdays!
 
 ## Week 1.
 
-* Lecture 0 [Wednesday and Friday](/lectures/week-0)
-* Start with [Scratch](/problem-sets/problem-set-0)
+* Lecture 0 Wednesday and Friday
+* Start with Scratch in Problem Set 0!
 
 ## Week 2.
 
