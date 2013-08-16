@@ -9,12 +9,10 @@ tour through the important parts.
 ## Lectures
 
 These discuss all theory that is needed to pass the quizzes. Lecture notes can
-be found on the page of each lecture. The lectures help you to finish your
-Problem Sets and are the source of questions for the Quizzes.
-
-Watch the lectures before or on your way to the lab sessions, i.e. not during
-the lab sessions, in order to be able to spend your lab time programming and
-asking good questions about the problem sets.
+be found on the page of each lecture. Watch the lectures before or on your way
+to the lab sessions, i.e. not during the lab sessions, in order to be able to
+spend your lab time programming and asking good questions about the problem
+sets.
 
 ## Sections
 

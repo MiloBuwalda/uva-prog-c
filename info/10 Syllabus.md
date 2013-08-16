@@ -36,12 +36,8 @@ None -- definitely no programming experience needed.
 ## Expectations
 
 You are expected to watch all lectures and sections, submit eight problem sets,
-take two quizzes, and submit a final project.
-
-You are required to work in the lab for some amount of time during the week,
-as agreed upon with the course coordinator. During these hours, teaching
-assistants are available to answer any questions you may have about the
-lectures, quizzes or problem sets.
+take two quizzes, and submit a final project. You are also expected to attend a
+minimum amount of lab sessions in order to be able to asked questions.
 
 ## Grades
 
@@ -61,7 +57,7 @@ pass the course!
 The grade of **Part 1** will be determined using the following weights:
 
 * Problem Sets 0--4: 100%
-* Quiz 0: 0% (but needs to be passed)
+* Quiz 0 needs to be passed
 
 </div>
 
@@ -71,7 +67,7 @@ The grade of **Part 2** will be determined using the following weights:
 
 * Problem Sets 5--7: 60%
 * Final Project: 40%
-* Quiz 1: 0% (but needs to be passed)
+* Quiz 1 needs to be passed
 
 </div>
 </div>
@@ -91,11 +87,10 @@ fellows. Remarkable effort and upward trending do not go unnoticed.
 ## Books
 
 No books are required for this course. However, we do have a number of books
-available for you to read during office hours. You are welcome to pick up one
-of these and read them as a preparation for or review of one of the lectures.
+available for you to use during office hours. You are welcome to pick up one of
+these and read them as a preparation for or review of one of the lectures.
 
-For those who would like to have their own book, here are some good
-suggestions:
+If one seeks additional reference, here are some good suggestions:
 
 > **For Those Less Comfortable**
 > 

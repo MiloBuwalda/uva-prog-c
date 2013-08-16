@@ -23,7 +23,7 @@ You are welcome to discuss the course's material with others in order to better
 understand it. You may even discuss problem sets with classmates, but you may
 not share code. In other words, you may communicate with classmates in English,
 but you may not communicate in, say, C. If in doubt as to the appropriateness
-of some discussion, contact the course's instructor or preceptor.
+of some discussion, contact the course's instructor.
 
 ## Quoting sources
 
@@ -44,9 +44,9 @@ course reserves the right to impose local sanctions on top of that outcome for
 that student that may include, but not be limited to, a failing grade for work
 submitted or for the course itself.
 
-In all cases we follow the directives of the University of Amsterdam and the
-examination board of the Computer Science BSc programme regarding fraud and
-plagiarism. Find them here in [English] and [Dutch].
+In all cases we follow the directives regarding fraud and plagiarism of the
+University of Amsterdam and of the examination board of the Computer Science
+BSc programme. Find them here in [English] and [Dutch].
 
 [Dutch]: http://uva.nl/plagiaat
 [English]: http://student.uva.nl/en/az/content/plagiarism-and-fraud/plagiarism-and-fraud.html
