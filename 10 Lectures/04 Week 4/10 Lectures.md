@@ -13,3 +13,7 @@ allocation. Heap.
 * Lecture 1: [Download (.HTML)](http://d2o9nyf4hwsci4.cloudfront.net/2012/fall/lectures/4/notes4m/notes4m.html)
 * Lecture 2: [Download (.HTML)](http://d2o9nyf4hwsci4.cloudfront.net/2012/fall/lectures/4/notes4w/notes4w.html)
 
+## Demos
+
+* Pointer fun with Binky: [Watch video (YouTube)](http://www.youtube.com/watch?v=6pmWojisM_E)
+* Sorting algorithm animations: [View demo](http://www.sorting-algorithms.com/)

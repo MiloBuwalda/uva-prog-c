@@ -15,3 +15,7 @@ continued. Loops, continued.
 * Lecture 1: [Download (.HTML)](http://d2o9nyf4hwsci4.cloudfront.net/2012/fall/lectures/1/notes1m/notes1m.html)
 * Lecture 2: [Download (.HTML)](http://d2o9nyf4hwsci4.cloudfront.net/2012/fall/lectures/1/notes1w/notes1w.html)
 
+## Demos
+
+* Engineering disasters: [Watch video (YouTube)](http://www.youtube.com/watch?v=EMVBLg2MrLs)
+* Official Space Trailer: [Watch video (YouTube)](http://www.youtube.com/watch?v=G_wiXgRWrIU)

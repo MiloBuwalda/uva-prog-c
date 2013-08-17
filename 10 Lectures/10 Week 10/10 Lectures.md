@@ -11,3 +11,6 @@ Keywords: Security.
 
 * Lecture 1: [Download (.HTML)](http://d2o9nyf4hwsci4.cloudfront.net/2012/fall/lectures/10/notes10m/notes10m.html)
 
+## Demos
+
+* Reflections on trusting trust: [View demo](http://cm.bell-labs.com/who/ken/trust.html)
