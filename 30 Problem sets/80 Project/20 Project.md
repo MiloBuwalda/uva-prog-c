@@ -1,7 +1,5 @@
 # Project
 
-"Problem set 8" is your final project!
-
 ## Specifications
 
 * First off, you should pick a subject or theme for whatever you are going to
