@@ -1,10 +1,6 @@
 # Getting started
 
 <ul>
-<li><p>If using the CS50 Appliance for your final project, start up your appliance and, upon reaching John Harvard's desktop, open a terminal window (remember how?) and execute</p>
-<div class="notranslate syntax"><pre>update50
-</pre></div>
-<p>to ensure that your appliance is up-to-date!</p></li>
 <li><p>If using C for your final project (and the CS50 Appliance), odds are you'll want to execute commands like the below.</p>
 <div class="notranslate syntax"><pre>cd ~/Dropbox
 mkdir project
