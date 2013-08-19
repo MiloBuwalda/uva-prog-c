@@ -4,59 +4,50 @@ Note: all deadlines are on Thursdays!
 
 ## Before course start
 
-* lecture 0 Wednesday and Friday
+* lecture 0
 
 ## Week 1.
 
 * Scratch (one day only)
 * deadline: pset 0
-* lecture 1 Wednesday
-* Lecture 1 Friday
-* lecture 2 Monday
-* lecture 2 Wednesday
+* lecture 1 
+* lecture 2 
 * deadline: pset 1
 
 ## Week 2.
 
-* lecture 3 Monday
-* lecture 3 Wednesday
+* lecture 3 
 * deadline pset 2
 
 ## Week 3.
 
-* lecture 4 Monday
-* lecture 4 Wednesday
+* lecture 4 
 * deadline: pset 3
 
 ## Week 4.
 
-* lecture 5 Monday
-* lecture 5 Wednesday
+* lecture 5 
 * deadline: pset 4
+* tentamen: Programmeren 1
 
 ## Week 5.
 
-* lecture 7 Monday
-* lecture 7 Wednesday
+* lecture 7
 * deadline: pset 5
-* tentamen: Programmeren 1
 
 ## Week 6.
 
-* lecture 8 Monday
-* lecture 8 Wednesday
+* lecture 8
 * deadline: pset 6
 
 ## Week 7.
 
-* lecture 9 Monday
-* lecture 9 Wednesday
+* lecture 9
 * deadline: pset 7
 
 ## Week 8.
 
-* lecture 10 Monday
-* lecture 10 Wednesday
+* lecture 10
 * deadline: final project
 * tentamen: Programmeren 2
 
