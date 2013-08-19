@@ -31,7 +31,7 @@ TBA
 
 ## Prerequisites
 
-None -- definitely no programming experience needed.
+None --- definitely no programming experience needed.
 
 ## Expectations
 
