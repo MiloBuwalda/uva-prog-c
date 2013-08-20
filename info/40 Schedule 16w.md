@@ -46,39 +46,40 @@ Note: all deadlines are on Thursdays!
 
 ## Week 9.
 
+* No deadlines this week!
+
+## Week 10.
+
 * lecture 7 
 * deadline: pset 5
 
-## Week 10.
+## Week 11.
 
 * lecture 8 
 * deadline: pset 6
 
-## Week 11.
+## Week 12.
 
 * lecture 9 
 * deadline: pset 7
 * deadline: project pre-proposal
 
-## Week 12.
+## Week 13.
 
 * lecture 10 
 * deadline: project proposal
 * start project
 
-## Week 13.
-
-* lecture 11
-
 ## Week 14.
 
+* lecture 11
 * deadline: project status report
 
 ## Week 15.
 
-* deadline: final project
+* Tentamen Programmeren 2
 
 ## Week 16.
 
-* Tentamen Programmeren 2
+* deadline: final project
 
