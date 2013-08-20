@@ -1,4 +1,4 @@
-# Introduction
+# About the problem sets
 
 * Problem sets come with a PDF file describing the assignment(s) required for a
   given week. You can download these files (called **specifications**) for each
