@@ -8,13 +8,13 @@ Note: all deadlines are on Thursdays!
 ## Week 1.
 
 * Readings
+* lecture 0
 
 ## Week 2.
 
-* lecture 0
 * Start with Scratch in Problem Set 0!
-* deadline: pset 0
 * lecture 1
+* deadline: pset 0
 
 ## Week 3.
 
@@ -28,16 +28,17 @@ Note: all deadlines are on Thursdays!
 
 ## Week 5.
 
-
-## Week 6.
-
 * lecture 4
 * deadline: pset 3
 
-## Week 7.
+## Week 6.
 
 * lecture 5
 * deadline: pset 4
+
+## Week 7.
+
+* No deadlines this week!
 
 ## Week 8.
 
@@ -71,7 +72,7 @@ Note: all deadlines are on Thursdays!
 
 ## Week 14.
 
-* deadline: status report
+* deadline: project status report
 
 ## Week 15.
 
