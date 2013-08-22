@@ -1,6 +1,7 @@
 course:
     title: Introduction to Computer Science
     short: CS50
+	submit: CS50-2103
 
 acknowledgements:
     - 'Based on CS50 from http://cs50.tv/2011/fall/ -- Copyright 2011--2013, David J. Malan.'
