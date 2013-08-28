@@ -103,7 +103,7 @@ Problem sets and the final project will be evaluated along the following axes:
 
 Grades are ordinarily determined by
 
-$$"scope" * (3 * "correctness" + 2 * "design" + 1 * "style")$$
+$$"scope" * (3 * "correctness" + 2 * "design" + 1 * "style")$$.
 
 Scores are normalized across TFs at term's end, so mid-semester comparisons
 among students of scores are not reliable indicators of standing.
