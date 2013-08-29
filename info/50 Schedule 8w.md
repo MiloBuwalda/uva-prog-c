@@ -2,6 +2,9 @@
 
 Note: all deadlines are on Thursdays!
 
+<div class="row">
+<div class="col-lg-6">
+
 ## Before course start
 
 * lecture 0
@@ -30,6 +33,10 @@ Note: all deadlines are on Thursdays!
 * deadline: pset 4
 * tentamen: Programmeren 1
 
+</div>
+
+<div class="col-lg-6">
+
 ## Week 5.
 
 * lecture 7
@@ -51,3 +58,5 @@ Note: all deadlines are on Thursdays!
 * deadline: final project
 * tentamen: Programmeren 2
 
+</div>
+</div>

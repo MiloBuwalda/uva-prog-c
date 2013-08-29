@@ -5,6 +5,9 @@ session.  And remember to harass your assistant with difficult questions!
 
 Note: all deadlines are on Thursdays!
 
+<div class="row">
+<div class="col-lg-6">
+
 ## Week 1.
 
 * Readings
@@ -37,6 +40,10 @@ Note: all deadlines are on Thursdays!
 
 * Tentamen Programmeren 1
 
+</div>
+
+<div class="col-lg-6">
+
 ## Week 7.
 
 * lecture 7 
@@ -68,3 +75,6 @@ Note: all deadlines are on Thursdays!
 
 * Tentamen Programmeren 2
 * deadline: final project
+
+</div>
+</div>
