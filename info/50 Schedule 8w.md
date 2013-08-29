@@ -9,7 +9,7 @@ Note: all deadlines are on Thursdays!
 
 * lecture 0
 
-## Week 1.
+## Week 1
 
 * Scratch (one day only)
 * deadline: pset 0
@@ -17,17 +17,17 @@ Note: all deadlines are on Thursdays!
 * lecture 2 
 * deadline: pset 1
 
-## Week 2.
+## Week 2
 
 * lecture 3 
 * deadline pset 2
 
-## Week 3.
+## Week 3
 
 * lecture 4 
 * deadline: pset 3
 
-## Week 4.
+## Week 4
 
 * lecture 5 
 * deadline: pset 4
@@ -37,22 +37,26 @@ Note: all deadlines are on Thursdays!
 
 <div class="col-lg-6">
 
-## Week 5.
+## Before course start
+
+* lecture 5
+
+## Week 5
 
 * lecture 7
 * deadline: pset 5
 
-## Week 6.
+## Week 6
 
 * lecture 8
 * deadline: pset 6
 
-## Week 7.
+## Week 7
 
 * lecture 9
 * deadline: pset 7
 
-## Week 8.
+## Week 8
 
 * lecture 10
 * deadline: final project

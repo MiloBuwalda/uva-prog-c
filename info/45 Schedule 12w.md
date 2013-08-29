@@ -8,7 +8,7 @@ Note: all deadlines are on Thursdays!
 <div class="row">
 <div class="col-lg-6">
 
-## Week 1.
+## Week 1
 
 * Readings
 * lecture 0
@@ -16,27 +16,27 @@ Note: all deadlines are on Thursdays!
 * lecture 1
 * deadline: pset 0
 
-## Week 2.
+## Week 2
 
 * lecture 2 
 * deadline: pset 1 
 
-## Week 3.
+## Week 3
 
 * lecture 3
 * deadline: pset 2
 
-## Week 4.
+## Week 4
 
 * lecture 4
 * deadline: pset 3
 
-## Week 5.
+## Week 5
 
 * lecture 5
 * deadline: pset 4
 
-## Week 6.
+## Week 6
 
 * Tentamen Programmeren 1
 
@@ -44,34 +44,34 @@ Note: all deadlines are on Thursdays!
 
 <div class="col-lg-6">
 
-## Week 7.
+## Week 7
 
 * lecture 7 
 * deadline: pset 5
 
-## Week 8.
+## Week 8
 
 * lecture 8 
 * deadline: pset 6
 
-## Week 9.
+## Week 9
 
 * lecture 9 
 * deadline: pset 7
 * deadline: project pre-proposal
 
-## Week 10.
+## Week 10
 
 * lecture 10 
 * deadline: project proposal
 * start project
 
-## Week 11.
+## Week 11
 
 * lecture 11
 * deadline: project status report
 
-## Week 12.
+## Week 12
 
 * Tentamen Programmeren 2
 * deadline: final project
