@@ -67,6 +67,7 @@ Problem sets and the final project will be evaluated along the following axes:
 	3. you've done everything required
 	4. you've tried some extras
 	5. above and beyond: a real extra
+	{: start="0"}
 
 * Correctness
 
