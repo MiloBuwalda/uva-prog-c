@@ -1,43 +1,38 @@
 # 16-week schedule
 
-We have listed the activities that you should have done **before** the lab
-session.  And remember to harass your assistant with difficult questions!
-
-Note: all deadlines are on Thursdays!
-
 <div class="row">
 <div class="col-lg-6">
 
 ## Week 1
 
 * Readings
-* lecture 0
+* Lecture 0
+* Start with Scratch in Problem Set 0!
 
 ## Week 2
 
-* Start with Scratch in Problem Set 0!
-* lecture 1
-* deadline: pset 0
+* Lecture 1
+* Thursday deadline: pset 0
 
 ## Week 3
 
-* lecture 2 
-* deadline: pset 1 
+* Lecture 2 
+* Thursday deadline: pset 1 
 
 ## Week 4
 
-* lecture 3
-* deadline: pset 2
+* Lecture 3
+* Thursday deadline: pset 2
 
 ## Week 5
 
-* lecture 4
-* deadline: pset 3
+* Lecture 4
+* Thursday deadline: pset 3
 
 ## Week 6
 
-* lecture 5
-* deadline: pset 4
+* Lecture 5
+* Thursday deadline: pset 4
 
 ## Week 7
 
@@ -45,7 +40,7 @@ Note: all deadlines are on Thursdays!
 
 ## Week 8
 
-* Tentamen Programmeren 1
+* Quiz 0
 
 </div>
 
@@ -57,38 +52,37 @@ Note: all deadlines are on Thursdays!
 
 ## Week 10
 
-* lecture 7 
-* deadline: pset 5
+* Lecture 7 
+* Thursday deadline: pset 5
 
 ## Week 11
 
-* lecture 8 
-* deadline: pset 6
+* Lecture 8 
+* Thursday deadline: pset 6
 
 ## Week 12
 
-* lecture 9 
-* deadline: pset 7
-* deadline: project pre-proposal
+* Lecture 9 
+* Thursday deadline: pset 7
+* Deadline: project pre-proposal
 
 ## Week 13
 
-* lecture 10 
-* deadline: project proposal
-* start project
+* Lecture 10 
+* Thursday deadline: project proposal
 
 ## Week 14
 
-* lecture 11
-* deadline: project status report
+* Lecture 11
+* Thursday deadline: project status report
 
 ## Week 15
 
-* Tentamen Programmeren 2
+* Quiz 1
 
 ## Week 16
 
-* deadline: final project
+* Thursday deadline: final project
 
 </div>
 </div>
