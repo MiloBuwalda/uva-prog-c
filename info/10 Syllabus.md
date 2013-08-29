@@ -109,7 +109,7 @@ If one seeks additional reference, here are some good suggestions:
 The book below is recommended for those interested in understanding how their
 own computers work for personal edification.
 
-> How Computers Work, Ninth Edition
+> How Computers Work, Ninth Edition  
 > Ron White  
 > Que Publishing, 2007  
 > ISBN 0-7897-3613-6
