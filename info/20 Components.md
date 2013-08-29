@@ -10,15 +10,14 @@ tour through the important parts.
 
 These discuss all theory that is needed to pass the quizzes. Lecture notes can
 be found on the page of each lecture. Watch the lectures before or on your way
-to the lab sessions, i.e. not during the lab sessions, in order to be able to
-spend your lab time programming and asking good questions about the problem
-sets.
+to the lab sessions, in order to be able to spend your lab time programming and
+asking questions.
 
 ## Sections
 
 Lectures are supplemented by weekly, 90-minute sections led by the Harvard
-teaching fellows. Sections provide you with opportunities to explore and
-discuss course materials in a more intimate environment.
+teaching fellows. Sections more thoroughly discuss some of the material from
+the lectures.
 
 ## Walkthroughs
 
@@ -27,8 +26,8 @@ direction on where to begin and how to approach the week's challenges.
 
 ## Problem Sets
 
-The eight problem sets are the hard work of the course. You are supposed to
-work on them in the lab, where you can ask questions to the teaching assistants.
+The twelve problem sets are the hard work of the course, on which you will
+spend most of the lab time and then some more.
 
 You have four "late days" that you may "spend" during the semester, each of
 which provides you with an extension of twenty-four hours. You may spend no
