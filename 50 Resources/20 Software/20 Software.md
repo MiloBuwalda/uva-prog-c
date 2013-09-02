@@ -5,7 +5,7 @@
 To avoid having to install all necessary software yourself you can do the
 assignments in an already prepared Virtual Machine (VM) instance or Appliance.
 The Appliance for this course can be found here:
-<https://manual.cs50.net/CS50_Appliance_2.3>
+<https://manual.cs50.net/appliance/17/>
 
 ## Running the Appliance
 
