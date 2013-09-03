@@ -21,6 +21,6 @@ Problem set 0 is called **Scratch**.
 
 * Paste the URL to your Scratch project in the box below:
 
-    <textarea name="url"></textarea>
+    <textarea name="a[url]"></textarea>
 
 * On the next tab, press Submit!
