@@ -6,6 +6,11 @@
 
 * Problem sets always come with extra video tutorials and other resources to
   help you along the way. You can find these under the **Walkthrough** tab.
+
+* Please realize that you are **not** allowed to e-mail assistants or course
+  management for help regarding your problem set. You should always ask such
+  questions in person during office hours. You're always welcome to drop by,
+  even outside of your own scheduled hours!
   
 * Most problems sets come with a *Normal edition* and a *Hacker edition*. The 
   Hacker edition contains harder and more challenging assignments. While we 
