@@ -2,4 +2,6 @@ name: 1
 required:
     - hello.c
     - mario.c
-    - greedy.c (for Normal edition) or credit.c (for Hacker edition)
+optional:
+    - greedy.c # (for Normal edition)
+    - credit.c # (for Hacker edition)
