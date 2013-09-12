@@ -1,5 +1,5 @@
 name: 2
 optional:
-    - caesar.c (required for Normal edition only)
-    - vigenere.c (required for Normal edition only)
-    - crack.c (required for Hacker edition only)
+    - caesar.c
+    - vigenere.c
+    - crack.c

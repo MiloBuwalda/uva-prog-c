@@ -3,5 +3,5 @@ required:
     - hello.c
     - mario.c
 optional:
-    - greedy.c # (for Normal edition)
-    - credit.c # (for Hacker edition)
+    - greedy.c
+    - credit.c
