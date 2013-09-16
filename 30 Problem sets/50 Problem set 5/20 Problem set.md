@@ -10,3 +10,5 @@ Problem set 5 is called **Mispellings**.
 ## Files
 
 * [Download Normal and Hacker edition (.ZIP)](pset5.zip)
+* To help test your program, you can run your speller over 
+  [these texts (.ZIP)](texts.zip), with [these solutions (.ZIP)](keys.zip).
