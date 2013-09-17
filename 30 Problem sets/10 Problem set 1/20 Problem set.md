@@ -4,11 +4,9 @@ Problem set 1 is called **C**.
 
 ## Appliance
 
-Follow the instructions in the Problem Set to install the Appliance. For those
-who need them, here are direct download links.
+Here is a direct link to the installation instructions for the right version of the CS50 Appliance (17).
 
-* Download the [Appliance for VirtualBox](http://mirror.cs50.net/appliance/17a/appliance50-17a-ovf.zip?download).
-* Download the [Appliance for VMWare](http://mirror.cs50.net/appliance/17a/appliance50-17a-vmx.zip?download).
+<https://manual.cs50.net/appliance/17/>
 
 ## Specifications
 
