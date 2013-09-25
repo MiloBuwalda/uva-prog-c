@@ -4,6 +4,11 @@ Problem set 4 is called **Forensics**.
 
 ## Specifications
 
+Watch out: there is an incorrect link in the "Section of questions". To
+download the section's source code files, use [this link].
+
+[this link]: http://cdn.cs50.net/2012/fall/sections/5/section5.zip
+
 * [Download Normal edition (.PDF)](pset4.pdf)
 * [Download Hacker edition (.PDF)](hacker4.pdf)
 
