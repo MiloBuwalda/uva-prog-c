@@ -2,8 +2,11 @@
 
 This quiz is about the following:
 
-- everything in the lectures from weeks 0--4
-- everything in problem sets 0--3
+* everything in the lectures from weeks 0--4
+* everything in problem sets 0--3
+
+During the quiz, you may utilize one two-sided page (A4 size) of notes, typed
+or written, and a pen or pencil, nothing else.
 
 ## Example quiz
 
