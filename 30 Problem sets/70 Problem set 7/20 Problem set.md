@@ -10,3 +10,7 @@ Problem set 7 is called **C$50 Finance**.
 ## Files
 
 * [Download Normal edition (.ZIP)](pset7.zip)
+
+## Check
+
+check50 is not available for this problem set.

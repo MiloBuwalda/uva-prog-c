@@ -16,3 +16,9 @@ download the section's source code files, use [this link].
 
 * [Download Normal edition (.ZIP)](pset4.zip)
 * [Download Hacker edition (.ZIP)](hacker4.zip)
+
+## Check
+
+You can check the correctness of your solution by executing (in a terminal) the following command:
+
+	check50 2012/pset4/resize bmp.h resize.c
