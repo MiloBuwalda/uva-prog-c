@@ -15,6 +15,6 @@ Problem set 5 is called **Mispellings**.
   
 ## Check
 
-You can check the correctness of your solution by executing (in a terminal) the following commands:
+You can check the correctness of your solution by executing (in a terminal) the following command:
 
 	check50 2012/pset5/speller dictionary.c dictionary.h Makefile

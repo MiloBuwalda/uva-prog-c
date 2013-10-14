@@ -13,7 +13,7 @@ Problem set 6 is called **Huff'n Puff**.
 
 ## Check
 
-You can check the correctness of your solution by executing (in a terminal) the following command(s):
+You can check the correctness of your solution by executing (in a terminal) the following commands:
 
 	check50 2012/pset6/puff puff.c Makefile
   

@@ -13,6 +13,6 @@ Problem set 3 is called **Scramble**.
 
 ## Check
 
-You can check the correctness of your solution by executing (in a terminal) the following command:
+You can check the correctness of your solution by executing (in a terminal) the following commands:
 
 	check50 2012/pset3/scramble scramble.c

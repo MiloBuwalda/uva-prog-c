@@ -19,6 +19,9 @@ download the section's source code files, use [this link].
 
 ## Check
 
-You can check the correctness of your solution by executing (in a terminal) the following command:
+You can check the correctness of your solution by executing (in a terminal) the following commands:
 
 	check50 2012/pset4/resize bmp.h resize.c
+	check50 2012/pset4/recover bmp.h resize.c
+  
+	check50 2012/hacker4/resize bmp.h resize.c
