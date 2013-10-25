@@ -23,6 +23,10 @@ Or this:
 
 	// Compute student's average.
 	average = (int) (sum / QUIZZES + 0.5);
+  
+Do not place comments on the same line as actual code, as in
+
+	average = (int) (sum / QUIZZES + 0.5); // compute student's average
 
 Atop your `.c` and `.h` files should be multi-line comments that summarize what your program (or that particular file) does along with, perhaps, your name and that of the file. Consider what I tend to do:
 
@@ -39,14 +43,13 @@ Atop your `.c` and `.h` files should be multi-line comments that summarize what 
 
 Atop each of your functions (except, perhaps, main) should be multi-line comments that summarize what your function does along with, perhaps, its signature. Consider what I tend to do:
 
-	/*
+	/**
 	 * Sings about a number, b, of bottles.
 	 */
-	
 	void chorus(int b)
 	{
 	    // use proper grammar
-	    string  s1 = (b == 1) ? "bottle" : "bottles";
+	    string s1 = (b == 1) ? "bottle" : "bottles";
 	    string s2 = (b == 2) ? "bottle" : "bottles";
 	
 	    // sing verses
@@ -78,14 +81,6 @@ But it's fine to include them, especially if you think you might add additional 
 
 Notice how the curly braces line up nicely, making perfectly clear what's inside the branch.
 
-To save space, some people like to keep the first curly brace on the same line as the condition itself, but we don't recommend, as it's harder to read:
-
-	if (x < 0) {
-	    printf("x is negative\n");
-	} else if (x < 0) {
-	    printf("x is negative\n");
-	}
-
 Do not indent your curly braces:
 
 	if (x < 0)
@@ -110,6 +105,12 @@ Declare functions as follows, with curly braces on lines of their own:
 
 	int main(void)
 	{
+	
+	}
+
+But it's also fine if you want to put the curly brace on the same line as the function declaration as in (but don't omit the space between the function and curly brace):
+
+	int main(void) {
 	
 	}
 
@@ -161,13 +162,6 @@ or:
 
 Do not declare main with:
 
-	int main(int argc, char** argv)
-	{
-	
-	}
-
-or with:
-
 	int main()
 	{
 	
@@ -192,12 +186,6 @@ or with:
 When declaring a pointer, write the `*` next to the type, as in:
 
 	int* p;
-
-Don't write it next to the variable's name, as in:
-
-	int *p;
-
-This convention can lead to ambiguity in some contexts, but we think, overall, it's clearer when first learning pointers.
 
 ## Variables
 

@@ -10,3 +10,9 @@ Problem set 3 is called **Scramble**.
 ## Files
 
 * [Download Normal and Hacker edition (.ZIP)](pset3.zip)
+
+## Check
+
+You can check the correctness of your solution by executing (in a terminal) the following commands:
+
+	check50 2012/pset3/scramble scramble.c

@@ -26,8 +26,8 @@ direction on where to begin and how to approach the week's challenges.
 
 ## Problem Sets
 
-The twelve problem sets are the hard work of the course, on which you will
-spend most of the lab time and then some more.
+The seven problem sets and the final project are the hard work of the course, on
+which you will spend most of the lab time and then some more.
 
 You have four "late days" that you may "spend" during the semester, each of
 which provides you with an extension of twenty-four hours. You may spend no
