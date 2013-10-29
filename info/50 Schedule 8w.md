@@ -38,6 +38,7 @@
 ## Before course start
 
 * Lecture 5
+* Lecture 6
 
 ## Week 5
 

@@ -52,6 +52,7 @@
 
 ## Week 10
 
+* Lecture 6
 * Lecture 7 
 * Thursday deadline: pset 5
 
