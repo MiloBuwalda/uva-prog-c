@@ -20,3 +20,11 @@
   than is required by each of the course's problem sets.
   
 * See the **project** tab for more information.
+
+* Grading of your final project is currently possible at the following moments:
+
+	monday okt 28  : 13.00 - 17.00
+	tuesday okt 29 : 11.00 - 13.00
+	monday nov 4   : 11.00 - 17.00
+	monday nov 11  : 11.00 - 17.00
+	monday nov 18  : 11.00 - 17.00
