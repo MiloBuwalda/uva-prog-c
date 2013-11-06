@@ -65,6 +65,13 @@ The grade of **Part 2** will be determined using the following weights:
 * Final Project: 40%
 * Quiz 1 needs to be passed
 
+For hi-speed students (doing Part 1 and 2 together in 8 weeks), the grade is
+determined using:
+
+* Problem Sets 5--7: 80%
+* Final Project: 20%
+* Quiz 1 needs to be passed
+
 </div>
 </div>
 
