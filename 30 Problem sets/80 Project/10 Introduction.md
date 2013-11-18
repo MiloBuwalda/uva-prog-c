@@ -19,12 +19,19 @@
   project. A one-person project, mind you, should entail more time and effort 
   than is required by each of the course's problem sets.
   
+* *If you started in semester 1 (before Februari 2014)*, your project will be
+  graded based on a live demonstration in addition to a code review, much like
+  how problem set 7 was graded. Be extra sure your project works properly when
+  the time comes to show it to us. Also, be sure to upload all of your project's
+  files by including them in a single .tar.gz file.
+  
+* *If you started in semester 2 (after Februari 2014)*, your project will be
+  graded based on your submission alone, much like all of the previous problem
+  sets. Be extra sure your project works properly and can be set up properly
+  using the single .tar.gz file you submit. If multiple or complicated steps are
+  required to set up your project, be sure to include instructions for us so we
+  can do so.
+  
 * See the **project** tab for more information.
 
-* Grading of your final project is currently possible at the following moments:
-
-	monday okt 28  : 13.00 - 17.00
-	tuesday okt 29 : 11.00 - 13.00
-	monday nov 4   : 11.00 - 17.00
-	monday nov 11  : 11.00 - 17.00
-	monday nov 18  : 11.00 - 17.00
+* 
