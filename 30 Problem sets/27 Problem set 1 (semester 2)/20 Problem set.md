@@ -215,7 +215,7 @@ Toward the end of World 1-1 in Nintendos Super Mario Brothers, Mario must
 ascend a "half-pyramid" of blocks before leaping (if he wants to maximize his
 score) toward a flag pole. Below is a screenshot.
 
-TBA Screenshot
+![Mario!](pset11.png)
 
 Write, in a file called mario.c in your `~/Desktop/pset1` directory, a program
 that recreates this half-pyramid using hashes (#) for blocks. However, to make
@@ -272,7 +272,7 @@ and/or run our own example implementation (for comparison) with:
 	~cs50/pset1/mario
 
 To get you on your way,
-(watch this video)[http://www.youtube.com/watch?v=z32BxNe2Sfc].
+[watch this video](http://www.youtube.com/watch?v=z32BxNe2Sfc).
 
 # `greedy.c`
 
@@ -281,7 +281,7 @@ mathematical skills) with this spring-loaded changer that you wear on your
 belt to dispense quarters, dimes, nickels, and pennies into your hand." Or so
 says the website on which we found this here accessory (for ages 5 and up).
 
-TBA Picture
+![Picture of an awesome gadget](pset12.png)
 
 Of course, the novelty of this thing quickly wears off, especially when
 someone pays for a newspaper with a big bill. Fortunately, computer science
@@ -353,7 +353,7 @@ might otherwise add up! Of course, dont just cast the users input from a
 `float` to an int! After all, how many cents does one dollar equal? And be
 careful to round and not truncate your pennies!
 
-(Watch this video)[http://www.youtube.com/watch?v=9dZzyl7dCuw] to help you get
+[Watch this video](http://www.youtube.com/watch?v=9dZzyl7dCuw) to help you get
 on your way.
 
 Remember that you can use `check50` to check the correctness of your solution.
