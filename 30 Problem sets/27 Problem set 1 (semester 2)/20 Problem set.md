@@ -72,3 +72,20 @@ Using the `touch` command, you can create a new file, not unlike how you've
 just created a new directory. To create a file called **hello.c**, type
 
 	touch hello.c
+
+To change the contents of this new and empty file, type
+
+	gedit hello.c
+
+to open the file in an editor that might be reminiscent of Window's Notepad.
+This will be the program you'll be using to write your code during the course.
+For now, just close the file again without writing anything to it.
+
+Up until now, we have just used only the **Terminal** to navigate through the
+appliance. You can also navigate through the appliance in the way you're
+probably used to when using Windows or MAC OS (as per using your mouse to
+navigate through a Guided User Interface), but it's best to get comfortable
+with using the terminal as soon as possible. You'll definitely need it for
+certain other tasks soon enough!
+
+(Watch this video)[http://www.youtube.com/watch?v=HkQD6aw7oDc]
