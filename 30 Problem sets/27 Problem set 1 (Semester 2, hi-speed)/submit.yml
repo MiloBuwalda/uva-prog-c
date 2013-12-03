@@ -1,0 +1,4 @@
+name: 1
+required:
+    - hello.c
+    - mario.c
