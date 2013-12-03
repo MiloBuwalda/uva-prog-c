@@ -8,7 +8,7 @@ The deadline for this problem set is Friday **Februari 7th, 2014** (16:00).
 
 ### Commands
 
-* *(Skip to the **Getting Started** section on your first read-through!)*
+* *(Skip to the __Getting Started__ section on your first read-through!)*
 
 * Example implementations:
 
@@ -98,12 +98,12 @@ The deadline for this problem set is Friday **Februari 7th, 2014** (16:00).
   
 * Go ahead and write your first program by typing these lines into the file:
 
-	#include <stdio.h>
+	`#include <stdio.h>
 	
 	int main(void)
 	{
     printf("hello, world\n");
-	}
+	}`
   
 * Notice how gedit adds "syntax highlighting" (i.e., color) as you type. Those
   colors aren’t actually saved inside of the file itself; they’re just added by
