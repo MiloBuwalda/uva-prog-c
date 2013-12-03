@@ -167,3 +167,40 @@ deny.) If you see no more errors, try running your program by typing
 at your prompt! Hopefully you now see precisely the below?
 
 	hello, world
+
+# Using check50
+
+Now lets see if the program you just wrote is correct! Included in the CS50
+Appliance is `check50`, a command-line program with which you can check the
+correctness of (some of) your programs.
+
+To check your implementation of `hello.c` which you've just written, navigate
+to your folder as per
+
+	cd Desktop/pset1
+
+and then execute
+
+	check50 2013.pset1.hello hello.c
+
+to perform `check50` over your program. If all commentary is green-colored,
+your program is fully correct. If one or more yellow or red commentaries
+appear, you've made a mistake. Best to retrace your steps, or ask an assistant
+for help!
+
+# Using style50
+
+In addition to `check50`, the CS50 Appliance comes with `style50`, a tool with
+which you can evaluate your codes style. To run it on, say, `hello.c`,
+execute the below:
+
+	style50 hello.c
+
+You should see zero or more lines of suggestions. Yellow smilies indicate
+warnings that you should consider addressing. Red smilies indicate errors that
+you should definitely address.
+
+Know that `style50` does not scour your code for all possible style flaws. For
+example, it cannot understand the comments you type. In other words, having a
+flawless output from `style50` does not in fact mean that your code style itself
+is also flawless.
