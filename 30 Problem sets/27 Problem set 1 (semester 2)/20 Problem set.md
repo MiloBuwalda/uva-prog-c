@@ -102,5 +102,11 @@ Go ahead and write your first program by typing these lines into the file:
 	
 	int main(void)
 	{
-    printf("hello, world\n");
+  	printf("hello, world\n");
 	}
+
+Notice how gedit adds "syntax highlighting" (i.e., color) as you type. Those
+colors aren’t actually saved inside of the file itself; they’re just added by
+gedit to make certain syntax stand out. Had you not saved the file as hello.c
+from the start, gedit wouldn’t know (per the filename’s extension) that you’re
+writing C code, in which case those colors would be absent.
