@@ -122,49 +122,5 @@ Recall that the leading asterisk in the tabs name should then disappear.
 As you can see, gedit itself also has a **Terminal** window, although it
 initially rests in your home directory. Type
 
-	cd Desktop/pset1
 
-to immediately move yourself from your home directory to your **pset1**
-directory. You can then use
-
-	ls
-
-to confirm that your `hello.c` file is indeed there. `ls` stands for "list",
-and provides a listing of the contents of the current directory, whereas `cd`
-stands for "change directory".
-
-Assuming `ls` indeed shows `hello.c`, you can type
-
-	make hello
-
-to compile your textual code into binary code that the computer can execute.
-If you just receive the same prompt, you're succesful! You can then type
-
-	./hello
-
-to execute the binary code you just generated.
-
-If, though, upon running `make`, you instead see some error(s), its time to
-debug! (If the terminal windows too small to see everything, click and drag
-its top border upward to increase its height.) If you see an error like
-expected declaration or something no less mysterious, odds are you made a
-syntax error (i.e., typo) by omitting some character or adding something in
-the wrong place. Scour your code for any differences vis-à-vis the template
-above. Its easy to miss the slightest of things when learning to program, so
-do compare your code against ours character by character; odds are the
-mistake(s) will jump out! Anytime you make changes to your own code, just
-remember to re-save via File > Save (or ctrl-s), then re-click inside of the
-terminal window, and then re-type
-
-	make hello
-
-at your prompt, followed by Enter. (Just be sure that you are inside of
-`~/Desktop/pset1` within your terminal window, as your prompt will confirm or
-deny.) If you see no more errors, try running your program by typing
-
-	./hello
-
-at your prompt! Hopefully you now see precisely the below?
-
-	hello, world
 
