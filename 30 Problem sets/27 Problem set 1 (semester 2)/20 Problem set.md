@@ -122,5 +122,25 @@ Recall that the leading asterisk in the tabs name should then disappear.
 As you can see, gedit itself also has a **Terminal** window, although it
 initially rests in your home directory. Type
 
+	cd Desktop/pset1
 
+to immediately move yourself from your home directory to your **pset1**
+directory. You can then use
+
+	ls
+
+to confirm that your `hello.c` file is indeed there. `ls` stands for "list",
+and provides a listing of the contents of the current directory, whereas `cd`
+stands for "change directory".
+
+Assuming `ls` indeed shows `hello.c`, you can type
+
+	make hello
+
+to compile your textual code into binary code that the computer can execute.
+If you just receive the same prompt, you're succesful! You can then type
+
+	./hello
+
+to execute the binary code you just generated.
 
