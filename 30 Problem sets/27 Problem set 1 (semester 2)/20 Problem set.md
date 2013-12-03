@@ -144,3 +144,26 @@ If you just receive the same prompt, you're succesful! You can then type
 
 to execute the binary code you just generated.
 
+If, though, upon running `make`, you instead see some error(s), its time to
+debug! (If the terminal windows too small to see everything, click and drag
+its top border upward to increase its height.) If you see an error like
+expected declaration or something no less mysterious, odds are you made a
+syntax error (i.e., typo) by omitting some character or adding something in
+the wrong place. Scour your code for any differences vis-à-vis the template
+above. Its easy to miss the slightest of things when learning to program, so
+do compare your code against ours character by character; odds are the
+mistake(s) will jump out! Anytime you make changes to your own code, just
+remember to re-save via **File > Save** (or ctrl-s), then re-click inside of the
+terminal window, and then re-type
+
+	make hello
+
+at your prompt, followed by Enter. (Just be sure that you are inside of
+`~/Desktop/pset1` within your terminal window, as your prompt will confirm or
+deny.) If you see no more errors, try running your program by typing
+
+	./hello
+
+at your prompt! Hopefully you now see precisely the below?
+
+	hello, world
