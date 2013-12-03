@@ -225,11 +225,10 @@ pictured above happens to be 8.) If the user fails to provide a non-negative
 integer no greater than 23, you should re-prompt for the same again. Then,
 generate (with the help of printf and one or more loops) the desired half-
 pyramid. Take care to align the bottom-left corner of your half-pyramid with
-the left-hand edge of your terminal window, as in the sample output below,
-wherein bold text represents some users input.
+the left-hand edge of your terminal window, as in the sample output below.
 
-	jharvard@appliance (~/Desktop/pset1): **./mario**
-	Height: **8**
+	jharvard@appliance (~/Desktop/pset1): ./mario
+	Height: 8
 	       ##
 	      ###
 	     ####
@@ -243,16 +242,15 @@ Note that the rightmost two columns of blocks must be of the same height. No
 need to generate the pipe, clouds, numbers, text, or Mario himself.
 
 By contrast, if the user fails to provide a non-negative integer no greater
-than 23, your programs output should instead resemble the below, wherein bold
-text again represents some users input. (Recall that GetInt will handle some,
-but not all, re-prompting for you.)
+than 23, your programs output should instead resemble the below (Recall that
+`GetInt` will handle some, but not all, re-prompting for you.)
 
-	jharvard@appliance (~/Dropbox/pset1): **./mario**
-	Height: **-2**
-	Height: **-1**
-	Height: **foo**
-	Retry: **bar**
-	Retry: **1**
+	jharvard@appliance (~/Dropbox/pset1): ./mario
+	Height: -2
+	Height: -1
+	Height: foo
+	Retry: bar
+	Retry: 1
 	##
 
 Remember that you can use
@@ -275,3 +273,4 @@ and/or run our own example implementation (for comparison) with:
 
 To get you on your way,
 (watch this video)[http://www.youtube.com/watch?v=z32BxNe2Sfc].
+
