@@ -98,21 +98,9 @@ to open up your `hello.c` file in a text editor.
 
 Go ahead and write your first program by typing these lines into the file:
 
-
-
-Notice how gedit adds "syntax highlighting" (i.e., color) as you type. Those
-colors aren’t actually saved inside of the file itself; they’re just added by
-gedit to make certain syntax stand out. Had you not saved the file as hello.c
-from the start, gedit wouldn’t know (per the filename’s extension) that you’re
-writing C code, in which case those colors would be absent.
-
-Do be sure that you type in this program just right, else you’re about to
-experience your first bug! In particular, capitalization matters, so don’t
-accidentally capitalize words (unless they’re between those two quotes). And
-don’t overlook that one semicolon. C is quite nitpicky!
-
-When done typing, select **File - Save** (or hit ctrl-s), but don’t quit.
-Recall that the leading asterisk in the tab’s name should then disappear.
-
-As you can see, gedit itself also has a **Terminal** window, although it
-initially rests in your home directory. Type
+	#include <stdio.h>
+	
+	int main(void)
+	{
+    printf("hello, world\n");
+	}
