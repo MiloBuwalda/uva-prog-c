@@ -106,7 +106,7 @@ Go ahead and write your first program by typing these lines into the file:
 	}
 
 Notice how gedit adds syntax highlighting (color) as you type. Those colors
-aren’t actually saved inside of the file itself; they’re just added by gedit to
-make certain syntax stand out. Had you not saved the file as `hello.c` from the
-start, gedit would not know (per the filenames extension) that you’re writing C
-code, in which case those colors would be absent.
+aren not actually saved inside of the file itself; they are just added by gedit
+to make certain syntax stand out. Had you not saved the file as `hello.c` from
+the start, gedit would not know (per the extension) that you are writing C code,
+in which case those colors would be absent.
