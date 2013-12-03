@@ -111,7 +111,7 @@ experience your first bug! In particular, capitalization matters, so don’t
 accidentally capitalize words (unless they’re between those two quotes). And
 don’t overlook that one semicolon. C is quite nitpicky!
 
-When done typing, select **File > Save** (or hit ctrl-s), but don’t quit.
+When done typing, select **File - Save** (or hit ctrl-s), but don’t quit.
 Recall that the leading asterisk in the tab’s name should then disappear.
 
 As you can see, gedit itself also has a **Terminal** window, although it
