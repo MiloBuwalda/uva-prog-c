@@ -98,12 +98,7 @@ to open up your `hello.c` file in a text editor.
 
 Go ahead and write your first program by typing these lines into the file:
 
-	#include <stdio.h>
-	
-	int main(void)
-	{
-	  printf("hello, world\n");
-	}
+
 
 Notice how gedit adds "syntax highlighting" (i.e., color) as you type. Those
 colors aren’t actually saved inside of the file itself; they’re just added by
