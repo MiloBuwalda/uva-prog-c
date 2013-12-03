@@ -204,3 +204,74 @@ Know that `style50` does not scour your code for all possible style flaws. For
 example, it cannot understand the comments you type. In other words, having a
 flawless output from `style50` does not in fact mean that your code style itself
 is also flawless.
+
+# Shorts
+
+TBA
+
+# `mario.c`
+
+Toward the end of World 1-1 in Nintendos Super Mario Brothers, Mario must
+ascend a "half-pyramid" of blocks before leaping (if he wants to maximize his
+score) toward a flag pole. Below is a screenshot.
+
+TBA Screenshot
+
+Write, in a file called mario.c in your `~/Desktop/pset1` directory, a program
+that recreates this half-pyramid using hashes (#) for blocks. However, to make
+things more interesting, first prompt the user for the half-pyramids height,
+a non-negative integer no greater than 23. (The height of the half-pyramid
+pictured above happens to be 8.) If the user fails to provide a non-negative
+integer no greater than 23, you should re-prompt for the same again. Then,
+generate (with the help of printf and one or more loops) the desired half-
+pyramid. Take care to align the bottom-left corner of your half-pyramid with
+the left-hand edge of your terminal window, as in the sample output below,
+wherein bold text represents some users input.
+
+	jharvard@appliance (~/Desktop/pset1): **./mario**
+	Height: **8**
+	       ##
+	      ###
+	     ####
+	    #####
+	   ######
+	  #######
+	 ########
+	#########
+
+Note that the rightmost two columns of blocks must be of the same height. No
+need to generate the pipe, clouds, numbers, text, or Mario himself.
+
+By contrast, if the user fails to provide a non-negative integer no greater
+than 23, your programs output should instead resemble the below, wherein bold
+text again represents some users input. (Recall that GetInt will handle some,
+but not all, re-prompting for you.)
+
+	jharvard@appliance (~/Dropbox/pset1): **./mario**
+	Height: **-2**
+	Height: **-1**
+	Height: **foo**
+	Retry: **bar**
+	Retry: **1**
+	##
+
+Remember that you can use
+
+	make mario
+
+to compile your program and then
+
+	./mario
+
+to run it.
+
+You can check the correctness of your program with
+
+	check50 2013.pset1.mario mario.c
+
+and/or run our own example implementation (for comparison) with:
+
+	~cs50/pset1/mario
+
+To get you on your way,
+(watch this video)[http://www.youtube.com/watch?v=z32BxNe2Sfc].
