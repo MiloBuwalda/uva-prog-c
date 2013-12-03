@@ -45,3 +45,30 @@ effect.
 Now, let's start on the problem set. First, create a new directory for your
 problem set's files to live in. Open up your **Terminal** and type
 
+	cd Desktop
+
+which will move you from your current position to your Desktop. Once there,
+you should see that your prompt has changed from
+  
+	jharvard@appliance (~):
+
+to
+
+	jharvard@appliance (~/Desktop):
+
+Next, create a new directory named **pset1** by executing
+
+	mkdir pset1
+
+Now, you can move yourself to this newly created directory by executing
+
+	cd pset1
+
+which should change your prompt to
+
+	jharvard@appliance (~/Desktop/pset1):
+
+Using the `touch` command, you can create a new file, not unlike how you've
+just created a new directory. To create a file called **hello.c**, type
+
+	touch hello.c
