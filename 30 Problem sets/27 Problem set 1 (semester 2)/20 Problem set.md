@@ -102,7 +102,7 @@ Go ahead and write your first program by typing these lines into the file:
 	
 	int main(void)
 	{
-  	printf("hello, world\n");
+		printf("hello, world\n");
 	}
   
 TBA
