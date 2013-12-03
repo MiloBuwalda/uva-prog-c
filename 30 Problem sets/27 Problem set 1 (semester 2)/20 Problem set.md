@@ -104,10 +104,3 @@ Go ahead and write your first program by typing these lines into the file:
 	{
 		printf("hello, world\n");
 	}
-  
-TBA
-
-Do be sure that you type in this program just right, else you’re about to
-experience your first bug! In particular, capitalization matters, so don’t
-accidentally capitalize words (unless they’re between those two quotes). And
-don’t overlook that one semicolon. C is quite nitpicky!
