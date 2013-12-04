@@ -10,17 +10,17 @@ The deadline for this problem set is Friday **Februari 7th, 2014** (16:00).
 
 *(Skip to the __Getting Started__ section on your first read-through!)*
 
-Example implementations:
+* Example implementations:
 
-	~cs50/pset1/hello
-	~cs50/pset1/mario
-	~cs50/pset1/greedy
+		~cs50/pset1/hello
+		~cs50/pset1/mario
+		~cs50/pset1/greedy
 
-`check50` commands:
+* `check50` commands:
 
-	check50 2013.pset1.hello hello.c
-	check50 2013.pset1.mario mario.c
-	check50 2013.pset1.greedy greedy.c
+		check50 2013.pset1.hello hello.c
+		check50 2013.pset1.mario mario.c
+		check50 2013.pset1.greedy greedy.c
 
 # Getting started
 
