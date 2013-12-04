@@ -3,8 +3,9 @@ Februari 3rd, 2014.**
 
 # This is problem set 1
 
-Problem set 1 is called **C**.
-The deadline for this problem set is Friday **Februari 7th, 2014** (16:00).
+* Problem set 1 is called **C**.
+
+* The deadline for this problem set is Friday **Februari 7th, 2014** (16:00).
 
 # Commands
 
@@ -24,127 +25,127 @@ The deadline for this problem set is Friday **Februari 7th, 2014** (16:00).
 
 # Getting started
 
-This text assumes you have the appliance up and running. If not, head back to
+* This text assumes you have the appliance up and running. If not, head back to
 the "Setting up" page for instructions on how to do so.
 
-To ensure your appliance remains up to date, be sure to update your appliance
+* To ensure your appliance remains up to date, be sure to update your appliance
 every now and then. To do so, open up your **Terminal** and type
 
-	update50
+		update50
 
 which will then proceed to download any updates and install them.
 
-Know that, whenever your appliance has internet issues, you can type
+* Know that, whenever your appliance has internet issues, you can type
 
-	connect50
+		connect50
 
 to have the appliance automatically fix these issues for you! You might need to
 restart the appliance after you've ran `connect50` for the changes to take
 effect.
 
-Now, let's start on the problem set. First, create a new directory for your
-problem set's files to live in. Open up your **Terminal** and type
+* Now, let's start on the problem set. First, create a new directory for your
+problem set's files to live in. Open up your **terminal** and type
 
-	cd Desktop
+		cd Desktop
 
 which will move you from your current position to your Desktop. Once there,
 you should see that your prompt has changed from
   
-	jharvard@appliance (~):
+		jharvard@appliance (~):
 
 to
 
-	jharvard@appliance (~/Desktop):
+		jharvard@appliance (~/Desktop):
 
-Next, create a new directory named **pset1** by executing
+* Next, create a new directory named `pset1` by executing
 
-	mkdir pset1
+		mkdir pset1
 
-Now, you can move yourself to this newly created directory by executing
+* Now, you can move yourself to this newly created directory by executing
 
-	cd pset1
+		cd pset1
 
 which should change your prompt to
 
-	jharvard@appliance (~/Desktop/pset1):
+		jharvard@appliance (~/Desktop/pset1):
 
-Using the `touch` command, you can create a new file, not unlike how you've
+* Using the `touch` command, you can create a new file, not unlike how you've
 just created a new directory. To create a file called `hello.c`, type
 
-	touch hello.c
+		touch hello.c
 
-To change the contents of this new and empty file, type
+* To change the contents of this new and empty file, type
 
-	gedit hello.c
+		gedit hello.c
 
 to open the file in an editor that might be reminiscent of Window's Notepad.
 This will be the program you'll be using to write your code during the course.
 For now, just close the file again without writing anything to it.
 
-Up until now, we have just used only the **Terminal** to navigate through the
+* Up until now, we have just used only the **terminal** to navigate through the
 appliance. You can also navigate through the appliance in the way you're
 probably used to when using Windows or MAC OS (as per using your mouse to
 navigate through a Guided User Interface), but it's best to get comfortable
 with using the terminal as soon as possible. You'll definitely need it for
 certain other tasks soon enough!
 
-[Watch this video.](http://www.youtube.com/watch?v=HkQD6aw7oDc)
+* [Watch this video.](http://www.youtube.com/watch?v=HkQD6aw7oDc)
 
-Navigate to your **pset1** folder using the **Terminal** and then type
+* Navigate to your `pset1` folder using the **terminal** and then type
 
-	gedit hello.c
+		gedit hello.c
 
 to open up your `hello.c` file in a text editor.
 
-Go ahead and write your first program by typing these lines into the file:
+* Go ahead and write your first program by typing these lines into the file:
 
-	#include <stdio.h>
-	
-	int main(void)
-	{
-		printf("hello, world\n");
-	}
+		#include <stdio.h>
+		
+		int main(void)
+		{
+			printf("hello, world\n");
+		}
 
-Notice how gedit adds syntax highlighting (color) as you type. Those colors
+* Notice how gedit adds syntax highlighting (color) as you type. Those colors
 aren not actually saved inside of the file itself; they are just added by gedit
 to make certain syntax stand out. Had you not saved the file as `hello.c` from
 the start, gedit would not know (per the extension) that you are writing C code,
 in which case those colors would be absent.
 
-Do be sure that you type in this program just right, else youre about to
+* Do be sure that you type in this program just right, else youre about to
 experience your first bug! In particular, capitalization matters, so dont
 accidentally capitalize words (unless theyre between those two quotes). And
 dont overlook that one semicolon. C is quite nitpicky!
 
-When done typing, select **File > Save** (or hit ctrl-s), but dont quit.
+* When done typing, select **File > Save** (or hit ctrl-s), but dont quit.
 Recall that the leading asterisk in the tabs name should then disappear.
 
-As you can see, gedit itself also has a **Terminal** window, although it
+* As you can see, gedit itself also has a **terminal** window, although it
 initially rests in your home directory. Type
 
-	cd Desktop/pset1
+		cd Desktop/pset1
 
-to immediately move yourself from your home directory to your **pset1**
+to immediately move yourself from your home directory to your `pset1`
 directory. You can then use
 
-	ls
+		ls
 
 to confirm that your `hello.c` file is indeed there. `ls` stands for "list",
 and provides a listing of the contents of the current directory, whereas `cd`
 stands for "change directory".
 
-Assuming `ls` indeed shows `hello.c`, you can type
+* Assuming `ls` indeed shows `hello.c`, you can type
 
-	make hello
+		make hello
 
 to compile your textual code into binary code that the computer can execute.
 If you just receive the same prompt, you're succesful! You can then type
 
-	./hello
+		./hello
 
 to execute the binary code you just generated.
 
-If, though, upon running `make`, you instead see some error(s), its time to
+* If, though, upon running `make`, you instead see some error(s), its time to
 debug! (If the terminal windows too small to see everything, click and drag
 its top border upward to increase its height.) If you see an error like
 expected declaration or something no less mysterious, odds are you made a
@@ -156,17 +157,17 @@ mistake(s) will jump out! Anytime you make changes to your own code, just
 remember to re-save via **File > Save** (or ctrl-s), then re-click inside of the
 terminal window, and then re-type
 
-	make hello
+		make hello
 
 at your prompt, followed by Enter. (Just be sure that you are inside of
 `~/Desktop/pset1` within your terminal window, as your prompt will confirm or
 deny.) If you see no more errors, try running your program by typing
 
-	./hello
+		./hello
 
 at your prompt! Hopefully you now see precisely the below?
 
-	hello, world
+		hello, world
 
 # Using check50
 
