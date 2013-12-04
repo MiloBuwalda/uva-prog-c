@@ -39,9 +39,9 @@ which will then proceed to download any updates and install them.
 
 		connect50
 
-to have the appliance automatically fix these issues for you! You might need to
-restart the appliance after you've ran `connect50` for the changes to take
-effect.
+  to have the appliance automatically fix these issues for you! You might need to
+  restart the appliance after you've ran `connect50` for the changes to take
+  effect.
 
 * Now, let's start on the problem set. First, create a new directory for your
 problem set's files to live in. Open up your **terminal** and type
